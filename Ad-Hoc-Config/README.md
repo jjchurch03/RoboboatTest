@@ -27,3 +27,5 @@ To change from managed to ibss: `sudo iw dev wlo1 set type ibss`
 
 From here run `sudo iw dev wlo1 scan` if you do it right here is what you should get out: 
 ![Failure?](https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority/blob/main/Ad-Hoc-Config/it_is_down.png)
+
+Why is this? Well this is due to the fact that **when you make changes to your interfaces you should always put them in a down state**
