@@ -22,3 +22,7 @@ Another thing that should be checked in the picture above is the mode being ran.
 **BEFORE YOU DO ANYTHING RUN THIS:** `sudo systemctl stop NetworkManager`. If you don't do this then you **will not** be able to configure the interface.
 
 From here we will need to change the type of interface from managed to *Independent Basic Service Set(IBSS)*. To learn more about ibss go [here](https://www.geeksforgeeks.org/introduction-of-independent-basic-service-set-ibss/). The main thing that you need to know is it is a service which allows hosts (like the boat and computer) to talk to each other directly without a middle man which will be the foundation to our ad hoc network. 
+
+To change from managed to ibss: `sudo iw dev wlo1 set type ibss`
+
+From here run `sudo iw dev wlo1 scan` if you do it right here is what you should get out:
