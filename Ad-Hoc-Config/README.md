@@ -20,3 +20,4 @@ Another thing that should be checked in the picture above is the mode being ran.
 ### Changing into Ad Hoc mode
 
 **BEFORE YOU DO ANYTHING RUN THIS:** `sudo systemctl stop NetworkManager`. If you don't do this then you **will not** be able to configure the interface.
+
