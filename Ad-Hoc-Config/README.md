@@ -30,4 +30,7 @@ From here run `sudo iw dev wlo1 scan` if you do it right here is what you should
 
 Why is this? Well this is due to the fact that **when you make changes to your interfaces you should always put them in a down state**. To do this run the command `sudo ip link set wlo1 down`. When the interface switched modes it automatically goes into a down state.
 
-To fix this run the command `sudo ip link set wlo1 up`
+To fix this run the command `sudo ip link set wlo1 up`. This should bring the interface into an up state. Due to this being the only wireless card you now have an ad hoc network up but not configured.
+
+## Jetson
+### Establishing Baseline
