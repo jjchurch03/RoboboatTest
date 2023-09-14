@@ -11,7 +11,7 @@ This is a guide made by 1/c Sierra Barbee about how to configure the RoboBoat to
 Before you can start configuring your network you need to know what type of interface you are working with. If you are using the laptop that 2023 RoboBoat was using it should show the same if not similar information as what will be shown later. The first command you need to run is `iw dev`. When you do that it should look like this:
 ![Start point](https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority/blob/main/Ad-Hoc-Config/host_inital_iw_dev_results.png)
 
-iw Documentation: [here](https://www.freedesktop.org/software/systemd/man/systemd.net-naming-scheme.html)
+`iw` Documentation if you get lost: [here](https://www.freedesktop.org/software/systemd/man/systemd.net-naming-scheme.html)
 
 As shown above the interface being used is a wireless LAN on-board. This is like a wireless LAN except for the fact that it uses `ID_NET_NAME_ONBOARD' which involves predictive naming schemes which can be read about [here](https://www.freedesktop.org/software/systemd/man/systemd.net-naming-scheme.html).
 
