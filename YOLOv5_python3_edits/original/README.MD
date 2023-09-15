@@ -4,9 +4,9 @@ Written by Hannah Meisner
   Code comments by Sierra Barbee
 
 ## Table of Contents
--coordinates.txt
--detector.py
--exp13best.pt
--MainControl.py
--object_detection.py
--yolo5m.pt.1
+- coordinates.txt
+- detector.py
+- exp13best.pt
+- MainControl.py
+- object_detection.py
+- yolo5m.pt.1
