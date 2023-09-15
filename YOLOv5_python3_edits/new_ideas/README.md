@@ -9,5 +9,6 @@ Ideas for updates
      -
      -
   - Change how move_to_center works in MainControl.py in both class ZedObjects and ""
+      - have a delay so it isn't constantly running
    
   - Fix if statements in object_detection.py
