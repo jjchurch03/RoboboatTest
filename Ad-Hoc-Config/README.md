@@ -33,6 +33,7 @@ Why is this? Well this is due to the fact that **when you make changes to your i
 To fix this run the command `sudo ip link set wlo1 up`. This should bring the interface into an up state. Due to this being the only wireless card you now have an ad hoc network up but not configured. **REMEBER ANY TIME YOU MAKE A CHANGE PUT THE INTERFACE IN A DOWN STATE**
 
 ### Configure the Ad Hoc network
+*explainations and pcitures to come*
 
 ## Jetson
 ### Establishing Baseline
