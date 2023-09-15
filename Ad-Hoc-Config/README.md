@@ -37,3 +37,5 @@ To fix this run the command `sudo ip link set wlo1 up`. This should bring the in
 
 ## Jetson
 ### Establishing Baseline
+
+Please go through the same steps as with the *Establishing Baseline* section previous for the Laptop Host. Below are the screenshots you should get if you are running on the same Jetson as the 2023 team.
