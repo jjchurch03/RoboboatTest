@@ -15,8 +15,14 @@ import pyzed.sl as sl
 
 # Initial GPIO Setup
 GPIO.setmode(GPIO.BOARD)
+
+#Sets IN1 AND IN2 relay on low as defined in ...
 GPIO.setup(in12, GPIO.OUT, initial=GPIO.LOW)
+
+#Set right thruster to low
 GPIO.setup(r_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
+
+#set left thruster to low
 GPIO.setup(l_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 
 class Thrusters:
