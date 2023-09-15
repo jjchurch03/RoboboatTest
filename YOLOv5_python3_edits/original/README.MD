@@ -8,6 +8,6 @@ Code comments by Sierra Barbee
 - coordinates.txt
 - detector.py
 - exp13best.pt
-- MainControl.py
+- MainControl.py: defines parameters for thrusters, identifying red and green bouys and their centerpoint, navigating to centerpoint, and motor testing parameters
 - object_detection.py
 - yolo5m.pt.1
