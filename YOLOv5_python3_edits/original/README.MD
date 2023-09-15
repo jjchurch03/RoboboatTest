@@ -1,7 +1,8 @@
 # Original Python code used by the 2022 RoboBoat team
 
 Written by Hannah Meisner
-  Code comments by Sierra Barbee
+  
+Code comments by Sierra Barbee
 
 ## Table of Contents
 - coordinates.txt
