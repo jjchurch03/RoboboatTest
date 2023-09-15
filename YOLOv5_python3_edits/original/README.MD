@@ -4,6 +4,8 @@ Written by Hannah Meisner
   
 Code comments by Sierra Barbee
 
+## Needed packages
+
 ## Table of Contents
 - coordinates.txt
 - detector.py
