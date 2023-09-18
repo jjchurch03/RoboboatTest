@@ -14,5 +14,10 @@ If you remember nothing else do these things:
 - `git commit -m "first commit"`: If this runs correctly it will show all changes in the commit
 - `git push`: Push the commit to GitHub
 
+![git push outcome](https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority/blob/main/Git_Hub_Basics/git_push.png)
+
 ## Authentication 
  Use `gh`. In order to get things linked up properly use this and after it is properly upgraded run the command `gh auth login` to link your account to this device. 
+
+ ![Auth example](https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority/blob/main/Git_Hub_Basics/gh_auth_ex.png)
+
