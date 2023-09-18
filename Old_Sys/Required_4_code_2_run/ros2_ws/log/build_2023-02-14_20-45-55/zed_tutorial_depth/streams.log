@@ -1,0 +1,23 @@
+[0.111s] Invoking command in '/home/roboboat/ros2_ws/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_tutorial_depth -- -j12 -l12
+[0.243s] [100%] Built target zed_tutorial_depth
+[0.282s] Invoked command in '/home/roboboat/ros2_ws/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_tutorial_depth -- -j12 -l12
+[0.350s] Invoking command in '/home/roboboat/ros2_ws/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_tutorial_depth
+[0.367s] -- Install configuration: "Release"
+[0.368s] -- Execute custom install script
+[0.370s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/lib/zed_tutorial_depth/zed_tutorial_depth
+[0.370s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/ament_index/resource_index/package_run_dependencies/zed_tutorial_depth
+[0.371s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/ament_index/resource_index/parent_prefix_path/zed_tutorial_depth
+[0.372s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/ament_prefix_path.sh
+[0.372s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/ament_prefix_path.dsv
+[0.373s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/path.sh
+[0.373s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/path.dsv
+[0.374s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.bash
+[0.375s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.sh
+[0.375s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.zsh
+[0.376s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.dsv
+[0.376s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/package.dsv
+[0.395s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/ament_index/resource_index/packages/zed_tutorial_depth
+[0.395s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/cmake/zed_tutorial_depthConfig.cmake
+[0.395s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/cmake/zed_tutorial_depthConfig-version.cmake
+[0.395s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/package.xml
+[0.440s] Invoked command in '/home/roboboat/ros2_ws/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_tutorial_depth

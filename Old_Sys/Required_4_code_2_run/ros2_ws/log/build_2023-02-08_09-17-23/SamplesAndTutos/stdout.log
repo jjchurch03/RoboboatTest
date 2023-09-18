@@ -1,0 +1,203 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  
+-- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") 
+-- Found OpenCV: /usr (found version "4.5.4") 
+-- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") 
+-- Found GLUT: /usr/lib/aarch64-linux-gnu/libglut.so  
+-- Found GLEW: /usr/include (found version "2.1.0") 
+-- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/roboboat/ros2_ws/build/SamplesAndTutos
+[35m[1mScanning dependencies of target ZED_Object_detection_image_viewer[0m
+[35m[1mScanning dependencies of target ZED_ROI_Exposure[0m
+[35m[1mScanning dependencies of target ZED_Object_detection_birds_eye_viewer[0m
+[35m[1mScanning dependencies of target ZED_Body_Tracking_Viewer[0m
+[35m[1mScanning dependencies of target ZED_SVO_Playback[0m
+[35m[1mScanning dependencies of target ZED_Plane_Detection[0m
+[35m[1mScanning dependencies of target ZED_SVO_Export[0m
+[35m[1mScanning dependencies of target ZED_Positional_Tracking[0m
+[35m[1mScanning dependencies of target ZED_Spatial_Mapping[0m
+[35m[1mScanning dependencies of target ZED_Depth_Sensing[0m
+[35m[1mScanning dependencies of target ZED_Camera_Control[0m
+[35m[1mScanning dependencies of target ZED_SVO_Recording[0m
+[  1%] [32mBuilding CXX object svo recording/recording/cpp/CMakeFiles/ZED_SVO_Recording.dir/src/main.cpp.o[0m
+[  4%] [32mBuilding CXX object depth sensing/cpp/CMakeFiles/ZED_Depth_Sensing.dir/src/GLViewer.cpp.o[0m
+[  4%] [32mBuilding CXX object camera control/cpp/CMakeFiles/ZED_Camera_Control.dir/src/main.cpp.o[0m
+[  5%] [32mBuilding CXX object plane detection/overview/cpp/CMakeFiles/ZED_Plane_Detection.dir/src/GLViewer.cpp.o[0m
+[  8%] [32mBuilding CXX object object detection/image viewer/cpp/CMakeFiles/ZED_Object_detection_image_viewer.dir/src/GLViewer.cpp.o[0m
+[ 10%] [32mBuilding CXX object spatial mapping/overview/cpp/CMakeFiles/ZED_Spatial_Mapping.dir/src/GLViewer.cpp.o[0m
+[ 10%] [32mBuilding CXX object positional tracking/cpp/CMakeFiles/ZED_Positional_Tracking.dir/src/GLViewer.cpp.o[0m
+[ 11%] [32mBuilding CXX object camera roi/auto exposure/cpp/CMakeFiles/ZED_ROI_Exposure.dir/src/main.cpp.o[0m
+[ 13%] [32mBuilding CXX object svo recording/export/cpp/CMakeFiles/ZED_SVO_Export.dir/src/main.cpp.o[0m
+[ 14%] [32mBuilding CXX object svo recording/playback/cpp/CMakeFiles/ZED_SVO_Playback.dir/src/main.cpp.o[0m
+[ 15%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/BatchSystemHandler.cpp.o[0m
+[ 17%] [32mBuilding CXX object body tracking/cpp/CMakeFiles/ZED_Body_Tracking_Viewer.dir/src/GLViewer.cpp.o[0m
+[ 18%] [32m[1mLinking CXX executable ZED_SVO_Recording[0m
+[ 18%] Built target ZED_SVO_Recording
+[ 20%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/GLViewer.cpp.o[0m
+[ 21%] [32mBuilding CXX object plane detection/overview/cpp/CMakeFiles/ZED_Plane_Detection.dir/src/main.cpp.o[0m
+[ 23%] [32mBuilding CXX object depth sensing/cpp/CMakeFiles/ZED_Depth_Sensing.dir/src/main.cpp.o[0m
+[ 24%] [32mBuilding CXX object spatial mapping/overview/cpp/CMakeFiles/ZED_Spatial_Mapping.dir/src/main.cpp.o[0m
+[ 26%] [32mBuilding CXX object positional tracking/cpp/CMakeFiles/ZED_Positional_Tracking.dir/src/main.cpp.o[0m
+[ 27%] [32mBuilding CXX object body tracking/cpp/CMakeFiles/ZED_Body_Tracking_Viewer.dir/src/TrackingViewer.cpp.o[0m
+[ 28%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/TrackingViewer.cpp.o[0m
+[ 30%] [32mBuilding CXX object object detection/image viewer/cpp/CMakeFiles/ZED_Object_detection_image_viewer.dir/src/main.cpp.o[0m
+[ 31%] [32m[1mLinking CXX executable ZED_Spatial_Mapping[0m
+[ 33%] [32m[1mLinking CXX executable ZED_Depth_Sensing[0m
+[ 34%] [32m[1mLinking CXX executable ZED_Plane_Detection[0m
+[ 34%] Built target ZED_Spatial_Mapping
+[35m[1mScanning dependencies of target ZED_Streaming_Receiver[0m
+[ 36%] [32m[1mLinking CXX executable ZED_SVO_Playback[0m
+[ 37%] [32m[1mLinking CXX executable ZED_ROI_Exposure[0m
+[ 39%] [32mBuilding CXX object camera streaming/receiver/cpp/CMakeFiles/ZED_Streaming_Receiver.dir/src/main.cpp.o[0m
+[ 39%] Built target ZED_Depth_Sensing
+[ 40%] [32m[1mLinking CXX executable ZED_Positional_Tracking[0m
+[35m[1mScanning dependencies of target ZED_Streaming_Sender[0m
+[ 40%] Built target ZED_Plane_Detection
+[35m[1mScanning dependencies of target ZED_Point_Cloud_Mapping[0m
+[ 42%] [32mBuilding CXX object camera streaming/sender/cpp/CMakeFiles/ZED_Streaming_Sender.dir/src/main.cpp.o[0m
+[ 43%] [32mBuilding CXX object spatial mapping/advanced point cloud mapping/cpp/CMakeFiles/ZED_Point_Cloud_Mapping.dir/src/GLViewer.cpp.o[0m
+[ 44%] [32m[1mLinking CXX executable ZED_SVO_Export[0m
+[ 46%] [32m[1mLinking CXX executable ZED_Camera_Control[0m
+[ 46%] Built target ZED_Positional_Tracking
+[35m[1mScanning dependencies of target ZED_Floor_Plane_Detection[0m
+[ 46%] Built target ZED_SVO_Playback
+[ 46%] Built target ZED_ROI_Exposure
+[ 47%] [32mBuilding CXX object plane detection/floor plane/cpp/CMakeFiles/ZED_Floor_Plane_Detection.dir/src/GLViewer.cpp.o[0m
+[35m[1mScanning dependencies of target ZED_Sensing_ROI[0m
+[ 49%] [34m[1mBuilding NVCC (Device) object other/cuda refocus/CMakeFiles/ZED_CUDA_Refocus.dir/src/ZED_CUDA_Refocus_generated_dof_gpu.cu.o[0m
+[ 50%] [32mBuilding CXX object camera roi/sensing roi/cpp/CMakeFiles/ZED_Sensing_ROI.dir/src/main.cpp.o[0m
+[ 50%] Built target ZED_Camera_Control
+[ 52%] [32mBuilding CXX object plane detection/floor plane/cpp/CMakeFiles/ZED_Floor_Plane_Detection.dir/src/main.cpp.o[0m
+[ 52%] Built target ZED_SVO_Export
+[35m[1mScanning dependencies of target ZED_openGL[0m
+[ 53%] [32mBuilding CXX object other/opengl gpu interop/CMakeFiles/ZED_openGL.dir/src/main.cpp.o[0m
+[ 55%] [32m[1mLinking CXX executable ZED_Object_detection_image_viewer[0m
+[ 56%] [32m[1mLinking CXX executable ZED_Streaming_Sender[0m
+[ 56%] Built target ZED_Object_detection_image_viewer
+[ 56%] Built target ZED_Streaming_Sender
+[35m[1mScanning dependencies of target ZED_Multi_Camera[0m
+[ 57%] [32mBuilding CXX object spatial mapping/advanced point cloud mapping/cpp/CMakeFiles/ZED_Point_Cloud_Mapping.dir/src/main.cpp.o[0m
+[ 59%] [32mBuilding CXX object other/multi camera/cpp/CMakeFiles/ZED_Multi_Camera.dir/src/main.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable ZED_openGL[0m
+[35m[1mScanning dependencies of target ZED_Tutorial_1[0m
+[ 62%] [32mBuilding CXX object tutorials/tutorial 1 - hello ZED/cpp/CMakeFiles/ZED_Tutorial_1.dir/main.cpp.o[0m
+[ 62%] Built target ZED_openGL
+[35m[1mScanning dependencies of target ZED_Tutorial_2[0m
+[ 63%] [32mBuilding CXX object tutorials/tutorial 2 - image capture/cpp/CMakeFiles/ZED_Tutorial_2.dir/main.cpp.o[0m
+[ 65%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/main.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable ZED_Floor_Plane_Detection[0m
+[ 66%] Built target ZED_Floor_Plane_Detection
+[ 68%] [32mBuilding CXX object body tracking/cpp/CMakeFiles/ZED_Body_Tracking_Viewer.dir/src/main.cpp.o[0m
+[35m[1mScanning dependencies of target ZED_Tutorial_3[0m
+[ 69%] [32mBuilding CXX object tutorials/tutorial 3 - depth sensing/cpp/CMakeFiles/ZED_Tutorial_3.dir/main.cpp.o[0m
+[ 71%] [32m[1mLinking CXX executable ZED_Tutorial_1[0m
+[ 72%] [32m[1mLinking CXX executable ZED_Tutorial_2[0m
+[ 72%] Built target ZED_Tutorial_1
+[35m[1mScanning dependencies of target ZED_Tutorial_4[0m
+[ 73%] [32mBuilding CXX object tutorials/tutorial 4 - positional tracking/cpp/CMakeFiles/ZED_Tutorial_4.dir/main.cpp.o[0m
+[ 73%] Built target ZED_Tutorial_2
+[35m[1mScanning dependencies of target ZED_Tutorial_5[0m
+[35m[1mScanning dependencies of target ZED_Tutorial_6[0m
+[ 75%] [32mBuilding CXX object tutorials/tutorial 6 - object detection/cpp/CMakeFiles/ZED_Tutorial_6.dir/main.cpp.o[0m
+[ 76%] [32mBuilding CXX object tutorials/tutorial 5 - spatial mapping/cpp/CMakeFiles/ZED_Tutorial_5.dir/main.cpp.o[0m
+[35m[1mScanning dependencies of target ZED_Tutorial_7[0m
+[ 78%] [32mBuilding CXX object tutorials/tutorial 7 - sensor data/cpp/CMakeFiles/ZED_Tutorial_7.dir/main.cpp.o[0m
+[ 79%] [32m[1mLinking CXX executable ZED_Tutorial_3[0m
+[ 79%] Built target ZED_Tutorial_3
+[35m[1mScanning dependencies of target ZED_Tutorial_8[0m
+[ 81%] [32mBuilding CXX object tutorials/tutorial 8 - body tracking/cpp/CMakeFiles/ZED_Tutorial_8.dir/main.cpp.o[0m
+[ 82%] [32m[1mLinking CXX executable ZED_Streaming_Receiver[0m
+[ 84%] [32m[1mLinking CXX executable ZED_Sensing_ROI[0m
+[ 85%] [32m[1mLinking CXX executable ZED_Tutorial_4[0m
+[ 85%] Built target ZED_Streaming_Receiver
+[ 85%] Built target ZED_Sensing_ROI
+[ 85%] Built target ZED_Tutorial_4
+[ 86%] [32m[1mLinking CXX executable ZED_Tutorial_5[0m
+[ 86%] Built target ZED_Tutorial_5
+[ 88%] [32m[1mLinking CXX executable ZED_Tutorial_7[0m
+[ 88%] Built target ZED_Tutorial_7
+[ 89%] [32m[1mLinking CXX executable ZED_Tutorial_6[0m
+[ 89%] Built target ZED_Tutorial_6
+[ 91%] [32m[1mLinking CXX executable ZED_Tutorial_8[0m
+[ 92%] [32m[1mLinking CXX executable ZED_Multi_Camera[0m
+[ 92%] Built target ZED_Tutorial_8
+[35m[1mScanning dependencies of target ZED_CUDA_Refocus[0m
+[ 94%] [32mBuilding CXX object other/cuda refocus/CMakeFiles/ZED_CUDA_Refocus.dir/src/main.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable ZED_Point_Cloud_Mapping[0m
+[ 95%] Built target ZED_Multi_Camera
+[ 95%] Built target ZED_Point_Cloud_Mapping
+[ 97%] [32m[1mLinking CXX executable ZED_Object_detection_birds_eye_viewer[0m
+[ 98%] [32m[1mLinking CXX executable ZED_Body_Tracking_Viewer[0m
+[100%] [32m[1mLinking CXX executable ZED_CUDA_Refocus[0m
+[100%] Built target ZED_Object_detection_birds_eye_viewer
+[100%] Built target ZED_Body_Tracking_Viewer
+[100%] Built target ZED_CUDA_Refocus
+-- Install configuration: "Release"
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Camera_Control
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Camera_Control" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Depth_Sensing
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Depth_Sensing" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_image_viewer
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_image_viewer" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_birds_eye_viewer
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_birds_eye_viewer" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_ROI_Exposure
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_ROI_Exposure" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Body_Tracking_Viewer
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Body_Tracking_Viewer" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Plane_Detection
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Plane_Detection" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Positional_Tracking
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Positional_Tracking" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Spatial_Mapping
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Spatial_Mapping" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Export
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Export" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Playback
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Playback" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Recording
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Recording" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Receiver
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Receiver" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Sender
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Sender" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Point_Cloud_Mapping
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Point_Cloud_Mapping" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Floor_Plane_Detection
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Floor_Plane_Detection" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Sensing_ROI
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Sensing_ROI" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_openGL
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_openGL" to ""
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Multi_Camera
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Multi_Camera" to ""

@@ -1,0 +1,804 @@
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:25:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   25 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;35m[K"layout(location = 1) in vec3 in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   28 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   29 | [01;35m[K"out vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;35m[K"   b_color = in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   33 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:36:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   36 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;35m[K"in vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;35m[K"   out_Color = vec4(b_color, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   41 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:495:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  495 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  496 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  497 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  498 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+  499 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  500 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  501 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  502 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  503 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  504 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  505 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:508:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  508 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  509 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+  510 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  511 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  512 | [01;35m[K"   out_Color = b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  513 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:24:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   24 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K"layout(location = 1) in float in_dist;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   28 | [01;35m[K"uniform vec3 u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   29 | [01;35m[K"out vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;35m[K"out float distance;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;35m[K"   b_color = u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   33 | [01;35m[K"   distance = in_dist;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   34 | [01;35m[K"   gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   35 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:38:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   38 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;35m[K"in vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;35m[K"in float distance;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+   41 | [01;35m[K"layout(location = 0) out vec4 color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   42 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   43 | [01;35m[K"   color = vec4(b_color,distance);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   44 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:47:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   47 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   48 | [01;35m[K" in vec2 UV;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+   49 | [01;35m[K" out vec4 color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   50 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   51 | [01;35m[K" uniform bool revert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   52 | [01;35m[K" uniform bool rgbflip;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   53 | [01;35m[K" void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+   54 | [01;35m[K"    vec2 scaler  =revert?vec2(UV.x,1.f - UV.y):vec2(UV.x,UV.y);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   55 | [01;35m[K"    vec3 rgbcolor = rgbflip?vec3(texture(texImage, scaler).zyx):vec3(texture(texImage, scaler).xyz);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   56 | [01;35m[K"    color = vec4(rgbcolor,1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:60:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   60 | [01;35m[K"#version 330\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+   61 | [01;35m[K"layout(location = 0) in vec3 vert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   62 | [01;35m[K"out vec2 UV;"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~[m[K
+   63 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   64 | [01;35m[K"   UV = (vert.xy+vec2(1,1))/2;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   65 | [01;35m[K" gl_Position = vec4(vert, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   66 | [01;35m[K"}\n"[m[K;
+      | [01;35m[K~~~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/positional tracking/cpp/src/GLViewer.cpp:23:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   23 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K"layout(location = 1) in vec3 in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;35m[K"out vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   28 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   29 | [01;35m[K"   b_color = in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/positional tracking/cpp/src/GLViewer.cpp:34:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   34 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   35 | [01;35m[K"in vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   36 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;35m[K"   out_Color = vec4(b_color, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:9:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+    9 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   10 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   11 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   12 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   13 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   14 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   15 | [01;35m[K"   b_color = in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   16 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   17 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:20:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   20 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   21 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   22 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   23 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;35m[K" float gamma = 2.2;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K"   out_Color = b_color;//pow(b_color, vec4(1.0/gamma));;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:29:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   29 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;35m[K"layout(location = 2) in vec3 in_Normal;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   33 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   34 | [01;35m[K"out vec3 b_position;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   35 | [01;35m[K"out vec3 b_normal;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+   36 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;35m[K"uniform vec4 u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;35m[K"   b_color = in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;35m[K"   b_position = in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   41 | [01;35m[K"   b_normal = in_Normal;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   42 | [01;35m[K" gl_Position =  u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   43 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:46:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   46 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   47 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   48 | [01;35m[K"in vec3 b_position;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   49 | [01;35m[K"in vec3 b_normal;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   50 | [01;35m[K"out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   51 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   52 | [01;35m[K" vec3 lightPosition = vec3(0, 10000, 0);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   53 | [01;35m[K" vec3 lightColor = vec3(1,1,1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   54 | [01;35m[K" float ambientStrength = 0.4;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   55 | [01;35m[K" vec3 ambient = ambientStrength * lightColor;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   56 | [01;35m[K" vec3 lightDir = normalize(lightPosition - b_position);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;35m[K" float diffuse = (1 - 0) * max(dot(b_normal, lightDir), 0.0);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   58 | [01;35m[K"   out_Color = vec4(b_color.rgb * (diffuse + ambient), 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   59 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:903:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  903 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  904 | [01;35m[K" in vec2 UV;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+  905 | [01;35m[K" out vec4 color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+  906 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  907 | [01;35m[K" void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+  908 | [01;35m[K" vec2 scaler  =vec2(UV.x,1.f - UV.y);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  909 | [01;35m[K" vec3 rgbcolor = vec3(texture(texImage, scaler).zyx);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  910 | [01;35m[K" vec3 color_rgb = pow(rgbcolor, vec3(1.65f));\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  911 | [01;35m[K" color = vec4(color_rgb,1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  912 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:915:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  915 | [01;35m[K"#version 330\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+  916 | [01;35m[K"layout(location = 0) in vec3 vert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  917 | [01;35m[K"out vec2 UV;"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~[m[K
+  918 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  919 | [01;35m[K" UV = (vert.xy+vec2(1,1))* .5f;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  920 | [01;35m[K" gl_Position = vec4(vert, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  921 | [01;35m[K"}\n"[m[K;
+      | [01;35m[K~~~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:989:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  989 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  990 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  991 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  992 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+  993 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  994 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  995 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  996 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  997 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  998 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  999 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:1002:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+ 1002 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+ 1003 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+ 1004 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 1005 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+ 1006 | [01;35m[K"   out_Color = b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 1007 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:9:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+    9 |         [01;35m[K"#version 330 core\n"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   10 | [01;35m[K        "layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   11 | [01;35m[K        "layout(location = 1) in vec4 in_Color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   12 | [01;35m[K        "uniform mat4 u_mvpMatrix;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   13 | [01;35m[K        "out vec4 b_color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   14 | [01;35m[K        "void main() {\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   15 | [01;35m[K        "   b_color = in_Color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   16 | [01;35m[K        " gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   17 | [01;35m[K        "}"[m[K;
+      |         [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:20:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   20 |         [01;35m[K"#version 330 core\n"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   21 | [01;35m[K        "in vec4 b_color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   22 | [01;35m[K        "layout(location = 0) out vec4 out_Color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   23 | [01;35m[K        "void main() {\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;35m[K        " float gamma = 2.2;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K        "   out_Color = b_color;//pow(b_color, vec4(1.0/gamma));;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K        "}"[m[K;
+      |         [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:29:3:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   29 |   [01;35m[K"#version 330 core\n"[m[K
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;35m[K  "layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;35m[K  "layout(location = 1) in vec4 in_Color;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;35m[K  "layout(location = 2) in vec3 in_Normal;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   33 | [01;35m[K  "out vec4 b_color;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   34 | [01;35m[K  "out vec3 b_position;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   35 | [01;35m[K  "out vec3 b_normal;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+   36 | [01;35m[K  "uniform mat4 u_mvpMatrix;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;35m[K  "uniform vec4 u_color;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;35m[K  "void main() {\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;35m[K  "   b_color = in_Color;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;35m[K  "   b_position = in_Vertex;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   41 | [01;35m[K  "   b_normal = in_Normal;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   42 | [01;35m[K  " gl_Position =  u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   43 | [01;35m[K  "}"[m[K;
+      |   [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:46:3:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   46 |   [01;35m[K"#version 330 core\n"[m[K
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   47 | [01;35m[K  "in vec4 b_color;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   48 | [01;35m[K  "in vec3 b_position;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   49 | [01;35m[K  "in vec3 b_normal;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   50 | [01;35m[K  "out vec4 out_Color;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   51 | [01;35m[K  "void main() {\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   52 | [01;35m[K  " vec3 lightPosition = vec3(0, 10, 0);\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   53 | [01;35m[K  " vec3 lightColor = vec3(1,1,1);\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   54 | [01;35m[K  " float ambientStrength = 0.3;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   55 | [01;35m[K  " vec3 ambient = ambientStrength * lightColor;\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   56 | [01;35m[K  " vec3 norm = normalize(b_normal); \n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;35m[K  " vec3 lightDir = normalize(lightPosition - b_position);\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   58 | [01;35m[K  " float diffuse = (1 - ambientStrength) * max(dot(b_normal, lightDir), 0.0);\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   59 | [01;35m[K  "   out_Color = vec4(b_color.rgb * (diffuse + ambient), 1);\n"[m[K
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   60 | [01;35m[K  "}"[m[K;
+      |   [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:33:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   33 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   34 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   35 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   36 | [01;35m[K"uniform vec3 u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;35m[K"out vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;35m[K"   b_color = u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;35m[K"   gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   41 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:44:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   44 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   45 | [01;35m[K"layout(location = 0) in vec4 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   46 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   47 | [01;35m[K"uniform vec3 u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   48 | [01;35m[K"out vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   49 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   50 | [01;35m[K"   b_color = u_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   51 | [01;35m[K"   gl_Position = u_mvpMatrix * vec4(in_Vertex.xyz, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   52 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:55:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   55 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   56 | [01;35m[K"in vec3 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;35m[K"layout(location = 0) out vec4 color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   58 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   59 | [01;35m[K"   color = vec4(b_color,1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   60 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:63:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   63 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   64 | [01;35m[K" in vec2 UV;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+   65 | [01;35m[K" out vec4 color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   66 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   67 | [01;35m[K" uniform bool revert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   68 | [01;35m[K" uniform bool rgbflip;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   69 | [01;35m[K" void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+   70 | [01;35m[K"    vec2 scaler  =revert?vec2(UV.x,1.f - UV.y):vec2(UV.x,UV.y);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   71 | [01;35m[K"    vec3 rgbcolor = rgbflip?vec3(texture(texImage, scaler).zyx):vec3(texture(texImage, scaler).xyz);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   72 | [01;35m[K"    color = vec4(rgbcolor,1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:76:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   76 | [01;35m[K"#version 330\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+   77 | [01;35m[K"layout(location = 0) in vec3 vert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   78 | [01;35m[K"out vec2 UV;"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~[m[K
+   79 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   80 | [01;35m[K"   UV = (vert.xy+vec2(1,1))/2;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   81 | [01;35m[K" gl_Position = vec4(vert, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   82 | [01;35m[K"}\n"[m[K;
+      | [01;35m[K~~~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:950:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  950 |         [01;35m[K"#version 330 core\n"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  951 | [01;35m[K        " in vec2 UV;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~[m[K
+  952 | [01;35m[K        " out vec4 color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+  953 | [01;35m[K        " uniform sampler2D texImage;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  954 | [01;35m[K        " uniform bool revert;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  955 | [01;35m[K        " uniform bool rgbflip;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  956 | [01;35m[K        " void main() {\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+  957 | [01;35m[K        "    vec2 scaler  =revert?vec2(UV.x,1.f - UV.y):vec2(UV.x,UV.y);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  958 | [01;35m[K        "    vec3 rgbcolor = rgbflip?vec3(texture(texImage, scaler).zyx):vec3(texture(texImage, scaler).xyz);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  959 | [01;35m[K        " float gamma = 1.0/1.65;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  960 | [01;35m[K        "   vec3 color_rgb = pow(rgbcolor, vec3(1.0/gamma));;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  961 | [01;35m[K        "    color = vec4(color_rgb,1);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  962 | [01;35m[K        "}"[m[K;
+      |         [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:965:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  965 |         [01;35m[K"#version 330\n"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+  966 | [01;35m[K        "layout(location = 0) in vec3 vert;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  967 | [01;35m[K        "out vec2 UV;"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~[m[K
+  968 | [01;35m[K        "void main() {\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  969 | [01;35m[K        "   UV = (vert.xy+vec2(1,1))/2;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  970 | [01;35m[K        " gl_Position = vec4(vert, 1);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  971 | [01;35m[K        "}\n"[m[K;
+      |         [01;35m[K~~~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:13:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   13 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   14 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   15 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   16 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   17 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   18 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   19 | [01;35m[K"   b_color = in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   20 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   21 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:24:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   24 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   28 | [01;35m[K"   out_Color = b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   29 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:812:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  812 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  813 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  814 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  815 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+  816 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  817 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  818 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  819 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  820 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  821 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  822 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:825:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  825 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  826 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+  827 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  828 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  829 | [01;35m[K"   out_Color = b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  830 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/advanced point cloud mapping/cpp/src/GLViewer.cpp:4:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+    4 |         [01;35m[K"#version 330 core\n"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+    5 | [01;35m[K        "layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+    6 | [01;35m[K        "layout(location = 1) in vec3 in_Color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+    7 | [01;35m[K        "uniform mat4 u_mvpMatrix;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+    8 | [01;35m[K        "out vec3 b_color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+    9 | [01;35m[K        "void main() {\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   10 | [01;35m[K        "   b_color = in_Color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   11 | [01;35m[K        " gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   12 | [01;35m[K        "}"[m[K;
+      |         [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/advanced point cloud mapping/cpp/src/GLViewer.cpp:15:5:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   15 |     [01;35m[K"#version 330 core\n"[m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   16 | [01;35m[K    "layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   17 | [01;35m[K    "uniform mat4 u_mvpMatrix;\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   18 | [01;35m[K    "uniform float pointsize;\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   19 | [01;35m[K    "out vec3 b_color;\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   20 | [01;35m[K    "void main() {\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   21 | [01;35m[K    "   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   22 | [01;35m[K    "   b_color = vec3(((vertexColor & uint(0x00FF0000)) >> 16) / 255.f, ((vertexColor & uint(0x0000FF00)) >> 8) / 255.f, (vertexColor & uint(0x000000FF)) / 255.f);\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   23 | [01;35m[K    " gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;35m[K    "   gl_PointSize = pointsize;\n"[m[K
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K    "}"[m[K;
+      |     [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/advanced point cloud mapping/cpp/src/GLViewer.cpp:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   28 |         [01;35m[K"#version 330 core\n"[m[K
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   29 | [01;35m[K        "in vec3 b_color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   30 | [01;35m[K        "layout(location = 0) out vec4 out_Color;\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   31 | [01;35m[K        "void main() {\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;35m[K        "   out_Color = vec4(b_color, 1);\n"[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   33 | [01;35m[K        "}"[m[K;
+      |         [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:13:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   13 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   14 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   15 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   16 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   17 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+   18 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   19 | [01;35m[K"   b_color = in_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   20 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   21 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:24:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+   24 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+   26 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   27 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+   28 | [01;35m[K"   out_Color = b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   29 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:602:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  602 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  603 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  604 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  605 | [01;35m[K"out vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+  606 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  607 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  608 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  609 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  610 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  611 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  612 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:615:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  615 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  616 | [01;35m[K"in vec4 b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+  617 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  618 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  619 | [01;35m[K"   out_Color = b_color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  620 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:831:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  831 | [01;35m[K"#version 330\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+  832 | [01;35m[K"layout(location = 0) in vec2 vert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  833 | [01;35m[K"layout(location = 1) in vec3 vert_tex;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  834 | [01;35m[K"out vec2 UV;"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~[m[K
+  835 | [01;35m[K"void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+  836 | [01;35m[K" UV = vert;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~[m[K
+  837 | [01;35m[K" gl_Position = vec4(vert_tex, 1);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  838 | [01;35m[K"}\n"[m[K;
+      | [01;35m[K~~~~~[m[K
+[01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:841:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+  841 | [01;35m[K"#version 330 core\n"[m[K
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+  842 | [01;35m[K" in vec2 UV;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+  843 | [01;35m[K" out vec4 color;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+  844 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  845 | [01;35m[K" void main() {\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+  846 | [01;35m[K" vec2 scaler = vec2(UV.x, UV.y);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  847 | [01;35m[K" color = vec4(texture(texImage, scaler).zyxw);\n"[m[K
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  848 | [01;35m[K"}"[m[K;
+      | [01;35m[K~~~[m[K
+/usr/local/zed/include/sl/Camera.hpp(5438): warning #815-D: type qualifier on return type is meaningless
+
+/home/roboboat/ros2_ws/src/zed-examples/other/cuda refocus/src/dof_gpu.cu(56): warning #20054-D: dynamic initialization is not supported for a function-scope static __shared__ variable within a __device__/__global__ function
+
+/home/roboboat/ros2_ws/src/zed-examples/other/cuda refocus/src/dof_gpu.cu(126): warning #20054-D: dynamic initialization is not supported for a function-scope static __shared__ variable within a __device__/__global__ function
+
+/usr/local/zed/include/sl/Camera.hpp(5438): warning #815-D: type qualifier on return type is meaningless
+

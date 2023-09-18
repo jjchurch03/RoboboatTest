@@ -1,0 +1,1368 @@
+[0.000000] (-) TimerEvent: {}
+[0.000427] (zed_interfaces) JobQueued: {'identifier': 'zed_interfaces', 'dependencies': OrderedDict()}
+[0.000796] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict([('zed_interfaces', '/home/roboboat/ros2_ws/install/zed_interfaces')])}
+[0.001006] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('zed_interfaces', '/home/roboboat/ros2_ws/install/zed_interfaces'), ('zed_components', '/home/roboboat/ros2_ws/install/zed_components')])}
+[0.001326] (zed_ros2) JobQueued: {'identifier': 'zed_ros2', 'dependencies': OrderedDict([('zed_interfaces', '/home/roboboat/ros2_ws/install/zed_interfaces'), ('zed_components', '/home/roboboat/ros2_ws/install/zed_components'), ('zed_wrapper', '/home/roboboat/ros2_ws/install/zed_wrapper')])}
+[0.001403] (zed_interfaces) JobStarted: {'identifier': 'zed_interfaces'}
+[0.019072] (zed_interfaces) JobProgress: {'identifier': 'zed_interfaces', 'progress': 'cmake'}
+[0.020216] (zed_interfaces) JobProgress: {'identifier': 'zed_interfaces', 'progress': 'build'}
+[0.021490] (zed_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/ros2_ws/build/zed_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/ros2_ws/build/zed_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.095917] (zed_interfaces) StdoutLine: {'line': b'[  0%] Built target zed_interfaces__cpp\n'}
+[0.099580] (-) TimerEvent: {}
+[0.100684] (zed_interfaces) StdoutLine: {'line': b'[ 12%] Built target zed_interfaces__rosidl_generator_c\n'}
+[0.128778] (zed_interfaces) StdoutLine: {'line': b'[ 36%] Built target zed_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.129124] (zed_interfaces) StdoutLine: {'line': b'[ 36%] Built target zed_interfaces__rosidl_typesupport_cpp\n'}
+[0.132610] (zed_interfaces) StdoutLine: {'line': b'[ 48%] Built target zed_interfaces__rosidl_typesupport_c\n'}
+[0.135445] (zed_interfaces) StdoutLine: {'line': b'[ 72%] Built target zed_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.135697] (zed_interfaces) StdoutLine: {'line': b'[ 72%] Built target zed_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.176014] (zed_interfaces) StdoutLine: {'line': b'[ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.199604] (zed_interfaces) StdoutLine: {'line': b'[ 84%] Built target zed_interfaces\n'}
+[0.199830] (-) TimerEvent: {}
+[0.224780] (zed_interfaces) StdoutLine: {'line': b'[ 85%] Built target zed_interfaces__py\n'}
+[0.267641] (zed_interfaces) StdoutLine: {'line': b'[ 96%] Built target zed_interfaces__python\n'}
+[0.299979] (-) TimerEvent: {}
+[0.300459] (zed_interfaces) StdoutLine: {'line': b'[100%] Built target zed_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.300722] (zed_interfaces) StdoutLine: {'line': b'[100%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.300840] (zed_interfaces) StdoutLine: {'line': b'[100%] Built target zed_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.317005] (zed_interfaces) CommandEnded: {'returncode': 0}
+[0.400107] (-) TimerEvent: {}
+[0.500607] (-) TimerEvent: {}
+[0.543450] (zed_interfaces) JobProgress: {'identifier': 'zed_interfaces', 'progress': 'install'}
+[0.557985] (zed_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboboat/ros2_ws/build/zed_interfaces'], 'cwd': '/home/roboboat/ros2_ws/build/zed_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.571919] (zed_interfaces) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.572826] (zed_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.573248] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces\n'}
+[0.574466] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/bounding_box2_df.h\n'}
+[0.574675] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/bounding_box2_di.h\n'}
+[0.574877] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/bounding_box3_d.h\n'}
+[0.575074] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/depth_info_stamped.h\n'}
+[0.575298] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__functions.h\n'}
+[0.575504] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__struct.h\n'}
+[0.575700] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__type_support.h\n'}
+[0.575900] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__functions.h\n'}
+[0.576098] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__struct.h\n'}
+[0.576290] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__type_support.h\n'}
+[0.576482] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__functions.h\n'}
+[0.576683] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__struct.h\n'}
+[0.576891] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__type_support.h\n'}
+[0.577082] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__functions.h\n'}
+[0.577279] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__struct.h\n'}
+[0.577478] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__type_support.h\n'}
+[0.577668] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__functions.h\n'}
+[0.577865] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__struct.h\n'}
+[0.578060] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__type_support.h\n'}
+[0.578258] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__functions.h\n'}
+[0.578446] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__struct.h\n'}
+[0.578642] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__type_support.h\n'}
+[0.578838] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__functions.h\n'}
+[0.579032] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__struct.h\n'}
+[0.579529] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__type_support.h\n'}
+[0.579649] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__functions.h\n'}
+[0.579764] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__struct.h\n'}
+[0.579939] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__type_support.h\n'}
+[0.580141] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__functions.h\n'}
+[0.580339] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__struct.h\n'}
+[0.580528] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__type_support.h\n'}
+[0.580717] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__functions.h\n'}
+[0.580912] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__struct.h\n'}
+[0.581103] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__type_support.h\n'}
+[0.581294] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__functions.h\n'}
+[0.581490] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__struct.h\n'}
+[0.581679] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__type_support.h\n'}
+[0.581885] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__functions.h\n'}
+[0.582074] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__struct.h\n'}
+[0.582269] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__type_support.h\n'}
+[0.582459] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/keypoint2_df.h\n'}
+[0.582649] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/keypoint2_di.h\n'}
+[0.582833] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/keypoint3_d.h\n'}
+[0.583025] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/object.h\n'}
+[0.583221] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/objects_stamped.h\n'}
+[0.583417] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/plane_stamped.h\n'}
+[0.583608] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.583790] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/skeleton2_d.h\n'}
+[0.583980] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/skeleton3_d.h\n'}
+[0.584179] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__functions.h\n'}
+[0.584371] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__struct.h\n'}
+[0.584566] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__type_support.h\n'}
+[0.584755] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__functions.h\n'}
+[0.584945] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__struct.h\n'}
+[0.585139] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__type_support.h\n'}
+[0.585333] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__functions.h\n'}
+[0.585522] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__struct.h\n'}
+[0.585719] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__type_support.h\n'}
+[0.585912] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/set_pose.h\n'}
+[0.586095] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/set_roi.h\n'}
+[0.586279] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/start_svo_rec.h\n'}
+[0.586603] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/library_path.sh\n'}
+[0.586898] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/library_path.dsv\n'}
+[0.588039] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_c.h\n'}
+[0.588244] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_c.h\n'}
+[0.588443] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.588639] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[0.588843] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_c.h\n'}
+[0.589043] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_c.h\n'}
+[0.589236] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.589427] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_c.h\n'}
+[0.589620] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[0.589816] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[0.590011] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.590208] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.590400] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.590608] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[0.590805] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_c.h\n'}
+[0.590997] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_c.h\n'}
+[0.591504] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.592728] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.592940] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.593146] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.593343] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.593540] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.593743] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.593940] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.594147] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.594348] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.594546] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.594741] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.594934] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.595127] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.595365] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.595560] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.595753] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.596203] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.597003] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_c.h\n'}
+[0.597213] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_c.h\n'}
+[0.597410] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[0.597613] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_c.h\n'}
+[0.597813] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_c.h\n'}
+[0.598009] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_c.h\n'}
+[0.598205] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_c.h\n'}
+[0.598408] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_c.h\n'}
+[0.598603] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_c.h\n'}
+[0.598798] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_c.h\n'}
+[0.598992] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_c.h\n'}
+[0.599210] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_c.h\n'}
+[0.599406] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.599598] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_c.h\n'}
+[0.599797] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_c.h\n'}
+[0.599993] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_c.h\n'}
+[0.600660] (-) TimerEvent: {}
+[0.601091] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/bounding_box2_df.hpp\n'}
+[0.601295] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/bounding_box2_di.hpp\n'}
+[0.601495] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/bounding_box3_d.hpp\n'}
+[0.601687] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/depth_info_stamped.hpp\n'}
+[0.601886] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__builder.hpp\n'}
+[0.602080] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__struct.hpp\n'}
+[0.602272] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__traits.hpp\n'}
+[0.602471] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__builder.hpp\n'}
+[0.602662] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__struct.hpp\n'}
+[0.602851] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__traits.hpp\n'}
+[0.603039] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__builder.hpp\n'}
+[0.603248] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__struct.hpp\n'}
+[0.603441] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__traits.hpp\n'}
+[0.603630] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__builder.hpp\n'}
+[0.603828] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__struct.hpp\n'}
+[0.604023] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__traits.hpp\n'}
+[0.604213] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__builder.hpp\n'}
+[0.604403] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__struct.hpp\n'}
+[0.604591] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__traits.hpp\n'}
+[0.604782] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__builder.hpp\n'}
+[0.604973] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__struct.hpp\n'}
+[0.605158] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__traits.hpp\n'}
+[0.605349] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__builder.hpp\n'}
+[0.605544] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__struct.hpp\n'}
+[0.605737] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__traits.hpp\n'}
+[0.605926] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__builder.hpp\n'}
+[0.606117] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__struct.hpp\n'}
+[0.606309] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__traits.hpp\n'}
+[0.606502] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__builder.hpp\n'}
+[0.606697] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__struct.hpp\n'}
+[0.606884] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__traits.hpp\n'}
+[0.607078] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__builder.hpp\n'}
+[0.607291] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__struct.hpp\n'}
+[0.607479] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__traits.hpp\n'}
+[0.607670] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__builder.hpp\n'}
+[0.607863] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__struct.hpp\n'}
+[0.608048] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__traits.hpp\n'}
+[0.608238] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__builder.hpp\n'}
+[0.608428] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__struct.hpp\n'}
+[0.608622] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__traits.hpp\n'}
+[0.608812] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/keypoint2_df.hpp\n'}
+[0.608997] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/keypoint2_di.hpp\n'}
+[0.609179] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/keypoint3_d.hpp\n'}
+[0.609366] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/object.hpp\n'}
+[0.609556] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/objects_stamped.hpp\n'}
+[0.609743] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/plane_stamped.hpp\n'}
+[0.609930] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/skeleton2_d.hpp\n'}
+[0.610114] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/skeleton3_d.hpp\n'}
+[0.610312] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__builder.hpp\n'}
+[0.610502] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__struct.hpp\n'}
+[0.610695] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__traits.hpp\n'}
+[0.610884] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__builder.hpp\n'}
+[0.611073] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__struct.hpp\n'}
+[0.611278] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__traits.hpp\n'}
+[0.611473] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__builder.hpp\n'}
+[0.611663] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__struct.hpp\n'}
+[0.611856] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__traits.hpp\n'}
+[0.612041] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/set_pose.hpp\n'}
+[0.612224] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/set_roi.hpp\n'}
+[0.612416] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/start_svo_rec.hpp\n'}
+[0.613186] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.613392] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.613594] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.613789] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.613990] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.614190] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.614382] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.614577] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.614767] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.614958] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.615190] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.615365] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.615559] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.615755] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.615955] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/include/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.616264] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.sh\n'}
+[0.616554] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.dsv\n'}
+[0.616850] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/__init__.py\n'}
+[0.617483] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/__init__.py\n'}
+[0.617688] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_bounding_box2_df.py\n'}
+[0.617885] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_bounding_box2_di.py\n'}
+[0.618080] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_bounding_box3_d.py\n'}
+[0.618276] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_depth_info_stamped.py\n'}
+[0.618472] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_keypoint2_df.py\n'}
+[0.618664] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_keypoint2_di.py\n'}
+[0.618850] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_keypoint3_d.py\n'}
+[0.619039] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_object.py\n'}
+[0.619351] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_objects_stamped.py\n'}
+[0.619547] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_plane_stamped.py\n'}
+[0.619742] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_skeleton2_d.py\n'}
+[0.619932] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/msg/_skeleton3_d.py\n'}
+[0.620466] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/srv/__init__.py\n'}
+[0.620669] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/srv/_set_pose.py\n'}
+[0.620864] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/srv/_set_roi.py\n'}
+[0.621057] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/srv/_start_svo_rec.py\n'}
+[0.621520] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.621971] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.622416] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.622862] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__python.so\n'}
+[0.623172] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Object.idl\n'}
+[0.623476] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.idl\n'}
+[0.623767] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.idl\n'}
+[0.624056] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.idl\n'}
+[0.624342] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.idl\n'}
+[0.624633] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.idl\n'}
+[0.624919] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.idl\n'}
+[0.625205] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.idl\n'}
+[0.625501] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.idl\n'}
+[0.625790] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.idl\n'}
+[0.626075] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.idl\n'}
+[0.626361] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.idl\n'}
+[0.626648] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose.idl\n'}
+[0.626938] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.idl\n'}
+[0.627275] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI.idl\n'}
+[0.627579] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Object.msg\n'}
+[0.627907] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.msg\n'}
+[0.628295] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.msg\n'}
+[0.628585] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.msg\n'}
+[0.628897] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.msg\n'}
+[0.629185] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.msg\n'}
+[0.629472] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.msg\n'}
+[0.629803] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.msg\n'}
+[0.630095] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.msg\n'}
+[0.630375] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.msg\n'}
+[0.630659] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.msg\n'}
+[0.630943] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.msg\n'}
+[0.631297] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose.srv\n'}
+[0.631587] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Request.msg\n'}
+[0.631869] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Response.msg\n'}
+[0.632152] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.srv\n'}
+[0.632433] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Request.msg\n'}
+[0.632714] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Response.msg\n'}
+[0.632995] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI.srv\n'}
+[0.633277] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Request.msg\n'}
+[0.633559] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Response.msg\n'}
+[0.634086] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zed.stl\n'}
+[0.634274] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zed2.stl\n'}
+[0.634456] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zed2i.stl\n'}
+[0.634638] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zedm.stl\n'}
+[0.634956] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/package_run_dependencies/zed_interfaces\n'}
+[0.635275] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/parent_prefix_path/zed_interfaces\n'}
+[0.635575] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.sh\n'}
+[0.635862] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.636152] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/path.sh\n'}
+[0.636434] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/path.dsv\n'}
+[0.636714] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.bash\n'}
+[0.636993] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.sh\n'}
+[0.637273] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.zsh\n'}
+[0.637550] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.dsv\n'}
+[0.637780] (zed_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/package.dsv\n'}
+[0.649456] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/packages/zed_interfaces\n'}
+[0.649748] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.650042] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.650345] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.650636] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.650929] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.651229] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.651517] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.651806] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig.cmake\n'}
+[0.651999] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig-version.cmake\n'}
+[0.652280] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/package.xml\n'}
+[0.652611] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so\n'}
+[0.653027] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.653417] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so\n'}
+[0.653817] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.654220] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.696104] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.696217] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_generator_cExport-release.cmake\n'}
+[0.696424] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.696524] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[0.696707] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.696811] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-release.cmake\n'}
+[0.696984] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.697211] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.697317] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[0.697489] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.697593] (zed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-release.cmake\n'}
+[0.700745] (-) TimerEvent: {}
+[0.701526] (zed_interfaces) CommandEnded: {'returncode': 0}
+[0.800891] (-) TimerEvent: {}
+[0.901335] (-) TimerEvent: {}
+[0.981825] (zed_interfaces) JobEnded: {'identifier': 'zed_interfaces', 'rc': 0}
+[0.986016] (zed_components) JobStarted: {'identifier': 'zed_components'}
+[0.996218] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'cmake'}
+[0.996987] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_components'], 'cwd': '/home/roboboat/ros2_ws/build/zed_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[1.001633] (-) TimerEvent: {}
+[1.027609] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[1.101762] (-) TimerEvent: {}
+[1.119385] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[1.122455] (zed_components) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.201893] (-) TimerEvent: {}
+[1.209912] (zed_components) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.210211] (zed_components) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.302011] (-) TimerEvent: {}
+[1.303031] (zed_components) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.303335] (zed_components) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.382903] (zed_components) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.383268] (zed_components) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.402128] (-) TimerEvent: {}
+[1.466844] (zed_components) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.467883] (zed_components) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.492364] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[1.502229] (-) TimerEvent: {}
+[1.600603] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[1.601155] (zed_components) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  \n'}
+[1.602287] (-) TimerEvent: {}
+[1.627514] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") \n'}
+[1.655408] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found version "11.8") \n'}
+[1.657909] (zed_components) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.687596] (zed_components) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.687806] (zed_components) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.702359] (-) TimerEvent: {}
+[1.802656] (-) TimerEvent: {}
+[1.903046] (-) TimerEvent: {}
+[1.923920] (zed_components) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.949045] (zed_components) StdoutLine: {'line': b'-- Found rcutils: 1.1.4 (/opt/ros/foxy/share/rcutils/cmake)\n'}
+[1.954407] (zed_components) StdoutLine: {'line': b'-- Found zed_interfaces: 0.3.0 (/home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake)\n'}
+[1.972897] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.980185] (zed_components) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.003110] (-) TimerEvent: {}
+[2.076088] (zed_components) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.103175] (-) TimerEvent: {}
+[2.106924] (zed_components) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.199167] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.203246] (-) TimerEvent: {}
+[2.303537] (-) TimerEvent: {}
+[2.403893] (-) TimerEvent: {}
+[2.504257] (-) TimerEvent: {}
+[2.546810] (zed_components) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.604323] (-) TimerEvent: {}
+[2.624253] (zed_components) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.627840] (zed_components) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.704413] (-) TimerEvent: {}
+[2.804707] (-) TimerEvent: {}
+[2.848198] (zed_components) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[2.904775] (-) TimerEvent: {}
+[2.950405] (zed_components) StdoutLine: {'line': b'-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[2.964925] (zed_components) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[3.004855] (-) TimerEvent: {}
+[3.105098] (-) TimerEvent: {}
+[3.205277] (-) TimerEvent: {}
+[3.305465] (-) TimerEvent: {}
+[3.356088] (zed_components) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[3.368421] (zed_components) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[3.373576] (zed_components) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[3.405531] (-) TimerEvent: {}
+[3.411621] (zed_components) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.505627] (-) TimerEvent: {}
+[3.509632] (zed_components) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[3.605694] (-) TimerEvent: {}
+[3.607724] (zed_components) StdoutLine: {'line': b'-- Found stereo_msgs: 2.0.5 (/opt/ros/foxy/share/stereo_msgs/cmake)\n'}
+[3.705764] (-) TimerEvent: {}
+[3.758174] (zed_components) StdoutLine: {'line': b'-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)\n'}
+[3.805833] (-) TimerEvent: {}
+[3.818834] (zed_components) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[3.837334] (zed_components) StdoutLine: {'line': b'-- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)\n'}
+[3.889945] (zed_components) StdoutLine: {'line': b'-- Found diagnostic_updater: 2.0.8 (/opt/ros/foxy/share/diagnostic_updater/cmake)\n'}
+[3.905900] (-) TimerEvent: {}
+[3.920236] (zed_components) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[4.005981] (-) TimerEvent: {}
+[4.017926] (zed_components) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.106060] (-) TimerEvent: {}
+[4.158005] (zed_components) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.159594] (zed_components) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.160334] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components/src/include;/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/include\n'}
+[4.160477] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.161096] (zed_components) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.162546] (zed_components) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.162654] (zed_components) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.163178] (zed_components) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.171494] (zed_components) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.206127] (-) TimerEvent: {}
+[4.222985] (zed_components) StdoutLine: {'line': b'-- Generating done\n'}
+[4.225672] (zed_components) StdoutLine: {'line': b'-- Build files have been written to: /home/roboboat/ros2_ws/build/zed_components\n'}
+[4.242555] (zed_components) CommandEnded: {'returncode': 0}
+[4.243431] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'build'}
+[4.243875] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/ros2_ws/build/zed_components', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/ros2_ws/build/zed_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[4.297325] (zed_components) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zed_camera_component\x1b[0m\n'}
+[4.306212] (-) TimerEvent: {}
+[4.406528] (-) TimerEvent: {}
+[4.506848] (-) TimerEvent: {}
+[4.574145] (zed_components) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_win_avg.cpp.o\x1b[0m\n'}
+[4.574471] (zed_components) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[4.581473] (zed_components) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o\x1b[0m\n'}
+[4.606971] (-) TimerEvent: {}
+[4.707427] (-) TimerEvent: {}
+[4.807880] (-) TimerEvent: {}
+[4.909637] (-) TimerEvent: {}
+[5.010287] (-) TimerEvent: {}
+[5.110714] (-) TimerEvent: {}
+[5.211070] (-) TimerEvent: {}
+[5.311485] (-) TimerEvent: {}
+[5.411871] (-) TimerEvent: {}
+[5.512232] (-) TimerEvent: {}
+[5.612650] (-) TimerEvent: {}
+[5.713009] (-) TimerEvent: {}
+[5.813388] (-) TimerEvent: {}
+[5.913840] (-) TimerEvent: {}
+[6.014280] (-) TimerEvent: {}
+[6.114730] (-) TimerEvent: {}
+[6.215221] (-) TimerEvent: {}
+[6.315684] (-) TimerEvent: {}
+[6.416155] (-) TimerEvent: {}
+[6.516614] (-) TimerEvent: {}
+[6.617059] (-) TimerEvent: {}
+[6.717442] (-) TimerEvent: {}
+[6.817824] (-) TimerEvent: {}
+[6.918135] (-) TimerEvent: {}
+[7.018330] (-) TimerEvent: {}
+[7.118514] (-) TimerEvent: {}
+[7.218700] (-) TimerEvent: {}
+[7.318983] (-) TimerEvent: {}
+[7.419252] (-) TimerEvent: {}
+[7.519525] (-) TimerEvent: {}
+[7.619876] (-) TimerEvent: {}
+[7.720152] (-) TimerEvent: {}
+[7.820400] (-) TimerEvent: {}
+[7.920665] (-) TimerEvent: {}
+[8.020965] (-) TimerEvent: {}
+[8.121289] (-) TimerEvent: {}
+[8.221582] (-) TimerEvent: {}
+[8.321808] (-) TimerEvent: {}
+[8.422128] (-) TimerEvent: {}
+[8.522495] (-) TimerEvent: {}
+[8.622880] (-) TimerEvent: {}
+[8.723169] (-) TimerEvent: {}
+[8.823396] (-) TimerEvent: {}
+[8.923655] (-) TimerEvent: {}
+[9.023939] (-) TimerEvent: {}
+[9.124314] (-) TimerEvent: {}
+[9.224674] (-) TimerEvent: {}
+[9.324927] (-) TimerEvent: {}
+[9.425173] (-) TimerEvent: {}
+[9.525425] (-) TimerEvent: {}
+[9.625742] (-) TimerEvent: {}
+[9.725972] (-) TimerEvent: {}
+[9.826162] (-) TimerEvent: {}
+[9.926332] (-) TimerEvent: {}
+[10.026511] (-) TimerEvent: {}
+[10.126737] (-) TimerEvent: {}
+[10.227043] (-) TimerEvent: {}
+[10.327306] (-) TimerEvent: {}
+[10.427590] (-) TimerEvent: {}
+[10.527920] (-) TimerEvent: {}
+[10.628229] (-) TimerEvent: {}
+[10.728500] (-) TimerEvent: {}
+[10.828769] (-) TimerEvent: {}
+[10.929076] (-) TimerEvent: {}
+[11.029349] (-) TimerEvent: {}
+[11.129647] (-) TimerEvent: {}
+[11.229923] (-) TimerEvent: {}
+[11.330182] (-) TimerEvent: {}
+[11.430463] (-) TimerEvent: {}
+[11.530743] (-) TimerEvent: {}
+[11.631070] (-) TimerEvent: {}
+[11.731336] (-) TimerEvent: {}
+[11.831569] (-) TimerEvent: {}
+[11.931797] (-) TimerEvent: {}
+[12.032023] (-) TimerEvent: {}
+[12.132273] (-) TimerEvent: {}
+[12.232496] (-) TimerEvent: {}
+[12.332756] (-) TimerEvent: {}
+[12.433069] (-) TimerEvent: {}
+[12.533313] (-) TimerEvent: {}
+[12.633639] (-) TimerEvent: {}
+[12.733887] (-) TimerEvent: {}
+[12.834127] (-) TimerEvent: {}
+[12.934351] (-) TimerEvent: {}
+[13.034578] (-) TimerEvent: {}
+[13.134855] (-) TimerEvent: {}
+[13.235094] (-) TimerEvent: {}
+[13.335322] (-) TimerEvent: {}
+[13.435513] (-) TimerEvent: {}
+[13.535805] (-) TimerEvent: {}
+[13.636187] (-) TimerEvent: {}
+[13.736505] (-) TimerEvent: {}
+[13.836766] (-) TimerEvent: {}
+[13.937040] (-) TimerEvent: {}
+[14.037289] (-) TimerEvent: {}
+[14.137572] (-) TimerEvent: {}
+[14.237834] (-) TimerEvent: {}
+[14.338036] (-) TimerEvent: {}
+[14.438271] (-) TimerEvent: {}
+[14.538539] (-) TimerEvent: {}
+[14.638900] (-) TimerEvent: {}
+[14.739190] (-) TimerEvent: {}
+[14.839398] (-) TimerEvent: {}
+[14.939581] (-) TimerEvent: {}
+[15.039756] (-) TimerEvent: {}
+[15.139958] (-) TimerEvent: {}
+[15.240146] (-) TimerEvent: {}
+[15.340338] (-) TimerEvent: {}
+[15.440556] (-) TimerEvent: {}
+[15.540817] (-) TimerEvent: {}
+[15.641196] (-) TimerEvent: {}
+[15.741452] (-) TimerEvent: {}
+[15.841668] (-) TimerEvent: {}
+[15.941854] (-) TimerEvent: {}
+[16.042042] (-) TimerEvent: {}
+[16.142276] (-) TimerEvent: {}
+[16.242481] (-) TimerEvent: {}
+[16.342653] (-) TimerEvent: {}
+[16.442860] (-) TimerEvent: {}
+[16.543247] (-) TimerEvent: {}
+[16.643663] (-) TimerEvent: {}
+[16.744000] (-) TimerEvent: {}
+[16.844187] (-) TimerEvent: {}
+[16.944370] (-) TimerEvent: {}
+[17.044540] (-) TimerEvent: {}
+[17.144719] (-) TimerEvent: {}
+[17.244895] (-) TimerEvent: {}
+[17.345061] (-) TimerEvent: {}
+[17.445239] (-) TimerEvent: {}
+[17.545460] (-) TimerEvent: {}
+[17.645821] (-) TimerEvent: {}
+[17.746100] (-) TimerEvent: {}
+[17.846346] (-) TimerEvent: {}
+[17.946527] (-) TimerEvent: {}
+[18.046797] (-) TimerEvent: {}
+[18.147165] (-) TimerEvent: {}
+[18.247481] (-) TimerEvent: {}
+[18.347735] (-) TimerEvent: {}
+[18.448103] (-) TimerEvent: {}
+[18.548424] (-) TimerEvent: {}
+[18.648782] (-) TimerEvent: {}
+[18.749053] (-) TimerEvent: {}
+[18.849243] (-) TimerEvent: {}
+[18.949507] (-) TimerEvent: {}
+[19.049826] (-) TimerEvent: {}
+[19.150160] (-) TimerEvent: {}
+[19.250471] (-) TimerEvent: {}
+[19.350656] (-) TimerEvent: {}
+[19.450899] (-) TimerEvent: {}
+[19.551195] (-) TimerEvent: {}
+[19.651535] (-) TimerEvent: {}
+[19.751813] (-) TimerEvent: {}
+[19.852118] (-) TimerEvent: {}
+[19.952361] (-) TimerEvent: {}
+[20.052531] (-) TimerEvent: {}
+[20.152712] (-) TimerEvent: {}
+[20.252888] (-) TimerEvent: {}
+[20.353054] (-) TimerEvent: {}
+[20.453258] (-) TimerEvent: {}
+[20.553572] (-) TimerEvent: {}
+[20.653923] (-) TimerEvent: {}
+[20.754166] (-) TimerEvent: {}
+[20.854440] (-) TimerEvent: {}
+[20.954726] (-) TimerEvent: {}
+[21.054894] (-) TimerEvent: {}
+[21.155113] (-) TimerEvent: {}
+[21.255469] (-) TimerEvent: {}
+[21.355817] (-) TimerEvent: {}
+[21.456145] (-) TimerEvent: {}
+[21.556395] (-) TimerEvent: {}
+[21.656783] (-) TimerEvent: {}
+[21.757136] (-) TimerEvent: {}
+[21.857478] (-) TimerEvent: {}
+[21.957797] (-) TimerEvent: {}
+[22.058034] (-) TimerEvent: {}
+[22.158354] (-) TimerEvent: {}
+[22.258598] (-) TimerEvent: {}
+[22.358847] (-) TimerEvent: {}
+[22.459048] (-) TimerEvent: {}
+[22.559313] (-) TimerEvent: {}
+[22.659576] (-) TimerEvent: {}
+[22.759754] (-) TimerEvent: {}
+[22.859955] (-) TimerEvent: {}
+[22.960145] (-) TimerEvent: {}
+[23.060307] (-) TimerEvent: {}
+[23.160484] (-) TimerEvent: {}
+[23.260656] (-) TimerEvent: {}
+[23.360821] (-) TimerEvent: {}
+[23.460982] (-) TimerEvent: {}
+[23.561201] (-) TimerEvent: {}
+[23.661470] (-) TimerEvent: {}
+[23.761637] (-) TimerEvent: {}
+[23.861791] (-) TimerEvent: {}
+[23.961937] (-) TimerEvent: {}
+[24.062090] (-) TimerEvent: {}
+[24.162258] (-) TimerEvent: {}
+[24.262426] (-) TimerEvent: {}
+[24.362581] (-) TimerEvent: {}
+[24.462740] (-) TimerEvent: {}
+[24.562991] (-) TimerEvent: {}
+[24.663447] (-) TimerEvent: {}
+[24.763880] (-) TimerEvent: {}
+[24.864310] (-) TimerEvent: {}
+[24.964728] (-) TimerEvent: {}
+[25.065164] (-) TimerEvent: {}
+[25.165598] (-) TimerEvent: {}
+[25.266014] (-) TimerEvent: {}
+[25.366432] (-) TimerEvent: {}
+[25.466849] (-) TimerEvent: {}
+[25.567276] (-) TimerEvent: {}
+[25.667697] (-) TimerEvent: {}
+[25.768116] (-) TimerEvent: {}
+[25.868555] (-) TimerEvent: {}
+[25.968994] (-) TimerEvent: {}
+[26.069446] (-) TimerEvent: {}
+[26.169892] (-) TimerEvent: {}
+[26.270332] (-) TimerEvent: {}
+[26.370765] (-) TimerEvent: {}
+[26.471206] (-) TimerEvent: {}
+[26.571644] (-) TimerEvent: {}
+[26.672076] (-) TimerEvent: {}
+[26.772501] (-) TimerEvent: {}
+[26.872936] (-) TimerEvent: {}
+[26.973362] (-) TimerEvent: {}
+[27.073825] (-) TimerEvent: {}
+[27.174278] (-) TimerEvent: {}
+[27.274716] (-) TimerEvent: {}
+[27.375141] (-) TimerEvent: {}
+[27.475571] (-) TimerEvent: {}
+[27.576001] (-) TimerEvent: {}
+[27.676433] (-) TimerEvent: {}
+[27.776862] (-) TimerEvent: {}
+[27.877291] (-) TimerEvent: {}
+[27.977716] (-) TimerEvent: {}
+[28.078138] (-) TimerEvent: {}
+[28.178563] (-) TimerEvent: {}
+[28.278990] (-) TimerEvent: {}
+[28.379416] (-) TimerEvent: {}
+[28.479841] (-) TimerEvent: {}
+[28.580279] (-) TimerEvent: {}
+[28.680714] (-) TimerEvent: {}
+[28.781137] (-) TimerEvent: {}
+[28.881564] (-) TimerEvent: {}
+[28.981991] (-) TimerEvent: {}
+[29.082424] (-) TimerEvent: {}
+[29.182851] (-) TimerEvent: {}
+[29.283284] (-) TimerEvent: {}
+[29.383714] (-) TimerEvent: {}
+[29.484139] (-) TimerEvent: {}
+[29.584582] (-) TimerEvent: {}
+[29.685026] (-) TimerEvent: {}
+[29.785473] (-) TimerEvent: {}
+[29.885898] (-) TimerEvent: {}
+[29.986326] (-) TimerEvent: {}
+[30.086758] (-) TimerEvent: {}
+[30.187197] (-) TimerEvent: {}
+[30.287645] (-) TimerEvent: {}
+[30.388084] (-) TimerEvent: {}
+[30.488511] (-) TimerEvent: {}
+[30.588946] (-) TimerEvent: {}
+[30.689326] (-) TimerEvent: {}
+[30.789538] (-) TimerEvent: {}
+[30.889701] (-) TimerEvent: {}
+[30.989872] (-) TimerEvent: {}
+[31.090119] (-) TimerEvent: {}
+[31.190524] (-) TimerEvent: {}
+[31.290909] (-) TimerEvent: {}
+[31.391258] (-) TimerEvent: {}
+[31.491529] (-) TimerEvent: {}
+[31.591878] (-) TimerEvent: {}
+[31.692249] (-) TimerEvent: {}
+[31.792583] (-) TimerEvent: {}
+[31.892902] (-) TimerEvent: {}
+[31.993214] (-) TimerEvent: {}
+[32.093538] (-) TimerEvent: {}
+[32.193850] (-) TimerEvent: {}
+[32.294152] (-) TimerEvent: {}
+[32.394387] (-) TimerEvent: {}
+[32.494711] (-) TimerEvent: {}
+[32.595056] (-) TimerEvent: {}
+[32.695417] (-) TimerEvent: {}
+[32.795709] (-) TimerEvent: {}
+[32.896050] (-) TimerEvent: {}
+[32.996385] (-) TimerEvent: {}
+[33.096720] (-) TimerEvent: {}
+[33.197016] (-) TimerEvent: {}
+[33.297279] (-) TimerEvent: {}
+[33.397587] (-) TimerEvent: {}
+[33.497890] (-) TimerEvent: {}
+[33.598184] (-) TimerEvent: {}
+[33.698552] (-) TimerEvent: {}
+[33.798825] (-) TimerEvent: {}
+[33.899092] (-) TimerEvent: {}
+[33.999365] (-) TimerEvent: {}
+[34.099662] (-) TimerEvent: {}
+[34.199892] (-) TimerEvent: {}
+[34.300092] (-) TimerEvent: {}
+[34.400274] (-) TimerEvent: {}
+[34.500485] (-) TimerEvent: {}
+[34.600844] (-) TimerEvent: {}
+[34.701196] (-) TimerEvent: {}
+[34.801565] (-) TimerEvent: {}
+[34.901918] (-) TimerEvent: {}
+[35.002270] (-) TimerEvent: {}
+[35.102635] (-) TimerEvent: {}
+[35.203024] (-) TimerEvent: {}
+[35.303468] (-) TimerEvent: {}
+[35.403900] (-) TimerEvent: {}
+[35.504326] (-) TimerEvent: {}
+[35.604753] (-) TimerEvent: {}
+[35.705181] (-) TimerEvent: {}
+[35.805600] (-) TimerEvent: {}
+[35.906035] (-) TimerEvent: {}
+[36.006466] (-) TimerEvent: {}
+[36.106880] (-) TimerEvent: {}
+[36.207304] (-) TimerEvent: {}
+[36.307728] (-) TimerEvent: {}
+[36.408154] (-) TimerEvent: {}
+[36.508592] (-) TimerEvent: {}
+[36.609033] (-) TimerEvent: {}
+[36.709457] (-) TimerEvent: {}
+[36.809883] (-) TimerEvent: {}
+[36.910308] (-) TimerEvent: {}
+[37.010738] (-) TimerEvent: {}
+[37.111178] (-) TimerEvent: {}
+[37.211618] (-) TimerEvent: {}
+[37.312065] (-) TimerEvent: {}
+[37.412514] (-) TimerEvent: {}
+[37.512959] (-) TimerEvent: {}
+[37.613391] (-) TimerEvent: {}
+[37.713830] (-) TimerEvent: {}
+[37.814258] (-) TimerEvent: {}
+[37.914678] (-) TimerEvent: {}
+[38.015097] (-) TimerEvent: {}
+[38.115524] (-) TimerEvent: {}
+[38.215953] (-) TimerEvent: {}
+[38.316386] (-) TimerEvent: {}
+[38.416801] (-) TimerEvent: {}
+[38.517231] (-) TimerEvent: {}
+[38.617662] (-) TimerEvent: {}
+[38.718075] (-) TimerEvent: {}
+[38.818493] (-) TimerEvent: {}
+[38.918908] (-) TimerEvent: {}
+[39.019336] (-) TimerEvent: {}
+[39.119777] (-) TimerEvent: {}
+[39.220205] (-) TimerEvent: {}
+[39.320627] (-) TimerEvent: {}
+[39.421056] (-) TimerEvent: {}
+[39.521497] (-) TimerEvent: {}
+[39.621922] (-) TimerEvent: {}
+[39.722326] (-) TimerEvent: {}
+[39.822741] (-) TimerEvent: {}
+[39.923171] (-) TimerEvent: {}
+[40.023602] (-) TimerEvent: {}
+[40.124030] (-) TimerEvent: {}
+[40.224460] (-) TimerEvent: {}
+[40.324916] (-) TimerEvent: {}
+[40.425342] (-) TimerEvent: {}
+[40.525770] (-) TimerEvent: {}
+[40.626197] (-) TimerEvent: {}
+[40.726626] (-) TimerEvent: {}
+[40.827040] (-) TimerEvent: {}
+[40.927455] (-) TimerEvent: {}
+[41.027857] (-) TimerEvent: {}
+[41.128262] (-) TimerEvent: {}
+[41.228681] (-) TimerEvent: {}
+[41.329098] (-) TimerEvent: {}
+[41.429510] (-) TimerEvent: {}
+[41.529932] (-) TimerEvent: {}
+[41.630353] (-) TimerEvent: {}
+[41.730773] (-) TimerEvent: {}
+[41.831203] (-) TimerEvent: {}
+[41.931620] (-) TimerEvent: {}
+[42.032031] (-) TimerEvent: {}
+[42.132435] (-) TimerEvent: {}
+[42.232851] (-) TimerEvent: {}
+[42.333268] (-) TimerEvent: {}
+[42.433689] (-) TimerEvent: {}
+[42.534111] (-) TimerEvent: {}
+[42.634526] (-) TimerEvent: {}
+[42.734933] (-) TimerEvent: {}
+[42.835356] (-) TimerEvent: {}
+[42.935772] (-) TimerEvent: {}
+[43.036186] (-) TimerEvent: {}
+[43.136602] (-) TimerEvent: {}
+[43.237013] (-) TimerEvent: {}
+[43.337435] (-) TimerEvent: {}
+[43.437868] (-) TimerEvent: {}
+[43.538299] (-) TimerEvent: {}
+[43.638720] (-) TimerEvent: {}
+[43.739131] (-) TimerEvent: {}
+[43.839546] (-) TimerEvent: {}
+[43.939939] (-) TimerEvent: {}
+[44.040329] (-) TimerEvent: {}
+[44.140711] (-) TimerEvent: {}
+[44.241116] (-) TimerEvent: {}
+[44.341563] (-) TimerEvent: {}
+[44.442005] (-) TimerEvent: {}
+[44.542444] (-) TimerEvent: {}
+[44.642888] (-) TimerEvent: {}
+[44.743335] (-) TimerEvent: {}
+[44.843773] (-) TimerEvent: {}
+[44.944213] (-) TimerEvent: {}
+[45.044650] (-) TimerEvent: {}
+[45.145094] (-) TimerEvent: {}
+[45.245536] (-) TimerEvent: {}
+[45.345964] (-) TimerEvent: {}
+[45.446409] (-) TimerEvent: {}
+[45.546856] (-) TimerEvent: {}
+[45.647309] (-) TimerEvent: {}
+[45.747754] (-) TimerEvent: {}
+[45.848200] (-) TimerEvent: {}
+[45.948631] (-) TimerEvent: {}
+[46.049069] (-) TimerEvent: {}
+[46.149501] (-) TimerEvent: {}
+[46.249934] (-) TimerEvent: {}
+[46.350364] (-) TimerEvent: {}
+[46.450802] (-) TimerEvent: {}
+[46.551248] (-) TimerEvent: {}
+[46.651683] (-) TimerEvent: {}
+[46.752116] (-) TimerEvent: {}
+[46.852555] (-) TimerEvent: {}
+[46.952994] (-) TimerEvent: {}
+[47.053428] (-) TimerEvent: {}
+[47.153870] (-) TimerEvent: {}
+[47.254289] (-) TimerEvent: {}
+[47.354690] (-) TimerEvent: {}
+[47.455059] (-) TimerEvent: {}
+[47.555445] (-) TimerEvent: {}
+[47.655870] (-) TimerEvent: {}
+[47.756285] (-) TimerEvent: {}
+[47.856692] (-) TimerEvent: {}
+[47.957096] (-) TimerEvent: {}
+[48.057506] (-) TimerEvent: {}
+[48.157922] (-) TimerEvent: {}
+[48.258328] (-) TimerEvent: {}
+[48.358733] (-) TimerEvent: {}
+[48.459161] (-) TimerEvent: {}
+[48.559580] (-) TimerEvent: {}
+[48.659995] (-) TimerEvent: {}
+[48.760402] (-) TimerEvent: {}
+[48.860805] (-) TimerEvent: {}
+[48.961227] (-) TimerEvent: {}
+[49.061625] (-) TimerEvent: {}
+[49.162030] (-) TimerEvent: {}
+[49.262443] (-) TimerEvent: {}
+[49.362848] (-) TimerEvent: {}
+[49.463252] (-) TimerEvent: {}
+[49.563673] (-) TimerEvent: {}
+[49.664120] (-) TimerEvent: {}
+[49.764560] (-) TimerEvent: {}
+[49.864989] (-) TimerEvent: {}
+[49.965401] (-) TimerEvent: {}
+[50.065815] (-) TimerEvent: {}
+[50.166239] (-) TimerEvent: {}
+[50.266650] (-) TimerEvent: {}
+[50.367027] (-) TimerEvent: {}
+[50.467412] (-) TimerEvent: {}
+[50.567748] (-) TimerEvent: {}
+[50.668124] (-) TimerEvent: {}
+[50.768445] (-) TimerEvent: {}
+[50.868767] (-) TimerEvent: {}
+[50.969137] (-) TimerEvent: {}
+[51.069480] (-) TimerEvent: {}
+[51.169885] (-) TimerEvent: {}
+[51.270302] (-) TimerEvent: {}
+[51.370716] (-) TimerEvent: {}
+[51.471113] (-) TimerEvent: {}
+[51.571466] (-) TimerEvent: {}
+[51.671837] (-) TimerEvent: {}
+[51.772151] (-) TimerEvent: {}
+[51.872459] (-) TimerEvent: {}
+[51.972771] (-) TimerEvent: {}
+[52.073132] (-) TimerEvent: {}
+[52.173562] (-) TimerEvent: {}
+[52.273987] (-) TimerEvent: {}
+[52.374400] (-) TimerEvent: {}
+[52.474812] (-) TimerEvent: {}
+[52.575242] (-) TimerEvent: {}
+[52.675664] (-) TimerEvent: {}
+[52.776093] (-) TimerEvent: {}
+[52.876526] (-) TimerEvent: {}
+[52.976966] (-) TimerEvent: {}
+[53.077398] (-) TimerEvent: {}
+[53.177832] (-) TimerEvent: {}
+[53.278253] (-) TimerEvent: {}
+[53.378673] (-) TimerEvent: {}
+[53.479095] (-) TimerEvent: {}
+[53.579573] (-) TimerEvent: {}
+[53.679998] (-) TimerEvent: {}
+[53.780419] (-) TimerEvent: {}
+[53.880846] (-) TimerEvent: {}
+[53.981279] (-) TimerEvent: {}
+[54.081712] (-) TimerEvent: {}
+[54.182147] (-) TimerEvent: {}
+[54.282582] (-) TimerEvent: {}
+[54.383012] (-) TimerEvent: {}
+[54.483461] (-) TimerEvent: {}
+[54.583895] (-) TimerEvent: {}
+[54.684338] (-) TimerEvent: {}
+[54.784774] (-) TimerEvent: {}
+[54.885210] (-) TimerEvent: {}
+[54.985647] (-) TimerEvent: {}
+[55.086079] (-) TimerEvent: {}
+[55.186522] (-) TimerEvent: {}
+[55.286968] (-) TimerEvent: {}
+[55.394566] (-) TimerEvent: {}
+[55.495006] (-) TimerEvent: {}
+[55.595464] (-) TimerEvent: {}
+[55.695913] (-) TimerEvent: {}
+[55.796358] (-) TimerEvent: {}
+[55.896800] (-) TimerEvent: {}
+[55.997228] (-) TimerEvent: {}
+[56.097669] (-) TimerEvent: {}
+[56.198132] (-) TimerEvent: {}
+[56.298574] (-) TimerEvent: {}
+[56.399005] (-) TimerEvent: {}
+[56.499465] (-) TimerEvent: {}
+[56.599919] (-) TimerEvent: {}
+[56.700365] (-) TimerEvent: {}
+[56.800808] (-) TimerEvent: {}
+[56.901249] (-) TimerEvent: {}
+[57.001694] (-) TimerEvent: {}
+[57.102126] (-) TimerEvent: {}
+[57.202582] (-) TimerEvent: {}
+[57.303045] (-) TimerEvent: {}
+[57.403503] (-) TimerEvent: {}
+[57.503944] (-) TimerEvent: {}
+[57.604398] (-) TimerEvent: {}
+[57.704829] (-) TimerEvent: {}
+[57.805267] (-) TimerEvent: {}
+[57.905714] (-) TimerEvent: {}
+[58.006153] (-) TimerEvent: {}
+[58.106591] (-) TimerEvent: {}
+[58.207032] (-) TimerEvent: {}
+[58.307488] (-) TimerEvent: {}
+[58.407925] (-) TimerEvent: {}
+[58.508361] (-) TimerEvent: {}
+[58.608806] (-) TimerEvent: {}
+[58.709244] (-) TimerEvent: {}
+[58.809688] (-) TimerEvent: {}
+[58.910134] (-) TimerEvent: {}
+[59.010574] (-) TimerEvent: {}
+[59.111021] (-) TimerEvent: {}
+[59.211484] (-) TimerEvent: {}
+[59.311935] (-) TimerEvent: {}
+[59.412366] (-) TimerEvent: {}
+[59.512819] (-) TimerEvent: {}
+[59.613278] (-) TimerEvent: {}
+[59.713743] (-) TimerEvent: {}
+[59.814195] (-) TimerEvent: {}
+[59.914646] (-) TimerEvent: {}
+[60.015092] (-) TimerEvent: {}
+[60.115540] (-) TimerEvent: {}
+[60.215959] (-) TimerEvent: {}
+[60.316395] (-) TimerEvent: {}
+[60.416851] (-) TimerEvent: {}
+[60.517303] (-) TimerEvent: {}
+[60.617734] (-) TimerEvent: {}
+[60.718168] (-) TimerEvent: {}
+[60.818613] (-) TimerEvent: {}
+[60.919056] (-) TimerEvent: {}
+[61.019465] (-) TimerEvent: {}
+[61.119857] (-) TimerEvent: {}
+[61.220309] (-) TimerEvent: {}
+[61.320756] (-) TimerEvent: {}
+[61.421219] (-) TimerEvent: {}
+[61.521678] (-) TimerEvent: {}
+[61.622134] (-) TimerEvent: {}
+[61.722583] (-) TimerEvent: {}
+[61.823032] (-) TimerEvent: {}
+[61.923482] (-) TimerEvent: {}
+[62.023907] (-) TimerEvent: {}
+[62.124338] (-) TimerEvent: {}
+[62.224767] (-) TimerEvent: {}
+[62.325194] (-) TimerEvent: {}
+[62.425624] (-) TimerEvent: {}
+[62.526069] (-) TimerEvent: {}
+[62.626511] (-) TimerEvent: {}
+[62.726944] (-) TimerEvent: {}
+[62.827393] (-) TimerEvent: {}
+[62.927819] (-) TimerEvent: {}
+[63.028239] (-) TimerEvent: {}
+[63.128666] (-) TimerEvent: {}
+[63.229109] (-) TimerEvent: {}
+[63.329548] (-) TimerEvent: {}
+[63.429994] (-) TimerEvent: {}
+[63.530440] (-) TimerEvent: {}
+[63.630882] (-) TimerEvent: {}
+[63.731329] (-) TimerEvent: {}
+[63.831765] (-) TimerEvent: {}
+[63.932214] (-) TimerEvent: {}
+[64.032663] (-) TimerEvent: {}
+[64.133107] (-) TimerEvent: {}
+[64.233538] (-) TimerEvent: {}
+[64.333961] (-) TimerEvent: {}
+[64.434374] (-) TimerEvent: {}
+[64.534799] (-) TimerEvent: {}
+[64.635231] (-) TimerEvent: {}
+[64.735658] (-) TimerEvent: {}
+[64.836085] (-) TimerEvent: {}
+[64.936502] (-) TimerEvent: {}
+[65.036922] (-) TimerEvent: {}
+[65.137348] (-) TimerEvent: {}
+[65.237762] (-) TimerEvent: {}
+[65.338185] (-) TimerEvent: {}
+[65.438573] (-) TimerEvent: {}
+[65.538942] (-) TimerEvent: {}
+[65.639340] (-) TimerEvent: {}
+[65.739645] (-) TimerEvent: {}
+[65.839940] (-) TimerEvent: {}
+[65.940242] (-) TimerEvent: {}
+[66.040565] (-) TimerEvent: {}
+[66.140939] (-) TimerEvent: {}
+[66.241297] (-) TimerEvent: {}
+[66.341625] (-) TimerEvent: {}
+[66.441978] (-) TimerEvent: {}
+[66.542325] (-) TimerEvent: {}
+[66.642714] (-) TimerEvent: {}
+[66.743041] (-) TimerEvent: {}
+[66.843429] (-) TimerEvent: {}
+[66.943849] (-) TimerEvent: {}
+[67.044284] (-) TimerEvent: {}
+[67.144724] (-) TimerEvent: {}
+[67.245139] (-) TimerEvent: {}
+[67.345548] (-) TimerEvent: {}
+[67.445964] (-) TimerEvent: {}
+[67.546399] (-) TimerEvent: {}
+[67.646833] (-) TimerEvent: {}
+[67.747265] (-) TimerEvent: {}
+[67.847696] (-) TimerEvent: {}
+[67.948096] (-) TimerEvent: {}
+[68.048493] (-) TimerEvent: {}
+[68.148887] (-) TimerEvent: {}
+[68.249290] (-) TimerEvent: {}
+[68.349707] (-) TimerEvent: {}
+[68.450114] (-) TimerEvent: {}
+[68.550495] (-) TimerEvent: {}
+[68.650860] (-) TimerEvent: {}
+[68.751219] (-) TimerEvent: {}
+[68.790306] (zed_components) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_component.so\x1b[0m\n'}
+[68.851366] (-) TimerEvent: {}
+[68.951780] (-) TimerEvent: {}
+[69.052141] (-) TimerEvent: {}
+[69.152535] (-) TimerEvent: {}
+[69.252909] (-) TimerEvent: {}
+[69.353233] (-) TimerEvent: {}
+[69.403248] (zed_components) StdoutLine: {'line': b'[100%] Built target zed_camera_component\n'}
+[69.419609] (zed_components) CommandEnded: {'returncode': 0}
+[69.450937] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'install'}
+[69.451537] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboboat/ros2_ws/build/zed_components'], 'cwd': '/home/roboboat/ros2_ws/build/zed_components', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[69.454656] (-) TimerEvent: {}
+[69.464674] (zed_components) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[69.465288] (zed_components) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[69.465851] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/lib/libzed_camera_component.so\n'}
+[69.477407] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//zed_camera_component.hpp\n'}
+[69.489027] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//sl_tools.hpp\n'}
+[69.499807] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//sl_win_avg.hpp\n'}
+[69.510801] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//visibility_control.hpp\n'}
+[69.521611] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/library_path.sh\n'}
+[69.532568] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/library_path.dsv\n'}
+[69.543573] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components\n'}
+[69.553915] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components\n'}
+[69.554704] (-) TimerEvent: {}
+[69.564492] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/ament_prefix_path.sh\n'}
+[69.575174] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv\n'}
+[69.585690] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/path.sh\n'}
+[69.596580] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/path.dsv\n'}
+[69.607516] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.bash\n'}
+[69.618270] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.sh\n'}
+[69.629067] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.zsh\n'}
+[69.639545] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.dsv\n'}
+[69.650275] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/package.dsv\n'}
+[69.654811] (-) TimerEvent: {}
+[69.660937] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/packages/zed_components\n'}
+[69.672028] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components\n'}
+[69.682489] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[69.693204] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[69.703743] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[69.714404] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake\n'}
+[69.724769] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake\n'}
+[69.735365] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/package.xml\n'}
+[69.748266] (zed_components) CommandEnded: {'returncode': 0}
+[69.754961] (-) TimerEvent: {}
+[69.820435] (zed_components) JobEnded: {'identifier': 'zed_components', 'rc': 0}
+[69.824533] (zed_wrapper) JobStarted: {'identifier': 'zed_wrapper'}
+[69.836700] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'cmake'}
+[69.837041] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_wrapper', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_wrapper'], 'cwd': '/home/roboboat/ros2_ws/build/zed_wrapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_wrapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[69.855095] (-) TimerEvent: {}
+[69.908717] (zed_wrapper) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[69.955240] (-) TimerEvent: {}
+[69.970659] (zed_wrapper) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[69.976050] (zed_wrapper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[70.055373] (-) TimerEvent: {}
+[70.059493] (zed_wrapper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[70.060527] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[70.146287] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[70.155426] (-) TimerEvent: {}
+[70.158890] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[70.159309] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[70.162271] (zed_wrapper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[70.255582] (-) TimerEvent: {}
+[70.256039] (zed_wrapper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[70.257236] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[70.351622] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[70.355640] (-) TimerEvent: {}
+[70.364670] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[70.365276] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[70.369545] (zed_wrapper) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[70.455775] (-) TimerEvent: {}
+[70.464649] (zed_wrapper) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[70.466035] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[70.553136] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[70.553486] (zed_wrapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[70.555826] (-) TimerEvent: {}
+[70.648990] (zed_wrapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[70.649336] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[70.655902] (-) TimerEvent: {}
+[70.726016] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[70.726357] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[70.756026] (-) TimerEvent: {}
+[70.811359] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[70.812502] (zed_wrapper) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[70.837422] (zed_wrapper) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[70.856090] (-) TimerEvent: {}
+[70.949885] (zed_wrapper) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[70.950491] (zed_wrapper) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  \n'}
+[70.956160] (-) TimerEvent: {}
+[70.969698] (zed_wrapper) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") \n'}
+[70.991695] (zed_wrapper) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found version "11.8") \n'}
+[70.994310] (zed_wrapper) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[71.024586] (zed_wrapper) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[71.024756] (zed_wrapper) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[71.056230] (-) TimerEvent: {}
+[71.156526] (-) TimerEvent: {}
+[71.256926] (-) TimerEvent: {}
+[71.260738] (zed_wrapper) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[71.287380] (zed_wrapper) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[71.332402] (zed_wrapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[71.340030] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[71.356973] (-) TimerEvent: {}
+[71.441835] (zed_wrapper) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[71.457051] (-) TimerEvent: {}
+[71.473561] (zed_wrapper) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[71.557190] (-) TimerEvent: {}
+[71.569482] (zed_wrapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[71.637904] (zed_wrapper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[71.639728] (zed_wrapper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[71.657240] (-) TimerEvent: {}
+[71.757489] (-) TimerEvent: {}
+[71.826445] (zed_wrapper) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[71.857569] (-) TimerEvent: {}
+[71.898322] (zed_wrapper) StdoutLine: {'line': b'-- Found zed_components: 0.2.0 (/home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake)\n'}
+[71.957641] (-) TimerEvent: {}
+[72.057903] (-) TimerEvent: {}
+[72.158197] (-) TimerEvent: {}
+[72.258548] (-) TimerEvent: {}
+[72.358863] (-) TimerEvent: {}
+[72.459182] (-) TimerEvent: {}
+[72.491387] (zed_wrapper) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[72.494452] (zed_wrapper) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[72.559250] (-) TimerEvent: {}
+[72.659517] (-) TimerEvent: {}
+[72.759799] (-) TimerEvent: {}
+[72.860063] (-) TimerEvent: {}
+[72.960326] (-) TimerEvent: {}
+[73.060590] (-) TimerEvent: {}
+[73.160862] (-) TimerEvent: {}
+[73.261141] (-) TimerEvent: {}
+[73.309501] (zed_wrapper) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[73.361214] (-) TimerEvent: {}
+[73.461507] (-) TimerEvent: {}
+[73.561881] (-) TimerEvent: {}
+[73.662236] (-) TimerEvent: {}
+[73.696195] (zed_wrapper) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[73.697840] (zed_wrapper) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[73.698303] (zed_wrapper) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_wrapper/src\n'}
+[73.698436] (zed_wrapper) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[73.699084] (zed_wrapper) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[73.699710] (zed_wrapper) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[73.701004] (zed_wrapper) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[73.701133] (zed_wrapper) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[73.701636] (zed_wrapper) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[73.706895] (zed_wrapper) StdoutLine: {'line': b'-- Configuring done\n'}
+[73.748159] (zed_wrapper) StdoutLine: {'line': b'-- Generating done\n'}
+[73.750908] (zed_wrapper) StdoutLine: {'line': b'-- Build files have been written to: /home/roboboat/ros2_ws/build/zed_wrapper\n'}
+[73.762295] (-) TimerEvent: {}
+[73.771344] (zed_wrapper) CommandEnded: {'returncode': 0}
+[73.772299] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'build'}
+[73.772680] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/ros2_ws/build/zed_wrapper', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/ros2_ws/build/zed_wrapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_wrapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[73.828820] (zed_wrapper) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zed_wrapper\x1b[0m\n'}
+[73.862385] (-) TimerEvent: {}
+[73.905931] (zed_wrapper) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o\x1b[0m\n'}
+[73.962467] (-) TimerEvent: {}
+[74.062748] (-) TimerEvent: {}
+[74.162975] (-) TimerEvent: {}
+[74.263192] (-) TimerEvent: {}
+[74.363378] (-) TimerEvent: {}
+[74.463584] (-) TimerEvent: {}
+[74.563758] (-) TimerEvent: {}
+[74.663949] (-) TimerEvent: {}
+[74.764123] (-) TimerEvent: {}
+[74.864298] (-) TimerEvent: {}
+[74.964452] (-) TimerEvent: {}
+[75.064609] (-) TimerEvent: {}
+[75.164778] (-) TimerEvent: {}
+[75.264944] (-) TimerEvent: {}
+[75.365112] (-) TimerEvent: {}
+[75.465299] (-) TimerEvent: {}
+[75.565491] (-) TimerEvent: {}
+[75.665756] (-) TimerEvent: {}
+[75.765940] (-) TimerEvent: {}
+[75.866103] (-) TimerEvent: {}
+[75.966256] (-) TimerEvent: {}
+[76.066417] (-) TimerEvent: {}
+[76.166613] (-) TimerEvent: {}
+[76.266787] (-) TimerEvent: {}
+[76.366943] (-) TimerEvent: {}
+[76.467099] (-) TimerEvent: {}
+[76.567295] (-) TimerEvent: {}
+[76.667613] (-) TimerEvent: {}
+[76.767989] (-) TimerEvent: {}
+[76.868269] (-) TimerEvent: {}
+[76.968698] (-) TimerEvent: {}
+[77.069062] (-) TimerEvent: {}
+[77.169470] (-) TimerEvent: {}
+[77.269902] (-) TimerEvent: {}
+[77.370332] (-) TimerEvent: {}
+[77.470734] (-) TimerEvent: {}
+[77.571095] (-) TimerEvent: {}
+[77.671503] (-) TimerEvent: {}
+[77.771814] (-) TimerEvent: {}
+[77.872106] (-) TimerEvent: {}
+[77.972388] (-) TimerEvent: {}
+[78.072713] (-) TimerEvent: {}
+[78.173124] (-) TimerEvent: {}
+[78.273498] (-) TimerEvent: {}
+[78.373856] (-) TimerEvent: {}
+[78.474259] (-) TimerEvent: {}
+[78.574608] (-) TimerEvent: {}
+[78.675003] (-) TimerEvent: {}
+[78.775339] (-) TimerEvent: {}
+[78.875634] (-) TimerEvent: {}
+[78.942614] (zed_wrapper) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable zed_wrapper\x1b[0m\n'}
+[78.975727] (-) TimerEvent: {}
+[79.076015] (-) TimerEvent: {}
+[79.176206] (-) TimerEvent: {}
+[79.243014] (zed_wrapper) StdoutLine: {'line': b'[100%] Built target zed_wrapper\n'}
+[79.259955] (zed_wrapper) CommandEnded: {'returncode': 0}
+[79.276326] (-) TimerEvent: {}
+[79.287750] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'install'}
+[79.288223] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboboat/ros2_ws/build/zed_wrapper'], 'cwd': '/home/roboboat/ros2_ws/build/zed_wrapper', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_wrapper'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[79.301727] (zed_wrapper) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[79.302273] (zed_wrapper) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[79.302920] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/lib/zed_wrapper/zed_wrapper\n'}
+[79.315031] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/common.yaml\n'}
+[79.326183] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zed.yaml\n'}
+[79.336999] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml\n'}
+[79.348000] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml\n'}
+[79.358536] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml\n'}
+[79.370116] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro\n'}
+[79.376385] (-) TimerEvent: {}
+[79.380784] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro\n'}
+[79.391686] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro\n'}
+[79.403330] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch/include/zed_camera.launch.py\n'}
+[79.414588] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch/zed.launch.py\n'}
+[79.425199] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch/zed2.launch.py\n'}
+[79.435898] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch/zed2i.launch.py\n'}
+[79.446746] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch/zedm.launch.py\n'}
+[79.457721] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper\n'}
+[79.468766] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper\n'}
+[79.476495] (-) TimerEvent: {}
+[79.479502] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh\n'}
+[79.490045] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv\n'}
+[79.500935] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/path.sh\n'}
+[79.512442] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/path.dsv\n'}
+[79.523958] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.bash\n'}
+[79.534724] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.sh\n'}
+[79.545775] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.zsh\n'}
+[79.556536] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.dsv\n'}
+[79.567352] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/package.dsv\n'}
+[79.576558] (-) TimerEvent: {}
+[79.578432] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper\n'}
+[79.589542] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake\n'}
+[79.600489] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake\n'}
+[79.611615] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_wrapper/share/zed_wrapper/package.xml\n'}
+[79.624940] (zed_wrapper) CommandEnded: {'returncode': 0}
+[79.677166] (-) TimerEvent: {}
+[79.682769] (zed_wrapper) JobEnded: {'identifier': 'zed_wrapper', 'rc': 0}
+[79.686117] (zed_ros2) JobStarted: {'identifier': 'zed_ros2'}
+[79.699860] (zed_ros2) JobProgress: {'identifier': 'zed_ros2', 'progress': 'cmake'}
+[79.700272] (zed_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_ros2', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_ros2'], 'cwd': '/home/roboboat/ros2_ws/build/zed_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[79.723016] (zed_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[79.752757] (zed_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[79.752979] (zed_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[79.777220] (-) TimerEvent: {}
+[79.877502] (-) TimerEvent: {}
+[79.977734] (-) TimerEvent: {}
+[79.990132] (zed_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[80.016455] (zed_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[80.077816] (-) TimerEvent: {}
+[80.105694] (zed_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[80.106732] (zed_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[80.107612] (zed_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[80.109968] (zed_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[80.112484] (zed_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[80.113444] (zed_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/roboboat/ros2_ws/build/zed_ros2\n'}
+[80.118332] (zed_ros2) CommandEnded: {'returncode': 0}
+[80.119126] (zed_ros2) JobProgress: {'identifier': 'zed_ros2', 'progress': 'build'}
+[80.119431] (zed_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/ros2_ws/build/zed_ros2', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/ros2_ws/build/zed_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[80.169378] (zed_ros2) CommandEnded: {'returncode': 0}
+[80.177931] (-) TimerEvent: {}
+[80.193183] (zed_ros2) JobProgress: {'identifier': 'zed_ros2', 'progress': 'install'}
+[80.193506] (zed_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboboat/ros2_ws/build/zed_ros2'], 'cwd': '/home/roboboat/ros2_ws/build/zed_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2579'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2380'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:62553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2614,unix/roboboat-desktop:/tmp/.ICE-unix/2614'), ('INVOCATION_ID', '73a7098b34fd4d2187014ba685dff2b3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ad6cad16_c6ef_47be_a4d0_f8590b7a4b1e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/ros2_ws/build/zed_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy')]), 'shell': False}
+[80.207031] (zed_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[80.207582] (zed_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[80.208116] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/ament_index/resource_index/package_run_dependencies/zed_ros2\n'}
+[80.219662] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/ament_index/resource_index/parent_prefix_path/zed_ros2\n'}
+[80.231065] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/environment/ament_prefix_path.sh\n'}
+[80.241824] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/environment/ament_prefix_path.dsv\n'}
+[80.252717] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/environment/path.sh\n'}
+[80.263630] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/environment/path.dsv\n'}
+[80.274404] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/local_setup.bash\n'}
+[80.278010] (-) TimerEvent: {}
+[80.285190] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/local_setup.sh\n'}
+[80.296367] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/local_setup.zsh\n'}
+[80.307102] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/local_setup.dsv\n'}
+[80.318459] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/package.dsv\n'}
+[80.329751] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/ament_index/resource_index/packages/zed_ros2\n'}
+[80.340672] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/cmake/zed_ros2Config.cmake\n'}
+[80.351459] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/cmake/zed_ros2Config-version.cmake\n'}
+[80.362343] (zed_ros2) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/ros2_ws/install/zed_ros2/share/zed_ros2/package.xml\n'}
+[80.375963] (zed_ros2) CommandEnded: {'returncode': 0}
+[80.379651] (-) TimerEvent: {}
+[80.430642] (zed_ros2) JobEnded: {'identifier': 'zed_ros2', 'rc': 0}
+[80.431675] (-) EventReactorShutdown: {}

@@ -1,0 +1,58 @@
+[0.054s] Invoking command in '/home/roboboat/ros2_ws/build/zed_display_rviz2': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/opt/ros/foxy /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-examples/zed_display_rviz2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_display_rviz2
+[0.128s] -- The C compiler identification is GNU 9.4.0
+[0.199s] -- The CXX compiler identification is GNU 9.4.0
+[0.205s] -- Check for working C compiler: /usr/bin/cc
+[0.289s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.290s] -- Detecting C compiler ABI info
+[0.376s] -- Detecting C compiler ABI info - done
+[0.388s] -- Detecting C compile features
+[0.388s] -- Detecting C compile features - done
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++
+[0.492s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.493s] -- Detecting CXX compiler ABI info
+[0.599s] -- Detecting CXX compiler ABI info - done
+[0.610s] -- Detecting CXX compile features
+[0.611s] -- Detecting CXX compile features - done
+[0.614s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.649s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.649s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.914s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.946s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.068s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.070s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.071s] -- Added test 'lint_cmake' to check CMake code style
+[1.072s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.073s] -- Added test 'xmllint' to check XML markup files
+[1.077s] -- Configuring done
+[1.087s] -- Generating done
+[1.088s] -- Build files have been written to: /home/roboboat/ros2_ws/build/zed_display_rviz2
+[1.089s] Invoked command in '/home/roboboat/ros2_ws/build/zed_display_rviz2' returned '0': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/opt/ros/foxy /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-examples/zed_display_rviz2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_display_rviz2
+[1.094s] Invoking command in '/home/roboboat/ros2_ws/build/zed_display_rviz2': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_display_rviz2 -- -j12 -l12
+[1.151s] Invoked command in '/home/roboboat/ros2_ws/build/zed_display_rviz2' returned '0': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_display_rviz2 -- -j12 -l12
+[1.187s] Invoking command in '/home/roboboat/ros2_ws/build/zed_display_rviz2': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_display_rviz2
+[1.201s] -- Install configuration: "Release"
+[1.201s] -- Execute custom install script
+[1.202s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/launch/display_zed.launch.py
+[1.216s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/launch/display_zed2.launch.py
+[1.231s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/launch/display_zed2i.launch.py
+[1.244s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/launch/display_zedm.launch.py
+[1.259s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/rviz2/zed.rviz
+[1.272s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/rviz2/zed2.rviz
+[1.289s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/rviz2/zed2i.rviz
+[1.303s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/rviz2/zedm.rviz
+[1.317s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/ament_index/resource_index/package_run_dependencies/zed_display_rviz2
+[1.330s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/ament_index/resource_index/parent_prefix_path/zed_display_rviz2
+[1.344s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/environment/ament_prefix_path.sh
+[1.357s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/environment/ament_prefix_path.dsv
+[1.369s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/environment/path.sh
+[1.383s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/environment/path.dsv
+[1.400s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.bash
+[1.413s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.sh
+[1.433s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.zsh
+[1.439s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/local_setup.dsv
+[1.452s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/package.dsv
+[1.466s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/ament_index/resource_index/packages/zed_display_rviz2
+[1.488s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/cmake/zed_display_rviz2Config.cmake
+[1.498s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/cmake/zed_display_rviz2Config-version.cmake
+[1.510s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_display_rviz2/share/zed_display_rviz2/package.xml
+[1.532s] Invoked command in '/home/roboboat/ros2_ws/build/zed_display_rviz2' returned '0': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_display_rviz2

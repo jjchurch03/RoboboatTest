@@ -1,0 +1,58 @@
+[0.113s] Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake --build /home/roboboat/ros2_ws/build/SamplesAndTutos -- -j12 -l12
+[2.946s] -- Configuring done
+[3.172s] -- Generating done
+[3.183s] -- Build files have been written to: /home/roboboat/ros2_ws/build/SamplesAndTutos
+[3.297s] [ 23%] Built target ZED_Camera_Control
+[3.298s] [ 23%] Built target ZED_Object_detection_image_viewer
+[3.298s] [ 23%] Built target ZED_Depth_Sensing
+[3.298s] [ 27%] Built target ZED_Positional_Tracking
+[3.298s] [ 28%] Built target ZED_Spatial_Mapping
+[3.298s] [ 30%] Built target ZED_ROI_Exposure
+[3.299s] [ 30%] Built target ZED_Plane_Detection
+[3.299s] [ 30%] Built target ZED_SVO_Recording
+[3.301s] [ 43%] Built target ZED_SVO_Export
+[3.301s] [ 47%] Built target ZED_Body_Tracking_Viewer
+[3.301s] [ 46%] Built target ZED_SVO_Playback
+[3.302s] [ 49%] Built target ZED_Object_detection_birds_eye_viewer
+[3.358s] [ 59%] Built target ZED_Tutorial_4
+[3.358s] [ 59%] Built target ZED_Tutorial_2
+[3.358s] [ 62%] Built target ZED_openGL
+[3.359s] [ 65%] Built target ZED_Streaming_Sender
+[3.361s] [ 71%] Built target ZED_Floor_Plane_Detection
+[3.361s] [ 71%] Built target ZED_Multi_Camera
+[3.362s] [ 66%] Built target ZED_Tutorial_3
+[3.362s] [ 78%] Built target ZED_Sensing_ROI
+[3.362s] [ 84%] Built target ZED_Streaming_Receiver
+[3.362s] [ 84%] Built target ZED_Point_Cloud_Mapping
+[3.362s] [ 84%] Built target ZED_Tutorial_1
+[3.370s] [ 85%] [32m[1mLinking CXX executable ZED_CUDA_Refocus[0m
+[3.416s] [ 97%] Built target ZED_Tutorial_8
+[3.416s] [ 97%] Built target ZED_Tutorial_6
+[3.416s] [ 97%] Built target ZED_Tutorial_7
+[3.417s] [ 97%] Built target ZED_Tutorial_5
+[3.656s] [100%] Built target ZED_CUDA_Refocus
+[3.692s] Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake --build /home/roboboat/ros2_ws/build/SamplesAndTutos -- -j12 -l12
+[3.766s] Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake --install /home/roboboat/ros2_ws/build/SamplesAndTutos
+[3.793s] -- Install configuration: "Release"
+[3.828s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Camera_Control
+[3.830s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Depth_Sensing
+[3.831s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_image_viewer
+[3.833s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_birds_eye_viewer
+[3.834s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_ROI_Exposure
+[3.835s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Body_Tracking_Viewer
+[3.836s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Plane_Detection
+[3.838s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Positional_Tracking
+[3.839s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Spatial_Mapping
+[3.841s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Export
+[3.842s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Playback
+[3.843s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Recording
+[3.845s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Receiver
+[3.846s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Sender
+[3.848s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Point_Cloud_Mapping
+[3.850s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Floor_Plane_Detection
+[3.851s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Sensing_ROI
+[3.853s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus
+[3.854s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus" to ""
+[3.855s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_openGL
+[3.856s] -- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Multi_Camera
+[3.872s] Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake --install /home/roboboat/ros2_ws/build/SamplesAndTutos

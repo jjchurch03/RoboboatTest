@@ -1,0 +1,86 @@
+[0.042s] Invoking command in '/home/roboboat/ros2_ws/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-examples/rviz-plugin-zed-od -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/rviz_plugin_zed_od
+[0.066s] -- Enabling tests requiring a display
+[0.066s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.098s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.383s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.409s] -- Found rviz_common: 8.2.7 (/opt/ros/foxy/share/rviz_common/cmake)
+[0.484s] -- Setting OGRE_DIR to: '/opt/ros/foxy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.490s] -- Found OGRE
+[0.490s] --   static     : OFF
+[0.490s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.490s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.491s] --   media      : /opt/ros/foxy/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.491s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.491s] -- OGRE_LIBRARY_DIRS: /opt/ros/foxy/opt/rviz_ogre_vendor/lib
+[0.491s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.491s] -- OGRE_PLUGIN_DIR: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/OGRE
+[0.491s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.491s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.491s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.491s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/foxy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.519s] -- Could not find freeimage library
+[0.711s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[0.711s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[0.726s] -- library: libassimp.so.5
+[0.860s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[0.943s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.949s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.325s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.678s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.680s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.951s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[2.969s] -- Found zed_interfaces: 0.3.0 (/home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake)
+[3.263s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.464s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.467s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.468s] -- Configured cppcheck include dirs: /home/roboboat/ros2_ws/src/zed-ros2-examples/rviz-plugin-zed-od/src/include;/home/roboboat/ros2_ws/src/zed-ros2-examples/rviz-plugin-zed-od/src/plugin/include;$<BUILD_INTERFACE:/home/roboboat/ros2_ws/src/zed-ros2-examples/rviz-plugin-zed-od/include>
+[3.468s] -- Configured cppcheck exclude dirs and/or files: 
+[3.470s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.471s] -- Configured cpplint exclude dirs and/or files: 
+[3.472s] -- Added test 'lint_cmake' to check CMake code style
+[3.474s] -- Added test 'uncrustify' to check C / C++ code style
+[3.475s] -- Configured uncrustify additional arguments: 
+[3.476s] -- Added test 'xmllint' to check XML markup files
+[3.478s] -- Added test 'clang_format' to check C / C++ code style
+[3.495s] -- Configuring done
+[3.627s] -- Generating done
+[3.633s] -- Build files have been written to: /home/roboboat/ros2_ws/build/rviz_plugin_zed_od
+[3.677s] Invoked command in '/home/roboboat/ros2_ws/build/rviz_plugin_zed_od' returned '0': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-examples/rviz-plugin-zed-od -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/rviz_plugin_zed_od
+[3.679s] Invoking command in '/home/roboboat/ros2_ws/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/roboboat/ros2_ws/build/rviz_plugin_zed_od -- -j12 -l12
+[3.945s] [ 20%] [34m[1mAutomatic MOC and UIC for target rviz_plugin_zed_od[0m
+[4.130s] [ 20%] Built target rviz_plugin_zed_od_autogen
+[4.346s] [100%] Built target rviz_plugin_zed_od
+[4.405s] Invoked command in '/home/roboboat/ros2_ws/build/rviz_plugin_zed_od' returned '0': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/roboboat/ros2_ws/build/rviz_plugin_zed_od -- -j12 -l12
+[4.860s] Invoking command in '/home/roboboat/ros2_ws/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/roboboat/ros2_ws/build/rviz_plugin_zed_od
+[4.910s] -- Install configuration: "Release"
+[4.914s] -- Execute custom install script
+[4.917s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od//plugins_description.xml
+[4.928s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/library_path.sh
+[4.929s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/library_path.dsv
+[4.931s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//visibility_control.hpp
+[4.933s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//zed_od_display.hpp
+[4.945s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/include/rviz_plugin_zed_od//zed_od_info.hpp
+[4.953s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/icons/ZedObjDet.png
+[4.955s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/ament_index/resource_index/package_run_dependencies/rviz_plugin_zed_od
+[4.957s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/ament_index/resource_index/parent_prefix_path/rviz_plugin_zed_od
+[4.959s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/ament_prefix_path.sh
+[4.962s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/ament_prefix_path.dsv
+[4.962s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/path.sh
+[4.962s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/environment/path.dsv
+[4.963s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.bash
+[4.963s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.sh
+[4.963s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.zsh
+[4.963s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/local_setup.dsv
+[4.964s] -- Symlinking: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/package.dsv
+[5.012s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/ament_index/resource_index/packages/rviz_plugin_zed_od
+[5.012s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_plugin_zed_od
+[5.021s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.022s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/ament_cmake_export_targets-extras.cmake
+[5.022s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.023s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odConfig.cmake
+[5.024s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odConfig-version.cmake
+[5.025s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/package.xml
+[5.025s] -- Up-to-date: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib/librviz_plugin_zed_od.so
+[5.027s] -- Up-to-date: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport.cmake
+[5.027s] -- Installing: /home/roboboat/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport-release.cmake
+[5.037s] Invoked command in '/home/roboboat/ros2_ws/build/rviz_plugin_zed_od' returned '0': CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/roboboat/ros2_ws/build/rviz_plugin_zed_od

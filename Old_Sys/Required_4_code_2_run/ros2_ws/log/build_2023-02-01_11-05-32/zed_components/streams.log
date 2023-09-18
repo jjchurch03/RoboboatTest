@@ -1,0 +1,96 @@
+[0.014s] Invoking command in '/home/roboboat/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_components
+[0.042s] -- Looking for sgemm_
+[0.133s] -- Looking for sgemm_ - not found
+[0.136s] -- Looking for pthread.h
+[0.224s] -- Looking for pthread.h - found
+[0.224s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.317s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.317s] -- Looking for pthread_create in pthreads
+[0.397s] -- Looking for pthread_create in pthreads - not found
+[0.397s] -- Looking for pthread_create in pthread
+[0.481s] -- Looking for pthread_create in pthread - found
+[0.482s] -- Found Threads: TRUE  
+[0.506s] -- Looking for sgemm_
+[0.615s] -- Looking for sgemm_ - found
+[0.615s] -- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  
+[0.642s] -- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") 
+[0.670s] -- Found CUDA: /usr/local/cuda (found version "11.8") 
+[0.672s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.702s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.702s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.938s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.963s] -- Found rcutils: 1.1.4 (/opt/ros/foxy/share/rcutils/cmake)
+[0.968s] -- Found zed_interfaces: 0.3.0 (/home/roboboat/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake)
+[0.987s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.994s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.090s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.121s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.213s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.561s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.638s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.642s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.862s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[1.965s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[1.979s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[2.370s] -- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[2.382s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[2.388s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[2.426s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.524s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.622s] -- Found stereo_msgs: 2.0.5 (/opt/ros/foxy/share/stereo_msgs/cmake)
+[2.772s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[2.833s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[2.851s] -- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)
+[2.904s] -- Found diagnostic_updater: 2.0.8 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[2.934s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[3.032s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.172s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.174s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.174s] -- Configured cppcheck include dirs: /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components/src/include;/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/include
+[3.174s] -- Configured cppcheck exclude dirs and/or files: 
+[3.175s] -- Added test 'lint_cmake' to check CMake code style
+[3.177s] -- Added test 'uncrustify' to check C / C++ code style
+[3.177s] -- Configured uncrustify additional arguments: 
+[3.177s] -- Added test 'xmllint' to check XML markup files
+[3.186s] -- Configuring done
+[3.237s] -- Generating done
+[3.240s] -- Build files have been written to: /home/roboboat/ros2_ws/build/zed_components
+[3.257s] Invoked command in '/home/roboboat/ros2_ws/build/zed_components' returned '0': AMENT_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_components
+[3.260s] Invoking command in '/home/roboboat/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_components -- -j12 -l12
+[3.311s] [35m[1mScanning dependencies of target zed_camera_component[0m
+[3.588s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_win_avg.cpp.o[0m
+[3.589s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o[0m
+[3.596s] [ 75%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o[0m
+[67.805s] [100%] [32m[1mLinking CXX shared library libzed_camera_component.so[0m
+[68.417s] [100%] Built target zed_camera_component
+[68.434s] Invoked command in '/home/roboboat/ros2_ws/build/zed_components' returned '0': AMENT_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_components -- -j12 -l12
+[68.468s] Invoking command in '/home/roboboat/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_components
+[68.479s] -- Install configuration: "Release"
+[68.479s] -- Execute custom install script
+[68.480s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/lib/libzed_camera_component.so
+[68.492s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//zed_camera_component.hpp
+[68.503s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//sl_tools.hpp
+[68.514s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//sl_win_avg.hpp
+[68.525s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/include/zed_components//visibility_control.hpp
+[68.536s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/library_path.sh
+[68.547s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/library_path.dsv
+[68.558s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components
+[68.568s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components
+[68.579s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/ament_prefix_path.sh
+[68.589s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv
+[68.600s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/path.sh
+[68.611s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/environment/path.dsv
+[68.622s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.bash
+[68.632s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.sh
+[68.643s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.zsh
+[68.654s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/local_setup.dsv
+[68.664s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/package.dsv
+[68.675s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/packages/zed_components
+[68.686s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components
+[68.697s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake
+[68.707s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake
+[68.718s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake
+[68.729s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake
+[68.739s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake
+[68.749s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_components/share/zed_components/package.xml
+[68.766s] Invoked command in '/home/roboboat/ros2_ws/build/zed_components' returned '0': AMENT_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_components

@@ -1,0 +1,6 @@
+Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-examples -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/SamplesAndTutos
+Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-examples -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/SamplesAndTutos
+Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake --build /home/roboboat/ros2_ws/build/SamplesAndTutos -- -j12 -l12
+Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake --build /home/roboboat/ros2_ws/build/SamplesAndTutos -- -j12 -l12
+Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake --install /home/roboboat/ros2_ws/build/SamplesAndTutos
+Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake --install /home/roboboat/ros2_ws/build/SamplesAndTutos

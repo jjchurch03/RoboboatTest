@@ -1,0 +1,90 @@
+[0.122s] Invoking command in '/home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces -- -j12 -l12
+[0.266s] [  3%] Built target zed_topic_benchmark_interfaces__cpp
+[0.271s] [ 12%] Built target zed_topic_benchmark_interfaces__rosidl_generator_c
+[0.320s] [ 35%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_c
+[0.320s] [ 41%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_cpp
+[0.320s] [ 41%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_cpp
+[0.324s] [ 51%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_c
+[0.332s] [ 61%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.379s] [ 70%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_fastrtps_c
+[0.423s] [ 70%] Built target zed_topic_benchmark_interfaces
+[0.458s] [ 74%] Built target zed_topic_benchmark_interfaces__py
+[0.506s] [ 80%] Built target zed_topic_benchmark_interfaces__python
+[0.556s] [100%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_c__pyext
+[0.556s] [100%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.556s] [100%] Built target zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.594s] Invoked command in '/home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces -- -j12 -l12
+[0.671s] Invoking command in '/home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces
+[0.695s] -- Install configuration: "Release"
+[0.696s] -- Execute custom install script
+[0.697s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/rosidl_interfaces/zed_topic_benchmark_interfaces
+[0.699s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/benchmark_stats_stamped.h
+[0.700s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__functions.h
+[0.700s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__struct.h
+[0.701s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__type_support.h
+[0.701s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.702s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/library_path.sh
+[0.702s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/library_path.dsv
+[0.703s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__rosidl_typesupport_fastrtps_c.h
+[0.704s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.705s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.707s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.707s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.708s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.709s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__rosidl_typesupport_introspection_c.h
+[0.710s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.711s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/benchmark_stats_stamped.hpp
+[0.711s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__builder.hpp
+[0.712s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__struct.hpp
+[0.713s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__traits.hpp
+[0.714s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/include/zed_topic_benchmark_interfaces/msg/detail/benchmark_stats_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.714s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/pythonpath.sh
+[0.715s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/pythonpath.dsv
+[0.715s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages/zed_topic_benchmark_interfaces/__init__.py
+[0.716s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages/zed_topic_benchmark_interfaces/msg/__init__.py
+[0.716s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages/zed_topic_benchmark_interfaces/msg/_benchmark_stats_stamped.py
+[0.717s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages/zed_topic_benchmark_interfaces/zed_topic_benchmark_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[0.718s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages/zed_topic_benchmark_interfaces/zed_topic_benchmark_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[0.719s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages/zed_topic_benchmark_interfaces/zed_topic_benchmark_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[0.720s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__python.so
+[0.721s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/msg/BenchmarkStatsStamped.idl
+[0.722s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/msg/BenchmarkStatsStamped.msg
+[0.722s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/package_run_dependencies/zed_topic_benchmark_interfaces
+[0.723s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/parent_prefix_path/zed_topic_benchmark_interfaces
+[0.723s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/ament_prefix_path.sh
+[0.724s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/ament_prefix_path.dsv
+[0.725s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/path.sh
+[0.725s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/path.dsv
+[0.726s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.bash
+[0.726s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.sh
+[0.727s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.zsh
+[0.727s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.dsv
+[0.728s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/package.dsv
+[0.751s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/packages/zed_topic_benchmark_interfaces
+[0.752s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.753s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.753s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.754s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.755s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.755s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.756s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.757s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfacesConfig.cmake
+[0.757s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfacesConfig-version.cmake
+[0.758s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/package.xml
+[0.758s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_generator_c.so
+[0.759s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_typesupport_introspection_c.so
+[0.760s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_typesupport_c.so
+[0.761s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.762s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/libzed_topic_benchmark_interfaces__rosidl_typesupport_cpp.so
+[0.823s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_generator_cExport.cmake
+[0.823s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_generator_cExport-release.cmake
+[0.824s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.824s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[0.825s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_cExport.cmake
+[0.825s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_cExport-release.cmake
+[0.826s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_generator_cppExport.cmake
+[0.827s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.827s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[0.828s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_cppExport.cmake
+[0.829s] -- Up-to-date: /home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfaces__rosidl_typesupport_cppExport-release.cmake
+[0.840s] Invoked command in '/home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_topic_benchmark_interfaces

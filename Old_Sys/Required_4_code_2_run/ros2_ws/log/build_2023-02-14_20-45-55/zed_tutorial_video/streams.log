@@ -1,0 +1,23 @@
+[0.091s] Invoking command in '/home/roboboat/ros2_ws/build/zed_tutorial_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_tutorial_video -- -j12 -l12
+[0.203s] [100%] Built target zed_tutorial_video
+[0.231s] Invoked command in '/home/roboboat/ros2_ws/build/zed_tutorial_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_tutorial_video -- -j12 -l12
+[0.300s] Invoking command in '/home/roboboat/ros2_ws/build/zed_tutorial_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_tutorial_video
+[0.320s] -- Install configuration: "Release"
+[0.320s] -- Execute custom install script
+[0.320s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/lib/zed_tutorial_video/zed_tutorial_video
+[0.320s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/ament_index/resource_index/package_run_dependencies/zed_tutorial_video
+[0.322s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/ament_index/resource_index/parent_prefix_path/zed_tutorial_video
+[0.322s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/ament_prefix_path.sh
+[0.322s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/ament_prefix_path.dsv
+[0.323s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/path.sh
+[0.323s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/path.dsv
+[0.324s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.bash
+[0.324s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.sh
+[0.325s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.zsh
+[0.325s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.dsv
+[0.326s] -- Symlinking: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/package.dsv
+[0.343s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/ament_index/resource_index/packages/zed_tutorial_video
+[0.344s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/cmake/zed_tutorial_videoConfig.cmake
+[0.345s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/cmake/zed_tutorial_videoConfig-version.cmake
+[0.346s] -- Up-to-date symlink: /home/roboboat/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/package.xml
+[0.352s] Invoked command in '/home/roboboat/ros2_ws/build/zed_tutorial_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_tutorial_video

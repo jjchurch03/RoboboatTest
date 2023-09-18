@@ -1,0 +1,54 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/roboboat/ros2_ws/build/SamplesAndTutos
+[ 23%] Built target ZED_Camera_Control
+[ 23%] Built target ZED_Object_detection_image_viewer
+[ 23%] Built target ZED_Depth_Sensing
+[ 27%] Built target ZED_Positional_Tracking
+[ 28%] Built target ZED_Spatial_Mapping
+[ 30%] Built target ZED_ROI_Exposure
+[ 30%] Built target ZED_Plane_Detection
+[ 30%] Built target ZED_SVO_Recording
+[ 43%] Built target ZED_SVO_Export
+[ 47%] Built target ZED_Body_Tracking_Viewer
+[ 46%] Built target ZED_SVO_Playback
+[ 49%] Built target ZED_Object_detection_birds_eye_viewer
+[ 59%] Built target ZED_Tutorial_4
+[ 59%] Built target ZED_Tutorial_2
+[ 62%] Built target ZED_openGL
+[ 65%] Built target ZED_Streaming_Sender
+[ 71%] Built target ZED_Floor_Plane_Detection
+[ 71%] Built target ZED_Multi_Camera
+[ 66%] Built target ZED_Tutorial_3
+[ 78%] Built target ZED_Sensing_ROI
+[ 84%] Built target ZED_Streaming_Receiver
+[ 84%] Built target ZED_Point_Cloud_Mapping
+[ 84%] Built target ZED_Tutorial_1
+[ 85%] [32m[1mLinking CXX executable ZED_CUDA_Refocus[0m
+[ 97%] Built target ZED_Tutorial_8
+[ 97%] Built target ZED_Tutorial_6
+[ 97%] Built target ZED_Tutorial_7
+[ 97%] Built target ZED_Tutorial_5
+[100%] Built target ZED_CUDA_Refocus
+-- Install configuration: "Release"
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Camera_Control
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Depth_Sensing
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_image_viewer
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_birds_eye_viewer
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_ROI_Exposure
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Body_Tracking_Viewer
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Plane_Detection
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Positional_Tracking
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Spatial_Mapping
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Export
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Playback
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Recording
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Receiver
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Sender
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Point_Cloud_Mapping
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Floor_Plane_Detection
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Sensing_ROI
+-- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus
+-- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus" to ""
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_openGL
+-- Up-to-date: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Multi_Camera

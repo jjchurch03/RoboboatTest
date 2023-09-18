@@ -1,0 +1,7 @@
+*** WARNING *** ROS2 foxy is not supported. This package will not be installed.
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    AMENT_CMAKE_SYMLINK_INSTALL
+
+

@@ -1,0 +1,6 @@
+Invoking command in '/home/roboboat/ros2_ws/build/zed_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed-ros2-interfaces -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_interfaces
+Invoked command in '/home/roboboat/ros2_ws/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-ros2-wrapper/zed-ros2-interfaces -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/zed_interfaces
+Invoking command in '/home/roboboat/ros2_ws/build/zed_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_interfaces -- -j12 -l12
+Invoked command in '/home/roboboat/ros2_ws/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/ros2_ws/build/zed_interfaces -- -j12 -l12
+Invoking command in '/home/roboboat/ros2_ws/build/zed_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_interfaces
+Invoked command in '/home/roboboat/ros2_ws/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/ros2_ws/build/zed_interfaces

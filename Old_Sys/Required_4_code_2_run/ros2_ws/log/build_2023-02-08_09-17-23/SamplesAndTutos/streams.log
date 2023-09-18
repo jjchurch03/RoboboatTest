@@ -1,0 +1,1013 @@
+[0.101s] Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-examples -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/SamplesAndTutos
+[0.258s] -- The C compiler identification is GNU 9.4.0
+[0.364s] -- The CXX compiler identification is GNU 9.4.0
+[0.378s] -- Check for working C compiler: /usr/bin/cc
+[0.493s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.502s] -- Detecting C compiler ABI info
+[0.609s] -- Detecting C compiler ABI info - done
+[0.638s] -- Detecting C compile features
+[0.639s] -- Detecting C compile features - done
+[0.645s] -- Check for working CXX compiler: /usr/bin/c++
+[0.762s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.762s] -- Detecting CXX compiler ABI info
+[0.878s] -- Detecting CXX compiler ABI info - done
+[0.912s] -- Detecting CXX compile features
+[0.912s] -- Detecting CXX compile features - done
+[0.928s] -- Looking for sgemm_
+[1.035s] -- Looking for sgemm_ - not found
+[1.039s] -- Looking for pthread.h
+[1.153s] -- Looking for pthread.h - found
+[1.153s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.269s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.269s] -- Looking for pthread_create in pthreads
+[1.363s] -- Looking for pthread_create in pthreads - not found
+[1.363s] -- Looking for pthread_create in pthread
+[1.472s] -- Looking for pthread_create in pthread - found
+[1.473s] -- Found Threads: TRUE  
+[1.503s] -- Looking for sgemm_
+[1.661s] -- Looking for sgemm_ - found
+[1.661s] -- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  
+[1.717s] -- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") 
+[1.746s] -- Found OpenCV: /usr (found version "4.5.4") 
+[1.762s] -- Found CUDA: /usr/local/cuda (found suitable version "11.8", minimum required is "11.4") 
+[1.839s] -- Found GLUT: /usr/lib/aarch64-linux-gnu/libglut.so  
+[1.898s] -- Found GLEW: /usr/include (found version "2.1.0") 
+[1.907s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[4.435s] -- Configuring done
+[4.581s] -- Generating done
+[4.589s] -- Build files have been written to: /home/roboboat/ros2_ws/build/SamplesAndTutos
+[4.631s] Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake /home/roboboat/ros2_ws/src/zed-examples -DCMAKE_INSTALL_PREFIX=/home/roboboat/ros2_ws/install/SamplesAndTutos
+[4.636s] Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake --build /home/roboboat/ros2_ws/build/SamplesAndTutos -- -j12 -l12
+[4.705s] [35m[1mScanning dependencies of target ZED_Object_detection_image_viewer[0m
+[4.705s] [35m[1mScanning dependencies of target ZED_ROI_Exposure[0m
+[4.705s] [35m[1mScanning dependencies of target ZED_Object_detection_birds_eye_viewer[0m
+[4.705s] [35m[1mScanning dependencies of target ZED_Body_Tracking_Viewer[0m
+[4.705s] [35m[1mScanning dependencies of target ZED_SVO_Playback[0m
+[4.705s] [35m[1mScanning dependencies of target ZED_Plane_Detection[0m
+[4.705s] [35m[1mScanning dependencies of target ZED_SVO_Export[0m
+[4.706s] [35m[1mScanning dependencies of target ZED_Positional_Tracking[0m
+[4.706s] [35m[1mScanning dependencies of target ZED_Spatial_Mapping[0m
+[4.709s] [35m[1mScanning dependencies of target ZED_Depth_Sensing[0m
+[4.709s] [35m[1mScanning dependencies of target ZED_Camera_Control[0m
+[4.714s] [35m[1mScanning dependencies of target ZED_SVO_Recording[0m
+[4.781s] [  1%] [32mBuilding CXX object svo recording/recording/cpp/CMakeFiles/ZED_SVO_Recording.dir/src/main.cpp.o[0m
+[4.792s] [  4%] [32mBuilding CXX object depth sensing/cpp/CMakeFiles/ZED_Depth_Sensing.dir/src/GLViewer.cpp.o[0m
+[4.792s] [  4%] [32mBuilding CXX object camera control/cpp/CMakeFiles/ZED_Camera_Control.dir/src/main.cpp.o[0m
+[4.793s] [  5%] [32mBuilding CXX object plane detection/overview/cpp/CMakeFiles/ZED_Plane_Detection.dir/src/GLViewer.cpp.o[0m
+[4.794s] [  8%] [32mBuilding CXX object object detection/image viewer/cpp/CMakeFiles/ZED_Object_detection_image_viewer.dir/src/GLViewer.cpp.o[0m
+[4.794s] [ 10%] [32mBuilding CXX object spatial mapping/overview/cpp/CMakeFiles/ZED_Spatial_Mapping.dir/src/GLViewer.cpp.o[0m
+[4.794s] [ 10%] [32mBuilding CXX object positional tracking/cpp/CMakeFiles/ZED_Positional_Tracking.dir/src/GLViewer.cpp.o[0m
+[4.806s] [ 11%] [32mBuilding CXX object camera roi/auto exposure/cpp/CMakeFiles/ZED_ROI_Exposure.dir/src/main.cpp.o[0m
+[4.808s] [ 13%] [32mBuilding CXX object svo recording/export/cpp/CMakeFiles/ZED_SVO_Export.dir/src/main.cpp.o[0m
+[4.812s] [ 14%] [32mBuilding CXX object svo recording/playback/cpp/CMakeFiles/ZED_SVO_Playback.dir/src/main.cpp.o[0m
+[4.817s] [ 15%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/BatchSystemHandler.cpp.o[0m
+[4.825s] [ 17%] [32mBuilding CXX object body tracking/cpp/CMakeFiles/ZED_Body_Tracking_Viewer.dir/src/GLViewer.cpp.o[0m
+[6.145s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:25:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.145s]    25 | [01;35m[K"#version 330 core\n"[m[K
+[6.145s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.145s]    26 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.145s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.146s]    27 | [01;35m[K"layout(location = 1) in vec3 in_Color;\n"[m[K
+[6.146s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.146s]    28 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.146s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.146s]    29 | [01;35m[K"out vec3 b_color;\n"[m[K
+[6.146s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.146s]    30 | [01;35m[K"void main() {\n"[m[K
+[6.146s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.146s]    31 | [01;35m[K"   b_color = in_Color;\n"[m[K
+[6.146s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.146s]    32 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.147s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.147s]    33 | [01;35m[K"}"[m[K;
+[6.147s]       | [01;35m[K~~~[m[K
+[6.147s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:36:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.147s]    36 | [01;35m[K"#version 330 core\n"[m[K
+[6.147s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.147s]    37 | [01;35m[K"in vec3 b_color;\n"[m[K
+[6.147s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.147s]    38 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[6.147s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.147s]    39 | [01;35m[K"void main() {\n"[m[K
+[6.148s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.148s]    40 | [01;35m[K"   out_Color = vec4(b_color, 1);\n"[m[K
+[6.148s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.148s]    41 | [01;35m[K"}"[m[K;
+[6.148s]       | [01;35m[K~~~[m[K
+[6.162s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:495:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.162s]   495 | [01;35m[K"#version 330 core\n"[m[K
+[6.162s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.162s]   496 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+[6.162s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.162s]   497 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.163s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.163s]   498 | [01;35m[K"out vec4 b_color;\n"[m[K
+[6.163s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.163s]   499 | [01;35m[K"void main() {\n"[m[K
+[6.163s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.163s]   500 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+[6.163s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.163s]   501 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+[6.163s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.163s]   502 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+[6.163s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.164s]   503 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+[6.164s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.164s]   504 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+[6.164s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.164s]   505 | [01;35m[K"}"[m[K;
+[6.164s]       | [01;35m[K~~~[m[K
+[6.164s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/depth sensing/cpp/src/GLViewer.cpp:508:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.164s]   508 | [01;35m[K"#version 330 core\n"[m[K
+[6.164s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.164s]   509 | [01;35m[K"in vec4 b_color;\n"[m[K
+[6.164s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.164s]   510 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[6.165s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.165s]   511 | [01;35m[K"void main() {\n"[m[K
+[6.165s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.165s]   512 | [01;35m[K"   out_Color = b_color;\n"[m[K
+[6.165s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.165s]   513 | [01;35m[K"}"[m[K;
+[6.165s]       | [01;35m[K~~~[m[K
+[6.213s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:24:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.213s]    24 | [01;35m[K"#version 330 core\n"[m[K
+[6.213s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.213s]    25 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.213s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.213s]    26 | [01;35m[K"layout(location = 1) in float in_dist;\n"[m[K
+[6.214s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.214s]    27 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.214s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.214s]    28 | [01;35m[K"uniform vec3 u_color;\n"[m[K
+[6.214s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.214s]    29 | [01;35m[K"out vec3 b_color;\n"[m[K
+[6.214s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.214s]    30 | [01;35m[K"out float distance;\n"[m[K
+[6.214s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.214s]    31 | [01;35m[K"void main() {\n"[m[K
+[6.214s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.214s]    32 | [01;35m[K"   b_color = u_color;\n"[m[K
+[6.215s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.215s]    33 | [01;35m[K"   distance = in_dist;\n"[m[K
+[6.215s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.215s]    34 | [01;35m[K"   gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.215s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.215s]    35 | [01;35m[K"}"[m[K;
+[6.215s]       | [01;35m[K~~~[m[K
+[6.215s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:38:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.215s]    38 | [01;35m[K"#version 330 core\n"[m[K
+[6.215s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.215s]    39 | [01;35m[K"in vec3 b_color;\n"[m[K
+[6.216s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.216s]    40 | [01;35m[K"in float distance;\n"[m[K
+[6.216s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.216s]    41 | [01;35m[K"layout(location = 0) out vec4 color;\n"[m[K
+[6.216s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.216s]    42 | [01;35m[K"void main() {\n"[m[K
+[6.216s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.216s]    43 | [01;35m[K"   color = vec4(b_color,distance);\n"[m[K
+[6.216s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.216s]    44 | [01;35m[K"}"[m[K;
+[6.216s]       | [01;35m[K~~~[m[K
+[6.216s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:47:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.216s]    47 | [01;35m[K"#version 330 core\n"[m[K
+[6.217s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.217s]    48 | [01;35m[K" in vec2 UV;\n"[m[K
+[6.217s]       | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+[6.217s]    49 | [01;35m[K" out vec4 color;\n"[m[K
+[6.217s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.217s]    50 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+[6.217s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.217s]    51 | [01;35m[K" uniform bool revert;\n"[m[K
+[6.217s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.217s]    52 | [01;35m[K" uniform bool rgbflip;\n"[m[K
+[6.217s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.217s]    53 | [01;35m[K" void main() {\n"[m[K
+[6.218s]       | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+[6.218s]    54 | [01;35m[K"    vec2 scaler  =revert?vec2(UV.x,1.f - UV.y):vec2(UV.x,UV.y);\n"[m[K
+[6.218s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.218s]    55 | [01;35m[K"    vec3 rgbcolor = rgbflip?vec3(texture(texImage, scaler).zyx):vec3(texture(texImage, scaler).xyz);\n"[m[K
+[6.218s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.218s]    56 | [01;35m[K"    color = vec4(rgbcolor,1);\n"[m[K
+[6.218s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.218s]    57 | [01;35m[K"}"[m[K;
+[6.218s]       | [01;35m[K~~~[m[K
+[6.218s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/overview/cpp/src/GLViewer.cpp:60:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.218s]    60 | [01;35m[K"#version 330\n"[m[K
+[6.218s]       | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.218s]    61 | [01;35m[K"layout(location = 0) in vec3 vert;\n"[m[K
+[6.219s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.219s]    62 | [01;35m[K"out vec2 UV;"[m[K
+[6.219s]       | [01;35m[K~~~~~~~~~~~~~~[m[K
+[6.219s]    63 | [01;35m[K"void main() {\n"[m[K
+[6.219s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.219s]    64 | [01;35m[K"   UV = (vert.xy+vec2(1,1))/2;\n"[m[K
+[6.219s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.219s]    65 | [01;35m[K" gl_Position = vec4(vert, 1);\n"[m[K
+[6.219s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.219s]    66 | [01;35m[K"}\n"[m[K;
+[6.219s]       | [01;35m[K~~~~~[m[K
+[6.244s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/positional tracking/cpp/src/GLViewer.cpp:23:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.245s]    23 | [01;35m[K"#version 330 core\n"[m[K
+[6.245s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.245s]    24 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.245s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.245s]    25 | [01;35m[K"layout(location = 1) in vec3 in_Color;\n"[m[K
+[6.245s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.245s]    26 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.245s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.246s]    27 | [01;35m[K"out vec3 b_color;\n"[m[K
+[6.246s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.246s]    28 | [01;35m[K"void main() {\n"[m[K
+[6.246s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.246s]    29 | [01;35m[K"   b_color = in_Color;\n"[m[K
+[6.246s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.246s]    30 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.246s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.246s]    31 | [01;35m[K"}"[m[K;
+[6.246s]       | [01;35m[K~~~[m[K
+[6.246s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/positional tracking/cpp/src/GLViewer.cpp:34:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.247s]    34 | [01;35m[K"#version 330 core\n"[m[K
+[6.247s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.247s]    35 | [01;35m[K"in vec3 b_color;\n"[m[K
+[6.247s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.247s]    36 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[6.247s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.247s]    37 | [01;35m[K"void main() {\n"[m[K
+[6.247s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.247s]    38 | [01;35m[K"   out_Color = vec4(b_color, 1);\n"[m[K
+[6.247s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.248s]    39 | [01;35m[K"}"[m[K;
+[6.248s]       | [01;35m[K~~~[m[K
+[6.294s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:9:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.294s]     9 | [01;35m[K"#version 330 core\n"[m[K
+[6.294s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.294s]    10 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.294s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.294s]    11 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+[6.295s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.295s]    12 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.295s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.295s]    13 | [01;35m[K"out vec4 b_color;\n"[m[K
+[6.295s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.295s]    14 | [01;35m[K"void main() {\n"[m[K
+[6.295s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.295s]    15 | [01;35m[K"   b_color = in_Color;\n"[m[K
+[6.295s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.295s]    16 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.295s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.295s]    17 | [01;35m[K"}"[m[K;
+[6.296s]       | [01;35m[K~~~[m[K
+[6.296s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:20:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.296s]    20 | [01;35m[K"#version 330 core\n"[m[K
+[6.296s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.296s]    21 | [01;35m[K"in vec4 b_color;\n"[m[K
+[6.296s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.296s]    22 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[6.296s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.296s]    23 | [01;35m[K"void main() {\n"[m[K
+[6.296s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.296s]    24 | [01;35m[K" float gamma = 2.2;\n"[m[K
+[6.296s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.297s]    25 | [01;35m[K"   out_Color = b_color;//pow(b_color, vec4(1.0/gamma));;\n"[m[K
+[6.297s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.297s]    26 | [01;35m[K"}"[m[K;
+[6.297s]       | [01;35m[K~~~[m[K
+[6.297s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:29:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.297s]    29 | [01;35m[K"#version 330 core\n"[m[K
+[6.297s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.297s]    30 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.297s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.297s]    31 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+[6.297s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.297s]    32 | [01;35m[K"layout(location = 2) in vec3 in_Normal;\n"[m[K
+[6.297s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.298s]    33 | [01;35m[K"out vec4 b_color;\n"[m[K
+[6.298s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.298s]    34 | [01;35m[K"out vec3 b_position;\n"[m[K
+[6.298s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.298s]    35 | [01;35m[K"out vec3 b_normal;\n"[m[K
+[6.298s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.298s]    36 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.298s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.298s]    37 | [01;35m[K"uniform vec4 u_color;\n"[m[K
+[6.298s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.298s]    38 | [01;35m[K"void main() {\n"[m[K
+[6.298s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.299s]    39 | [01;35m[K"   b_color = in_Color;\n"[m[K
+[6.299s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.299s]    40 | [01;35m[K"   b_position = in_Vertex;\n"[m[K
+[6.299s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.299s]    41 | [01;35m[K"   b_normal = in_Normal;\n"[m[K
+[6.299s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.299s]    42 | [01;35m[K" gl_Position =  u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.299s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.299s]    43 | [01;35m[K"}"[m[K;
+[6.299s]       | [01;35m[K~~~[m[K
+[6.299s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:46:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.299s]    46 | [01;35m[K"#version 330 core\n"[m[K
+[6.300s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.300s]    47 | [01;35m[K"in vec4 b_color;\n"[m[K
+[6.300s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.300s]    48 | [01;35m[K"in vec3 b_position;\n"[m[K
+[6.300s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.300s]    49 | [01;35m[K"in vec3 b_normal;\n"[m[K
+[6.300s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.300s]    50 | [01;35m[K"out vec4 out_Color;\n"[m[K
+[6.300s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.300s]    51 | [01;35m[K"void main() {\n"[m[K
+[6.300s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.300s]    52 | [01;35m[K" vec3 lightPosition = vec3(0, 10000, 0);\n"[m[K
+[6.300s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.301s]    53 | [01;35m[K" vec3 lightColor = vec3(1,1,1);\n"[m[K
+[6.301s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.301s]    54 | [01;35m[K" float ambientStrength = 0.4;\n"[m[K
+[6.301s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.301s]    55 | [01;35m[K" vec3 ambient = ambientStrength * lightColor;\n"[m[K
+[6.301s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.301s]    56 | [01;35m[K" vec3 lightDir = normalize(lightPosition - b_position);\n"[m[K
+[6.301s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.301s]    57 | [01;35m[K" float diffuse = (1 - 0) * max(dot(b_normal, lightDir), 0.0);\n"[m[K
+[6.301s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.301s]    58 | [01;35m[K"   out_Color = vec4(b_color.rgb * (diffuse + ambient), 1);\n"[m[K
+[6.301s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.302s]    59 | [01;35m[K"}"[m[K;
+[6.302s]       | [01;35m[K~~~[m[K
+[6.337s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:903:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.338s]   903 | [01;35m[K"#version 330 core\n"[m[K
+[6.338s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.338s]   904 | [01;35m[K" in vec2 UV;\n"[m[K
+[6.338s]       | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+[6.338s]   905 | [01;35m[K" out vec4 color;\n"[m[K
+[6.338s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.338s]   906 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+[6.338s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.339s]   907 | [01;35m[K" void main() {\n"[m[K
+[6.339s]       | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+[6.339s]   908 | [01;35m[K" vec2 scaler  =vec2(UV.x,1.f - UV.y);\n"[m[K
+[6.339s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.339s]   909 | [01;35m[K" vec3 rgbcolor = vec3(texture(texImage, scaler).zyx);\n"[m[K
+[6.339s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.340s]   910 | [01;35m[K" vec3 color_rgb = pow(rgbcolor, vec3(1.65f));\n"[m[K
+[6.340s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.340s]   911 | [01;35m[K" color = vec4(color_rgb,1);\n"[m[K
+[6.340s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.340s]   912 | [01;35m[K"}"[m[K;
+[6.340s]       | [01;35m[K~~~[m[K
+[6.340s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:915:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.340s]   915 | [01;35m[K"#version 330\n"[m[K
+[6.340s]       | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.340s]   916 | [01;35m[K"layout(location = 0) in vec3 vert;\n"[m[K
+[6.340s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.340s]   917 | [01;35m[K"out vec2 UV;"[m[K
+[6.341s]       | [01;35m[K~~~~~~~~~~~~~~[m[K
+[6.341s]   918 | [01;35m[K"void main() {\n"[m[K
+[6.341s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.341s]   919 | [01;35m[K" UV = (vert.xy+vec2(1,1))* .5f;\n"[m[K
+[6.341s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.341s]   920 | [01;35m[K" gl_Position = vec4(vert, 1);\n"[m[K
+[6.341s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.341s]   921 | [01;35m[K"}\n"[m[K;
+[6.341s]       | [01;35m[K~~~~~[m[K
+[6.341s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:989:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.341s]   989 | [01;35m[K"#version 330 core\n"[m[K
+[6.341s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.341s]   990 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+[6.342s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.342s]   991 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.342s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.342s]   992 | [01;35m[K"out vec4 b_color;\n"[m[K
+[6.342s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.342s]   993 | [01;35m[K"void main() {\n"[m[K
+[6.342s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.342s]   994 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+[6.342s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.342s]   995 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+[6.342s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.342s]   996 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+[6.343s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.343s]   997 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+[6.343s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.343s]   998 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+[6.343s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.343s]   999 | [01;35m[K"}"[m[K;
+[6.343s]       | [01;35m[K~~~[m[K
+[6.343s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/body tracking/cpp/src/GLViewer.cpp:1002:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.343s]  1002 | [01;35m[K"#version 330 core\n"[m[K
+[6.343s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.343s]  1003 | [01;35m[K"in vec4 b_color;\n"[m[K
+[6.343s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.344s]  1004 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[6.344s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.344s]  1005 | [01;35m[K"void main() {\n"[m[K
+[6.344s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.344s]  1006 | [01;35m[K"   out_Color = b_color;\n"[m[K
+[6.344s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.344s]  1007 | [01;35m[K"}"[m[K;
+[6.344s]       | [01;35m[K~~~[m[K
+[6.408s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:9:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.408s]     9 |         [01;35m[K"#version 330 core\n"[m[K
+[6.409s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.409s]    10 | [01;35m[K        "layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.409s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.409s]    11 | [01;35m[K        "layout(location = 1) in vec4 in_Color;\n"[m[K
+[6.409s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.409s]    12 | [01;35m[K        "uniform mat4 u_mvpMatrix;\n"[m[K
+[6.409s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.409s]    13 | [01;35m[K        "out vec4 b_color;\n"[m[K
+[6.409s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.409s]    14 | [01;35m[K        "void main() {\n"[m[K
+[6.409s]       |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.409s]    15 | [01;35m[K        "   b_color = in_Color;\n"[m[K
+[6.410s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.410s]    16 | [01;35m[K        " gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.410s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.410s]    17 | [01;35m[K        "}"[m[K;
+[6.410s]       |         [01;35m[K~~~[m[K
+[6.410s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:20:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.410s]    20 |         [01;35m[K"#version 330 core\n"[m[K
+[6.410s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.410s]    21 | [01;35m[K        "in vec4 b_color;\n"[m[K
+[6.410s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.410s]    22 | [01;35m[K        "layout(location = 0) out vec4 out_Color;\n"[m[K
+[6.410s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.411s]    23 | [01;35m[K        "void main() {\n"[m[K
+[6.411s]       |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.411s]    24 | [01;35m[K        " float gamma = 2.2;\n"[m[K
+[6.411s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.411s]    25 | [01;35m[K        "   out_Color = b_color;//pow(b_color, vec4(1.0/gamma));;\n"[m[K
+[6.411s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.411s]    26 | [01;35m[K        "}"[m[K;
+[6.411s]       |         [01;35m[K~~~[m[K
+[6.412s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:29:3:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.412s]    29 |   [01;35m[K"#version 330 core\n"[m[K
+[6.412s]       |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.412s]    30 | [01;35m[K  "layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.412s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.412s]    31 | [01;35m[K  "layout(location = 1) in vec4 in_Color;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.413s]    32 | [01;35m[K  "layout(location = 2) in vec3 in_Normal;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.413s]    33 | [01;35m[K  "out vec4 b_color;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.413s]    34 | [01;35m[K  "out vec3 b_position;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.413s]    35 | [01;35m[K  "out vec3 b_normal;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.413s]    36 | [01;35m[K  "uniform mat4 u_mvpMatrix;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.413s]    37 | [01;35m[K  "uniform vec4 u_color;\n"[m[K
+[6.413s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.414s]    38 | [01;35m[K  "void main() {\n"[m[K
+[6.414s]       |   [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.414s]    39 | [01;35m[K  "   b_color = in_Color;\n"[m[K
+[6.414s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.414s]    40 | [01;35m[K  "   b_position = in_Vertex;\n"[m[K
+[6.414s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.414s]    41 | [01;35m[K  "   b_normal = in_Normal;\n"[m[K
+[6.414s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.414s]    42 | [01;35m[K  " gl_Position =  u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.414s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.414s]    43 | [01;35m[K  "}"[m[K;
+[6.414s]       |   [01;35m[K~~~[m[K
+[6.415s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:46:3:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.415s]    46 |   [01;35m[K"#version 330 core\n"[m[K
+[6.415s]       |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.416s]    47 | [01;35m[K  "in vec4 b_color;\n"[m[K
+[6.416s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.416s]    48 | [01;35m[K  "in vec3 b_position;\n"[m[K
+[6.416s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.416s]    49 | [01;35m[K  "in vec3 b_normal;\n"[m[K
+[6.416s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.416s]    50 | [01;35m[K  "out vec4 out_Color;\n"[m[K
+[6.416s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.416s]    51 | [01;35m[K  "void main() {\n"[m[K
+[6.417s]       |   [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.417s]    52 | [01;35m[K  " vec3 lightPosition = vec3(0, 10, 0);\n"[m[K
+[6.417s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.417s]    53 | [01;35m[K  " vec3 lightColor = vec3(1,1,1);\n"[m[K
+[6.417s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.417s]    54 | [01;35m[K  " float ambientStrength = 0.3;\n"[m[K
+[6.417s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.417s]    55 | [01;35m[K  " vec3 ambient = ambientStrength * lightColor;\n"[m[K
+[6.417s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.417s]    56 | [01;35m[K  " vec3 norm = normalize(b_normal); \n"[m[K
+[6.417s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.417s]    57 | [01;35m[K  " vec3 lightDir = normalize(lightPosition - b_position);\n"[m[K
+[6.418s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.418s]    58 | [01;35m[K  " float diffuse = (1 - ambientStrength) * max(dot(b_normal, lightDir), 0.0);\n"[m[K
+[6.418s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.418s]    59 | [01;35m[K  "   out_Color = vec4(b_color.rgb * (diffuse + ambient), 1);\n"[m[K
+[6.418s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.418s]    60 | [01;35m[K  "}"[m[K;
+[6.418s]       |   [01;35m[K~~~[m[K
+[6.474s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:33:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.474s]    33 | [01;35m[K"#version 330 core\n"[m[K
+[6.474s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.474s]    34 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[6.475s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.475s]    35 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.475s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.475s]    36 | [01;35m[K"uniform vec3 u_color;\n"[m[K
+[6.475s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.475s]    37 | [01;35m[K"out vec3 b_color;\n"[m[K
+[6.475s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.475s]    38 | [01;35m[K"void main() {\n"[m[K
+[6.475s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.475s]    39 | [01;35m[K"   b_color = u_color;\n"[m[K
+[6.475s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.475s]    40 | [01;35m[K"   gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[6.476s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.476s]    41 | [01;35m[K"}"[m[K;
+[6.476s]       | [01;35m[K~~~[m[K
+[6.476s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:44:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.476s]    44 | [01;35m[K"#version 330 core\n"[m[K
+[6.477s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.477s]    45 | [01;35m[K"layout(location = 0) in vec4 in_Vertex;\n"[m[K
+[6.477s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.477s]    46 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[6.477s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.477s]    47 | [01;35m[K"uniform vec3 u_color;\n"[m[K
+[6.477s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.477s]    48 | [01;35m[K"out vec3 b_color;\n"[m[K
+[6.477s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.477s]    49 | [01;35m[K"void main() {\n"[m[K
+[6.477s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.477s]    50 | [01;35m[K"   b_color = u_color;\n"[m[K
+[6.478s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.478s]    51 | [01;35m[K"   gl_Position = u_mvpMatrix * vec4(in_Vertex.xyz, 1);\n"[m[K
+[6.478s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.478s]    52 | [01;35m[K"}"[m[K;
+[6.478s]       | [01;35m[K~~~[m[K
+[6.478s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:55:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.478s]    55 | [01;35m[K"#version 330 core\n"[m[K
+[6.478s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.478s]    56 | [01;35m[K"in vec3 b_color;\n"[m[K
+[6.478s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.478s]    57 | [01;35m[K"layout(location = 0) out vec4 color;\n"[m[K
+[6.478s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.479s]    58 | [01;35m[K"void main() {\n"[m[K
+[6.479s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.479s]    59 | [01;35m[K"   color = vec4(b_color,1);\n"[m[K
+[6.479s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.479s]    60 | [01;35m[K"}"[m[K;
+[6.479s]       | [01;35m[K~~~[m[K
+[6.479s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:63:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.479s]    63 | [01;35m[K"#version 330 core\n"[m[K
+[6.479s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.479s]    64 | [01;35m[K" in vec2 UV;\n"[m[K
+[6.479s]       | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+[6.479s]    65 | [01;35m[K" out vec4 color;\n"[m[K
+[6.479s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    66 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+[6.480s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    67 | [01;35m[K" uniform bool revert;\n"[m[K
+[6.480s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    68 | [01;35m[K" uniform bool rgbflip;\n"[m[K
+[6.480s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    69 | [01;35m[K" void main() {\n"[m[K
+[6.480s]       | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    70 | [01;35m[K"    vec2 scaler  =revert?vec2(UV.x,1.f - UV.y):vec2(UV.x,UV.y);\n"[m[K
+[6.480s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    71 | [01;35m[K"    vec3 rgbcolor = rgbflip?vec3(texture(texImage, scaler).zyx):vec3(texture(texImage, scaler).xyz);\n"[m[K
+[6.480s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.480s]    72 | [01;35m[K"    color = vec4(rgbcolor,1);\n"[m[K
+[6.481s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.481s]    73 | [01;35m[K"}"[m[K;
+[6.481s]       | [01;35m[K~~~[m[K
+[6.481s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/overview/cpp/src/GLViewer.cpp:76:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.481s]    76 | [01;35m[K"#version 330\n"[m[K
+[6.481s]       | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.481s]    77 | [01;35m[K"layout(location = 0) in vec3 vert;\n"[m[K
+[6.481s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.481s]    78 | [01;35m[K"out vec2 UV;"[m[K
+[6.481s]       | [01;35m[K~~~~~~~~~~~~~~[m[K
+[6.481s]    79 | [01;35m[K"void main() {\n"[m[K
+[6.481s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.482s]    80 | [01;35m[K"   UV = (vert.xy+vec2(1,1))/2;\n"[m[K
+[6.482s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.482s]    81 | [01;35m[K" gl_Position = vec4(vert, 1);\n"[m[K
+[6.482s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.482s]    82 | [01;35m[K"}\n"[m[K;
+[6.482s]       | [01;35m[K~~~~~[m[K
+[6.484s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:950:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.484s]   950 |         [01;35m[K"#version 330 core\n"[m[K
+[6.484s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.484s]   951 | [01;35m[K        " in vec2 UV;\n"[m[K
+[6.484s]       |         [01;35m[K~~~~~~~~~~~~~~~~[m[K
+[6.484s]   952 | [01;35m[K        " out vec4 color;\n"[m[K
+[6.484s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[6.485s]   953 | [01;35m[K        " uniform sampler2D texImage;\n"[m[K
+[6.485s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.485s]   954 | [01;35m[K        " uniform bool revert;\n"[m[K
+[6.485s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.485s]   955 | [01;35m[K        " uniform bool rgbflip;\n"[m[K
+[6.485s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.485s]   956 | [01;35m[K        " void main() {\n"[m[K
+[6.485s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+[6.485s]   957 | [01;35m[K        "    vec2 scaler  =revert?vec2(UV.x,1.f - UV.y):vec2(UV.x,UV.y);\n"[m[K
+[6.485s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.485s]   958 | [01;35m[K        "    vec3 rgbcolor = rgbflip?vec3(texture(texImage, scaler).zyx):vec3(texture(texImage, scaler).xyz);\n"[m[K
+[6.485s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.486s]   959 | [01;35m[K        " float gamma = 1.0/1.65;\n"[m[K
+[6.486s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.486s]   960 | [01;35m[K        "   vec3 color_rgb = pow(rgbcolor, vec3(1.0/gamma));;\n"[m[K
+[6.486s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.486s]   961 | [01;35m[K        "    color = vec4(color_rgb,1);\n"[m[K
+[6.486s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.486s]   962 | [01;35m[K        "}"[m[K;
+[6.486s]       |         [01;35m[K~~~[m[K
+[6.487s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/image viewer/cpp/src/GLViewer.cpp:965:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[6.487s]   965 |         [01;35m[K"#version 330\n"[m[K
+[6.487s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.487s]   966 | [01;35m[K        "layout(location = 0) in vec3 vert;\n"[m[K
+[6.487s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.487s]   967 | [01;35m[K        "out vec2 UV;"[m[K
+[6.487s]       |         [01;35m[K~~~~~~~~~~~~~~[m[K
+[6.487s]   968 | [01;35m[K        "void main() {\n"[m[K
+[6.488s]       |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[6.488s]   969 | [01;35m[K        "   UV = (vert.xy+vec2(1,1))/2;\n"[m[K
+[6.488s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.488s]   970 | [01;35m[K        " gl_Position = vec4(vert, 1);\n"[m[K
+[6.488s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.488s]   971 | [01;35m[K        "}\n"[m[K;
+[6.488s]       |         [01;35m[K~~~~~[m[K
+[7.023s] [ 18%] [32m[1mLinking CXX executable ZED_SVO_Recording[0m
+[7.372s] [ 18%] Built target ZED_SVO_Recording
+[7.431s] [ 20%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/GLViewer.cpp.o[0m
+[7.537s] [ 21%] [32mBuilding CXX object plane detection/overview/cpp/CMakeFiles/ZED_Plane_Detection.dir/src/main.cpp.o[0m
+[7.748s] [ 23%] [32mBuilding CXX object depth sensing/cpp/CMakeFiles/ZED_Depth_Sensing.dir/src/main.cpp.o[0m
+[7.804s] [ 24%] [32mBuilding CXX object spatial mapping/overview/cpp/CMakeFiles/ZED_Spatial_Mapping.dir/src/main.cpp.o[0m
+[8.250s] [ 26%] [32mBuilding CXX object positional tracking/cpp/CMakeFiles/ZED_Positional_Tracking.dir/src/main.cpp.o[0m
+[8.676s] [ 27%] [32mBuilding CXX object body tracking/cpp/CMakeFiles/ZED_Body_Tracking_Viewer.dir/src/TrackingViewer.cpp.o[0m
+[9.007s] [ 28%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/TrackingViewer.cpp.o[0m
+[9.689s] [ 30%] [32mBuilding CXX object object detection/image viewer/cpp/CMakeFiles/ZED_Object_detection_image_viewer.dir/src/main.cpp.o[0m
+[10.071s] [ 31%] [32m[1mLinking CXX executable ZED_Spatial_Mapping[0m
+[10.255s] [ 33%] [32m[1mLinking CXX executable ZED_Depth_Sensing[0m
+[10.408s] [ 34%] [32m[1mLinking CXX executable ZED_Plane_Detection[0m
+[10.535s] [ 34%] Built target ZED_Spatial_Mapping
+[10.615s] [35m[1mScanning dependencies of target ZED_Streaming_Receiver[0m
+[10.679s] [ 36%] [32m[1mLinking CXX executable ZED_SVO_Playback[0m
+[10.696s] [ 37%] [32m[1mLinking CXX executable ZED_ROI_Exposure[0m
+[10.710s] [ 39%] [32mBuilding CXX object camera streaming/receiver/cpp/CMakeFiles/ZED_Streaming_Receiver.dir/src/main.cpp.o[0m
+[10.716s] [ 39%] Built target ZED_Depth_Sensing
+[10.776s] [ 40%] [32m[1mLinking CXX executable ZED_Positional_Tracking[0m
+[10.793s] [35m[1mScanning dependencies of target ZED_Streaming_Sender[0m
+[10.822s] [ 40%] Built target ZED_Plane_Detection
+[10.847s] [35m[1mScanning dependencies of target ZED_Point_Cloud_Mapping[0m
+[10.887s] [ 42%] [32mBuilding CXX object camera streaming/sender/cpp/CMakeFiles/ZED_Streaming_Sender.dir/src/main.cpp.o[0m
+[10.932s] [ 43%] [32mBuilding CXX object spatial mapping/advanced point cloud mapping/cpp/CMakeFiles/ZED_Point_Cloud_Mapping.dir/src/GLViewer.cpp.o[0m
+[10.932s] [ 44%] [32m[1mLinking CXX executable ZED_SVO_Export[0m
+[11.042s] [ 46%] [32m[1mLinking CXX executable ZED_Camera_Control[0m
+[11.151s] [ 46%] Built target ZED_Positional_Tracking
+[11.213s] [35m[1mScanning dependencies of target ZED_Floor_Plane_Detection[0m
+[11.239s] [ 46%] Built target ZED_SVO_Playback
+[11.255s] [ 46%] Built target ZED_ROI_Exposure
+[11.260s] [ 47%] [32mBuilding CXX object plane detection/floor plane/cpp/CMakeFiles/ZED_Floor_Plane_Detection.dir/src/GLViewer.cpp.o[0m
+[11.285s] [35m[1mScanning dependencies of target ZED_Sensing_ROI[0m
+[11.347s] [ 49%] [34m[1mBuilding NVCC (Device) object other/cuda refocus/CMakeFiles/ZED_CUDA_Refocus.dir/src/ZED_CUDA_Refocus_generated_dof_gpu.cu.o[0m
+[11.398s] [ 50%] [32mBuilding CXX object camera roi/sensing roi/cpp/CMakeFiles/ZED_Sensing_ROI.dir/src/main.cpp.o[0m
+[11.568s] [ 50%] Built target ZED_Camera_Control
+[11.615s] [ 52%] [32mBuilding CXX object plane detection/floor plane/cpp/CMakeFiles/ZED_Floor_Plane_Detection.dir/src/main.cpp.o[0m
+[11.646s] [ 52%] Built target ZED_SVO_Export
+[11.673s] [35m[1mScanning dependencies of target ZED_openGL[0m
+[11.779s] [ 53%] [32mBuilding CXX object other/opengl gpu interop/CMakeFiles/ZED_openGL.dir/src/main.cpp.o[0m
+[11.809s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:13:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[11.810s]    13 | [01;35m[K"#version 330 core\n"[m[K
+[11.810s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.811s]    14 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[11.811s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.811s]    15 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+[11.811s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.811s]    16 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[11.812s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.812s]    17 | [01;35m[K"out vec4 b_color;\n"[m[K
+[11.812s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.812s]    18 | [01;35m[K"void main() {\n"[m[K
+[11.812s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[11.813s]    19 | [01;35m[K"   b_color = in_Color;\n"[m[K
+[11.813s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.813s]    20 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[11.813s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.813s]    21 | [01;35m[K"}"[m[K;
+[11.813s]       | [01;35m[K~~~[m[K
+[11.814s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:24:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[11.814s]    24 | [01;35m[K"#version 330 core\n"[m[K
+[11.814s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.814s]    25 | [01;35m[K"in vec4 b_color;\n"[m[K
+[11.814s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[11.815s]    26 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[11.815s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.815s]    27 | [01;35m[K"void main() {\n"[m[K
+[11.815s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[11.815s]    28 | [01;35m[K"   out_Color = b_color;\n"[m[K
+[11.815s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.816s]    29 | [01;35m[K"}"[m[K;
+[11.816s]       | [01;35m[K~~~[m[K
+[11.853s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:812:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[11.853s]   812 | [01;35m[K"#version 330 core\n"[m[K
+[11.854s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.854s]   813 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+[11.854s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.854s]   814 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[11.854s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.854s]   815 | [01;35m[K"out vec4 b_color;\n"[m[K
+[11.854s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.854s]   816 | [01;35m[K"void main() {\n"[m[K
+[11.854s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[11.854s]   817 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+[11.854s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.855s]   818 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+[11.855s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.855s]   819 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+[11.855s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.855s]   820 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+[11.855s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.855s]   821 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+[11.855s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.855s]   822 | [01;35m[K"}"[m[K;
+[11.855s]       | [01;35m[K~~~[m[K
+[11.855s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/object detection/birds eye viewer/cpp/src/GLViewer.cpp:825:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[11.855s]   825 | [01;35m[K"#version 330 core\n"[m[K
+[11.856s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.856s]   826 | [01;35m[K"in vec4 b_color;\n"[m[K
+[11.856s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[11.856s]   827 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[11.856s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.856s]   828 | [01;35m[K"void main() {\n"[m[K
+[11.856s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[11.856s]   829 | [01;35m[K"   out_Color = b_color;\n"[m[K
+[11.856s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.856s]   830 | [01;35m[K"}"[m[K;
+[11.856s]       | [01;35m[K~~~[m[K
+[12.456s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/advanced point cloud mapping/cpp/src/GLViewer.cpp:4:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.456s]     4 |         [01;35m[K"#version 330 core\n"[m[K
+[12.456s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.457s]     5 | [01;35m[K        "layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[12.457s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.457s]     6 | [01;35m[K        "layout(location = 1) in vec3 in_Color;\n"[m[K
+[12.457s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.457s]     7 | [01;35m[K        "uniform mat4 u_mvpMatrix;\n"[m[K
+[12.457s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.457s]     8 | [01;35m[K        "out vec3 b_color;\n"[m[K
+[12.458s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.458s]     9 | [01;35m[K        "void main() {\n"[m[K
+[12.458s]       |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.458s]    10 | [01;35m[K        "   b_color = in_Color;\n"[m[K
+[12.458s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.458s]    11 | [01;35m[K        " gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[12.459s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.459s]    12 | [01;35m[K        "}"[m[K;
+[12.459s]       |         [01;35m[K~~~[m[K
+[12.459s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/advanced point cloud mapping/cpp/src/GLViewer.cpp:15:5:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.459s]    15 |     [01;35m[K"#version 330 core\n"[m[K
+[12.459s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.459s]    16 | [01;35m[K    "layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+[12.460s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.460s]    17 | [01;35m[K    "uniform mat4 u_mvpMatrix;\n"[m[K
+[12.460s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.460s]    18 | [01;35m[K    "uniform float pointsize;\n"[m[K
+[12.460s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.460s]    19 | [01;35m[K    "out vec3 b_color;\n"[m[K
+[12.461s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.461s]    20 | [01;35m[K    "void main() {\n"[m[K
+[12.461s]       |     [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.461s]    21 | [01;35m[K    "   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+[12.461s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.461s]    22 | [01;35m[K    "   b_color = vec3(((vertexColor & uint(0x00FF0000)) >> 16) / 255.f, ((vertexColor & uint(0x0000FF00)) >> 8) / 255.f, (vertexColor & uint(0x000000FF)) / 255.f);\n"[m[K
+[12.461s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.461s]    23 | [01;35m[K    " gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+[12.462s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.462s]    24 | [01;35m[K    "   gl_PointSize = pointsize;\n"[m[K
+[12.462s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.462s]    25 | [01;35m[K    "}"[m[K;
+[12.462s]       |     [01;35m[K~~~[m[K
+[12.462s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/spatial mapping/advanced point cloud mapping/cpp/src/GLViewer.cpp:28:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.463s]    28 |         [01;35m[K"#version 330 core\n"[m[K
+[12.463s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.463s]    29 | [01;35m[K        "in vec3 b_color;\n"[m[K
+[12.463s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[12.463s]    30 | [01;35m[K        "layout(location = 0) out vec4 out_Color;\n"[m[K
+[12.463s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.463s]    31 | [01;35m[K        "void main() {\n"[m[K
+[12.463s]       |         [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.463s]    32 | [01;35m[K        "   out_Color = vec4(b_color, 1);\n"[m[K
+[12.463s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.463s]    33 | [01;35m[K        "}"[m[K;
+[12.464s]       |         [01;35m[K~~~[m[K
+[12.584s] [ 55%] [32m[1mLinking CXX executable ZED_Object_detection_image_viewer[0m
+[12.656s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:13:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.656s]    13 | [01;35m[K"#version 330 core\n"[m[K
+[12.656s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.656s]    14 | [01;35m[K"layout(location = 0) in vec3 in_Vertex;\n"[m[K
+[12.656s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.656s]    15 | [01;35m[K"layout(location = 1) in vec4 in_Color;\n"[m[K
+[12.656s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.657s]    16 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[12.657s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.657s]    17 | [01;35m[K"out vec4 b_color;\n"[m[K
+[12.657s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.657s]    18 | [01;35m[K"void main() {\n"[m[K
+[12.657s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.657s]    19 | [01;35m[K"   b_color = in_Color;\n"[m[K
+[12.657s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.657s]    20 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_Vertex, 1);\n"[m[K
+[12.657s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.657s]    21 | [01;35m[K"}"[m[K;
+[12.657s]       | [01;35m[K~~~[m[K
+[12.658s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:24:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.658s]    24 | [01;35m[K"#version 330 core\n"[m[K
+[12.658s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.658s]    25 | [01;35m[K"in vec4 b_color;\n"[m[K
+[12.658s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[12.658s]    26 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[12.658s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.658s]    27 | [01;35m[K"void main() {\n"[m[K
+[12.658s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.658s]    28 | [01;35m[K"   out_Color = b_color;\n"[m[K
+[12.658s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.658s]    29 | [01;35m[K"}"[m[K;
+[12.659s]       | [01;35m[K~~~[m[K
+[12.679s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:602:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.679s]   602 | [01;35m[K"#version 330 core\n"[m[K
+[12.679s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.679s]   603 | [01;35m[K"layout(location = 0) in vec4 in_VertexRGBA;\n"[m[K
+[12.679s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.679s]   604 | [01;35m[K"uniform mat4 u_mvpMatrix;\n"[m[K
+[12.680s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.680s]   605 | [01;35m[K"out vec4 b_color;\n"[m[K
+[12.680s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.680s]   606 | [01;35m[K"void main() {\n"[m[K
+[12.680s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.680s]   607 | [01;35m[K// Decompose the 4th channel of the XYZRGBA buffer to retrieve the color of the point (1float to 4uint)[m[K
+[12.680s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.680s]   608 | [01;35m[K"   uint vertexColor = floatBitsToUint(in_VertexRGBA.w); \n"[m[K
+[12.680s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.680s]   609 | [01;35m[K"   vec3 clr_int = vec3((vertexColor & uint(0x000000FF)), (vertexColor & uint(0x0000FF00)) >> 8, (vertexColor & uint(0x00FF0000)) >> 16);\n"[m[K
+[12.680s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.681s]   610 | [01;35m[K"   b_color = vec4(clr_int.r / 255.0f, clr_int.g / 255.0f, clr_int.b / 255.0f, 1.f);"[m[K
+[12.681s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.681s]   611 | [01;35m[K" gl_Position = u_mvpMatrix * vec4(in_VertexRGBA.xyz, 1);\n"[m[K
+[12.681s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.681s]   612 | [01;35m[K"}"[m[K;
+[12.681s]       | [01;35m[K~~~[m[K
+[12.681s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:615:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.681s]   615 | [01;35m[K"#version 330 core\n"[m[K
+[12.681s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.681s]   616 | [01;35m[K"in vec4 b_color;\n"[m[K
+[12.681s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[12.681s]   617 | [01;35m[K"layout(location = 0) out vec4 out_Color;\n"[m[K
+[12.681s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.682s]   618 | [01;35m[K"void main() {\n"[m[K
+[12.682s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.682s]   619 | [01;35m[K"   out_Color = b_color;\n"[m[K
+[12.682s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.682s]   620 | [01;35m[K"}"[m[K;
+[12.682s]       | [01;35m[K~~~[m[K
+[12.686s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:831:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.686s]   831 | [01;35m[K"#version 330\n"[m[K
+[12.687s]       | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[12.687s]   832 | [01;35m[K"layout(location = 0) in vec2 vert;\n"[m[K
+[12.687s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.687s]   833 | [01;35m[K"layout(location = 1) in vec3 vert_tex;\n"[m[K
+[12.687s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.687s]   834 | [01;35m[K"out vec2 UV;"[m[K
+[12.687s]       | [01;35m[K~~~~~~~~~~~~~~[m[K
+[12.687s]   835 | [01;35m[K"void main() {\n"[m[K
+[12.687s]       | [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[12.687s]   836 | [01;35m[K" UV = vert;\n"[m[K
+[12.687s]       | [01;35m[K~~~~~~~~~~~~~~~[m[K
+[12.688s]   837 | [01;35m[K" gl_Position = vec4(vert_tex, 1);\n"[m[K
+[12.688s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.688s]   838 | [01;35m[K"}\n"[m[K;
+[12.688s]       | [01;35m[K~~~~~[m[K
+[12.688s] [01m[K/home/roboboat/ros2_ws/src/zed-examples/plane detection/floor plane/cpp/src/GLViewer.cpp:841:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[KGLchar*[m[K’ {aka ‘[01m[Kchar*[m[K’} [[01;35m[K-Wwrite-strings[m[K]
+[12.688s]   841 | [01;35m[K"#version 330 core\n"[m[K
+[12.688s]       | [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.688s]   842 | [01;35m[K" in vec2 UV;\n"[m[K
+[12.688s]       | [01;35m[K~~~~~~~~~~~~~~~~[m[K
+[12.688s]   843 | [01;35m[K" out vec4 color;\n"[m[K
+[12.688s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[12.688s]   844 | [01;35m[K" uniform sampler2D texImage;\n"[m[K
+[12.689s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.689s]   845 | [01;35m[K" void main() {\n"[m[K
+[12.689s]       | [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+[12.689s]   846 | [01;35m[K" vec2 scaler = vec2(UV.x, UV.y);\n"[m[K
+[12.689s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.689s]   847 | [01;35m[K" color = vec4(texture(texImage, scaler).zyxw);\n"[m[K
+[12.689s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.689s]   848 | [01;35m[K"}"[m[K;
+[12.689s]       | [01;35m[K~~~[m[K
+[12.784s] [ 56%] [32m[1mLinking CXX executable ZED_Streaming_Sender[0m
+[12.997s] [ 56%] Built target ZED_Object_detection_image_viewer
+[13.042s] [ 56%] Built target ZED_Streaming_Sender
+[13.084s] [35m[1mScanning dependencies of target ZED_Multi_Camera[0m
+[13.100s] [ 57%] [32mBuilding CXX object spatial mapping/advanced point cloud mapping/cpp/CMakeFiles/ZED_Point_Cloud_Mapping.dir/src/main.cpp.o[0m
+[13.152s] [ 59%] [32mBuilding CXX object other/multi camera/cpp/CMakeFiles/ZED_Multi_Camera.dir/src/main.cpp.o[0m
+[13.664s] [ 60%] [32m[1mLinking CXX executable ZED_openGL[0m
+[13.727s] [35m[1mScanning dependencies of target ZED_Tutorial_1[0m
+[13.761s] /usr/local/zed/include/sl/Camera.hpp(5438): warning #815-D: type qualifier on return type is meaningless
+[13.761s] 
+[13.816s] /home/roboboat/ros2_ws/src/zed-examples/other/cuda refocus/src/dof_gpu.cu(56): warning #20054-D: dynamic initialization is not supported for a function-scope static __shared__ variable within a __device__/__global__ function
+[13.817s] 
+[13.819s] [ 62%] [32mBuilding CXX object tutorials/tutorial 1 - hello ZED/cpp/CMakeFiles/ZED_Tutorial_1.dir/main.cpp.o[0m
+[13.823s] /home/roboboat/ros2_ws/src/zed-examples/other/cuda refocus/src/dof_gpu.cu(126): warning #20054-D: dynamic initialization is not supported for a function-scope static __shared__ variable within a __device__/__global__ function
+[13.823s] 
+[14.048s] [ 62%] Built target ZED_openGL
+[14.101s] [35m[1mScanning dependencies of target ZED_Tutorial_2[0m
+[14.189s] [ 63%] [32mBuilding CXX object tutorials/tutorial 2 - image capture/cpp/CMakeFiles/ZED_Tutorial_2.dir/main.cpp.o[0m
+[14.485s] [ 65%] [32mBuilding CXX object object detection/birds eye viewer/cpp/CMakeFiles/ZED_Object_detection_birds_eye_viewer.dir/src/main.cpp.o[0m
+[14.516s] [ 66%] [32m[1mLinking CXX executable ZED_Floor_Plane_Detection[0m
+[14.914s] [ 66%] Built target ZED_Floor_Plane_Detection
+[14.947s] [ 68%] [32mBuilding CXX object body tracking/cpp/CMakeFiles/ZED_Body_Tracking_Viewer.dir/src/main.cpp.o[0m
+[14.965s] [35m[1mScanning dependencies of target ZED_Tutorial_3[0m
+[15.009s] [ 69%] [32mBuilding CXX object tutorials/tutorial 3 - depth sensing/cpp/CMakeFiles/ZED_Tutorial_3.dir/main.cpp.o[0m
+[15.528s] [ 71%] [32m[1mLinking CXX executable ZED_Tutorial_1[0m
+[15.994s] [ 72%] [32m[1mLinking CXX executable ZED_Tutorial_2[0m
+[15.997s] [ 72%] Built target ZED_Tutorial_1
+[16.073s] [35m[1mScanning dependencies of target ZED_Tutorial_4[0m
+[16.140s] [ 73%] [32mBuilding CXX object tutorials/tutorial 4 - positional tracking/cpp/CMakeFiles/ZED_Tutorial_4.dir/main.cpp.o[0m
+[16.296s] [ 73%] Built target ZED_Tutorial_2
+[16.299s] [35m[1mScanning dependencies of target ZED_Tutorial_5[0m
+[16.353s] [35m[1mScanning dependencies of target ZED_Tutorial_6[0m
+[16.404s] [ 75%] [32mBuilding CXX object tutorials/tutorial 6 - object detection/cpp/CMakeFiles/ZED_Tutorial_6.dir/main.cpp.o[0m
+[16.439s] [ 76%] [32mBuilding CXX object tutorials/tutorial 5 - spatial mapping/cpp/CMakeFiles/ZED_Tutorial_5.dir/main.cpp.o[0m
+[16.462s] [35m[1mScanning dependencies of target ZED_Tutorial_7[0m
+[16.561s] [ 78%] [32mBuilding CXX object tutorials/tutorial 7 - sensor data/cpp/CMakeFiles/ZED_Tutorial_7.dir/main.cpp.o[0m
+[16.707s] [ 79%] [32m[1mLinking CXX executable ZED_Tutorial_3[0m
+[17.022s] [ 79%] Built target ZED_Tutorial_3
+[17.056s] [35m[1mScanning dependencies of target ZED_Tutorial_8[0m
+[17.106s] [ 81%] [32mBuilding CXX object tutorials/tutorial 8 - body tracking/cpp/CMakeFiles/ZED_Tutorial_8.dir/main.cpp.o[0m
+[17.205s] /usr/local/zed/include/sl/Camera.hpp(5438): warning #815-D: type qualifier on return type is meaningless
+[17.205s] 
+[17.453s] [ 82%] [32m[1mLinking CXX executable ZED_Streaming_Receiver[0m
+[17.617s] [ 84%] [32m[1mLinking CXX executable ZED_Sensing_ROI[0m
+[17.740s] [ 85%] [32m[1mLinking CXX executable ZED_Tutorial_4[0m
+[17.795s] [ 85%] Built target ZED_Streaming_Receiver
+[17.957s] [ 85%] Built target ZED_Sensing_ROI
+[17.961s] [ 85%] Built target ZED_Tutorial_4
+[17.979s] [ 86%] [32m[1mLinking CXX executable ZED_Tutorial_5[0m
+[18.190s] [ 86%] Built target ZED_Tutorial_5
+[18.272s] [ 88%] [32m[1mLinking CXX executable ZED_Tutorial_7[0m
+[18.489s] [ 88%] Built target ZED_Tutorial_7
+[18.497s] [ 89%] [32m[1mLinking CXX executable ZED_Tutorial_6[0m
+[18.702s] [ 89%] Built target ZED_Tutorial_6
+[19.015s] [ 91%] [32m[1mLinking CXX executable ZED_Tutorial_8[0m
+[19.098s] [ 92%] [32m[1mLinking CXX executable ZED_Multi_Camera[0m
+[19.212s] [ 92%] Built target ZED_Tutorial_8
+[19.212s] [35m[1mScanning dependencies of target ZED_CUDA_Refocus[0m
+[19.249s] [ 94%] [32mBuilding CXX object other/cuda refocus/CMakeFiles/ZED_CUDA_Refocus.dir/src/main.cpp.o[0m
+[19.274s] [ 95%] [32m[1mLinking CXX executable ZED_Point_Cloud_Mapping[0m
+[19.406s] [ 95%] Built target ZED_Multi_Camera
+[19.635s] [ 95%] Built target ZED_Point_Cloud_Mapping
+[20.544s] [ 97%] [32m[1mLinking CXX executable ZED_Object_detection_birds_eye_viewer[0m
+[20.632s] [ 98%] [32m[1mLinking CXX executable ZED_Body_Tracking_Viewer[0m
+[20.848s] [100%] [32m[1mLinking CXX executable ZED_CUDA_Refocus[0m
+[20.907s] [100%] Built target ZED_Object_detection_birds_eye_viewer
+[20.990s] [100%] Built target ZED_Body_Tracking_Viewer
+[21.095s] [100%] Built target ZED_CUDA_Refocus
+[21.118s] Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake --build /home/roboboat/ros2_ws/build/SamplesAndTutos -- -j12 -l12
+[21.195s] Invoking command in '/home/roboboat/ros2_ws/build/SamplesAndTutos': /usr/bin/cmake --install /home/roboboat/ros2_ws/build/SamplesAndTutos
+[21.216s] -- Install configuration: "Release"
+[21.216s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Camera_Control
+[21.217s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Camera_Control" to ""
+[21.217s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Depth_Sensing
+[21.217s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Depth_Sensing" to ""
+[21.218s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_image_viewer
+[21.218s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_image_viewer" to ""
+[21.218s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_birds_eye_viewer
+[21.219s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Object_detection_birds_eye_viewer" to ""
+[21.220s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_ROI_Exposure
+[21.220s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_ROI_Exposure" to ""
+[21.220s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Body_Tracking_Viewer
+[21.221s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Body_Tracking_Viewer" to ""
+[21.221s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Plane_Detection
+[21.221s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Plane_Detection" to ""
+[21.222s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Positional_Tracking
+[21.222s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Positional_Tracking" to ""
+[21.222s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Spatial_Mapping
+[21.223s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Spatial_Mapping" to ""
+[21.223s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Export
+[21.224s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Export" to ""
+[21.224s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Playback
+[21.224s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Playback" to ""
+[21.225s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Recording
+[21.225s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_SVO_Recording" to ""
+[21.225s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Receiver
+[21.226s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Receiver" to ""
+[21.226s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Sender
+[21.226s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Streaming_Sender" to ""
+[21.227s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Point_Cloud_Mapping
+[21.227s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Point_Cloud_Mapping" to ""
+[21.228s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Floor_Plane_Detection
+[21.228s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Floor_Plane_Detection" to ""
+[21.229s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Sensing_ROI
+[21.229s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Sensing_ROI" to ""
+[21.229s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus
+[21.230s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_CUDA_Refocus" to ""
+[21.230s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_openGL
+[21.230s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_openGL" to ""
+[21.231s] -- Installing: /home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Multi_Camera
+[21.231s] -- Set runtime path of "/home/roboboat/ros2_ws/src/zed-examples/bin/ZED_Multi_Camera" to ""
+[21.246s] Invoked command in '/home/roboboat/ros2_ws/build/SamplesAndTutos' returned '0': /usr/bin/cmake --install /home/roboboat/ros2_ws/build/SamplesAndTutos
