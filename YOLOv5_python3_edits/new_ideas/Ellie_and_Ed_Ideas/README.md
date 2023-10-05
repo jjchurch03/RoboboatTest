@@ -4,4 +4,4 @@ This is where Ellie and Edward's staging area for python code will be stored bef
 
 ## Table of Contents
 
-*To be updated as they occur*
+1) messed with MainControl to attempt to add a PID controller to vessel motion
