@@ -7,8 +7,8 @@ class PublisherNode(Node):
     def __init__(self): 
         super().__init__('publisher_node')                                     # Initalize node which is defined as a 'publisher_node'
         self.publisher = self.create_publisher(string, 'detection', 10)        # Create node with the name of it being 'detection' which is a string variable with a queue size of 10
-        timer_period = 1                                                       # 1 second                 
-        self.timer = self.create_timer(timer_period, self.publish_message)     # timer is created with a callback to execute every second
+        timer_period = 0.1                                                     # 0.1 second                 
+        self.timer = self.create_timer(timer_period, self.publish_message)     # timer is created with a callback to execute every tenth of a second
         self.count = 0                                                         # Initalize count
         
     def publish_message(self): 
