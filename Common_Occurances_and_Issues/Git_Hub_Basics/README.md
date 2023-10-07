@@ -2,14 +2,21 @@
 
 Hi
 
+## Table of contents
+
+- Clone/Push Github
+- Authentication
+- Github webfiles setup
+
 ## Basics
 If you remember nothing else do these things:
 - `git clone https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority.git`: grabs everything stored in this repo and copies it to your system
-- `git add Roboboat_Cyber_Minority.git`: Converts the local file into a .git repo
+- `git add Roboboat_Cyber_Minority.git`: Converts the local file into a .git repo (use 'git status .' to check to see if you need to do this. If updates show up for this then the file is alread a `.git` file and you can move onto the next section
 	- From here `cd` into the folder which you have ran this code on
 	- From here before you can commit you may need to set an email and user to commit as
 		- `git config --global user.email "youremail@here"`
 		- `git config --global user.name "usernamehere"`
+- Go to Authentication section to allow ability to push to Github repo
 - `git add .`: Allows for all changes to be added including things getting deleted/added/changed
 - `git commit -m "first commit"`: If this runs correctly it will show all changes in the commit
 - `git push`: Push the commit to GitHub
@@ -21,3 +28,6 @@ If you remember nothing else do these things:
 
  ![Auth example](https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority/blob/main/Git_Hub_Basics/gh_auth_ex.png)
 
+## Edit Filesys on Github
+
+Use `.` to change the mode from your typical webview to a file system where you can move and copy files around (add pic later)
