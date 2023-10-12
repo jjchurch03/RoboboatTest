@@ -4,7 +4,8 @@ This is where configurations and troubleshooting efforts will be stored
 
 ## Folders
 
-- Ad-Hoc-Config: Get ad hoc network together
+- Network_and_Wireless_Chips_Conf: Where Roboboat network and wireless chip information will be stored
+
 - Git_Hub_Basics: Help you understand how to continue to maintain this
 
 ## Files
