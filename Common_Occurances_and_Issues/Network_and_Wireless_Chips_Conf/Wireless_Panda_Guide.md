@@ -84,7 +84,7 @@ make[1]: Entering directory '/usr/src/linux-headers-6.2.6-76060206-generic'
 make[2]: *** No rule to make target 'arch/x86/entry/syscalls/syscall_32.tbl', needed by 'arch/x86/include/generated/uapi/asm/unistd_32.h'.  Stop.
 make[1]: *** [arch/x86/Makefile:248: archheaders] Error 2
 make[1]: Leaving directory '/usr/src/linux-headers-6.2.6-76060206-generic
-make: *** [Makefile:357: LINUX] Error 2```
+make: *** [Makefile:357: LINUX] Error 2``
 
 Current Solution
 
