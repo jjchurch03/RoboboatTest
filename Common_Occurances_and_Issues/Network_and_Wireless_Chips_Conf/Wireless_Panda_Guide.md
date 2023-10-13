@@ -90,3 +90,13 @@ Current Solution
 
 FIX KERNEL BECAUSE `syscall_32.tbl` is missing. 
 
+Solution: Frankenstien's kernel
+
+https://phoenixnap.com/kb/build-linux-kernel
+
+Go to the website above and follow the directions in order to build your own up to date kernel
+- This will take a long time so plan accordingly (constant connection and power supply will make it quicker)
+
+### Finding the .ko file
+
+
