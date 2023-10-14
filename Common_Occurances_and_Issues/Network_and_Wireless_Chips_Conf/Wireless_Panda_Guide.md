@@ -71,7 +71,8 @@ Read the `README_STA_usb` file to understand Fedora files and what needs to be c
 *Before you do anything make sure you have flex and bison installed onto you system*
 
 Current Problem: 
-```sudo make
+````
+sudo make
 [sudo] password for barbees: 
 make -C tools
 make[1]: Entering directory '/home/barbees/Downloads/LinuxDriver4Fedora_v2.5.0.3/tools'
@@ -83,8 +84,9 @@ make -C /lib/modules/6.2.6-76060206-generic/build SUBDIRS=/home/barbees/Download
 make[1]: Entering directory '/usr/src/linux-headers-6.2.6-76060206-generic'
 make[2]: *** No rule to make target 'arch/x86/entry/syscalls/syscall_32.tbl', needed by 'arch/x86/include/generated/uapi/asm/unistd_32.h'.  Stop.
 make[1]: *** [arch/x86/Makefile:248: archheaders] Error 2
-make[1]: Leaving directory '/usr/src/linux-headers-6.2.6-76060206-generic'
-make: *** [Makefile:357: LINUX] Error 2````
+make[1]: Leaving directory '/usr/src/linux-headers-6.2.6-76060206-generic
+make: *** [Makefile:357: LINUX] Error 2
+````
 
 Current Solution
 
