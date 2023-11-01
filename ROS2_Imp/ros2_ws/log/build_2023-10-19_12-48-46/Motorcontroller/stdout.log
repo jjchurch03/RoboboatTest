@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/Motorcontroller/Motorcontroller.egg-info
+writing ../../build/Motorcontroller/Motorcontroller.egg-info/PKG-INFO
+writing dependency_links to ../../build/Motorcontroller/Motorcontroller.egg-info/dependency_links.txt
+writing entry points to ../../build/Motorcontroller/Motorcontroller.egg-info/entry_points.txt
+writing requirements to ../../build/Motorcontroller/Motorcontroller.egg-info/requires.txt
+writing top-level names to ../../build/Motorcontroller/Motorcontroller.egg-info/top_level.txt
+writing manifest file '../../build/Motorcontroller/Motorcontroller.egg-info/SOURCES.txt'
+reading manifest file '../../build/Motorcontroller/Motorcontroller.egg-info/SOURCES.txt'
+writing manifest file '../../build/Motorcontroller/Motorcontroller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/build/Motorcontroller/build
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/build/Motorcontroller/build/lib
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/build/Motorcontroller/build/lib/Motorcontroller
+copying Motorcontroller/__init__.py -> /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/build/Motorcontroller/build/lib/Motorcontroller
+running install
+running install_lib
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/lib/python3.10/site-packages/Motorcontroller
+copying /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/build/Motorcontroller/build/lib/Motorcontroller/__init__.py -> /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/lib/python3.10/site-packages/Motorcontroller
+byte-compiling /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/lib/python3.10/site-packages/Motorcontroller/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/share/ament_index
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/share/ament_index/resource_index
+creating /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/share/ament_index/resource_index/packages
+copying resource/Motorcontroller -> /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/share/ament_index/resource_index/packages
+copying package.xml -> /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/share/Motorcontroller
+running install_egg_info
+Copying ../../build/Motorcontroller/Motorcontroller.egg-info to /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/install/Motorcontroller/lib/python3.10/site-packages/Motorcontroller-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/build/Motorcontroller/install.log'

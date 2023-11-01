@@ -1,0 +1,4 @@
+source;share/HyperNav_Comms/local_setup.bash
+source;share/HyperNav_Comms/local_setup.dsv
+source;share/HyperNav_Comms/local_setup.sh
+source;share/HyperNav_Comms/local_setup.zsh

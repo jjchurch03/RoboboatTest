@@ -1,0 +1,8 @@
+source;share/HyperNav_Comms/hook/cmake_prefix_path.ps1
+source;share/HyperNav_Comms/hook/cmake_prefix_path.dsv
+source;share/HyperNav_Comms/hook/cmake_prefix_path.sh
+source;share/HyperNav_Comms/local_setup.bash
+source;share/HyperNav_Comms/local_setup.dsv
+source;share/HyperNav_Comms/local_setup.ps1
+source;share/HyperNav_Comms/local_setup.sh
+source;share/HyperNav_Comms/local_setup.zsh

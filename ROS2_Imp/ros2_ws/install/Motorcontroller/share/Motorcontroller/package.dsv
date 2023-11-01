@@ -1,0 +1,6 @@
+source;share/Motorcontroller/hook/pythonpath.ps1
+source;share/Motorcontroller/hook/pythonpath.dsv
+source;share/Motorcontroller/hook/pythonpath.sh
+source;share/Motorcontroller/hook/ament_prefix_path.ps1
+source;share/Motorcontroller/hook/ament_prefix_path.dsv
+source;share/Motorcontroller/hook/ament_prefix_path.sh
