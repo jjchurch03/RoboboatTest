@@ -7,7 +7,7 @@
 void runDetectorPythonScript() {
     // Execute your Python script here
     int detectorReturnCode = system("python3 home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_ws/src/big_brain/detector.py");
-     if (returnCode == 0) {
+     if (detectorReturnCode == 0) {
         // Python script executed successfully
         cout << "detector.py has been found and is being loaded..."
     } 
