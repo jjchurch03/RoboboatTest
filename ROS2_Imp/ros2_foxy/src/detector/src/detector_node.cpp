@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "detector/msg/YOLOv5helper.msg"
+#include "detector/msg/YOLOv5helper.hpp"
 #include <string>
 #include <iostream>
 #include <memory>
