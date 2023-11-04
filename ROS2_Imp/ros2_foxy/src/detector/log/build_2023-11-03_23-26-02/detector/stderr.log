@@ -1,0 +1,10 @@
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:[m[K In constructor ‘[01m[KDetectorPublisherNode::DetectorPublisherNode()[m[K’:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:13:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   13 |             [01;31m[K1000ms[m[K,
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:14:24:[m[K [01;31m[Kerror: [m[K‘[01m[KCppPublisherNode[m[K’ has not been declared
+   14 |             std::bind(&[01;31m[KCppPublisherNode[m[K::publishDetectorData, this)
+      |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/detector_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

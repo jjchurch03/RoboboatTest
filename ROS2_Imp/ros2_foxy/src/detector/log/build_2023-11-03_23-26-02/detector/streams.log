@@ -1,0 +1,35 @@
+[0.105s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.211s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.268s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.615s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.694s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.701s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.909s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.998s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.001s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.240s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.376s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.376s] -- Configured cppcheck include dirs: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/include
+[1.376s] -- Configured cppcheck exclude dirs and/or files: 
+[1.377s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.381s] -- Added test 'lint_cmake' to check CMake code style
+[1.384s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.397s] -- Added test 'uncrustify' to check C / C++ code style
+[1.397s] -- Configured uncrustify additional arguments: 
+[1.411s] -- Added test 'xmllint' to check XML markup files
+[1.417s] -- Configuring done
+[1.431s] -- Generating done
+[1.434s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector
+[1.546s] [35m[1mScanning dependencies of target detector_node[0m
+[1.618s] [ 50%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[3.777s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:[m[K In constructor ‘[01m[KDetectorPublisherNode::DetectorPublisherNode()[m[K’:
+[3.777s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:13:13:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[3.777s]    13 |             [01;31m[K1000ms[m[K,
+[3.777s]       |             [01;31m[K^~~~~~[m[K
+[3.777s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:14:24:[m[K [01;31m[Kerror: [m[K‘[01m[KCppPublisherNode[m[K’ has not been declared
+[3.777s]    14 |             std::bind(&[01;31m[KCppPublisherNode[m[K::publishDetectorData, this)
+[3.777s]       |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.260s] make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+[5.260s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/detector_node.dir/all] Error 2
+[5.261s] make: *** [Makefile:141: all] Error 2
+[5.265s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
