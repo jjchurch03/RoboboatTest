@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_generator_py/detector/msg/_yol_ov5helper_s.c" "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_yol_ov5helper_s.c.o"
+  "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_generator_py/detector/msg/_my_custom_msg_s.c" "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_my_custom_msg_s.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "rosidl_generator_py"
   "/usr/include/python3.8"
   "rosidl_typesupport_c"
-  "../../include/detector/msg"
+  "rosidl_generator_cpp/detector/msg"
   "/opt/ros/foxy/include"
   )
 

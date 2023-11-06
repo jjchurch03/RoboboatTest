@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/detector__cpp"
-  "rosidl_generator_cpp/detector/msg/detail/yol_ov5helper__builder.hpp"
-  "rosidl_generator_cpp/detector/msg/detail/yol_ov5helper__struct.hpp"
-  "rosidl_generator_cpp/detector/msg/detail/yol_ov5helper__traits.hpp"
-  "rosidl_generator_cpp/detector/msg/detail/yol_ov5helper__type_support.hpp"
-  "rosidl_generator_cpp/detector/msg/yol_ov5helper.hpp"
+  "rosidl_generator_cpp/detector/msg/detail/my_custom_msg__builder.hpp"
+  "rosidl_generator_cpp/detector/msg/detail/my_custom_msg__struct.hpp"
+  "rosidl_generator_cpp/detector/msg/detail/my_custom_msg__traits.hpp"
+  "rosidl_generator_cpp/detector/msg/detail/my_custom_msg__type_support.hpp"
+  "rosidl_generator_cpp/detector/msg/my_custom_msg.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

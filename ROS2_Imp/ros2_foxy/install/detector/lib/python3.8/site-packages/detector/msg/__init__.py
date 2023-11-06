@@ -1,1 +1,1 @@
-from detector.msg._yol_ov5helper import YOLOv5helper  # noqa: F401
+from detector.msg._my_custom_msg import MyCustomMsg  # noqa: F401

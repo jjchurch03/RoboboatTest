@@ -1,0 +1,36 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Main_control/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control
+[100%] Built target mainControlPublisher
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/lib/Main_control/mainControlPublisher
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/ament_index/resource_index/package_run_dependencies/Main_control
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/ament_index/resource_index/parent_prefix_path/Main_control
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/path.sh
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/path.dsv
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.bash
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.sh
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.zsh
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.dsv
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/package.dsv
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/ament_index/resource_index/packages/Main_control
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/cmake/Main_controlConfig.cmake
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/cmake/Main_controlConfig-version.cmake
+-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/package.xml

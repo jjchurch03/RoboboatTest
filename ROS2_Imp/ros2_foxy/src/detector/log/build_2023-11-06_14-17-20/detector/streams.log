@@ -1,0 +1,34 @@
+[0.107s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.158s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.192s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.192s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.482s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.496s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.540s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.544s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.717s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.777s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.779s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.952s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.980s] CMake Error at CMakeLists.txt:23 (find_package):
+[0.981s]   By not providing "FindMyCustomMsg.cmake" in CMAKE_MODULE_PATH this project
+[0.981s]   has asked CMake to find a package configuration file provided by
+[0.981s]   "MyCustomMsg", but CMake did not find one.
+[0.981s] 
+[0.981s]   Could not find a package configuration file provided by "MyCustomMsg" with
+[0.981s]   any of the following names:
+[0.981s] 
+[0.981s]     MyCustomMsgConfig.cmake
+[0.981s]     mycustommsg-config.cmake
+[0.981s] 
+[0.982s]   Add the installation prefix of "MyCustomMsg" to CMAKE_PREFIX_PATH or set
+[0.982s]   "MyCustomMsg_DIR" to a directory containing one of the above files.  If
+[0.982s]   "MyCustomMsg" provides a separate development package or SDK, be sure it
+[0.982s]   has been installed.
+[0.982s] 
+[0.982s] 
+[0.983s] -- Configuring incomplete, errors occurred!
+[0.984s] See also "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/CMakeFiles/CMakeOutput.log".
+[0.984s] See also "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/CMakeFiles/CMakeError.log".
+[0.997s] make: *** [Makefile:792: cmake_check_build_system] Error 1
+[1.000s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12

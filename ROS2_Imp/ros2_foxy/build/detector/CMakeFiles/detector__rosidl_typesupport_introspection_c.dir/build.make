@@ -57,42 +57,42 @@ include CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/progress.mak
 # Include the compile flags for this target's objects.
 include CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/flags.make
 
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h: rosidl_adapter/detector/msg/YOLOv5helper.idl
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h: rosidl_adapter/detector/msg/MyCustomMsg.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c__arguments.json
 
-rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c: rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c
+rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c: rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c
 
-CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o: CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/flags.make
-CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o: rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o   -c /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c
+CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.o: CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.o: rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.o   -c /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c
 
-CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c > CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.i
+CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c > CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.i
 
-CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c -o CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.s
+CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c -o CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.s
 
 # Object files for target detector__rosidl_typesupport_introspection_c
 detector__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o"
+"CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.o"
 
 # External object files for target detector__rosidl_typesupport_introspection_c
 detector__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
-libdetector__rosidl_typesupport_introspection_c.so: CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o
+libdetector__rosidl_typesupport_introspection_c.so: CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c.o
 libdetector__rosidl_typesupport_introspection_c.so: CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/build.make
 libdetector__rosidl_typesupport_introspection_c.so: libdetector__rosidl_generator_c.so
 libdetector__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
@@ -111,8 +111,8 @@ CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/clean
 
-CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h
-CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c
+CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h
+CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg__type_support.c
 	cd /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/depend
 

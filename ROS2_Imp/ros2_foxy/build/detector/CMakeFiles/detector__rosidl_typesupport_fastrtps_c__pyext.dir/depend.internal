@@ -97,7 +97,7 @@ CMakeFiles/detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_p
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
- rosidl_generator_c/detector/msg/detail/yol_ov5helper__functions.h
- rosidl_generator_c/detector/msg/detail/yol_ov5helper__struct.h
- rosidl_generator_c/detector/msg/detail/yol_ov5helper__type_support.h
+ rosidl_generator_c/detector/msg/detail/my_custom_msg__functions.h
+ rosidl_generator_c/detector/msg/detail/my_custom_msg__struct.h
+ rosidl_generator_c/detector/msg/detail/my_custom_msg__type_support.h
  rosidl_generator_c/detector/msg/rosidl_generator_c__visibility_control.h

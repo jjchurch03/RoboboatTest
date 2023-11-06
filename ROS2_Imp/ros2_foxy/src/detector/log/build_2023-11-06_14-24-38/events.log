@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.000345] (detector) JobQueued: {'identifier': 'detector', 'dependencies': OrderedDict()}
+[0.000946] (detector) JobStarted: {'identifier': 'detector'}
+[0.100109] (-) TimerEvent: {}
+[0.103269] (detector) JobProgress: {'identifier': 'detector', 'progress': 'cmake'}
+[0.105579] (detector) JobProgress: {'identifier': 'detector', 'progress': 'build'}
+[0.105910] (detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2459'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/roboboat/ros2_ws/install/zed_rgb_convert/lib:/home/roboboat/ros2_ws/install/zed_components/lib:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od/lib:/home/roboboat/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1893'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install:/home/roboboat/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:55092'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/roboboat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2513,unix/roboboat-desktop:/tmp/.ICE-unix/2513'), ('INVOCATION_ID', 'dde00295d7324650bcd6790a83c6d08f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1096daa_6826_4213_8290_b163745ff75a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.79'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/Motorcontroller:/home/roboboat/ros2_ws/install/HyperNav_Comms:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:/home/roboboat/ros2_ws/install/Motorcontroller/lib/python3.10/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control:/home/roboboat/ros2_ws/install/zed_ros2:/home/roboboat/ros2_ws/install/zed_multi_camera:/home/roboboat/ros2_ws/install/zed_display_rviz2:/home/roboboat/ros2_ws/install/zed_wrapper:/home/roboboat/ros2_ws/install/zed_tutorial_video:/home/roboboat/ros2_ws/install/zed_tutorial_pos_tracking:/home/roboboat/ros2_ws/install/zed_tutorial_depth:/home/roboboat/ros2_ws/install/zed_topic_benchmark_interfaces:/home/roboboat/ros2_ws/install/zed_rgb_convert:/home/roboboat/ros2_ws/install/zed_components:/home/roboboat/ros2_ws/install/rviz_plugin_zed_od:/home/roboboat/ros2_ws/install/zed_interfaces:/home/roboboat/ros2_ws/install/HyperNav_Comms:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy')]), 'shell': False}
+[0.159452] (detector) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.193334] (detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.193718] (detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.200182] (-) TimerEvent: {}
+[0.300681] (-) TimerEvent: {}
+[0.401164] (-) TimerEvent: {}
+[0.480516] (detector) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.490234] (detector) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.501237] (-) TimerEvent: {}
+[0.534166] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.538315] (detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.601406] (-) TimerEvent: {}
+[0.701985] (-) TimerEvent: {}
+[0.709793] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.770434] (detector) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.773009] (detector) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.802046] (-) TimerEvent: {}
+[0.902463] (-) TimerEvent: {}
+[0.945941] (detector) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.999412] (detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.002536] (-) TimerEvent: {}
+[1.102896] (-) TimerEvent: {}
+[1.196371] (detector) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.202948] (-) TimerEvent: {}
+[1.303393] (-) TimerEvent: {}
+[1.359960] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.371771] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.403491] (-) TimerEvent: {}
+[1.410354] (detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.410798] (detector) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.447844] (detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.448274] (detector) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.448394] (detector) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[1.483856] (detector) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.502242] (detector) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.503551] (-) TimerEvent: {}
+[1.550737] (detector) StdoutLine: {'line': b'-- Generating done\n'}
+[1.557320] (detector) StdoutLine: {'line': b'-- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector\n'}
+[1.603910] (-) TimerEvent: {}
+[1.633858] (detector) StdoutLine: {'line': b'[  3%] Built target detector__cpp\n'}
+[1.640813] (detector) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o\x1b[0m\n'}
+[1.649898] (detector) StdoutLine: {'line': b'[ 15%] Built target detector__rosidl_generator_c\n'}
+[1.668658] (detector) StdoutLine: {'line': b'[ 24%] Built target detector__rosidl_typesupport_cpp\n'}
+[1.669089] (detector) StdoutLine: {'line': b'[ 33%] Built target detector__rosidl_typesupport_introspection_cpp\n'}
+[1.675143] (detector) StdoutLine: {'line': b'[ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp\n'}
+[1.688435] (detector) StdoutLine: {'line': b'[ 60%] Built target detector__rosidl_typesupport_c\n'}
+[1.688857] (detector) StdoutLine: {'line': b'[ 60%] Built target detector__rosidl_typesupport_introspection_c\n'}
+[1.704068] (-) TimerEvent: {}
+[1.716402] (detector) StdoutLine: {'line': b'[ 69%] Built target detector__rosidl_typesupport_fastrtps_c\n'}
+[1.752005] (detector) StdoutLine: {'line': b'[ 69%] Built target detector\n'}
+[1.780468] (detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:3:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kdetector/msg/MyCustomMsg.hpp: No such file or directory\n'}
+[1.780953] (detector) StderrLine: {'line': b'    3 | #include \x1b[01;31m\x1b[K"detector/msg/MyCustomMsg.hpp"\x1b[m\x1b[K\n'}
+[1.781075] (detector) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.781187] (detector) StderrLine: {'line': b'compilation terminated.\n'}
+[1.786136] (detector) StdoutLine: {'line': b'[ 72%] Built target detector__py\n'}
+[1.796018] (detector) StderrLine: {'line': b'make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1\n'}
+[1.796583] (detector) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/detector_node.dir/all] Error 2\n'}
+[1.796836] (detector) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[1.804201] (-) TimerEvent: {}
+[1.828246] (detector) StdoutLine: {'line': b'[ 78%] Built target detector__python\n'}
+[1.830517] (detector) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[1.834454] (detector) CommandEnded: {'returncode': 2}
+[1.904444] (-) TimerEvent: {}
+[2.005228] (-) TimerEvent: {}
+[2.058727] (detector) JobEnded: {'identifier': 'detector', 'rc': 2}
+[2.069534] (-) EventReactorShutdown: {}

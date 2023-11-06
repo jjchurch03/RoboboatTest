@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target detector_node[0m
+[  6%] Built target detector__cpp
+[ 12%] Built target detector__rosidl_generator_c
+[ 33%] Built target detector__rosidl_typesupport_cpp
+[ 33%] Built target detector__rosidl_typesupport_introspection_cpp
+[ 33%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[ 60%] Built target detector__rosidl_typesupport_introspection_c
+[ 60%] Built target detector__rosidl_typesupport_c
+[ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[ 69%] Built target detector
+[ 72%] Built target detector__py
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kdetector/msg/MyCustomMsg.hpp: No such file or directory
+    3 | #include [01;31m[K"detector/msg/MyCustomMsg.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/detector_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 78%] Built target detector__python
+make: *** [Makefile:141: all] Error 2

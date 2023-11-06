@@ -252,6 +252,9 @@ FastRTPS_LIBRARY_DEBUG:FILEPATH=FastRTPS_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 FastRTPS_LIBRARY_RELEASE:FILEPATH=/opt/ros/foxy/lib/libfastrtps.so
 
+//The directory containing a CMake configuration file for MyCustomMsg.
+MyCustomMsg_DIR:PATH=MyCustomMsg_DIR-NOTFOUND
+
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
 
@@ -395,6 +398,9 @@ builtin_interfaces_DIR:PATH=/opt/ros/foxy/share/builtin_interfaces/cmake
 
 //Value Computed by CMake
 detector_BINARY_DIR:STATIC=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector
+
+//The directory containing a CMake configuration file for detector.
+detector_DIR:PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake
 
 //Value Computed by CMake
 detector_SOURCE_DIR:STATIC=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector

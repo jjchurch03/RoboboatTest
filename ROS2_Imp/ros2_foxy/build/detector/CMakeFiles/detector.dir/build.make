@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/bui
 # Include the progress variables for this target.
 include CMakeFiles/detector.dir/progress.make
 
-CMakeFiles/detector: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg/YOLOv5helper.msg
+CMakeFiles/detector: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg/MyCustomMsg.msg
 
 
 detector: CMakeFiles/detector

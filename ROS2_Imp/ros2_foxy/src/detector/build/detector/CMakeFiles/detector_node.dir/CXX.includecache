@@ -11,8 +11,6 @@ rclcpp/rclcpp.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/rclcpp/rclcpp.hpp
 std_msgs/msg/string.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/std_msgs/msg/string.hpp
-detector/msg/yolov5helper.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector/msg/yolov5helper.hpp
 string
 -
 iostream

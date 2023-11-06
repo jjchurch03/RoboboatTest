@@ -80,6 +80,13 @@ detector_node_EXTERNAL_OBJECTS =
 detector_node: CMakeFiles/detector_node.dir/src/detector_node.cpp.o
 detector_node: CMakeFiles/detector_node.dir/build.make
 detector_node: /opt/ros/foxy/lib/librclcpp.so
+detector_node: /opt/ros/foxy/lib/librcutils.so
+detector_node: /opt/ros/foxy/lib/librcpputils.so
+detector_node: /opt/ros/foxy/lib/librosidl_typesupport_c.so
+detector_node: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
+detector_node: /opt/ros/foxy/lib/librosidl_runtime_c.so
+detector_node: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
+detector_node: /opt/ros/foxy/lib/librosidl_typesupport_introspection_cpp.so
 detector_node: /opt/ros/foxy/lib/liblibstatistics_collector.so
 detector_node: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 detector_node: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so

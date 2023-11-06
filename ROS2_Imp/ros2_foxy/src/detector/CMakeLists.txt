@@ -21,16 +21,27 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/YOLOv5helper.msg"
+set(msg_files
+  "msg/MyCustomMsg.msg"
 )
 
-add_executable(detector_node src/detector_node.cpp)
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+)
+
+install(
+  DIRECTORY include/
+  DESTINATION include
+)
+
 
 # Include the generated message headers
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/msg)
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp/${PROJECT_NAME}/msg)
 
-ament_target_dependencies(detector_node rclcpp std_msgs)
+add_executable(detector_node src/detector_node.cpp)
+ament_target_dependencies(detector_node rclcpp std_msgs rosidl_default_runtime)
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

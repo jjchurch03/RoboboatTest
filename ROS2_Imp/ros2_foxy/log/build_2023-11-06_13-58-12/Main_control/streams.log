@@ -1,0 +1,59 @@
+[0.193s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Main_control -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control
+[0.283s] -- The C compiler identification is GNU 9.4.0
+[0.362s] -- The CXX compiler identification is GNU 9.4.0
+[0.369s] -- Check for working C compiler: /usr/bin/cc
+[0.479s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.480s] -- Detecting C compiler ABI info
+[0.588s] -- Detecting C compiler ABI info - done
+[0.614s] -- Detecting C compile features
+[0.614s] -- Detecting C compile features - done
+[0.619s] -- Check for working CXX compiler: /usr/bin/c++
+[0.741s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.742s] -- Detecting CXX compiler ABI info
+[0.868s] -- Detecting CXX compiler ABI info - done
+[0.891s] -- Detecting CXX compile features
+[0.892s] -- Detecting CXX compile features - done
+[0.897s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.941s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.941s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.270s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.342s] WARNING: Package name "Main_control" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.388s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.389s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.390s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Main_control/include>
+[1.390s] -- Configured cppcheck exclude dirs and/or files: 
+[1.391s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.391s] -- Configured cpplint exclude dirs and/or files: 
+[1.392s] -- Added test 'lint_cmake' to check CMake code style
+[1.393s] -- Added test 'uncrustify' to check C / C++ code style
+[1.393s] -- Configured uncrustify additional arguments: 
+[1.394s] -- Added test 'xmllint' to check XML markup files
+[1.398s] -- Configuring done
+[1.403s] -- Generating done
+[1.404s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control
+[1.413s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Main_control -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control
+[1.419s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control -- -j12 -l12
+[1.491s] [35m[1mScanning dependencies of target mainControlPublisher[0m
+[1.512s] [ 50%] [32mBuilding CXX object CMakeFiles/mainControlPublisher.dir/src/mainControlPublisher.cpp.o[0m
+[1.561s] [100%] [32m[1mLinking CXX executable mainControlPublisher[0m
+[1.625s] [100%] Built target mainControlPublisher
+[1.647s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control -- -j12 -l12
+[1.711s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control
+[1.727s] -- Install configuration: ""
+[1.727s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/lib/Main_control/mainControlPublisher
+[1.727s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/ament_index/resource_index/package_run_dependencies/Main_control
+[1.728s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/ament_index/resource_index/parent_prefix_path/Main_control
+[1.728s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/ament_prefix_path.sh
+[1.728s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/ament_prefix_path.dsv
+[1.728s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/path.sh
+[1.729s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/environment/path.dsv
+[1.729s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.bash
+[1.729s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.sh
+[1.729s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.zsh
+[1.729s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/local_setup.dsv
+[1.730s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/package.dsv
+[1.730s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/ament_index/resource_index/packages/Main_control
+[1.731s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/cmake/Main_controlConfig.cmake
+[1.731s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/cmake/Main_controlConfig-version.cmake
+[1.731s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/Main_control/share/Main_control/package.xml
+[1.735s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/Main_control

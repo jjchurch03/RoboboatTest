@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/detector/msg/yol_ov5helper__type_support.cpp.o"
+  "CMakeFiles/detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/detector/msg/my_custom_msg__type_support.cpp.o"
   "libdetector__rosidl_typesupport_c.pdb"
   "libdetector__rosidl_typesupport_c.so"
-  "rosidl_typesupport_c/detector/msg/yol_ov5helper__type_support.cpp"
+  "rosidl_typesupport_c/detector/msg/my_custom_msg__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

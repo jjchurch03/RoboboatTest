@@ -1,0 +1,25 @@
+[0.105s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.196s] [  3%] Built target detector__cpp
+[0.196s] [ 12%] Built target detector__rosidl_generator_c
+[0.232s] [ 48%] Built target detector__rosidl_typesupport_c
+[0.232s] [ 48%] Built target detector__rosidl_typesupport_cpp
+[0.232s] [ 48%] Built target detector__rosidl_typesupport_introspection_c
+[0.233s] [ 48%] Built target detector__rosidl_typesupport_introspection_cpp
+[0.236s] [ 57%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[0.283s] [ 66%] Built target detector__rosidl_typesupport_fastrtps_c
+[0.332s] [ 66%] Built target detector
+[0.351s] [35m[1mScanning dependencies of target detector_node[0m
+[0.367s] [ 69%] Built target detector__py
+[0.390s] [ 72%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[0.408s] [ 78%] Built target detector__python
+[0.449s] [ 96%] Built target detector__rosidl_typesupport_fastrtps_c__pyext
+[0.450s] [ 96%] Built target detector__rosidl_typesupport_c__pyext
+[0.450s] [ 96%] Built target detector__rosidl_typesupport_introspection_c__pyext
+[0.528s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kdetector/msg/YOLOv5helper.hpp: No such file or directory
+[0.528s]     3 | #include [01;31m[K"detector/msg/YOLOv5helper.hpp"[m[K
+[0.528s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.528s] compilation terminated.
+[0.564s] make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+[0.565s] make[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/detector_node.dir/all] Error 2
+[0.566s] make: *** [Makefile:141: all] Error 2
+[0.572s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12

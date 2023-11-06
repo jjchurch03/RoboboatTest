@@ -1,0 +1,156 @@
+[0.102s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.159s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.198s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.199s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.473s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.485s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.537s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.542s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.711s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.772s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.774s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.947s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.961s] -- Found detector: 0.0.0 (/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake)
+[1.007s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.203s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.379s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.391s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.428s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.429s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.465s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.465s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.465s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[1.500s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.517s] -- Configuring done
+[1.559s] -- Generating done
+[1.565s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector
+[1.615s] [35m[1mScanning dependencies of target detector__rosidl_generator_c[0m
+[1.634s] [  3%] Built target detector__cpp
+[1.642s] [  6%] [32mBuilding C object CMakeFiles/detector__rosidl_generator_c.dir/rosidl_generator_c/detector/msg/detail/yol_ov5helper__functions.c.o[0m
+[1.652s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_cpp[0m
+[1.653s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_introspection_cpp[0m
+[1.653s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_cpp[0m
+[1.678s] [ 16%] [32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detector/msg/detail/yol_ov5helper__type_support.cpp.o[0m
+[1.679s] [ 16%] [32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/yol_ov5helper__type_support.cpp.o[0m
+[1.679s] [ 16%] [32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detector/msg/yol_ov5helper__type_support.cpp.o[0m
+[1.732s] [ 19%] [32m[1mLinking C shared library libdetector__rosidl_generator_c.so[0m
+[1.785s] [ 22%] Built target detector__rosidl_generator_c
+[1.805s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_c[0m
+[1.805s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_introspection_c[0m
+[1.830s] [ 29%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/yol_ov5helper__type_support.c.o[0m
+[1.830s] [ 29%] [32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/detector/msg/yol_ov5helper__type_support.cpp.o[0m
+[1.885s] [ 32%] [32m[1mLinking CXX shared library libdetector__rosidl_typesupport_c.so[0m
+[1.892s] [ 35%] [32m[1mLinking C shared library libdetector__rosidl_typesupport_introspection_c.so[0m
+[1.939s] [ 41%] Built target detector__rosidl_typesupport_introspection_c
+[1.939s] [ 41%] Built target detector__rosidl_typesupport_c
+[2.148s] [ 45%] [32m[1mLinking CXX shared library libdetector__rosidl_typesupport_cpp.so[0m
+[2.204s] [ 48%] Built target detector__rosidl_typesupport_cpp
+[2.312s] [ 51%] [32m[1mLinking CXX shared library libdetector__rosidl_typesupport_introspection_cpp.so[0m
+[2.426s] [ 54%] Built target detector__rosidl_typesupport_introspection_cpp
+[2.500s] [ 58%] [32m[1mLinking CXX shared library libdetector__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.627s] [ 61%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[2.646s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_c[0m
+[2.667s] [ 64%] [32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detector/msg/detail/yol_ov5helper__type_support_c.cpp.o[0m
+[3.229s] [ 67%] [32m[1mLinking CXX shared library libdetector__rosidl_typesupport_fastrtps_c.so[0m
+[3.355s] [ 70%] Built target detector__rosidl_typesupport_fastrtps_c
+[3.397s] [ 70%] Built target detector
+[3.435s] [ 74%] Built target detector__py
+[3.454s] [35m[1mScanning dependencies of target detector__python[0m
+[3.488s] [ 77%] [32mBuilding C object CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_yol_ov5helper_s.c.o[0m
+[3.688s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/detector/libdetector__python.so[0m
+[3.751s] [ 80%] Built target detector__python
+[3.771s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_c__pyext[0m
+[3.772s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_introspection_c__pyext[0m
+[3.783s] [35m[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.804s] [ 90%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.804s] [ 90%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.804s] [ 90%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c.o[0m
+[3.928s] [100%] [32m[1mLinking C shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[3.928s] [100%] [32m[1mLinking C shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[3.928s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[3.982s] [100%] Built target detector__rosidl_typesupport_introspection_c__pyext
+[3.983s] [100%] Built target detector__rosidl_typesupport_c__pyext
+[4.017s] [100%] Built target detector__rosidl_typesupport_fastrtps_c__pyext
+[4.038s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[4.159s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector
+[4.176s] -- Install configuration: ""
+[4.177s] -- Execute custom install script
+[4.177s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/rosidl_interfaces/detector
+[4.178s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__functions.h
+[4.179s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__struct.h
+[4.179s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__type_support.h
+[4.179s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_generator_c__visibility_control.h
+[4.180s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/yol_ov5helper.h
+[4.180s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/library_path.sh
+[4.180s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/library_path.dsv
+[4.181s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_fastrtps_c.h
+[4.181s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.181s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_fastrtps_c.so
+[4.182s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_fastrtps_cpp.hpp
+[4.183s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.183s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_fastrtps_cpp.so
+[4.184s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h
+[4.184s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.185s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__builder.hpp
+[4.185s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__struct.hpp
+[4.185s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__traits.hpp
+[4.186s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__type_support.hpp
+[4.186s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.186s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/yol_ov5helper.hpp
+[4.187s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_cpp.hpp
+[4.187s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/pythonpath.sh
+[4.188s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/pythonpath.dsv
+[4.188s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/__init__.py
+[4.189s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/msg/__init__.py
+[4.189s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/msg/_yol_ov5helper.py
+[4.190s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/detector_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[4.190s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/detector_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[4.191s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/detector_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[4.191s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__python.so
+[4.192s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/msg/YOLOv5helper.idl
+[4.192s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/msg/YOLOv5helper.msg
+[4.193s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/package_run_dependencies/detector
+[4.193s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/parent_prefix_path/detector
+[4.193s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/ament_prefix_path.sh
+[4.194s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/ament_prefix_path.dsv
+[4.194s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/path.sh
+[4.195s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/path.dsv
+[4.195s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.bash
+[4.195s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.sh
+[4.196s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.zsh
+[4.196s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.dsv
+[4.196s] -- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/package.dsv
+[4.213s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/packages/detector
+[4.213s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/rosidl_cmake-extras.cmake
+[4.214s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.214s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_libraries-extras.cmake
+[4.215s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_targets-extras.cmake
+[4.215s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.216s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.216s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.216s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detectorConfig.cmake
+[4.217s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detectorConfig-version.cmake
+[4.217s] -- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/package.xml
+[4.217s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_generator_c.so
+[4.218s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_generator_c.so" to ""
+[4.218s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_c.so
+[4.219s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_c.so" to ""
+[4.219s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_c.so
+[4.219s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_c.so" to ""
+[4.220s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_cpp.so
+[4.220s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_cpp.so" to ""
+[4.220s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_cpp.so
+[4.221s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_cpp.so" to ""
+[4.267s] Compiling '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/__init__.py'...
+[4.282s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_generator_cExport.cmake
+[4.283s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_generator_cExport-noconfig.cmake
+[4.283s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cExport.cmake
+[4.283s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.284s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cExport.cmake
+[4.284s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cExport-noconfig.cmake
+[4.284s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_generator_cppExport.cmake
+[4.284s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cppExport.cmake
+[4.285s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.285s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cppExport.cmake
+[4.285s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cppExport-noconfig.cmake
+[4.292s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector

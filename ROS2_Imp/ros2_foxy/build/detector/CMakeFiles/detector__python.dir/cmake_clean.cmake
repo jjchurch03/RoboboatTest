@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_yol_ov5helper_s.c.o"
+  "CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_my_custom_msg_s.c.o"
   "rosidl_generator_py/detector/libdetector__python.pdb"
   "rosidl_generator_py/detector/libdetector__python.so"
 )

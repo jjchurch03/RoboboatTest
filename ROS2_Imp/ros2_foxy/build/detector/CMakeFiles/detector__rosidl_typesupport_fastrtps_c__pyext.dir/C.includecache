@@ -21,12 +21,12 @@ rosidl_runtime_c/service_type_support_struct.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/rosidl_runtime_c/service_type_support_struct.h
 rosidl_runtime_c/action_type_support_struct.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/rosidl_runtime_c/action_type_support_struct.h
-detector/msg/detail/yol_ov5helper__type_support.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/detector/msg/detail/yol_ov5helper__type_support.h
-detector/msg/detail/yol_ov5helper__struct.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/detector/msg/detail/yol_ov5helper__struct.h
-detector/msg/detail/yol_ov5helper__functions.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/detector/msg/detail/yol_ov5helper__functions.h
+detector/msg/detail/my_custom_msg__type_support.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/detector/msg/detail/my_custom_msg__type_support.h
+detector/msg/detail/my_custom_msg__struct.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/detector/msg/detail/my_custom_msg__struct.h
+detector/msg/detail/my_custom_msg__functions.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py/detector/detector/msg/detail/my_custom_msg__functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
 rosidl_runtime_c/message_type_support_struct.h
@@ -570,7 +570,7 @@ cpython/unicodeobject.h
 
 /usr/include/python3.8/weakrefobject.h
 
-rosidl_generator_c/detector/msg/detail/yol_ov5helper__functions.h
+rosidl_generator_c/detector/msg/detail/my_custom_msg__functions.h
 stdbool.h
 -
 stdlib.h
@@ -579,10 +579,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/detector/msg/detail/rosidl_runtime_c/visibility_control.h
 detector/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/detector/msg/detail/detector/msg/rosidl_generator_c__visibility_control.h
-detector/msg/detail/yol_ov5helper__struct.h
-rosidl_generator_c/detector/msg/detail/detector/msg/detail/yol_ov5helper__struct.h
+detector/msg/detail/my_custom_msg__struct.h
+rosidl_generator_c/detector/msg/detail/detector/msg/detail/my_custom_msg__struct.h
 
-rosidl_generator_c/detector/msg/detail/yol_ov5helper__struct.h
+rosidl_generator_c/detector/msg/detail/my_custom_msg__struct.h
 stdbool.h
 -
 stddef.h
@@ -594,7 +594,7 @@ rosidl_generator_c/detector/msg/detail/rosidl_runtime_c/string.h
 rosidl_runtime_c/primitives_sequence.h
 rosidl_generator_c/detector/msg/detail/rosidl_runtime_c/primitives_sequence.h
 
-rosidl_generator_c/detector/msg/detail/yol_ov5helper__type_support.h
+rosidl_generator_c/detector/msg/detail/my_custom_msg__type_support.h
 rosidl_typesupport_interface/macros.h
 rosidl_generator_c/detector/msg/detail/rosidl_typesupport_interface/macros.h
 detector/msg/rosidl_generator_c__visibility_control.h

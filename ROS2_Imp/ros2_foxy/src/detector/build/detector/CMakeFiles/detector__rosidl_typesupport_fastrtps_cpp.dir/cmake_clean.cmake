@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/yol_ov5helper__type_support.cpp.o"
+  "CMakeFiles/detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.o"
   "libdetector__rosidl_typesupport_fastrtps_cpp.pdb"
   "libdetector__rosidl_typesupport_fastrtps_cpp.so"
-  "rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/yol_ov5helper__type_support.cpp"
-  "rosidl_typesupport_fastrtps_cpp/detector/msg/detail/yol_ov5helper__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/detector/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 
 # Per-language clean rules from dependency scanning.
