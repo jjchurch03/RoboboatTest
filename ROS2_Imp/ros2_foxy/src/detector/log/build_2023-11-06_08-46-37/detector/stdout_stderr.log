@@ -1,0 +1,38 @@
+[35m[1mScanning dependencies of target detector_node[0m
+[ 12%] Built target detector__cpp
+[ 12%] Built target detector__rosidl_generator_c
+[ 15%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[ 33%] Built target detector__rosidl_typesupport_cpp
+[ 33%] Built target detector__rosidl_typesupport_introspection_cpp
+[ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[ 60%] Built target detector__rosidl_typesupport_c
+[ 60%] Built target detector__rosidl_typesupport_introspection_c
+[ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[ 69%] Built target detector
+[ 72%] Built target detector__py
+[ 78%] Built target detector__python
+[ 96%] Built target detector__rosidl_typesupport_c__pyext
+[ 96%] Built target detector__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target detector__rosidl_typesupport_fastrtps_c__pyext
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:[m[K In member function ‘[01m[Kvoid DetectorPublisherNode::publishDetectorData()[m[K’:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:21:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconst _CharT* std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::data() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   21 |         [01;31m[Kmsg.data[m[K = data;
+      |         [01;31m[K~~~~^~~~[m[K
+      |                 [32m[K()[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:1[m[K:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:23:56:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kconst _CharT* std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::data() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   23 |         RCLCPP_INFO(get_logger(), "Published: %s", [01;31m[Kmsg.data[m[K.c_str());
+      |                                                    [01;31m[K~~~~^~~~[m[K
+make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/detector_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

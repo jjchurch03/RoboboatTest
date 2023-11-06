@@ -1,0 +1,24 @@
+[0.115s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.209s] [  6%] Built target detector__cpp
+[0.209s] [ 12%] Built target detector__rosidl_generator_c
+[0.219s] [ 15%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[0.243s] [ 33%] Built target detector__rosidl_typesupport_cpp
+[0.243s] [ 33%] Built target detector__rosidl_typesupport_introspection_cpp
+[0.251s] [ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[0.279s] [ 60%] Built target detector__rosidl_typesupport_introspection_c
+[0.279s] [ 60%] Built target detector__rosidl_typesupport_c
+[0.297s] [ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[0.314s] [35m[1mScanning dependencies of target detector[0m
+[0.331s] [ 69%] Built target detector
+[0.349s] [35m[1mScanning dependencies of target detector__py[0m
+[0.350s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kdetector/msg/YOLOv5helper.hpp: No such file or directory
+[0.351s]     3 | #include [01;31m[K"detector/msg/YOLOv5helper.hpp"[m[K
+[0.351s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.351s] compilation terminated.
+[0.366s] make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+[0.366s] make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/detector_node.dir/all] Error 2
+[0.366s] make[1]: *** Waiting for unfinished jobs....
+[0.367s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[0.912s] [ 72%] Built target detector__py
+[0.914s] make: *** [Makefile:141: all] Error 2
+[0.918s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12

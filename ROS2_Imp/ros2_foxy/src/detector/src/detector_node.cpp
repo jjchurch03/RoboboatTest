@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "detector/msg/YOLOv5helper.hpp"
+#include "detector/msg/yolov5helper.hpp"
 #include <string>
 #include <iostream>
 #include <memory>
@@ -10,14 +10,14 @@
 class DetectorPublisherNode : public rclcpp::Node {
 public:
     DetectorPublisherNode() : Node("detector_publisher_node") {
-        publisher_ = create_publisher<detector::msg::YOLOv5helper>("detector", 10);
+        publisher_ = create_publisher<std_msgs::msg::String>("detector", 10);
         timer_ = create_wall_timer(std::chrono::milliseconds(1000), std::bind(&DetectorPublisherNode::publishDetectorData, this));
     }
 
 private:
     void publishDetectorData() {
         std::string data = executePythonScript();
-        detector::msg::YOLOv5helper msg;
+        std_msgs::msg::String msg;
         msg.data = data;
         publisher_->publish(msg);
         RCLCPP_INFO(get_logger(), "Published: %s", msg.data.c_str());
@@ -44,7 +44,7 @@ private:
         return result;
     }
 
-    rclcpp::Publisher<detector::msg::YOLOv5helper>::SharedPtr publisher_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
 };
 

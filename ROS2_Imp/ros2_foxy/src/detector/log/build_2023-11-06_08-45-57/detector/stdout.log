@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target detector_node[0m
+[  6%] Built target detector__cpp
+[ 12%] Built target detector__rosidl_generator_c
+[ 15%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[ 27%] Built target detector__rosidl_typesupport_introspection_cpp
+[ 33%] Built target detector__rosidl_typesupport_cpp
+[ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[ 51%] Built target detector__rosidl_typesupport_introspection_c
+[ 60%] Built target detector__rosidl_typesupport_c
+[ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[ 69%] Built target detector
+[ 72%] Built target detector__py
+[ 78%] Built target detector__python
+[ 84%] Built target detector__rosidl_typesupport_fastrtps_c__pyext
+[ 90%] Built target detector__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target detector__rosidl_typesupport_c__pyext

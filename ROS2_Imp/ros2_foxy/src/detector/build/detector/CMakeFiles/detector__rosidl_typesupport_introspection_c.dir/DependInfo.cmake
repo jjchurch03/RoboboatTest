@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "rosidl_generator_c"
   "rosidl_typesupport_introspection_c"
+  "../../include/detector/msg"
   "/opt/ros/foxy/include"
   )
 

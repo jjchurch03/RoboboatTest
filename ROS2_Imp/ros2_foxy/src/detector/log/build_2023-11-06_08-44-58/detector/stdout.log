@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target detector_node[0m
+[  3%] Built target detector__cpp
+[ 12%] Built target detector__rosidl_generator_c
+[ 15%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[ 33%] Built target detector__rosidl_typesupport_cpp
+[ 33%] Built target detector__rosidl_typesupport_introspection_cpp
+[ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[ 60%] Built target detector__rosidl_typesupport_introspection_c
+[ 60%] Built target detector__rosidl_typesupport_c
+[ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[ 69%] Built target detector
+[ 72%] Built target detector__py
+[35m[1mScanning dependencies of target detector__python[0m
+[ 75%] [32mBuilding C object CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_yol_ov5helper_s.c.o[0m
+[ 78%] [32m[1mLinking C shared library rosidl_generator_py/detector/libdetector__python.so[0m
+[ 78%] Built target detector__python
+[35m[1mScanning dependencies of target detector__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target detector__rosidl_typesupport_introspection_c__pyext[0m
+[ 87%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 90%] [32m[1mLinking C shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 93%] [32m[1mLinking CXX shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 96%] Built target detector__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target detector__rosidl_typesupport_c__pyext
+[ 96%] Built target detector__rosidl_typesupport_fastrtps_c__pyext

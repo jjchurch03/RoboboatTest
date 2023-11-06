@@ -1,2 +1,1 @@
-source;share/detector/environment/ament_prefix_path.sh
-source;share/detector/environment/path.sh
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_environment_hooks/local_setup.dsv

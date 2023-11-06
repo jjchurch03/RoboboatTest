@@ -21,6 +21,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "rosidl_generator_py"
   "/usr/include/python3.8"
   "rosidl_typesupport_c"
+  "../../include/detector/msg"
   "/opt/ros/foxy/include"
   )
 
