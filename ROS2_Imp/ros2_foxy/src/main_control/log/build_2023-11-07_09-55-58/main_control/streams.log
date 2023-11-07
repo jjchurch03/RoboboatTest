@@ -1,0 +1,207 @@
+[0.110s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control -- -j12 -l12
+[0.159s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.193s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.193s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.479s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.524s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.529s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.699s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.759s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.761s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.933s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.984s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.182s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.343s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.353s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.390s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.390s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.425s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.425s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.426s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[1.454s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.477s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.507s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.509s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_c>;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_c;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_cpp;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_fastrtps_c;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_fastrtps_cpp;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_c>;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_cpp>;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_py;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/include>
+[1.509s] -- Configured cppcheck exclude dirs and/or files: 
+[1.536s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.536s] -- Configured cpplint exclude dirs and/or files: 
+[1.540s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.547s] -- Added test 'lint_cmake' to check CMake code style
+[1.551s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.577s] -- Added test 'uncrustify' to check C / C++ code style
+[1.577s] -- Configured uncrustify additional arguments: 
+[1.581s] -- Added test 'xmllint' to check XML markup files
+[1.588s] -- Configuring done
+[1.640s] -- Generating done
+[1.646s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control
+[1.700s] [35m[1mScanning dependencies of target main_control_pub[0m
+[1.720s] [ 12%] Built target main_control__cpp
+[1.720s] [ 12%] [32mBuilding CXX object CMakeFiles/main_control_pub.dir/src/main_control_pub.cpp.o[0m
+[1.721s] [ 15%] Built target main_control__rosidl_generator_c
+[1.739s] [ 30%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.739s] [ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.739s] [ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.739s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.739s] [ 30%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.056s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_cpp[0m
+[2.056s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_c[0m
+[2.082s] [ 33%] [32mBuilding CXX object CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.o[0m
+[2.083s] [ 36%] [32mBuilding CXX object CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.o[0m
+[2.092s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_introspection_c[0m
+[2.092s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_introspection_cpp[0m
+[2.096s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_fastrtps_cpp[0m
+[2.121s] [ 42%] [32mBuilding CXX object CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.o[0m
+[2.122s] [ 42%] [32mBuilding C object CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.o[0m
+[2.126s] [ 45%] [32mBuilding CXX object CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.o[0m
+[2.132s] [ 48%] [32m[1mLinking CXX shared library libmain_control__rosidl_typesupport_c.so[0m
+[2.177s] [ 51%] [32m[1mLinking C shared library libmain_control__rosidl_typesupport_introspection_c.so[0m
+[2.189s] [ 51%] Built target main_control__rosidl_typesupport_c
+[2.222s] [ 51%] Built target main_control__rosidl_typesupport_introspection_c
+[2.533s] [ 54%] [32m[1mLinking CXX shared library libmain_control__rosidl_typesupport_cpp.so[0m
+[2.592s] [ 54%] Built target main_control__rosidl_typesupport_cpp
+[2.698s] [ 57%] [32m[1mLinking CXX shared library libmain_control__rosidl_typesupport_introspection_cpp.so[0m
+[2.804s] [ 57%] Built target main_control__rosidl_typesupport_introspection_cpp
+[2.904s] [ 60%] [32m[1mLinking CXX shared library libmain_control__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.057s] [ 60%] Built target main_control__rosidl_typesupport_fastrtps_cpp
+[3.077s] [ 63%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.431s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_fastrtps_c[0m
+[3.466s] [ 66%] [32mBuilding CXX object CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.o[0m
+[4.028s] [ 69%] [32m[1mLinking CXX shared library libmain_control__rosidl_typesupport_fastrtps_c.so[0m
+[4.160s] [ 69%] Built target main_control__rosidl_typesupport_fastrtps_c
+[4.180s] [35m[1mScanning dependencies of target main_control[0m
+[4.199s] [ 69%] Built target main_control
+[4.218s] [35m[1mScanning dependencies of target main_control__py[0m
+[4.238s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.957s] [ 72%] Built target main_control__py
+[4.974s] [35m[1mScanning dependencies of target main_control__python[0m
+[5.005s] [ 75%] [32mBuilding C object CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o[0m
+[5.203s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/main_control/libmain_control__python.so[0m
+[5.272s] [ 78%] Built target main_control__python
+[5.291s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_introspection_c__pyext[0m
+[5.291s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.291s] [35m[1mScanning dependencies of target main_control__rosidl_typesupport_c__pyext[0m
+[5.324s] [ 87%] [32mBuilding C object CMakeFiles/main_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_c.c.o[0m
+[5.324s] [ 87%] [32mBuilding C object CMakeFiles/main_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.324s] [ 87%] [32mBuilding C object CMakeFiles/main_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.441s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/main_control/main_control_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[5.441s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/main_control/main_control_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[5.441s] [ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/main_control/main_control_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[5.494s] [ 96%] Built target main_control__rosidl_typesupport_c__pyext
+[5.494s] [ 96%] Built target main_control__rosidl_typesupport_introspection_c__pyext
+[5.527s] [ 96%] Built target main_control__rosidl_typesupport_fastrtps_c__pyext
+[6.637s] [100%] [32m[1mLinking CXX executable main_control_pub[0m
+[6.885s] [100%] Built target main_control_pub
+[6.907s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control -- -j12 -l12
+[7.027s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control
+[7.046s] -- Install configuration: ""
+[7.047s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/rosidl_interfaces/main_control
+[7.047s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control
+[7.047s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg
+[7.048s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/my_custom_msg.h
+[7.048s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail
+[7.048s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.h
+[7.049s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__functions.c
+[7.049s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__functions.h
+[7.049s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__struct.h
+[7.050s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_generator_c__visibility_control.h
+[7.050s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/library_path.sh
+[7.050s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/library_path.dsv
+[7.051s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_generator_c.so
+[7.051s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_generator_c.so" to ""
+[7.051s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control
+[7.052s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg
+[7.052s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail
+[7.052s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_c.h
+[7.052s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.053s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_c.so
+[7.053s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_c.so" to ""
+[7.054s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control
+[7.054s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg
+[7.054s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail
+[7.055s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/dds_fastrtps
+[7.055s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[7.055s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.055s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_cpp.so
+[7.056s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.056s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control
+[7.056s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg
+[7.057s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.057s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail
+[7.057s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.c
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_introspection_c.so
+[7.058s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_introspection_c.so" to ""
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_c.so
+[7.058s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_c.so" to ""
+[7.058s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control
+[7.058s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg
+[7.058s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__traits.hpp
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__struct.hpp
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.hpp
+[7.058s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__builder.hpp
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/my_custom_msg.hpp
+[7.059s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control
+[7.059s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg
+[7.059s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.cpp
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_introspection_cpp.so
+[7.059s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_introspection_cpp.so" to ""
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_cpp.so
+[7.059s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_cpp.so" to ""
+[7.059s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/pythonpath.sh
+[7.060s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/pythonpath.dsv
+[7.060s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/__init__.py
+[7.103s] Compiling '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/__init__.py'...
+[7.110s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg
+[7.111s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg/__init__.py
+[7.111s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg/_my_custom_msg_s.c
+[7.111s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg/_my_custom_msg.py
+[7.112s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[7.112s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[7.112s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[7.113s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[7.113s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[7.114s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[7.114s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__python.so
+[7.115s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__python.so" to ""
+[7.115s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/msg/MyCustomMsg.idl
+[7.115s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/msg/MyCustomMsg.msg
+[7.115s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/main_control_pub
+[7.117s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/main_control_pub" to ""
+[7.117s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/package_run_dependencies/main_control
+[7.117s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/parent_prefix_path/main_control
+[7.117s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/ament_prefix_path.sh
+[7.118s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/ament_prefix_path.dsv
+[7.118s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/path.sh
+[7.118s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/path.dsv
+[7.119s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.bash
+[7.119s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.sh
+[7.119s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.zsh
+[7.120s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.dsv
+[7.120s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/package.dsv
+[7.120s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/packages/main_control
+[7.120s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_generator_cExport.cmake
+[7.121s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_generator_cExport-noconfig.cmake
+[7.121s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cExport.cmake
+[7.121s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.122s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cExport.cmake
+[7.122s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cExport-noconfig.cmake
+[7.122s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_generator_cppExport.cmake
+[7.123s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cppExport.cmake
+[7.123s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.123s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cppExport.cmake
+[7.124s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cppExport-noconfig.cmake
+[7.124s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/rosidl_cmake-extras.cmake
+[7.124s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.124s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_libraries-extras.cmake
+[7.125s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_targets-extras.cmake
+[7.125s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.125s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.125s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.126s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_controlConfig.cmake
+[7.126s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_controlConfig-version.cmake
+[7.126s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/package.xml
+[7.129s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control

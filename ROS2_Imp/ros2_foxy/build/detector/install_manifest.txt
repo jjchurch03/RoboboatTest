@@ -41,6 +41,7 @@
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/libdetector__python.so
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/share/detector/msg/MyCustomMsg.idl
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/share/detector/msg/MyCustomMsg.msg
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/.YOLOv5Detection.hpp.swp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/share/ament_index/resource_index/package_run_dependencies/detector
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/share/ament_index/resource_index/parent_prefix_path/detector
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/share/detector/environment/ament_prefix_path.sh

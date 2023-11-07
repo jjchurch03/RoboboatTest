@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/main_control__cpp"
+  "rosidl_generator_cpp/main_control/msg/detail/my_custom_msg__builder.hpp"
+  "rosidl_generator_cpp/main_control/msg/detail/my_custom_msg__struct.hpp"
+  "rosidl_generator_cpp/main_control/msg/detail/my_custom_msg__traits.hpp"
+  "rosidl_generator_cpp/main_control/msg/detail/my_custom_msg__type_support.hpp"
+  "rosidl_generator_cpp/main_control/msg/my_custom_msg.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/main_control__cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

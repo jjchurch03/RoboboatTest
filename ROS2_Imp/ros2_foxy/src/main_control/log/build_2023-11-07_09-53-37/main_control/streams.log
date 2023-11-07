@@ -1,0 +1,57 @@
+[0.102s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control -- -j12 -l12
+[0.147s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.181s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.181s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.462s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.510s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.514s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.684s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.744s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.746s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.919s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.970s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.167s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.319s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.330s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.366s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.369s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.423s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.423s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.423s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.423s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[1.458s] -- Found PythonExtra: .so  
+[1.686s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.711s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.726s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.729s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_c>;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_c;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_cpp;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_fastrtps_c;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_fastrtps_cpp;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_typesupport_c>;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_cpp>;/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control/rosidl_generator_py;$<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/include>
+[1.729s] -- Configured cppcheck exclude dirs and/or files: 
+[1.743s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.743s] -- Configured cpplint exclude dirs and/or files: 
+[1.745s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.749s] -- Added test 'lint_cmake' to check CMake code style
+[1.752s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.766s] -- Added test 'uncrustify' to check C / C++ code style
+[1.767s] -- Configured uncrustify additional arguments: 
+[1.769s] -- Added test 'xmllint' to check XML markup files
+[1.776s] -- Configuring done
+[1.825s] -- Generating done
+[1.831s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control
+[1.884s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.885s] [35m[1mScanning dependencies of target main_control__cpp[0m
+[1.885s] [35m[1mScanning dependencies of target main_control_pub[0m
+[1.905s] [  9%] [32mBuilding CXX object CMakeFiles/main_control_pub.dir/src/main_control_pub.cpp.o[0m
+[1.906s] [  9%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.921s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/main_control_pub.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[1.921s]     1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[1.921s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.921s] compilation terminated.
+[1.924s] make[2]: *** [CMakeFiles/main_control_pub.dir/build.make:63: CMakeFiles/main_control_pub.dir/src/main_control_pub.cpp.o] Error 1
+[1.924s] make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/main_control_pub.dir/all] Error 2
+[1.924s] make[1]: *** Waiting for unfinished jobs....
+[2.256s] [  9%] Built target main_control__cpp
+[2.287s] [35m[1mScanning dependencies of target main_control__rosidl_generator_c[0m
+[2.333s] [ 12%] [32mBuilding C object CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o[0m
+[2.439s] [ 15%] [32m[1mLinking C shared library libmain_control__rosidl_generator_c.so[0m
+[2.496s] [ 15%] Built target main_control__rosidl_generator_c
+[2.498s] make: *** [Makefile:141: all] Error 2
+[2.503s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control -- -j12 -l12

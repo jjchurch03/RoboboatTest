@@ -1,0 +1,6 @@
+{
+  "package_name": "main_control",
+  "non_idl_tuples": [
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control:msg/MyCustomMsg.msg"
+  ]
+}

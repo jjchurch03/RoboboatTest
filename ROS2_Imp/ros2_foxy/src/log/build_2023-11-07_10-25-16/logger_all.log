@@ -1,0 +1,228 @@
+[3.374s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.374s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffacfc1fa0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffacfc1fa0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffacc80820>)
+[3.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.523s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src'
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.523s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.545s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['ignore', 'ignore_ament_install']
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ignore'
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ignore_ament_install'
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['colcon_pkg']
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'colcon_pkg'
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['colcon_meta']
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'colcon_meta'
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['ros']
+[3.546s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ros'
+[3.550s] DEBUG:colcon.colcon_core.package_identification:Package 'detector' with type 'ros.ament_cmake' and name 'detector'
+[3.550s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.550s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.550s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.550s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.550s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['ignore', 'ignore_ament_install']
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'ignore'
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'ignore_ament_install'
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['colcon_pkg']
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'colcon_pkg'
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['colcon_meta']
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'colcon_meta'
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['ros']
+[3.551s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'ros'
+[3.552s] DEBUG:colcon.colcon_core.package_identification:Package 'main_control' with type 'ros.ament_cmake' and name 'main_control'
+[3.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.695s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install
+[3.712s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 17 installed packages in /home/roboboat/ros2_ws/install
+[3.729s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 260 installed packages in /opt/ros/foxy
+[3.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.827s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_args' from command line to 'None'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_target' from command line to 'None'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_clean_cache' from command line to 'False'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_clean_first' from command line to 'False'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_force_configure' from command line to 'False'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'ament_cmake_args' from command line to 'None'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'catkin_cmake_args' from command line to 'None'
+[3.828s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.828s] DEBUG:colcon.colcon_core.verb:Building package 'detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector', 'symlink_install': False, 'test_result_base': None}
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_args' from command line to 'None'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_target' from command line to 'None'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_clean_cache' from command line to 'False'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_clean_first' from command line to 'False'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_force_configure' from command line to 'False'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'ament_cmake_args' from command line to 'None'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'catkin_cmake_args' from command line to 'None'
+[3.844s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.844s] DEBUG:colcon.colcon_core.verb:Building package 'main_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control', 'symlink_install': False, 'test_result_base': None}
+[3.860s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.877s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.877s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector' with build type 'ament_cmake'
+[3.877s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector'
+[3.896s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.896s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.896s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.971s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control' with build type 'ament_cmake'
+[3.972s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control'
+[3.990s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.990s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.070s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector
+[4.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control
+[7.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector
+[7.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector -- -j12 -l12
+[7.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control
+[7.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control -- -j12 -l12
+[13.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector -- -j12 -l12
+[13.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector
+[13.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control -- -j12 -l12
+[13.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control
+[13.231s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detector)
+[13.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector
+[13.263s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector' for CMake module files
+[13.264s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector' for CMake config files
+[13.264s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector', 'cmake_prefix_path')
+[13.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/cmake_prefix_path.ps1'
+[13.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/cmake_prefix_path.dsv'
+[13.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/cmake_prefix_path.sh'
+[13.285s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/lib'
+[13.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector', 'ld_library_path_lib')
+[13.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/ld_library_path_lib.ps1'
+[13.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/ld_library_path_lib.dsv'
+[13.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/ld_library_path_lib.sh'
+[13.307s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/bin'
+[13.307s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/lib/pkgconfig/detector.pc'
+[13.308s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/lib/python3.8/site-packages'
+[13.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector', 'pythonpath')
+[13.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/pythonpath.ps1'
+[13.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/pythonpath.dsv'
+[13.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/pythonpath.sh'
+[13.331s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/bin'
+[13.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.ps1'
+[13.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.dsv'
+[13.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.sh'
+[13.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.bash'
+[13.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.zsh'
+[13.356s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/colcon-core/packages/detector)
+[13.367s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(main_control)
+[13.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/roboboat/ros2_ws/install/Motorcontroller:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control
+[13.387s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control' for CMake module files
+[13.395s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control' for CMake config files
+[13.395s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_control', 'cmake_prefix_path')
+[13.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/cmake_prefix_path.ps1'
+[13.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/cmake_prefix_path.dsv'
+[13.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/cmake_prefix_path.sh'
+[13.415s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/lib'
+[13.416s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_control', 'ld_library_path_lib')
+[13.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/ld_library_path_lib.ps1'
+[13.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/ld_library_path_lib.dsv'
+[13.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/ld_library_path_lib.sh'
+[13.434s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/bin'
+[13.434s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/lib/pkgconfig/main_control.pc'
+[13.435s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/lib/python3.8/site-packages'
+[13.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_control', 'pythonpath')
+[13.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/pythonpath.ps1'
+[13.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/pythonpath.dsv'
+[13.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/pythonpath.sh'
+[13.454s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/bin'
+[13.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.ps1'
+[13.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.dsv'
+[13.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.sh'
+[13.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.bash'
+[13.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.zsh'
+[13.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/colcon-core/packages/main_control)
+[13.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detector)
+[13.524s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector' for CMake module files
+[13.525s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector' for CMake config files
+[13.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector', 'cmake_prefix_path')
+[13.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/cmake_prefix_path.ps1'
+[13.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/cmake_prefix_path.dsv'
+[13.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/cmake_prefix_path.sh'
+[13.546s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/lib'
+[13.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector', 'ld_library_path_lib')
+[13.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/ld_library_path_lib.ps1'
+[13.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/ld_library_path_lib.dsv'
+[13.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/ld_library_path_lib.sh'
+[13.565s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/bin'
+[13.566s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/lib/pkgconfig/detector.pc'
+[13.566s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/lib/python3.8/site-packages'
+[13.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('detector', 'pythonpath')
+[13.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/pythonpath.ps1'
+[13.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/pythonpath.dsv'
+[13.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/hook/pythonpath.sh'
+[13.587s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/bin'
+[13.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.ps1'
+[13.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.dsv'
+[13.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.sh'
+[13.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.bash'
+[13.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/detector/package.zsh'
+[13.615s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector/share/colcon-core/packages/detector)
+[13.634s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(main_control)
+[13.650s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control' for CMake module files
+[13.651s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control' for CMake config files
+[13.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_control', 'cmake_prefix_path')
+[13.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/cmake_prefix_path.ps1'
+[13.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/cmake_prefix_path.dsv'
+[13.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/cmake_prefix_path.sh'
+[13.674s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/lib'
+[13.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_control', 'ld_library_path_lib')
+[13.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/ld_library_path_lib.ps1'
+[13.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/ld_library_path_lib.dsv'
+[13.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/ld_library_path_lib.sh'
+[13.725s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/bin'
+[13.725s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/lib/pkgconfig/main_control.pc'
+[13.725s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/lib/python3.8/site-packages'
+[13.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('main_control', 'pythonpath')
+[13.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/pythonpath.ps1'
+[13.748s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/pythonpath.dsv'
+[13.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/hook/pythonpath.sh'
+[13.752s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/bin'
+[13.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.ps1'
+[13.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.dsv'
+[13.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.sh'
+[13.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.bash'
+[13.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/main_control/package.zsh'
+[13.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control/share/colcon-core/packages/main_control)
+[13.775s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.775s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.775s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.776s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.830s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.831s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.831s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.882s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.902s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.ps1'
+[13.903s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/_local_setup_util_ps1.py'
+[13.905s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.ps1'
+[13.924s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.sh'
+[13.925s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/_local_setup_util_sh.py'
+[13.925s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.sh'
+[13.944s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.bash'
+[13.945s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.bash'
+[13.963s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.zsh'
+[13.964s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.zsh'
