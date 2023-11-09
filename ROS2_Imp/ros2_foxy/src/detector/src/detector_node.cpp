@@ -1,11 +1,13 @@
 #include "rclcpp/rclcpp.hpp"
+#include "rclcpp/logging.hpp"
+#include "rclcpp/utilities.hpp"
 #include "std_msgs/msg/string.hpp"
-//#include "detector/msg/MyCustomMsg.hpp"
 #include <string>
 #include <iostream>
 #include <memory>
 #include <cstdio>
 #include <chrono>
+#include <fstream>
 
 class DetectorPublisherNode : public rclcpp::Node {
 public:
@@ -34,9 +36,12 @@ private:
 //Here is where the python script gets executed 
     std::string executePythonScript() {
         //find the exact path of .py script. It is being accessed from the repo for ease of access
-        std::string command = "python3 ~/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/detector.py";
+        std::string script_path = "python3 ~/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/detector.py";
+        std::string command = script_path + " --weights ~/RoboBoat_Cyber_Minority/Old_Sys/YOLOv5&Image_Tests/yolov5/exp13best.pt" + " --img_size 512" + " --conf_thres 0.1" + "--svo path/to/file.svo";
+        
         //Log that there was an attempt to execute said script
         RCLCPP_INFO(get_logger(), "Executing Python script: %s", command.c_str());
+    
         
 //opens the python script and attempts to read and store the data in a temporary and constantly updating
         FILE *pipe = popen(command.c_str(), "r");

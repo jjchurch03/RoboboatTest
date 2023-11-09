@@ -310,6 +310,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install("TARGETS" "detector_node" "DESTINATION" "lib/detector")
+include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/detector" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/detector" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
@@ -326,13 +329,13 @@ ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_I
 ament_cmake_symlink_install_directory("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" DIRECTORY "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_c/detector/" "DESTINATION" "include/detector" "PATTERN_EXCLUDE" "*.cpp")
 
 # install("TARGETS" "detector__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/" "DESTINATION" "include/detector" "PATTERN_EXCLUDE" "*.cpp")
 ament_cmake_symlink_install_directory("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" DIRECTORY "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/" "DESTINATION" "include/detector" "PATTERN_EXCLUDE" "*.cpp")
 
 # install("TARGETS" "detector__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
-include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_introspection_c/detector/" "DESTINATION" "include/detector" "PATTERN" "*.h")
 ament_cmake_symlink_install_directory("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" DIRECTORY "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_introspection_c/detector/" "DESTINATION" "include/detector" "PATTERN" "*.h")
@@ -356,16 +359,16 @@ ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_I
 ament_cmake_symlink_install_directory("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" DIRECTORY "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_generator_py/detector/msg/" "DESTINATION" "lib/python3.8/site-packages/detector/msg" "PATTERN" "*.py")
 
 # install("TARGETS" "detector__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/detector")
-include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
-
-# install("TARGETS" "detector__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/detector")
 include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "detector__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/detector")
+# install("TARGETS" "detector__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/detector")
 include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "detector__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+# install("TARGETS" "detector__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/detector")
 include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "detector__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_adapter/detector/msg/MyCustomMsg.idl" "DESTINATION" "share/detector/msg")
 ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_adapter/detector/msg/MyCustomMsg.idl" "DESTINATION" "share/detector/msg")

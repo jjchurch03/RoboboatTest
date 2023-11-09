@@ -21,6 +21,17 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+add_executable(detector_node src/detector_node.cpp)
+
+ament_target_dependencies(detector_node rclcpp std_msgs rosidl_default_runtime)
+
+target_include_directories(detector_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+
+install(TARGETS detector_node
+  DESTINATION lib/${PROJECT_NAME})
+
 set(msg_files
   "msg/MyCustomMsg.msg"
 )
@@ -38,8 +49,7 @@ install(
 # Include the generated message headers
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp/${PROJECT_NAME}/msg)
 
-add_executable(detector_node src/detector_node.cpp)
-ament_target_dependencies(detector_node rclcpp std_msgs rosidl_default_runtime)
+
 
 
 

@@ -181,32 +181,6 @@ detector__rosidl_typesupport_introspection_c__pyext/fast:
 .PHONY : detector__rosidl_typesupport_introspection_c__pyext/fast
 
 #=============================================================================
-# Target rules for targets named detector_node
-
-# Build rule for target.
-detector_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 detector_node
-.PHONY : detector_node
-
-# fast build rule for target.
-detector_node/fast:
-	$(MAKE) -f CMakeFiles/detector_node.dir/build.make CMakeFiles/detector_node.dir/build
-.PHONY : detector_node/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
 # Target rules for targets named detector__rosidl_typesupport_cpp
 
 # Build rule for target.
@@ -244,6 +218,32 @@ detector__cpp: cmake_check_build_system
 detector__cpp/fast:
 	$(MAKE) -f CMakeFiles/detector__cpp.dir/build.make CMakeFiles/detector__cpp.dir/build
 .PHONY : detector__cpp/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named detector_node
+
+# Build rule for target.
+detector_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detector_node
+.PHONY : detector_node
+
+# fast build rule for target.
+detector_node/fast:
+	$(MAKE) -f CMakeFiles/detector_node.dir/build.make CMakeFiles/detector_node.dir/build
+.PHONY : detector_node/fast
 
 #=============================================================================
 # Target rules for targets named detector
@@ -350,19 +350,6 @@ detector__rosidl_typesupport_fastrtps_cpp/fast:
 .PHONY : detector__rosidl_typesupport_fastrtps_cpp/fast
 
 #=============================================================================
-# Target rules for targets named detector__rosidl_typesupport_introspection_c
-
-# Build rule for target.
-detector__rosidl_typesupport_introspection_c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 detector__rosidl_typesupport_introspection_c
-.PHONY : detector__rosidl_typesupport_introspection_c
-
-# fast build rule for target.
-detector__rosidl_typesupport_introspection_c/fast:
-	$(MAKE) -f CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/build
-.PHONY : detector__rosidl_typesupport_introspection_c/fast
-
-#=============================================================================
 # Target rules for targets named detector__python
 
 # Build rule for target.
@@ -374,6 +361,19 @@ detector__python: cmake_check_build_system
 detector__python/fast:
 	$(MAKE) -f CMakeFiles/detector__python.dir/build.make CMakeFiles/detector__python.dir/build
 .PHONY : detector__python/fast
+
+#=============================================================================
+# Target rules for targets named detector__rosidl_typesupport_introspection_c
+
+# Build rule for target.
+detector__rosidl_typesupport_introspection_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detector__rosidl_typesupport_introspection_c
+.PHONY : detector__rosidl_typesupport_introspection_c
+
+# fast build rule for target.
+detector__rosidl_typesupport_introspection_c/fast:
+	$(MAKE) -f CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/build
+.PHONY : detector__rosidl_typesupport_introspection_c/fast
 
 #=============================================================================
 # Target rules for targets named detector__py
@@ -725,12 +725,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... detector__rosidl_typesupport_introspection_c__pyext"
-	@echo "... test"
-	@echo "... detector_node"
-	@echo "... uninstall"
 	@echo "... detector__rosidl_typesupport_cpp"
 	@echo "... detector_uninstall"
 	@echo "... detector__cpp"
+	@echo "... test"
+	@echo "... uninstall"
+	@echo "... detector_node"
 	@echo "... detector"
 	@echo "... detector__rosidl_generator_c"
 	@echo "... detector__rosidl_typesupport_c"
@@ -739,8 +739,8 @@ help:
 	@echo "... detector__rosidl_typesupport_fastrtps_c"
 	@echo "... detector__rosidl_typesupport_introspection_cpp"
 	@echo "... detector__rosidl_typesupport_fastrtps_cpp"
-	@echo "... detector__rosidl_typesupport_introspection_c"
 	@echo "... detector__python"
+	@echo "... detector__rosidl_typesupport_introspection_c"
 	@echo "... detector__py"
 	@echo "... rosidl_generator_c/detector/msg/detail/my_custom_msg__functions.o"
 	@echo "... rosidl_generator_c/detector/msg/detail/my_custom_msg__functions.i"

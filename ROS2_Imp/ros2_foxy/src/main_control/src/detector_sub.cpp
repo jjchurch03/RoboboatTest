@@ -25,8 +25,7 @@ int main(int argc, char** argv) {
     auto node = rclcpp::Node::make_shared("detector_subscriber_node");
 
     // Create a subscriber to the desired topic
-    auto sub = node->create_subscription<std_msgs::msg::String>(
-        "detector", 10, callback);
+    auto sub = node->create_subscription<std_msgs::msg::String>("detector", 10, callback);
 
     rclcpp::spin(node); // Keep the node running
 

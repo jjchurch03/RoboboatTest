@@ -1,0 +1,7 @@
+# my_logger_config.yaml
+loggers:
+  "my_logger":
+    output: "log_output_file.log"
+    format: "[$(time)] [$(severity)] [$(logger_name)]: $(message)"
+    # Optionally, set the minimum severity level you want to log, e.g., "debug", "info", "warning", "error", "fatal".
+    # severity: "debug"
