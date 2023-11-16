@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/detector/msg/__init__.py"
-  "../rosidl_generator_py/detector/msg/_my_custom_msg.py"
-  "../rosidl_generator_py/detector/msg/_my_custom_msg_s.c"
+  "../rosidl_generator_py/detector/msg/_my_custom_msg_detector.py"
+  "../rosidl_generator_py/detector/msg/_my_custom_msg_detector_s.c"
   "CMakeFiles/detector__py"
 )
 

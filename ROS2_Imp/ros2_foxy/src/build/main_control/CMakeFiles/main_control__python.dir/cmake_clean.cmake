@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o"
+  "CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o"
   "rosidl_generator_py/main_control/libmain_control__python.pdb"
   "rosidl_generator_py/main_control/libmain_control__python.so"
 )

@@ -97,7 +97,7 @@ CMakeFiles/main_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generat
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
- rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.h
- rosidl_generator_c/main_control/msg/detail/my_custom_msg__struct.h
- rosidl_generator_c/main_control/msg/detail/my_custom_msg__type_support.h
+ rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.h
+ rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__struct.h
+ rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__type_support.h
  rosidl_generator_c/main_control/msg/rosidl_generator_c__visibility_control.h

@@ -20,9 +20,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(detector REQUIRED)
 
 set(msg_files
-  "msg/MyCustomMsg.msg"
+  "msg/MyCustomMsgMC.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -38,6 +39,14 @@ target_include_directories(main_control_pub PUBLIC
 install(TARGETS main_control_pub
   DESTINATION lib/${PROJECT_NAME})
   
+add_executable(detector_sub src/detector_sub.cpp)
+ament_target_dependencies(detector_sub rclcpp std_msgs rosidl_default_runtime detector)
+target_include_directories(detector_sub PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+
+install(TARGETS detector_sub
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

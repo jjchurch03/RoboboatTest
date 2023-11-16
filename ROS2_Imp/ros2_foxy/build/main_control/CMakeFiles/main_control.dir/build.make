@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/bui
 # Include the progress variables for this target.
 include CMakeFiles/main_control.dir/progress.make
 
-CMakeFiles/main_control: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/msg/MyCustomMsg.msg
+CMakeFiles/main_control: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/msg/MyCustomMsgMC.msg
 
 
 main_control: CMakeFiles/main_control

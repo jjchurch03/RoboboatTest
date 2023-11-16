@@ -20,6 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(main_control REQUIRED)
 
 add_executable(detector_node src/detector_node.cpp)
 
@@ -33,7 +34,7 @@ install(TARGETS detector_node
   DESTINATION lib/${PROJECT_NAME})
 
 set(msg_files
-  "msg/MyCustomMsg.msg"
+  "msg/MyCustomMsgDetector.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

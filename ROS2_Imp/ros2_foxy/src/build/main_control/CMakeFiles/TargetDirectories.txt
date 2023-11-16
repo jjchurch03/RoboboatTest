@@ -6,6 +6,7 @@
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/main_control__rosidl_typesupport_c__pyext.dir
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/main_control__rosidl_typesupport_fastrtps_c__pyext.dir
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/main_control_uninstall.dir
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/detector_sub.dir
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/main_control.dir
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles/main_control__rosidl_generator_c.dir

@@ -42,6 +42,7 @@
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/msg/MyCustomMsg.idl
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/msg/MyCustomMsg.msg
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/main_control_pub
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/detector_sub
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/package_run_dependencies/main_control
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/parent_prefix_path/main_control
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/ament_prefix_path.sh

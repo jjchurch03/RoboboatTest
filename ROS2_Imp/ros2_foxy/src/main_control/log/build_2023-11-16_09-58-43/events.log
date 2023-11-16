@@ -1,0 +1,189 @@
+[0.000000] (-) TimerEvent: {}
+[0.000699] (main_control) JobQueued: {'identifier': 'main_control', 'dependencies': OrderedDict()}
+[0.001101] (main_control) JobStarted: {'identifier': 'main_control'}
+[0.084153] (main_control) JobProgress: {'identifier': 'main_control', 'progress': 'cmake'}
+[0.085346] (main_control) JobProgress: {'identifier': 'main_control', 'progress': 'build'}
+[0.086310] (main_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2387'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1861'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:47999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/roboboat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2459,unix/roboboat-desktop:/tmp/.ICE-unix/2459'), ('INVOCATION_ID', 'c6a7fcc49f4d46f98878af1427250243'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c8342cd3_657b_47b9_971a_ee3f171b95a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib/python3.8/site-packages:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy')]), 'shell': False}
+[0.099308] (-) TimerEvent: {}
+[0.173304] (main_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target main_control_pub\x1b[0m\n'}
+[0.188827] (main_control) StdoutLine: {'line': b'[ 11%] Built target main_control__cpp\n'}
+[0.189277] (main_control) StdoutLine: {'line': b'[ 11%] Built target main_control__rosidl_generator_c\n'}
+[0.199495] (-) TimerEvent: {}
+[0.200096] (main_control) StdoutLine: {'line': b'[ 17%] Built target detector_sub\n'}
+[0.212033] (main_control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/main_control_pub.dir/src/main_control_pub.cpp.o\x1b[0m\n'}
+[0.222633] (main_control) StdoutLine: {'line': b'[ 45%] Built target main_control__rosidl_typesupport_cpp\n'}
+[0.223074] (main_control) StdoutLine: {'line': b'[ 45%] Built target main_control__rosidl_typesupport_c\n'}
+[0.223203] (main_control) StdoutLine: {'line': b'[ 45%] Built target main_control__rosidl_typesupport_introspection_c\n'}
+[0.223309] (main_control) StdoutLine: {'line': b'[ 54%] Built target main_control__rosidl_typesupport_introspection_cpp\n'}
+[0.226985] (main_control) StdoutLine: {'line': b'[ 62%] Built target main_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.271074] (main_control) StdoutLine: {'line': b'[ 71%] Built target main_control__rosidl_typesupport_fastrtps_c\n'}
+[0.299656] (-) TimerEvent: {}
+[0.304092] (main_control) StdoutLine: {'line': b'[ 71%] Built target main_control\n'}
+[0.338510] (main_control) StdoutLine: {'line': b'[ 74%] Built target main_control__py\n'}
+[0.381777] (main_control) StdoutLine: {'line': b'[ 80%] Built target main_control__python\n'}
+[0.399783] (-) TimerEvent: {}
+[0.420566] (main_control) StdoutLine: {'line': b'[ 91%] Built target main_control__rosidl_typesupport_introspection_c__pyext\n'}
+[0.421026] (main_control) StdoutLine: {'line': b'[ 91%] Built target main_control__rosidl_typesupport_c__pyext\n'}
+[0.422955] (main_control) StdoutLine: {'line': b'[ 97%] Built target main_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.499932] (-) TimerEvent: {}
+[0.600533] (-) TimerEvent: {}
+[0.701143] (-) TimerEvent: {}
+[0.801757] (-) TimerEvent: {}
+[0.902363] (-) TimerEvent: {}
+[1.002965] (-) TimerEvent: {}
+[1.103570] (-) TimerEvent: {}
+[1.204189] (-) TimerEvent: {}
+[1.304819] (-) TimerEvent: {}
+[1.405420] (-) TimerEvent: {}
+[1.506014] (-) TimerEvent: {}
+[1.606586] (-) TimerEvent: {}
+[1.707154] (-) TimerEvent: {}
+[1.807738] (-) TimerEvent: {}
+[1.908325] (-) TimerEvent: {}
+[2.008924] (-) TimerEvent: {}
+[2.109516] (-) TimerEvent: {}
+[2.210097] (-) TimerEvent: {}
+[2.310669] (-) TimerEvent: {}
+[2.411241] (-) TimerEvent: {}
+[2.511815] (-) TimerEvent: {}
+[2.612380] (-) TimerEvent: {}
+[2.712974] (-) TimerEvent: {}
+[2.813579] (-) TimerEvent: {}
+[2.914148] (-) TimerEvent: {}
+[3.014729] (-) TimerEvent: {}
+[3.115317] (-) TimerEvent: {}
+[3.215923] (-) TimerEvent: {}
+[3.316543] (-) TimerEvent: {}
+[3.417164] (-) TimerEvent: {}
+[3.517780] (-) TimerEvent: {}
+[3.618399] (-) TimerEvent: {}
+[3.719034] (-) TimerEvent: {}
+[3.819655] (-) TimerEvent: {}
+[3.920291] (-) TimerEvent: {}
+[4.020891] (-) TimerEvent: {}
+[4.121488] (-) TimerEvent: {}
+[4.222068] (-) TimerEvent: {}
+[4.322650] (-) TimerEvent: {}
+[4.423229] (-) TimerEvent: {}
+[4.523794] (-) TimerEvent: {}
+[4.624342] (-) TimerEvent: {}
+[4.724904] (-) TimerEvent: {}
+[4.825517] (-) TimerEvent: {}
+[4.926296] (-) TimerEvent: {}
+[4.987864] (main_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable main_control_pub\x1b[0m\n'}
+[5.026614] (-) TimerEvent: {}
+[5.127246] (-) TimerEvent: {}
+[5.227991] (-) TimerEvent: {}
+[5.238714] (main_control) StdoutLine: {'line': b'[100%] Built target main_control_pub\n'}
+[5.281958] (main_control) CommandEnded: {'returncode': 0}
+[5.328143] (-) TimerEvent: {}
+[5.363729] (main_control) JobProgress: {'identifier': 'main_control', 'progress': 'install'}
+[5.386742] (main_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control'], 'cwd': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2387'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1861'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:47999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/roboboat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2459,unix/roboboat-desktop:/tmp/.ICE-unix/2459'), ('INVOCATION_ID', 'c6a7fcc49f4d46f98878af1427250243'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c8342cd3_657b_47b9_971a_ee3f171b95a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/build/main_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib/python3.8/site-packages:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy')]), 'shell': False}
+[5.409485] (main_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.409931] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/rosidl_interfaces/main_control\n'}
+[5.410156] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control\n'}
+[5.410323] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg\n'}
+[5.410443] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/my_custom_msg.h\n'}
+[5.410561] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail\n'}
+[5.410697] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.h\n'}
+[5.410808] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__functions.c\n'}
+[5.410979] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__functions.h\n'}
+[5.411132] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__struct.h\n'}
+[5.411268] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.411403] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/library_path.sh\n'}
+[5.411515] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/library_path.dsv\n'}
+[5.411870] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_generator_c.so\n'}
+[5.412211] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control\n'}
+[5.412521] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg\n'}
+[5.412936] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail\n'}
+[5.413244] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[5.413540] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.414035] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_c.so\n'}
+[5.414464] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control\n'}
+[5.414764] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg\n'}
+[5.415049] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail\n'}
+[5.415430] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/dds_fastrtps\n'}
+[5.415676] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.415907] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.416132] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.416357] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control\n'}
+[5.416580] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg\n'}
+[5.416828] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.417100] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail\n'}
+[5.417329] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h\n'}
+[5.417554] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.c\n'}
+[5.417781] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_introspection_c.so\n'}
+[5.418001] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_c.so\n'}
+[5.418222] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control\n'}
+[5.418445] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg\n'}
+[5.418684] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail\n'}
+[5.418910] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__traits.hpp\n'}
+[5.419133] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__struct.hpp\n'}
+[5.419351] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.hpp\n'}
+[5.419569] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__builder.hpp\n'}
+[5.419784] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.420005] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/my_custom_msg.hpp\n'}
+[5.420224] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control\n'}
+[5.420440] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg\n'}
+[5.420738] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail\n'}
+[5.421000] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.421229] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/include/main_control/msg/detail/my_custom_msg__type_support.cpp\n'}
+[5.421474] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_introspection_cpp.so\n'}
+[5.421698] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__rosidl_typesupport_cpp.so\n'}
+[5.421922] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/pythonpath.sh\n'}
+[5.422143] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/pythonpath.dsv\n'}
+[5.422362] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/__init__.py\n'}
+[5.428206] (-) TimerEvent: {}
+[5.465977] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg\n'}
+[5.466449] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg/__init__.py\n'}
+[5.466743] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg/_my_custom_msg_s.c\n'}
+[5.467004] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/msg/_my_custom_msg.py\n'}
+[5.467330] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.468156] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.468951] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/python3.8/site-packages/main_control/main_control_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[5.469510] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/libmain_control__python.so\n'}
+[5.469833] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/msg/MyCustomMsg.idl\n'}
+[5.470179] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/msg/MyCustomMsg.msg\n'}
+[5.470434] (main_control) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/main_control_pub\n'}
+[5.472009] (main_control) StdoutLine: {'line': b'-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/main_control_pub" to ""\n'}
+[5.472630] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/lib/main_control/detector_sub\n'}
+[5.473186] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/package_run_dependencies/main_control\n'}
+[5.473533] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/parent_prefix_path/main_control\n'}
+[5.473903] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/ament_prefix_path.sh\n'}
+[5.474311] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/ament_prefix_path.dsv\n'}
+[5.474669] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/path.sh\n'}
+[5.475032] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/environment/path.dsv\n'}
+[5.475404] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.bash\n'}
+[5.475829] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.sh\n'}
+[5.476316] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.zsh\n'}
+[5.476562] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/local_setup.dsv\n'}
+[5.476821] (main_control) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/package.dsv\n'}
+[5.477078] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/ament_index/resource_index/packages/main_control\n'}
+[5.477312] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_generator_cExport.cmake\n'}
+[5.477560] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.477792] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.478021] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.478251] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cExport.cmake\n'}
+[5.478495] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.478725] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_generator_cppExport.cmake\n'}
+[5.478973] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.479197] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.479424] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cppExport.cmake\n'}
+[5.479646] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_control__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.479868] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/rosidl_cmake-extras.cmake\n'}
+[5.480086] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.480305] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.480520] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.480797] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.481045] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.481271] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.481499] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_controlConfig.cmake\n'}
+[5.481839] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/cmake/main_controlConfig-version.cmake\n'}
+[5.482505] (main_control) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/install/main_control/share/main_control/package.xml\n'}
+[5.484118] (main_control) CommandEnded: {'returncode': 0}
+[5.528368] (-) TimerEvent: {}
+[5.629253] (-) TimerEvent: {}
+[5.730055] (-) TimerEvent: {}
+[5.831480] (-) TimerEvent: {}
+[5.841622] (main_control) JobEnded: {'identifier': 'main_control', 'rc': 0}
+[5.844328] (-) EventReactorShutdown: {}

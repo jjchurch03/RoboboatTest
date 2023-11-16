@@ -56,9 +56,9 @@ include detector__py/CMakeFiles/detector__py.dir/progress.make
 detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
 detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c
 detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c
-detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/msg/_my_custom_msg.py
+detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/msg/_my_custom_msg_detector.py
 detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/msg/__init__.py
-detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/msg/_my_custom_msg_s.c
+detector__py/CMakeFiles/detector__py: rosidl_generator_py/detector/msg/_my_custom_msg_detector_s.c
 
 
 rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -74,7 +74,7 @@ rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /op
 rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/detector/msg/MyCustomMsg.idl
+rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/detector/msg/MyCustomMsgDetector.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/detector__py && /usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -84,22 +84,22 @@ rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c
 rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/detector/msg/_my_custom_msg.py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detector/msg/_my_custom_msg.py
+rosidl_generator_py/detector/msg/_my_custom_msg_detector.py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detector/msg/_my_custom_msg_detector.py
 
 rosidl_generator_py/detector/msg/__init__.py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detector/msg/__init__.py
 
-rosidl_generator_py/detector/msg/_my_custom_msg_s.c: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detector/msg/_my_custom_msg_s.c
+rosidl_generator_py/detector/msg/_my_custom_msg_detector_s.c: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detector/msg/_my_custom_msg_detector_s.c
 
 detector__py: detector__py/CMakeFiles/detector__py
 detector__py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c
 detector__py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c
 detector__py: rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c
-detector__py: rosidl_generator_py/detector/msg/_my_custom_msg.py
+detector__py: rosidl_generator_py/detector/msg/_my_custom_msg_detector.py
 detector__py: rosidl_generator_py/detector/msg/__init__.py
-detector__py: rosidl_generator_py/detector/msg/_my_custom_msg_s.c
+detector__py: rosidl_generator_py/detector/msg/_my_custom_msg_detector_s.c
 detector__py: detector__py/CMakeFiles/detector__py.dir/build.make
 
 .PHONY : detector__py

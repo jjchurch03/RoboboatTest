@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/my_custom_msg__type_support.cpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/my_custom_msg_detector__type_support.cpp
 cstddef
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/cstddef
 rosidl_runtime_c/message_type_support_struct.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/rosidl_runtime_c/message_type_support_struct.h
 detector/msg/rosidl_typesupport_c__visibility_control.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/detector/msg/rosidl_typesupport_c__visibility_control.h
-detector/msg/detail/my_custom_msg__struct.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/detector/msg/detail/my_custom_msg__struct.h
+detector/msg/detail/my_custom_msg_detector__struct.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/detector/msg/detail/my_custom_msg_detector__struct.h
 rosidl_typesupport_c/identifier.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector/rosidl_typesupport_c/detector/msg/rosidl_typesupport_c/identifier.h
 rosidl_typesupport_c/message_type_support_dispatch.h
@@ -66,7 +66,7 @@ cstddef
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
 
-rosidl_generator_c/detector/msg/detail/my_custom_msg__struct.h
+rosidl_generator_c/detector/msg/detail/my_custom_msg_detector__struct.h
 stdbool.h
 -
 stddef.h

@@ -220,6 +220,19 @@ main_control_uninstall/fast:
 .PHONY : main_control_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named detector_sub
+
+# Build rule for target.
+detector_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detector_sub
+.PHONY : detector_sub
+
+# fast build rule for target.
+detector_sub/fast:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/build
+.PHONY : detector_sub/fast
+
+#=============================================================================
 # Target rules for targets named main_control__rosidl_typesupport_fastrtps_c
 
 # Build rule for target.
@@ -388,32 +401,32 @@ main_control__py/fast:
 	$(MAKE) -f main_control__py/CMakeFiles/main_control__py.dir/build.make main_control__py/CMakeFiles/main_control__py.dir/build
 .PHONY : main_control__py/fast
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.o: rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.o: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o
 
-.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.o
+.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.o
 
 # target to build an object file
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_generator_c.dir/build.make CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o
-.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_generator_c.dir/build.make CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o
+.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.i: rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.i: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i
 
-.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.i
+.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_generator_c.dir/build.make CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i
-.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_generator_c.dir/build.make CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i
+.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.s: rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.s: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s
 
-.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.s
+.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_generator_c.dir/build.make CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s
-.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_generator_c.dir/build.make CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s
+.PHONY : rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s
 
 rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_c.c.o
 
@@ -496,194 +509,221 @@ rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspec
 	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.c.s
 
-rosidl_generator_py/main_control/msg/_my_custom_msg_s.o: rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o
+rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.o: rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o
 
-.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_s.o
-
-# target to build an object file
-rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o:
-	$(MAKE) -f CMakeFiles/main_control__python.dir/build.make CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o
-.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o
-
-rosidl_generator_py/main_control/msg/_my_custom_msg_s.i: rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i
-
-.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i:
-	$(MAKE) -f CMakeFiles/main_control__python.dir/build.make CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i
-.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i
-
-rosidl_generator_py/main_control/msg/_my_custom_msg_s.s: rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s
-
-.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s:
-	$(MAKE) -f CMakeFiles/main_control__python.dir/build.make CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s
-.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s
-
-rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.o: rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.o
-
-.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.o
+.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.o
 
 # target to build an object file
-rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.o
+rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o:
+	$(MAKE) -f CMakeFiles/main_control__python.dir/build.make CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o
+.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o
 
-rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.i: rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.i
+rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.i: rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i
 
-.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.i
+.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.i
+rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i:
+	$(MAKE) -f CMakeFiles/main_control__python.dir/build.make CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i
+.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i
 
-rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.s: rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.s
+rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.s: rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s
 
-.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.s
+.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.cpp.s
+rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s:
+	$(MAKE) -f CMakeFiles/main_control__python.dir/build.make CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s
+.PHONY : rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s
 
-rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.o: rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.o
+rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.o: rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.o
+.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.o
 
 # target to build an object file
-rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.o
+rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.o
 
-rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.i: rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.i
+rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.i: rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.i
+.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.i
+rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.i
 
-rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.s: rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.s
+rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.s: rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.s
+.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.cpp.s
+rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.o: rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.o
+rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.o: rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.o
+.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.o
+rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.o
 
-rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.i: rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.i
+rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.i: rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.i
+.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.i
+rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.i
 
-rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.s: rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.s
+rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.s: rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.s
+.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.cpp.s
+rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.o: rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.o
+rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.o: rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.o
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.o
+.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.o
+rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.o
 
-rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.i: rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.i
+rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.i: rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.i
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.i
+.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.i
+rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.i
 
-rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.s: rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.s
+rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.s: rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.s
 
-.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.s
+.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp.s
+rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.cpp.s
 
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.o: rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.o
+rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.o: rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.o
 
-.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.o
+rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.o
 
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.i: rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.i
+rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.i: rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.i
 
-.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.i
+rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.i
 
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.s: rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.s
+rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.s: rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.s
 
-.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c.s
+rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.o: rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.o
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.o: rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.o
 
-.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.o
+.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.o:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.o
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.o
 
-rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.i: rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.i
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.i: rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.i
 
-.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.i
+.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.i:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.i
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.i
 
-rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.s: rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.s
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.s: rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.s
 
-.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.s
+.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.s:
-	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.s
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.o: rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.i: rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.s: rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.cpp.s
+
+src/detector_sub.o: src/detector_sub.cpp.o
+
+.PHONY : src/detector_sub.o
+
+# target to build an object file
+src/detector_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/src/detector_sub.cpp.o
+.PHONY : src/detector_sub.cpp.o
+
+src/detector_sub.i: src/detector_sub.cpp.i
+
+.PHONY : src/detector_sub.i
+
+# target to preprocess a source file
+src/detector_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/src/detector_sub.cpp.i
+.PHONY : src/detector_sub.cpp.i
+
+src/detector_sub.s: src/detector_sub.cpp.s
+
+.PHONY : src/detector_sub.s
+
+# target to generate assembly for a file
+src/detector_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/src/detector_sub.cpp.s
+.PHONY : src/detector_sub.cpp.s
 
 src/main_control_pub.o: src/main_control_pub.cpp.o
 
@@ -726,6 +766,7 @@ help:
 	@echo "... main_control__rosidl_typesupport_c__pyext"
 	@echo "... main_control__rosidl_typesupport_fastrtps_c__pyext"
 	@echo "... main_control_uninstall"
+	@echo "... detector_sub"
 	@echo "... main_control__rosidl_typesupport_fastrtps_c"
 	@echo "... main_control"
 	@echo "... main_control__rosidl_generator_c"
@@ -742,9 +783,9 @@ help:
 	@echo "... main_control__rosidl_typesupport_introspection_cpp"
 	@echo "... install/local"
 	@echo "... main_control__py"
-	@echo "... rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.o"
-	@echo "... rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.i"
-	@echo "... rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.s"
+	@echo "... rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.o"
+	@echo "... rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.i"
+	@echo "... rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.s"
 	@echo "... rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_c.s"
@@ -754,27 +795,30 @@ help:
 	@echo "... rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.s"
-	@echo "... rosidl_generator_py/main_control/msg/_my_custom_msg_s.o"
-	@echo "... rosidl_generator_py/main_control/msg/_my_custom_msg_s.i"
-	@echo "... rosidl_generator_py/main_control/msg/_my_custom_msg_s.s"
-	@echo "... rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.o"
-	@echo "... rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.i"
-	@echo "... rosidl_typesupport_c/main_control/msg/my_custom_msg__type_support.s"
-	@echo "... rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.o"
-	@echo "... rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.i"
-	@echo "... rosidl_typesupport_cpp/main_control/msg/my_custom_msg__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.s"
+	@echo "... rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.o"
+	@echo "... rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.i"
+	@echo "... rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.s"
+	@echo "... rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.o"
+	@echo "... rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.i"
+	@echo "... rosidl_typesupport_c/main_control/msg/my_custom_msg_mc__type_support.s"
+	@echo "... rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.o"
+	@echo "... rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.i"
+	@echo "... rosidl_typesupport_cpp/main_control/msg/my_custom_msg_mc__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/main_control/msg/detail/my_custom_msg_mc__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/main_control/msg/detail/dds_fastrtps/my_custom_msg_mc__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg_mc__type_support.s"
+	@echo "... src/detector_sub.o"
+	@echo "... src/detector_sub.i"
+	@echo "... src/detector_sub.s"
 	@echo "... src/main_control_pub.o"
 	@echo "... src/main_control_pub.i"
 	@echo "... src/main_control_pub.s"

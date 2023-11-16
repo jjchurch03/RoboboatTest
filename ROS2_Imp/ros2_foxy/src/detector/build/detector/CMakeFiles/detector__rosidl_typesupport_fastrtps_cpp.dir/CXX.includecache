@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/my_custom_msg__type_support.cpp
-detector/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/detector/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
-detector/msg/detail/my_custom_msg__struct.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/detector/msg/detail/my_custom_msg__struct.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/my_custom_msg_detector__type_support.cpp
+detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_fastrtps_cpp.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_fastrtps_cpp.hpp
+detector/msg/detail/my_custom_msg_detector__struct.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/detector/msg/detail/my_custom_msg_detector__struct.hpp
 limits
 -
 stdexcept
@@ -148,7 +148,7 @@ string
 
 /opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
 
-rosidl_generator_cpp/detector/msg/detail/my_custom_msg__struct.hpp
+rosidl_generator_cpp/detector/msg/detail/my_custom_msg_detector__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -164,15 +164,15 @@ string
 vector
 -
 
-rosidl_typesupport_fastrtps_cpp/detector/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+rosidl_typesupport_fastrtps_cpp/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_fastrtps_cpp.hpp
 rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_fastrtps_cpp/detector/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_interface/macros.h
 rosidl_typesupport_fastrtps_cpp/detector/msg/detail/rosidl_typesupport_interface/macros.h
 detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
 rosidl_typesupport_fastrtps_cpp/detector/msg/detail/detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
-detector/msg/detail/my_custom_msg__struct.hpp
-rosidl_typesupport_fastrtps_cpp/detector/msg/detail/detector/msg/detail/my_custom_msg__struct.hpp
+detector/msg/detail/my_custom_msg_detector__struct.hpp
+rosidl_typesupport_fastrtps_cpp/detector/msg/detail/detector/msg/detail/my_custom_msg_detector__struct.hpp
 fastcdr/Cdr.h
 rosidl_typesupport_fastrtps_cpp/detector/msg/detail/fastcdr/Cdr.h
 

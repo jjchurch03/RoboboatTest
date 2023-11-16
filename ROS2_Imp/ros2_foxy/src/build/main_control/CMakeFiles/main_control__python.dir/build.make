@@ -57,27 +57,27 @@ include CMakeFiles/main_control__python.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main_control__python.dir/flags.make
 
-CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o: CMakeFiles/main_control__python.dir/flags.make
-CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o: rosidl_generator_py/main_control/msg/_my_custom_msg_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o   -c /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c
+CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o: CMakeFiles/main_control__python.dir/flags.make
+CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o: rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o   -c /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c
 
-CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c > CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.i
+CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c > CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.i
 
-CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c -o CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.s
+CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c -o CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.s
 
 # Object files for target main_control__python
 main_control__python_OBJECTS = \
-"CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o"
+"CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o"
 
 # External object files for target main_control__python
 main_control__python_EXTERNAL_OBJECTS =
 
-rosidl_generator_py/main_control/libmain_control__python.so: CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_s.c.o
+rosidl_generator_py/main_control/libmain_control__python.so: CMakeFiles/main_control__python.dir/rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c.o
 rosidl_generator_py/main_control/libmain_control__python.so: CMakeFiles/main_control__python.dir/build.make
 rosidl_generator_py/main_control/libmain_control__python.so: libmain_control__rosidl_generator_c.so
 rosidl_generator_py/main_control/libmain_control__python.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so

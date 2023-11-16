@@ -1,6 +1,6 @@
+#include <fstream>
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-#include <fstream>
 
 void callback(const std_msgs::msg::String::SharedPtr msg) {
     std::string message = msg->data;

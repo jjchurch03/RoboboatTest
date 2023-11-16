@@ -57,56 +57,56 @@ include CMakeFiles/main_control__rosidl_generator_c.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main_control__rosidl_generator_c.dir/flags.make
 
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/lib/rosidl_generator_c/rosidl_generator_c
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_c/__init__.py
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/action__type_support.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__functions.c.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__functions.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__struct.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__type_support.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__functions.c.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__functions.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__struct.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__type_support.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
-rosidl_generator_c/main_control/msg/my_custom_msg.h: rosidl_adapter/main_control/msg/MyCustomMsg.idl
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/lib/rosidl_generator_c/rosidl_generator_c
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_c/__init__.py
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/action__type_support.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__functions.c.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__functions.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__struct.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/idl__type_support.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__functions.c.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__functions.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__struct.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__type_support.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
+rosidl_generator_c/main_control/msg/my_custom_msg_mc.h: rosidl_adapter/main_control/msg/MyCustomMsgMC.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c__arguments.json
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.h: rosidl_generator_c/main_control/msg/my_custom_msg.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.h
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.h: rosidl_generator_c/main_control/msg/my_custom_msg_mc.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.h
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__struct.h: rosidl_generator_c/main_control/msg/my_custom_msg.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg__struct.h
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__struct.h: rosidl_generator_c/main_control/msg/my_custom_msg_mc.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__struct.h
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__type_support.h: rosidl_generator_c/main_control/msg/my_custom_msg.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg__type_support.h
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__type_support.h: rosidl_generator_c/main_control/msg/my_custom_msg_mc.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__type_support.h
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c: rosidl_generator_c/main_control/msg/my_custom_msg.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c: rosidl_generator_c/main_control/msg/my_custom_msg_mc.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c
 
-CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o: CMakeFiles/main_control__rosidl_generator_c.dir/flags.make
-CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o: rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o   -c /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c
+CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o: CMakeFiles/main_control__rosidl_generator_c.dir/flags.make
+CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o   -c /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c
 
-CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c > CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.i
+CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c > CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.i
 
-CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c -o CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.s
+CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c -o CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.s
 
 # Object files for target main_control__rosidl_generator_c
 main_control__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o"
+"CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o"
 
 # External object files for target main_control__rosidl_generator_c
 main_control__rosidl_generator_c_EXTERNAL_OBJECTS =
 
-libmain_control__rosidl_generator_c.so: CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c.o
+libmain_control__rosidl_generator_c.so: CMakeFiles/main_control__rosidl_generator_c.dir/rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c.o
 libmain_control__rosidl_generator_c.so: CMakeFiles/main_control__rosidl_generator_c.dir/build.make
 libmain_control__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libmain_control__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
@@ -123,11 +123,11 @@ CMakeFiles/main_control__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/main_control__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/main_control__rosidl_generator_c.dir/clean
 
-CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/my_custom_msg.h
-CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.h
-CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg__struct.h
-CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg__type_support.h
-CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.c
+CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/my_custom_msg_mc.h
+CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.h
+CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__struct.h
+CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__type_support.h
+CMakeFiles/main_control__rosidl_generator_c.dir/depend: rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.c
 	cd /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/CMakeFiles/main_control__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main_control__rosidl_generator_c.dir/depend
 

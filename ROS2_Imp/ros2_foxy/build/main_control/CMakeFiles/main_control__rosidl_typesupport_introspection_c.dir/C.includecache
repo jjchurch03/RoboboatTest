@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__type_support.c
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__type_support.c
 stddef.h
 -
-main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h
+main_control/msg/detail/my_custom_msg_mc__rosidl_typesupport_introspection_c.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg_mc__rosidl_typesupport_introspection_c.h
 main_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
 rosidl_typesupport_introspection_c/field_types.h
@@ -19,10 +19,10 @@ rosidl_typesupport_introspection_c/identifier.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/rosidl_typesupport_introspection_c/identifier.h
 rosidl_typesupport_introspection_c/message_introspection.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/rosidl_typesupport_introspection_c/message_introspection.h
-main_control/msg/detail/my_custom_msg__functions.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg__functions.h
-main_control/msg/detail/my_custom_msg__struct.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg__struct.h
+main_control/msg/detail/my_custom_msg_mc__functions.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg_mc__functions.h
+main_control/msg/detail/my_custom_msg_mc__struct.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg_mc__struct.h
 rosidl_runtime_c/string_functions.h
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/main_control/rosidl_typesupport_introspection_c/main_control/msg/detail/rosidl_runtime_c/string_functions.h
 rosidl_runtime_c/primitives_sequence_functions.h
@@ -96,7 +96,7 @@ rosidl_typesupport_introspection_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_typesupport_introspection_c/visibility_control.h
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__functions.h
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__functions.h
 stdbool.h
 -
 stdlib.h
@@ -105,10 +105,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/main_control/msg/detail/rosidl_runtime_c/visibility_control.h
 main_control/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/main_control/msg/detail/main_control/msg/rosidl_generator_c__visibility_control.h
-main_control/msg/detail/my_custom_msg__struct.h
-rosidl_generator_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg__struct.h
+main_control/msg/detail/my_custom_msg_mc__struct.h
+rosidl_generator_c/main_control/msg/detail/main_control/msg/detail/my_custom_msg_mc__struct.h
 
-rosidl_generator_c/main_control/msg/detail/my_custom_msg__struct.h
+rosidl_generator_c/main_control/msg/detail/my_custom_msg_mc__struct.h
 stdbool.h
 -
 stddef.h
@@ -122,7 +122,7 @@ rosidl_generator_c/main_control/msg/detail/rosidl_runtime_c/primitives_sequence.
 
 rosidl_generator_c/main_control/msg/rosidl_generator_c__visibility_control.h
 
-rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/main_control/msg/detail/my_custom_msg_mc__rosidl_typesupport_introspection_c.h
 rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_introspection_c/main_control/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_interface/macros.h

@@ -370,11 +370,11 @@ include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/
 # install("TARGETS" "detector__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_adapter/detector/msg/MyCustomMsg.idl" "DESTINATION" "share/detector/msg")
-ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_adapter/detector/msg/MyCustomMsg.idl" "DESTINATION" "share/detector/msg")
+# install(FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_adapter/detector/msg/MyCustomMsgDetector.idl" "DESTINATION" "share/detector/msg")
+ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector/rosidl_adapter/detector/msg/MyCustomMsgDetector.idl" "DESTINATION" "share/detector/msg")
 
-# install(FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg/MyCustomMsg.msg" "DESTINATION" "share/detector/msg")
-ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg/MyCustomMsg.msg" "DESTINATION" "share/detector/msg")
+# install(FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg/MyCustomMsgDetector.msg" "DESTINATION" "share/detector/msg")
+ament_cmake_symlink_install_files("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" FILES "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/msg/MyCustomMsgDetector.msg" "DESTINATION" "share/detector/msg")
 
 # install(DIRECTORY "include/" "DESTINATION" "include")
 ament_cmake_symlink_install_directory("/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector" DIRECTORY "include/" "DESTINATION" "include")

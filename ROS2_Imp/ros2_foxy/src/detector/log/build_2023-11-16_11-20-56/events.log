@@ -1,0 +1,290 @@
+[0.000000] (-) TimerEvent: {}
+[0.000566] (detector) JobQueued: {'identifier': 'detector', 'dependencies': OrderedDict()}
+[0.001040] (detector) JobStarted: {'identifier': 'detector'}
+[0.082035] (detector) JobProgress: {'identifier': 'detector', 'progress': 'cmake'}
+[0.083909] (detector) JobProgress: {'identifier': 'detector', 'progress': 'build'}
+[0.084963] (detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector', '--', '-j12', '-l12'], 'cwd': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2387'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1861'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:47999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/roboboat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2459,unix/roboboat-desktop:/tmp/.ICE-unix/2459'), ('INVOCATION_ID', 'c6a7fcc49f4d46f98878af1427250243'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/506004a5_797d_4605_acdb_d9fa4867a105'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.144'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib/python3.8/site-packages:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy')]), 'shell': False}
+[0.099234] (-) TimerEvent: {}
+[0.147428] (detector) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.181009] (detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.181356] (detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.199324] (-) TimerEvent: {}
+[0.299976] (-) TimerEvent: {}
+[0.400647] (-) TimerEvent: {}
+[0.471121] (detector) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.500735] (-) TimerEvent: {}
+[0.502573] (detector) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.561064] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.564974] (detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.600828] (-) TimerEvent: {}
+[0.701508] (-) TimerEvent: {}
+[0.737241] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.797515] (detector) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.799286] (detector) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.801534] (-) TimerEvent: {}
+[0.901984] (-) TimerEvent: {}
+[0.972190] (detector) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.002482] (-) TimerEvent: {}
+[1.026900] (detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.102595] (-) TimerEvent: {}
+[1.203323] (-) TimerEvent: {}
+[1.225101] (detector) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.303523] (-) TimerEvent: {}
+[1.404374] (-) TimerEvent: {}
+[1.406096] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.416722] (detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.453157] (detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.453748] (detector) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.490295] (detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.490677] (detector) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.490939] (detector) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[1.504439] (-) TimerEvent: {}
+[1.543494] (detector) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.604566] (-) TimerEvent: {}
+[1.608122] (detector) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.695306] (detector) StdoutLine: {'line': b'-- Generating done\n'}
+[1.701220] (detector) StdoutLine: {'line': b'-- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector\n'}
+[1.704660] (-) TimerEvent: {}
+[1.762165] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__cpp\x1b[0m\n'}
+[1.776030] (detector) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.777755] (detector) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.778085] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector_node\x1b[0m\n'}
+[1.804811] (-) TimerEvent: {}
+[1.824268] (detector) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o\x1b[0m\n'}
+[1.904954] (-) TimerEvent: {}
+[2.005536] (-) TimerEvent: {}
+[2.102906] (detector) StdoutLine: {'line': b'[  9%] Built target detector__cpp\n'}
+[2.105603] (-) TimerEvent: {}
+[2.123697] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_generator_c\x1b[0m\n'}
+[2.126965] (detector) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.127226] (detector) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.127335] (detector) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.143607] (detector) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/detector__rosidl_generator_c.dir/rosidl_generator_c/detector/msg/detail/my_custom_msg_detector__functions.c.o\x1b[0m\n'}
+[2.205782] (-) TimerEvent: {}
+[2.227613] (detector) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libdetector__rosidl_generator_c.so\x1b[0m\n'}
+[2.278493] (detector) StdoutLine: {'line': b'[ 24%] Built target detector__rosidl_generator_c\n'}
+[2.298919] (detector) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.299318] (detector) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.305906] (-) TimerEvent: {}
+[2.406465] (-) TimerEvent: {}
+[2.430927] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.449912] (detector) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detector/msg/my_custom_msg_detector__type_support.cpp.o\x1b[0m\n'}
+[2.468980] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.469290] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.489929] (detector) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detector/msg/detail/my_custom_msg_detector__type_support.cpp.o\x1b[0m\n'}
+[2.490382] (detector) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detector/msg/detail/dds_fastrtps/my_custom_msg_detector__type_support.cpp.o\x1b[0m\n'}
+[2.506620] (-) TimerEvent: {}
+[2.607232] (-) TimerEvent: {}
+[2.607831] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_c\x1b[0m\n'}
+[2.626986] (detector) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/detector/msg/my_custom_msg_detector__type_support.cpp.o\x1b[0m\n'}
+[2.640343] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.660800] (detector) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detector/msg/detail/my_custom_msg_detector__type_support.c.o\x1b[0m\n'}
+[2.676184] (detector) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libdetector__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.707401] (-) TimerEvent: {}
+[2.721147] (detector) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libdetector__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.733271] (detector) StdoutLine: {'line': b'[ 51%] Built target detector__rosidl_typesupport_c\n'}
+[2.766906] (detector) StdoutLine: {'line': b'[ 51%] Built target detector__rosidl_typesupport_introspection_c\n'}
+[2.807543] (-) TimerEvent: {}
+[2.902612] (detector) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libdetector__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.907621] (-) TimerEvent: {}
+[2.957002] (detector) StdoutLine: {'line': b'[ 54%] Built target detector__rosidl_typesupport_cpp\n'}
+[3.007824] (-) TimerEvent: {}
+[3.086481] (detector) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libdetector__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.107943] (-) TimerEvent: {}
+[3.195625] (detector) StdoutLine: {'line': b'[ 57%] Built target detector__rosidl_typesupport_introspection_cpp\n'}
+[3.208064] (-) TimerEvent: {}
+[3.285895] (detector) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libdetector__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.308227] (-) TimerEvent: {}
+[3.408833] (-) TimerEvent: {}
+[3.409706] (detector) StdoutLine: {'line': b'[ 60%] Built target detector__rosidl_typesupport_fastrtps_cpp\n'}
+[3.438087] (detector) StdoutLine: {'line': b'[ 63%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.508954] (-) TimerEvent: {}
+[3.609476] (-) TimerEvent: {}
+[3.710043] (-) TimerEvent: {}
+[3.779301] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.800462] (detector) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detector/msg/detail/my_custom_msg_detector__type_support_c.cpp.o\x1b[0m\n'}
+[3.810104] (-) TimerEvent: {}
+[3.910635] (-) TimerEvent: {}
+[4.011439] (-) TimerEvent: {}
+[4.112264] (-) TimerEvent: {}
+[4.213043] (-) TimerEvent: {}
+[4.313839] (-) TimerEvent: {}
+[4.370182] (detector) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libdetector__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.413980] (-) TimerEvent: {}
+[4.490987] (detector) StdoutLine: {'line': b'[ 69%] Built target detector__rosidl_typesupport_fastrtps_c\n'}
+[4.514123] (-) TimerEvent: {}
+[4.527286] (detector) StdoutLine: {'line': b'[ 69%] Built target detector\n'}
+[4.559536] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__py\x1b[0m\n'}
+[4.578244] (detector) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.614224] (-) TimerEvent: {}
+[4.714771] (-) TimerEvent: {}
+[4.815376] (-) TimerEvent: {}
+[4.915988] (-) TimerEvent: {}
+[5.016609] (-) TimerEvent: {}
+[5.087136] (detector) StdoutLine: {'line': b'[ 72%] Built target detector__py\n'}
+[5.116738] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__python\x1b[0m\n'}
+[5.117178] (-) TimerEvent: {}
+[5.140344] (detector) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/detector__python.dir/rosidl_generator_py/detector/msg/_my_custom_msg_detector_s.c.o\x1b[0m\n'}
+[5.217368] (-) TimerEvent: {}
+[5.318002] (-) TimerEvent: {}
+[5.319281] (detector) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detector/libdetector__python.so\x1b[0m\n'}
+[5.377435] (detector) StdoutLine: {'line': b'[ 78%] Built target detector__python\n'}
+[5.406649] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[5.407067] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[5.407178] (detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[5.418130] (-) TimerEvent: {}
+[5.431142] (detector) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/detector__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.431618] (detector) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/detector__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.431886] (detector) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/detector__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detector/_detector_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.518307] (-) TimerEvent: {}
+[5.549803] (detector) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[5.550239] (detector) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[5.553294] (detector) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/detector/detector_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[5.600287] (detector) StdoutLine: {'line': b'[ 96%] Built target detector__rosidl_typesupport_c__pyext\n'}
+[5.600719] (detector) StdoutLine: {'line': b'[ 96%] Built target detector__rosidl_typesupport_introspection_c__pyext\n'}
+[5.618423] (-) TimerEvent: {}
+[5.640250] (detector) StdoutLine: {'line': b'[ 96%] Built target detector__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.718603] (-) TimerEvent: {}
+[5.819210] (-) TimerEvent: {}
+[5.919832] (-) TimerEvent: {}
+[6.020431] (-) TimerEvent: {}
+[6.121214] (-) TimerEvent: {}
+[6.221809] (-) TimerEvent: {}
+[6.322383] (-) TimerEvent: {}
+[6.422972] (-) TimerEvent: {}
+[6.523585] (-) TimerEvent: {}
+[6.624228] (-) TimerEvent: {}
+[6.724804] (-) TimerEvent: {}
+[6.825371] (-) TimerEvent: {}
+[6.879452] (detector) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable detector_node\x1b[0m\n'}
+[6.925549] (-) TimerEvent: {}
+[7.026104] (-) TimerEvent: {}
+[7.121227] (detector) StdoutLine: {'line': b'[100%] Built target detector_node\n'}
+[7.126194] (-) TimerEvent: {}
+[7.150961] (detector) CommandEnded: {'returncode': 0}
+[7.226418] (-) TimerEvent: {}
+[7.228059] (detector) JobProgress: {'identifier': 'detector', 'progress': 'install'}
+[7.254108] (detector) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector'], 'cwd': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'roboboat'), ('SSH_AGENT_PID', '2387'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/roboboat'), ('OLDPWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1861'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'roboboat'), ('JOURNAL_STREAM', '7:47999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'roboboat'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/roboboat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/roboboat-desktop:@/tmp/.ICE-unix/2459,unix/roboboat-desktop:/tmp/.ICE-unix/2459'), ('INVOCATION_ID', 'c6a7fcc49f4d46f98878af1427250243'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/506004a5_797d_4605_acdb_d9fa4867a105'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.144'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib/python3.8/site-packages:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy')]), 'shell': False}
+[7.277380] (detector) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.278179] (detector) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.278799] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/detector/detector_node\n'}
+[7.287556] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/rosidl_interfaces/detector\n'}
+[7.288489] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__functions.h\n'}
+[7.288827] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__struct.h\n'}
+[7.289192] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__type_support.h\n'}
+[7.289455] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__functions.h\n'}
+[7.310045] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__struct.h\n'}
+[7.324736] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__type_support.h\n'}
+[7.326639] (-) TimerEvent: {}
+[7.339015] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__functions.h\n'}
+[7.339382] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__struct.h\n'}
+[7.339766] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__type_support.h\n'}
+[7.340194] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/my_custom_msg.h\n'}
+[7.340784] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/my_custom_msg_detector.h\n'}
+[7.359848] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.360231] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/yol_ov5helper.h\n'}
+[7.360939] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/library_path.sh\n'}
+[7.361654] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/library_path.dsv\n'}
+[7.363345] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[7.363702] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_fastrtps_c.h\n'}
+[7.378475] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_fastrtps_c.h\n'}
+[7.379000] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.380410] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_fastrtps_c.so\n'}
+[7.382625] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.382968] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.403995] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.404602] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.406133] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.408042] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_c.h\n'}
+[7.408433] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_introspection_c.h\n'}
+[7.426739] (-) TimerEvent: {}
+[7.429000] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_c.h\n'}
+[7.429503] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.431861] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__builder.hpp\n'}
+[7.432745] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__struct.hpp\n'}
+[7.433261] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__traits.hpp\n'}
+[7.433698] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__type_support.hpp\n'}
+[7.434090] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__builder.hpp\n'}
+[7.453100] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__struct.hpp\n'}
+[7.468502] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__traits.hpp\n'}
+[7.486333] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__type_support.hpp\n'}
+[7.501193] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__builder.hpp\n'}
+[7.501838] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__struct.hpp\n'}
+[7.502476] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__traits.hpp\n'}
+[7.503191] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__type_support.hpp\n'}
+[7.503952] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/my_custom_msg.hpp\n'}
+[7.504400] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/my_custom_msg_detector.hpp\n'}
+[7.524017] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[7.524744] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/yol_ov5helper.hpp\n'}
+[7.526676] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.526930] (-) TimerEvent: {}
+[7.527341] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.542058] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/msg/detail/yol_ov5helper__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.543246] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/pythonpath.sh\n'}
+[7.544361] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/pythonpath.dsv\n'}
+[7.577687] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/__init__.py\n'}
+[7.580451] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/msg/__init__.py\n'}
+[7.581643] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/msg/_my_custom_msg.py\n'}
+[7.582090] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/msg/_my_custom_msg_detector.py\n'}
+[7.615999] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/msg/_yol_ov5helper.py\n'}
+[7.618398] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/detector_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[7.620262] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/detector_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[7.622333] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/detector_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[7.623487] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__python.so\n'}
+[7.624477] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/msg/MyCustomMsgDetector.idl\n'}
+[7.627068] (-) TimerEvent: {}
+[7.642612] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/msg/MyCustomMsgDetector.msg\n'}
+[7.658308] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/include/detector/.YOLOv5Detection.hpp.swp\n'}
+[7.699350] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/package_run_dependencies/detector\n'}
+[7.701375] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/parent_prefix_path/detector\n'}
+[7.702212] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/ament_prefix_path.sh\n'}
+[7.703317] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/ament_prefix_path.dsv\n'}
+[7.704687] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/path.sh\n'}
+[7.705785] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/environment/path.dsv\n'}
+[7.706627] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.bash\n'}
+[7.707726] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.sh\n'}
+[7.708834] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.zsh\n'}
+[7.709905] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/local_setup.dsv\n'}
+[7.710757] (detector) StdoutLine: {'line': b'-- Symlinking: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/package.dsv\n'}
+[7.727155] (-) TimerEvent: {}
+[7.747674] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/ament_index/resource_index/packages/detector\n'}
+[7.748906] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/rosidl_cmake-extras.cmake\n'}
+[7.750039] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.751149] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.752303] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.753405] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.754490] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.755582] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.757241] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detectorConfig.cmake\n'}
+[7.757840] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detectorConfig-version.cmake\n'}
+[7.758749] (detector) StdoutLine: {'line': b'-- Up-to-date symlink: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/package.xml\n'}
+[7.786679] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_generator_c.so\n'}
+[7.788212] (detector) StdoutLine: {'line': b'-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_generator_c.so" to ""\n'}
+[7.789393] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_c.so\n'}
+[7.790712] (detector) StdoutLine: {'line': b'-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.791851] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_c.so\n'}
+[7.793100] (detector) StdoutLine: {'line': b'-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_c.so" to ""\n'}
+[7.795118] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_cpp.so\n'}
+[7.796786] (detector) StdoutLine: {'line': b'-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.797881] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_cpp.so\n'}
+[7.799110] (detector) StdoutLine: {'line': b'-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/libdetector__rosidl_typesupport_cpp.so" to ""\n'}
+[7.827248] (-) TimerEvent: {}
+[7.854538] (detector) StdoutLine: {'line': b"Compiling '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/lib/python3.8/site-packages/detector/__init__.py'...\n"}
+[7.863915] (detector) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_generator_cExport.cmake\n'}
+[7.864318] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.865948] (detector) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.866300] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.867628] (detector) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cExport.cmake\n'}
+[7.868022] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.869307] (detector) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_generator_cppExport.cmake\n'}
+[7.870326] (detector) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.870644] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.871997] (detector) StdoutLine: {'line': b'-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cppExport.cmake\n'}
+[7.872331] (detector) StdoutLine: {'line': b'-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/install/detector/share/detector/cmake/detector__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.881555] (detector) CommandEnded: {'returncode': 0}
+[7.927751] (-) TimerEvent: {}
+[8.028837] (-) TimerEvent: {}
+[8.129574] (-) TimerEvent: {}
+[8.230323] (-) TimerEvent: {}
+[8.267894] (detector) JobEnded: {'identifier': 'detector', 'rc': 0}
+[8.269350] (-) EventReactorShutdown: {}

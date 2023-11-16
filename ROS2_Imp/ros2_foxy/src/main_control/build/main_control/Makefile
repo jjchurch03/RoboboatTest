@@ -220,6 +220,19 @@ main_control_uninstall/fast:
 .PHONY : main_control_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named detector_sub
+
+# Build rule for target.
+detector_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detector_sub
+.PHONY : detector_sub
+
+# fast build rule for target.
+detector_sub/fast:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/build
+.PHONY : detector_sub/fast
+
+#=============================================================================
 # Target rules for targets named main_control__rosidl_typesupport_fastrtps_c
 
 # Build rule for target.
@@ -685,6 +698,33 @@ rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type
 	$(MAKE) -f CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/main_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.cpp.s
 
+src/detector_sub.o: src/detector_sub.cpp.o
+
+.PHONY : src/detector_sub.o
+
+# target to build an object file
+src/detector_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/src/detector_sub.cpp.o
+.PHONY : src/detector_sub.cpp.o
+
+src/detector_sub.i: src/detector_sub.cpp.i
+
+.PHONY : src/detector_sub.i
+
+# target to preprocess a source file
+src/detector_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/src/detector_sub.cpp.i
+.PHONY : src/detector_sub.cpp.i
+
+src/detector_sub.s: src/detector_sub.cpp.s
+
+.PHONY : src/detector_sub.s
+
+# target to generate assembly for a file
+src/detector_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/detector_sub.dir/build.make CMakeFiles/detector_sub.dir/src/detector_sub.cpp.s
+.PHONY : src/detector_sub.cpp.s
+
 src/main_control_pub.o: src/main_control_pub.cpp.o
 
 .PHONY : src/main_control_pub.o
@@ -726,6 +766,7 @@ help:
 	@echo "... main_control__rosidl_typesupport_c__pyext"
 	@echo "... main_control__rosidl_typesupport_fastrtps_c__pyext"
 	@echo "... main_control_uninstall"
+	@echo "... detector_sub"
 	@echo "... main_control__rosidl_typesupport_fastrtps_c"
 	@echo "... main_control"
 	@echo "... main_control__rosidl_generator_c"
@@ -775,6 +816,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/main_control/msg/detail/my_custom_msg__type_support.s"
+	@echo "... src/detector_sub.o"
+	@echo "... src/detector_sub.i"
+	@echo "... src/detector_sub.s"
 	@echo "... src/main_control_pub.o"
 	@echo "... src/main_control_pub.i"
 	@echo "... src/main_control_pub.s"

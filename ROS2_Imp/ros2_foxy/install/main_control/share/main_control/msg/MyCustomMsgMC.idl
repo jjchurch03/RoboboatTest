@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from main_control/msg/MyCustomMsgMC.msg
+// generated code does not contain a copyright notice
+
+
+module main_control {
+  module msg {
+    struct MyCustomMsgMC {
+      string frame_id;
+
+      sequence<string> object_classes;
+
+      sequence<float> object_scores;
+
+      sequence<float> object_bounding_boxes;
+
+      sequence<float> object_positions;
+
+      sequence<float> object_orientations;
+    };
+  };
+};

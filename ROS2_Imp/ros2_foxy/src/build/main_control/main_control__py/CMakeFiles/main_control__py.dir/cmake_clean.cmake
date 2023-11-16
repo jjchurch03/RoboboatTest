@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/main_control/_main_control_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/main_control/msg/__init__.py"
-  "../rosidl_generator_py/main_control/msg/_my_custom_msg.py"
-  "../rosidl_generator_py/main_control/msg/_my_custom_msg_s.c"
+  "../rosidl_generator_py/main_control/msg/_my_custom_msg_mc.py"
+  "../rosidl_generator_py/main_control/msg/_my_custom_msg_mc_s.c"
   "CMakeFiles/main_control__py"
 )
 

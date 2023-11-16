@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_c/detector/msg/detail/my_custom_msg__functions.c
-detector/msg/detail/my_custom_msg__functions.h
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_c/detector/msg/detail/detector/msg/detail/my_custom_msg__functions.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_c/detector/msg/detail/my_custom_msg_detector__functions.c
+detector/msg/detail/my_custom_msg_detector__functions.h
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/detector/rosidl_generator_c/detector/msg/detail/detector/msg/detail/my_custom_msg_detector__functions.h
 assert.h
 -
 stdbool.h
@@ -98,7 +98,7 @@ rosidl_runtime_c/visibility_control.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
-rosidl_generator_c/detector/msg/detail/my_custom_msg__functions.h
+rosidl_generator_c/detector/msg/detail/my_custom_msg_detector__functions.h
 stdbool.h
 -
 stdlib.h
@@ -107,10 +107,10 @@ rosidl_runtime_c/visibility_control.h
 rosidl_generator_c/detector/msg/detail/rosidl_runtime_c/visibility_control.h
 detector/msg/rosidl_generator_c__visibility_control.h
 rosidl_generator_c/detector/msg/detail/detector/msg/rosidl_generator_c__visibility_control.h
-detector/msg/detail/my_custom_msg__struct.h
-rosidl_generator_c/detector/msg/detail/detector/msg/detail/my_custom_msg__struct.h
+detector/msg/detail/my_custom_msg_detector__struct.h
+rosidl_generator_c/detector/msg/detail/detector/msg/detail/my_custom_msg_detector__struct.h
 
-rosidl_generator_c/detector/msg/detail/my_custom_msg__struct.h
+rosidl_generator_c/detector/msg/detail/my_custom_msg_detector__struct.h
 stdbool.h
 -
 stddef.h

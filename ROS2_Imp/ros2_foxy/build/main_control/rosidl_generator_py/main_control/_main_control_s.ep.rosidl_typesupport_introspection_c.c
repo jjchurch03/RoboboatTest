@@ -24,39 +24,39 @@ static struct PyModuleDef main_control__module = {
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "main_control/msg/detail/my_custom_msg__type_support.h"
-#include "main_control/msg/detail/my_custom_msg__struct.h"
-#include "main_control/msg/detail/my_custom_msg__functions.h"
+#include "main_control/msg/detail/my_custom_msg_mc__type_support.h"
+#include "main_control/msg/detail/my_custom_msg_mc__struct.h"
+#include "main_control/msg/detail/my_custom_msg_mc__functions.h"
 
-static void * main_control__msg__my_custom_msg__create_ros_message(void)
+static void * main_control__msg__my_custom_msg_mc__create_ros_message(void)
 {
-  return main_control__msg__MyCustomMsg__create();
+  return main_control__msg__MyCustomMsgMC__create();
 }
 
-static void main_control__msg__my_custom_msg__destroy_ros_message(void * raw_ros_message)
+static void main_control__msg__my_custom_msg_mc__destroy_ros_message(void * raw_ros_message)
 {
-  main_control__msg__MyCustomMsg * ros_message = (main_control__msg__MyCustomMsg *)raw_ros_message;
-  main_control__msg__MyCustomMsg__destroy(ros_message);
+  main_control__msg__MyCustomMsgMC * ros_message = (main_control__msg__MyCustomMsgMC *)raw_ros_message;
+  main_control__msg__MyCustomMsgMC__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool main_control__msg__my_custom_msg__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool main_control__msg__my_custom_msg_mc__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * main_control__msg__my_custom_msg__convert_to_py(void * raw_ros_message);
+PyObject * main_control__msg__my_custom_msg_mc__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(main_control, msg, MyCustomMsg);
+ROSIDL_GET_MSG_TYPE_SUPPORT(main_control, msg, MyCustomMsgMC);
 
 int8_t
-_register_msg_type__msg__my_custom_msg(PyObject * pymodule)
+_register_msg_type__msg__my_custom_msg_mc(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&main_control__msg__my_custom_msg__create_ros_message,
+    (void *)&main_control__msg__my_custom_msg_mc__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -64,7 +64,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__msg__my_custom_msg",
+    "create_ros_message_msg__msg__my_custom_msg_mc",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -75,7 +75,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&main_control__msg__my_custom_msg__destroy_ros_message,
+    (void *)&main_control__msg__my_custom_msg_mc__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -83,7 +83,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__msg__my_custom_msg",
+    "destroy_ros_message_msg__msg__my_custom_msg_mc",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -94,7 +94,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&main_control__msg__my_custom_msg__convert_from_py,
+    (void *)&main_control__msg__my_custom_msg_mc__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -102,7 +102,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__msg__my_custom_msg",
+    "convert_from_py_msg__msg__my_custom_msg_mc",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -113,7 +113,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&main_control__msg__my_custom_msg__convert_to_py,
+    (void *)&main_control__msg__my_custom_msg_mc__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -121,7 +121,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__msg__my_custom_msg",
+    "convert_to_py_msg__msg__my_custom_msg_mc",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -132,7 +132,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(main_control, msg, MyCustomMsg),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(main_control, msg, MyCustomMsgMC),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -140,7 +140,7 @@ _register_msg_type__msg__my_custom_msg(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__msg__my_custom_msg",
+    "type_support_msg__msg__my_custom_msg_mc",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -161,7 +161,7 @@ PyInit_main_control_s__rosidl_typesupport_introspection_c(void)
   }
   int8_t err;
 
-  err = _register_msg_type__msg__my_custom_msg(pymodule);
+  err = _register_msg_type__msg__my_custom_msg_mc(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

@@ -7,10 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/main_control_pub.cpp
-rclcpp/rclcpp.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/rclcpp/rclcpp.hpp
-std_msgs/msg/string.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/std_msgs/msg/string.hpp
 string
 -
 iostream
@@ -21,6 +17,14 @@ cstdio
 -
 chrono
 -
+rclcpp/rclcpp.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/rclcpp/rclcpp.hpp
+rclcpp/logging.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/rclcpp/logging.hpp
+rclcpp/utilities.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/rclcpp/utilities.hpp
+std_msgs/msg/string.hpp
+/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/src/std_msgs/msg/string.hpp
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp
