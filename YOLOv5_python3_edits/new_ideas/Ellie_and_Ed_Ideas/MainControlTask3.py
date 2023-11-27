@@ -52,6 +52,7 @@ thrusters.changeSpeed(1350, 1350)
 
 # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
 class ZedObjects:
+
 	def __init__(self, objects):
         self.objects = objects
 		self.green_buoys_list = []
@@ -81,6 +82,12 @@ class ZedObjects:
         self.nearest_square_index = -1
         self.nearest_circle_index = -1
         self.nearest_plus_index = -1
+
+		self.detected_image = 0
+		self.image_of_the_day = 0
+		# ask what is the image of the day
+		# set the image to the image of the day
+
 
         # use this in case have to label each individually
 		# self.objects = objects
@@ -169,16 +176,36 @@ class ZedObjects:
 				self.red_buoy_detected = True
             elif (str(obj.raw_label) == "6") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Triangle
                 self.triangle_list.append(obj)
+				 # if color = green
+				 # self.green_trangle_list.append(obj)
+				 # self.detected_image = 1
+				 # elif ...
+				 # ... self.detected_image = 2
                 self.triangle_detected = True
             elif (str(obj.raw_label) == "7") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Square
                 self.square_list.append(obj)
                 self.square_detected = True
+				# if color = green
+				# self.green_square_list.append(obj)
+				# self.detected_image = 4
+				# elif ...
+				# ... self.detected_image = 5
             elif (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Circle
                 self.circle_list.append(obj)
                 self.circle_detected = True
+				# if color = green
+				# self.green_circle_list.append(obj)
+				# self.detected_image = 7
+				# elif ...
+				# ... self.detected_image = 9
             elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Plus
                 self.plus_list.append(obj)
                 self.plus_detected = True
+				# if color = green
+				# self.green_plus_list.append(obj)
+				# self.detected_image = 10
+				# elif ...
+				# ... self.detected_image = 11
             
 
 	def sort_green_buoys(self):
@@ -229,7 +256,13 @@ class ZedObjects:
                 i = i +1
 
     def sort_square(self):
-
+		if self.square_detected == False:
+		 	print("Error: No square detected.")
+		else:
+			# Find the square with closest distance
+			square_distances = []
+			for square in self.square_list:
+				square_distances.append(abs((square.position[2])))
     def sort_cirlce(self):
 
     def sort_plus(self):
@@ -249,20 +282,35 @@ class ZedObjects:
 			print("Error: Nearest red buoy not yet detected.")
 		else:
 			return self.red_buoys_list[self.nearest_red_index]
+	def get_nearest_circle
 	
 	# Finds what pixel is at the center of the green and red buoys
 	def find_center_point(self):
-		if self.nearest_green_index == -1:
-			print("Error: Issue with green index")
-			return -1
-		elif self.nearest_red_index == -1:
-			print("Error: Issue with red index")
-			return -1
-		else:
-			xmin_green = self.get_nearest_green_buoy().bounding_box_2d[0][0]
-			xmax_red = self.get_nearest_red_buoy().bounding_box_2d[1][0]
-			self.center_point = round((xmin_green + xmax_red)/2)
-			return self.center_point
+		match self.image_of_the_day
+		case 1
+			self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
+		case 2
+			self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
+		case 3
+			self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
+		case 4
+			self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
+		case 5
+			self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
+		case 6
+			self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
+		case 7 
+			self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
+		case 8
+			self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
+		case 9
+			self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
+		case 10
+			self.center_point = round((self.get_nearest_plus().bounding_box_2d[1][0] + self.get_nearest_plus().bounding_box_2d[0][0])/2)
+		case 11
+			self.center_point = round((self.get_nearest_plus().bounding_box_2d[1][0] + self.get_nearest_plus().bounding_box_2d[0][0])/2)
+		case 12
+			self.center_point = round((self.get_nearest_plus().bounding_box_2d[1][0] + self.get_nearest_plus().bounding_box_2d[0][0])/2)
 			
 
 # Takes in list of objects from Zed 2i Camera each frame
@@ -291,41 +339,20 @@ def move_to_center(center_point):
 	else:
 	# Go forward if within 20 pixels of center channel
 		thrusters.changeSpeed(1400, 1400)
-# speed controller
-    def match_speed(distance_away):
-        goal_distance = 1 # distance we want to be in meters
-        if goal_distance*3 >= distance_away
-            thruster.changeSpeed(1400,1400)
-        elif goal_distance*2 >= distance_away
-            thruster.changeSpeed(1425,1425)
-        elif goal_distance*1.5 >= distance_away
-            thruster.changeSpeed(1450,1450)
-        elif goal_distance*1.1 >= distance_away or goal_distance*0.9 <= distance_away
-            thruster.changeSpeed(1500+10*(goal_distance-distance_way),1500+10*(goal_distance-distance_away))
-        else
+		# speed controller
 
+def match_speed(distance_away):
+	goal_distance = 1 # distance we want to be in meters
+	if goal_distance*3 >= distance_away
+		thruster.changeSpeed(1400,1400)
+	elif goal_distance*2 >= distance_away
+		thruster.changeSpeed(1425,1425)
+	elif goal_distance*1.5 >= distance_away
+		thruster.changeSpeed(1450,1450)
+	elif goal_distance*1.1 >= distance_away or goal_distance*0.9 <= distance_away
+		thruster.changeSpeed(1500+10*(goal_distance-distance_way),1500+10*(goal_distance-distance_away))
+	else
 
-def test_motors():
-	# Initialize the thrusters in neuteral
-	print("Neuteral Thrusters")
-	thrusters = Thrusters(1500, 1500)
-	time.sleep(10)
-	
-	# Standard Foward
-	print("Standard Forward")
-	thrusters.changeSpeed(1650, 1650)
-	time.sleep(10)
-	
-	# Standard Reverse
-	print("Standard Reverse")
-	thrusters.changeSpeed(1350, 1350)
-	time.sleep(10)
-	
-	# Disconnect
-	print("Stop Thrusters")
-	thrusters.stop()
-	
-	GPIO.cleanup()
 
 
 
