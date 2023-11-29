@@ -1,0 +1,158 @@
+[0.084s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav-ros2/vectornav -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav
+[0.167s] -- The C compiler identification is GNU 9.4.0
+[0.250s] -- The CXX compiler identification is GNU 9.4.0
+[0.256s] -- Check for working C compiler: /usr/bin/cc
+[0.381s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.382s] -- Detecting C compiler ABI info
+[0.498s] -- Detecting C compiler ABI info - done
+[0.527s] -- Detecting C compile features
+[0.528s] -- Detecting C compile features - done
+[0.533s] -- Check for working CXX compiler: /usr/bin/c++
+[0.658s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.659s] -- Detecting CXX compiler ABI info
+[0.803s] -- Detecting CXX compiler ABI info - done
+[0.826s] -- Detecting CXX compile features
+[0.827s] -- Detecting CXX compile features - done
+[0.832s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.874s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.875s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.186s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.255s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.399s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.439s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.543s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.613s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.614s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.615s] -- Looking for pthread.h
+[1.745s] -- Looking for pthread.h - found
+[1.746s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.910s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.910s] -- Looking for pthread_create in pthreads
+[2.024s] -- Looking for pthread_create in pthreads - not found
+[2.024s] -- Looking for pthread_create in pthread
+[2.143s] -- Looking for pthread_create in pthread - found
+[2.144s] -- Found Threads: TRUE  
+[2.347s] -- Found rclcpp_action: 2.4.3 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[2.441s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.581s] -- Found vectornav_msgs: 3.0.0 (/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/share/vectornav_msgs/cmake)
+[2.732s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[2.741s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[2.745s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[3.138s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.259s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.260s] -- Configured cppcheck include dirs: 
+[3.260s] -- Configured cppcheck exclude dirs and/or files: 
+[3.269s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.270s] -- Configured cpplint exclude dirs and/or files: 
+[3.271s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.274s] -- Added test 'lint_cmake' to check CMake code style
+[3.276s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.286s] -- Added test 'uncrustify' to check C / C++ code style
+[3.286s] -- Configured uncrustify additional arguments: 
+[3.288s] -- Added test 'xmllint' to check XML markup files
+[3.295s] -- Configuring done
+[3.324s] -- Generating done
+[3.328s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav
+[3.353s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav-ros2/vectornav -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav
+[3.358s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav -- -j12 -l12
+[3.432s] [35m[1mScanning dependencies of target vn_sensor_msgs[0m
+[3.433s] [35m[1mScanning dependencies of target vncxx[0m
+[3.464s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/ezasyncdata.cpp.o[0m
+[3.464s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/dllvalidator.cpp.o[0m
+[3.464s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/conversions.cpp.o[0m
+[3.465s] [ 39%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/criticalsection.cpp.o[0m
+[3.465s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/error_detection.cpp.o[0m
+[3.465s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/memoryport.cpp.o[0m
+[3.465s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/compositedata.cpp.o[0m
+[3.465s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/event.cpp.o[0m
+[3.465s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/attitude.cpp.o[0m
+[3.467s] [ 35%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/packet.cpp.o[0m
+[3.467s] [ 39%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/packetfinder.cpp.o[0m
+[3.507s] [ 42%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/port.cpp.o[0m
+[3.512s] [ 46%] [32mBuilding CXX object CMakeFiles/vn_sensor_msgs.dir/src/vn_sensor_msgs.cc.o[0m
+[3.566s] [ 50%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/position.cpp.o[0m
+[3.774s] [ 53%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/rtcmlistener.cpp.o[0m
+[3.781s] [ 57%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/rtcmmessage.cpp.o[0m
+[3.811s] [ 60%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/searcher.cpp.o[0m
+[3.886s] [ 64%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/sensors.cpp.o[0m
+[4.001s] [ 67%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/serialport.cpp.o[0m
+[4.041s] [ 71%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/thread.cpp.o[0m
+[4.057s] [ 75%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/types.cpp.o[0m
+[4.093s] [ 78%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/util.cpp.o[0m
+[4.107s] [ 82%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/utilities.cpp.o[0m
+[4.123s] [ 85%] [32mBuilding CXX object vnproglib-1.2.0.0/cpp/CMakeFiles/vncxx.dir/src/vntime.cpp.o[0m
+[5.144s] [ 89%] [32m[1mLinking CXX shared library libvncxx.so[0m
+[5.314s] [ 89%] Built target vncxx
+[5.333s] [35m[1mScanning dependencies of target vectornav[0m
+[5.401s] [ 92%] [32mBuilding CXX object CMakeFiles/vectornav.dir/src/vectornav.cc.o[0m
+[19.236s] [ 96%] [32m[1mLinking CXX executable vectornav[0m
+[19.913s] [ 96%] Built target vectornav
+[27.693s] [100%] [32m[1mLinking CXX executable vn_sensor_msgs[0m
+[28.956s] [100%] Built target vn_sensor_msgs
+[28.993s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav -- -j12 -l12
+[29.044s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav
+[29.064s] -- Install configuration: ""
+[29.065s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/lib/vectornav/vectornav
+[29.070s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/lib/vectornav/vectornav" to ""
+[29.071s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/lib/vectornav/vn_sensor_msgs
+[29.081s] -- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/lib/vectornav/vn_sensor_msgs" to ""
+[29.081s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav//config
+[29.081s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav//config/vn_100_800hz.yaml
+[29.082s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav//config/vectornav.yaml
+[29.082s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav//launch
+[29.082s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav//launch/vectornav.launch.py
+[29.083s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/ament_index/resource_index/package_run_dependencies/vectornav
+[29.083s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/ament_index/resource_index/parent_prefix_path/vectornav
+[29.083s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/environment/ament_prefix_path.sh
+[29.083s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/environment/ament_prefix_path.dsv
+[29.084s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/environment/path.sh
+[29.084s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/environment/path.dsv
+[29.084s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/local_setup.bash
+[29.085s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/local_setup.sh
+[29.085s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/local_setup.zsh
+[29.085s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/local_setup.dsv
+[29.086s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/package.dsv
+[29.086s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/ament_index/resource_index/packages/vectornav
+[29.086s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.086s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/cmake/vectornavConfig.cmake
+[29.086s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/cmake/vectornavConfig-version.cmake
+[29.087s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/share/vectornav/package.xml
+[29.087s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/lib/libvncxx.so
+[29.087s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn
+[29.087s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/rtcmlistener.h
+[29.088s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/matrix.h
+[29.088s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/dllvalidator.h
+[29.088s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/registers.h
+[29.089s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/serialport.h
+[29.089s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/error_detection.h
+[29.090s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/port.h
+[29.090s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/attitude.h
+[29.090s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/searcher.h
+[29.091s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/boostpython.h
+[29.091s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/compositedata.h
+[29.091s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/int.h
+[29.092s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/consts.h
+[29.092s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/event.h
+[29.092s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/rtcmmessage.h
+[29.092s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/mock.h
+[29.093s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/signal.h
+[29.093s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/position.h
+[29.093s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/ezasyncdata.h
+[29.093s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/util.h
+[29.094s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/vntime.h
+[29.094s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/sensors.h
+[29.094s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/utilities.h
+[29.094s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/nocopy.h
+[29.095s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/conversions.h
+[29.095s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/exceptions.h
+[29.095s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/vector.h
+[29.096s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/thread.h
+[29.097s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/compiler.h
+[29.098s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/criticalsection.h
+[29.099s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/packet.h
+[29.100s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/memoryport.h
+[29.101s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/types.h
+[29.101s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/packetfinder.h
+[29.102s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav/include/vn/export.h
+[29.103s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav

@@ -1,0 +1,8 @@
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav/src/vn_sensor_msgs.cc:24:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+   24 | #include [01;31m[K"tf2_geometry_msgs/tf2_geometry_msgs.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/vn_sensor_msgs.dir/build.make:63: CMakeFiles/vn_sensor_msgs.dir/src/vn_sensor_msgs.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:100: CMakeFiles/vn_sensor_msgs.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

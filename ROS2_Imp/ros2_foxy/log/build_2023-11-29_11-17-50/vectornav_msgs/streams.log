@@ -1,0 +1,5 @@
+[0.113s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav_msgs -- -j12 -l12
+[0.151s] CMake Error: The source directory "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav-ros2/vectornav_msgs" does not exist.
+[0.151s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.152s] make: *** [Makefile:3388: cmake_check_build_system] Error 1
+[0.156s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/build/vectornav_msgs -- -j12 -l12

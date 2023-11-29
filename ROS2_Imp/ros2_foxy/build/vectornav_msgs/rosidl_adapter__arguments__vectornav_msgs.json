@@ -1,0 +1,17 @@
+{
+  "package_name": "vectornav_msgs",
+  "non_idl_tuples": [
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/AttitudeGroup.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/CommonGroup.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/DOP.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/GpsGroup.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/ImuGroup.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/InsGroup.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/InsStatus.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/TimeGroup.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/TimeStatus.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/TimeUTC.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:msg/VpeStatus.msg",
+    "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs:action/MagCal.action"
+  ]
+}

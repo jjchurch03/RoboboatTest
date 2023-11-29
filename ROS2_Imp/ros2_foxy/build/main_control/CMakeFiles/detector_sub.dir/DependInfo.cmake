@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control/include"
+  "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include"
   "/opt/ros/foxy/include"
   )
 
