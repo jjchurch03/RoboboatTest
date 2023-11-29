@@ -8,4 +8,4 @@ This is the folder whih contains all the files and documents from the system tha
 
 - Videos_and_Images: Videos and images found on the machine that may come in use later
 
-- YOLOv5&Image Tests: Contains YOLOv5 code and Image Testing
+- YOLOv5_Image_Tests: Contains YOLOv5 code and Image Testing
