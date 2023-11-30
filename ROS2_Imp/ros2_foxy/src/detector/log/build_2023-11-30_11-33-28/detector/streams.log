@@ -1,0 +1,22 @@
+[0.089s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.179s] [  6%] Built target detector__cpp
+[0.179s] [ 12%] Built target detector__rosidl_generator_c
+[0.185s] [ 15%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[0.213s] [ 33%] Built target detector__rosidl_typesupport_cpp
+[0.214s] [ 33%] Built target detector__rosidl_typesupport_introspection_cpp
+[0.217s] [ 42%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[0.249s] [ 60%] Built target detector__rosidl_typesupport_introspection_c
+[0.249s] [ 60%] Built target detector__rosidl_typesupport_c
+[0.256s] [ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[0.290s] [ 69%] Built target detector
+[0.324s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kdetector/msg/my_custom_msg_detector.h: No such file or directory
+[0.324s]    11 | #include [01;31m[K"detector/msg/my_custom_msg_detector.h"[m[K
+[0.324s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.324s] compilation terminated.
+[0.325s] [ 72%] Built target detector__py
+[0.337s] make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+[0.338s] make[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/detector_node.dir/all] Error 2
+[0.338s] make[1]: *** Waiting for unfinished jobs....
+[0.366s] [ 78%] Built target detector__python
+[0.367s] make: *** [Makefile:141: all] Error 2
+[0.372s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12

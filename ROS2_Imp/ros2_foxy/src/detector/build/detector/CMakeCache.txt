@@ -289,7 +289,7 @@ SITE:STRING=roboboat-desktop
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/lib/libmain_control__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a file.
 _numpy_h:FILEPATH=/usr/include/python3.8/numpy/numpyconfig.h
@@ -455,6 +455,9 @@ libstatistics_collector_DIR:PATH=/opt/ros/foxy/share/libstatistics_collector/cma
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/foxy/share/libyaml_vendor/cmake
+
+//The directory containing a CMake configuration file for main_control.
+main_control_DIR:PATH=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/share/main_control/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so

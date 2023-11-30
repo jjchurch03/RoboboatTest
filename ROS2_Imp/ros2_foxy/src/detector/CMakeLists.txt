@@ -22,8 +22,8 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(main_control REQUIRED)
 
+# detector_node
 add_executable(detector_node src/detector_node.cpp)
-
 ament_target_dependencies(detector_node rclcpp std_msgs rosidl_default_runtime)
 
 target_include_directories(detector_node PUBLIC
@@ -65,6 +65,8 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
 

@@ -1,0 +1,48 @@
+[0.095s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12
+[0.148s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.182s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.182s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.454s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.466s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.515s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.519s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.682s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.744s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.745s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.921s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.934s] -- Found main_control: 0.0.0 (/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control/share/main_control/cmake)
+[0.985s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.170s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.325s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.335s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.372s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.373s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.407s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.408s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.408s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[1.433s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.451s] -- Configuring done
+[1.499s] -- Generating done
+[1.505s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector
+[1.556s] [35m[1mScanning dependencies of target detector_node[0m
+[1.571s] [ 12%] Built target detector__cpp
+[1.571s] [ 12%] Built target detector__rosidl_generator_c
+[1.595s] [ 15%] [32mBuilding CXX object CMakeFiles/detector_node.dir/src/detector_node.cpp.o[0m
+[1.605s] [ 51%] Built target detector__rosidl_typesupport_c
+[1.605s] [ 51%] Built target detector__rosidl_typesupport_introspection_c
+[1.605s] [ 51%] Built target detector__rosidl_typesupport_introspection_cpp
+[1.605s] [ 51%] Built target detector__rosidl_typesupport_cpp
+[1.611s] [ 60%] Built target detector__rosidl_typesupport_fastrtps_cpp
+[1.655s] [ 69%] Built target detector__rosidl_typesupport_fastrtps_c
+[1.687s] [ 69%] Built target detector
+[1.724s] [ 72%] Built target detector__py
+[1.732s] [01m[K/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/src/detector_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kdetector/msg/my_custom_msg.h: No such file or directory
+[1.732s]    11 | #include [01;31m[K"detector/msg/my_custom_msg.h"[m[K
+[1.732s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.732s] compilation terminated.
+[1.746s] make[2]: *** [CMakeFiles/detector_node.dir/build.make:63: CMakeFiles/detector_node.dir/src/detector_node.cpp.o] Error 1
+[1.746s] make[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/detector_node.dir/all] Error 2
+[1.747s] make[1]: *** Waiting for unfinished jobs....
+[1.780s] [ 78%] Built target detector__python
+[1.782s] make: *** [Makefile:141: all] Error 2
+[1.788s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector/build/detector -- -j12 -l12

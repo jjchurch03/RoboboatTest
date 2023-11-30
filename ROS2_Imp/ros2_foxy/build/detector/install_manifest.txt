@@ -30,16 +30,11 @@
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/libdetector__rosidl_typesupport_introspection_c.so
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/lib/libdetector__rosidl_typesupport_c.so
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/my_custom_msg_detector.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg__traits.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg__struct.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg_detector__traits.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg__type_support.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg_detector__struct.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg_detector__type_support.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg__builder.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg_detector__builder.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/rosidl_generator_cpp__visibility_control.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/my_custom_msg.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg_detector__type_support.cpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg__rosidl_typesupport_introspection_cpp.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector/include/detector/msg/detail/my_custom_msg_detector__rosidl_typesupport_introspection_cpp.hpp

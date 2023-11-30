@@ -8,6 +8,7 @@
 #include "rclcpp/logging.hpp"
 #include "rclcpp/utilities.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "detector/msg/my_custom_msg_detector.hpp"
 
 class DetectorPublisherNode : public rclcpp::Node {
 public:
@@ -45,6 +46,7 @@ private:
         
 //opens the python script and attempts to read and store the data in a temporary and constantly updating
         FILE *pipe = popen(command.c_str(), "r");
+        RCLCPP_INFO(get_logger(), "Pipe created");
         //If it cannot access the .py script then log an error
         if (!pipe) {
             RCLCPP_ERROR(get_logger(), "Failed to execute the Python script");
@@ -54,9 +56,12 @@ private:
 //create a variable which returns the data we need. May need to be updated as personalized msg is implemented
         char buffer[128];
         std::string result = "";
+        RCLCPP_INFO(get_logger(), "Buffer created");
         while (fgets(buffer, sizeof(buffer), pipe) != NULL) {
             result += buffer;
+            RCLCPP_INFO(get_logger(), "Buffer update");
         }
+        RCLCPP_INFO(get_logger(), "Buffer closed");
 //logs that the code execution was a success and what is being sent to to the publishDetectorData function
         pclose(pipe);
         RCLCPP_INFO(get_logger(), "Python script output: %s", result.c_str());
