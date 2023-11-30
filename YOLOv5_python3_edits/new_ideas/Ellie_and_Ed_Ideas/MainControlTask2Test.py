@@ -187,16 +187,13 @@ class ZedObjects:
 							port_gap_width = xCenter_yellow_ball - xCenter_red_ball
 							if port_gap_width < stbd_gap_width:
 								# 0 = stbd side is greater, move to the right of the yellow ball
-								move_port_or_stbd = 0
-							else:
-								# 1 = port side is greater, move to the left of the yellow ball
-								move_port_or_stbd = 1
-							if move_port_or_stbd == 0:
 								print("Departing: move to stbd side of yellow ball")
 								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
 							else:
+								# 1 = port side is greater, move to the left of the yellow ball
 								print("Departing: move to port side of yellow ball")
 								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
+								
 					
 				# red on right, green on left					
 				else:
@@ -206,16 +203,13 @@ class ZedObjects:
 							port_gap_width = xCenter_yellow_ball - xCenter_green_ball
 							if port_gap_width < stbd_gap_width:
 								# 0 = stbd side is greater, move to the right of the yellow ball
-								move_port_or_stbd = 0
-							else:
-								# 1 = port side is greater, move to the left of the yellow ball
-								move_port_or_stbd = 1
-							if move_port_or_stbd == 0:
 								print("Returning: move to stbd side of yellow ball")
 								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
 							else:
+								# 1 = port side is greater, move to the left of the yellow ball
 								print("Returning: move to port side of yellow ball")
 								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
+														
 					
 				return self.desired_center_point
 			
