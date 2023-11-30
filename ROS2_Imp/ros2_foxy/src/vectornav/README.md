@@ -11,10 +11,10 @@ exposed as ROS2 parameters that can be modified from a launch file.
 ## QuickStart
 
 Build
-
-1. git clone https://github.com/dawonn/vectornav.git -b ros2
-2. cd vectornav 
+1. go to [here](Common_Occurances_and_Issues/Git_Hub_Basics/VectorNav_Repo_Update_Instructions.md) to get it set up
+2. cd into this location onto your computer
 3. colcon build
+4. May need to cd out of here to the overall workspace to make it an executable by running 3 again there
 
 Run with ros2 run (Option 1)
 
