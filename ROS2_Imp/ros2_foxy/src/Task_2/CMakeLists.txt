@@ -11,9 +11,9 @@ if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
+#if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+#  add_compile_options(-Wall -Wextra -Wpedantic)
+#endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -22,6 +22,20 @@ find_package(rclcpp_action REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(Task_2_msgs REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+
+ament_package()
+
+install(PROGRAMS
+  scripts/detectorTask2Test.py
+  scripts/MainControlTask2Test.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# Task_2
+add_executable(${PROJECT_NAME} src/task_2.cpp)
+ament_target_dependencies(${PROJECT_NAME} rclcpp geometry_msgs Task_2_msgs rclcpp_action)
+
 
 
 if(BUILD_TESTING)

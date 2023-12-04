@@ -1,0 +1,42 @@
+[0.527s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_nodelets': /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets
+[0.881s] -- The C compiler identification is GNU 9.4.0
+[1.121s] -- The CXX compiler identification is GNU 9.4.0
+[1.139s] -- Check for working C compiler: /usr/bin/cc
+[1.253s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.263s] -- Detecting C compiler ABI info
+[1.396s] -- Detecting C compiler ABI info - done
+[1.426s] -- Detecting C compile features
+[1.427s] -- Detecting C compile features - done
+[1.432s] -- Check for working CXX compiler: /usr/bin/c++
+[1.555s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.558s] -- Detecting CXX compiler ABI info
+[1.683s] -- Detecting CXX compiler ABI info - done
+[1.701s] -- Detecting CXX compile features
+[1.702s] -- Detecting CXX compile features - done
+[1.719s] CMake Warning at CMakeLists.txt:25 (find_package):
+[1.719s]   Could not find a configuration file for package "ZED" that is compatible
+[1.719s]   with requested version "4".
+[1.719s] 
+[1.719s]   The following configuration files were considered but not accepted:
+[1.720s] 
+[1.720s]     /usr/local/zed/zed-config.cmake, version: 3.8.2
+[1.720s] 
+[1.720s] 
+[1.720s] 
+[1.720s] CMake Error at CMakeLists.txt:20 (message):
+[1.720s]   
+[1.720s] 
+[1.720s]   
+[1.720s] 
+[1.720s]    ZED SDK v4.x not found, install it from:
+[1.720s]    https://www.stereolabs.com/developers/ 
+[1.720s] 
+[1.721s]   
+[1.721s] 
+[1.721s] Call Stack (most recent call first):
+[1.721s]   CMakeLists.txt:26 (checkPackage)
+[1.721s] 
+[1.721s] 
+[1.721s] -- Configuring incomplete, errors occurred!
+[1.721s] See also "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_nodelets/CMakeFiles/CMakeOutput.log".
+[1.726s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_nodelets' returned '1': /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets

@@ -1,0 +1,69 @@
+[0.185s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2_msg -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/Task_2_msg
+[0.466s] -- The C compiler identification is GNU 9.4.0
+[0.709s] -- The CXX compiler identification is GNU 9.4.0
+[0.723s] -- Check for working C compiler: /usr/bin/cc
+[0.842s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.851s] -- Detecting C compiler ABI info
+[0.984s] -- Detecting C compiler ABI info - done
+[1.011s] -- Detecting C compile features
+[1.012s] -- Detecting C compile features - done
+[1.016s] -- Check for working CXX compiler: /usr/bin/c++
+[1.134s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.136s] -- Detecting CXX compiler ABI info
+[1.262s] -- Detecting CXX compiler ABI info - done
+[1.275s] -- Detecting CXX compile features
+[1.276s] -- Detecting CXX compile features - done
+[1.279s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.319s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.320s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.643s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.685s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.695s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.843s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.884s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.001s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.120s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.135s] Grabbing messages 
+[2.172s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.445s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[2.445s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[2.445s]   Task_2_msg --arguments-file
+[2.445s]   /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg/rosidl_adapter__arguments__Task_2_msg.json
+[2.445s]   --output-dir
+[2.445s]   /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg/rosidl_adapter/Task_2_msg
+[2.446s]   --output-file
+[2.446s]   /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg/rosidl_adapter/Task_2_msg.idls)
+[2.446s]   returned error code 1:
+[2.446s] 
+[2.446s]   Traceback (most recent call last):
+[2.446s] 
+[2.446s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[2.446s]       return _run_code(code, main_globals, None,
+[2.446s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[2.446s]       exec(code, run_globals)
+[2.446s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.447s]       sys.exit(main())
+[2.447s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[2.447s]       abs_idl_file = convert_to_idl(
+[2.447s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[2.447s]       return convert_msg_to_idl(
+[2.447s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[2.447s]       msg = parse_message_string(package_name, input_file.stem, content)
+[2.447s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 540, in parse_message_string
+[2.447s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[2.447s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 387, in __init__
+[2.447s]       self.base_type = BaseType(
+[2.447s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 200, in __init__
+[2.447s]       raise InvalidResourceName(
+[2.448s] 
+[2.448s]   rosidl_adapter.parser.InvalidResourceName: 'Task_2_msg' is an invalid
+[2.448s]   package name.  It should have the pattern
+[2.448s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[2.448s] 
+[2.448s] Call Stack (most recent call first):
+[2.448s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[2.448s]   CMakeLists.txt:30 (rosidl_generate_interfaces)
+[2.448s] 
+[2.448s] 
+[2.448s] -- Configuring incomplete, errors occurred!
+[2.449s] See also "/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg/CMakeFiles/CMakeOutput.log".

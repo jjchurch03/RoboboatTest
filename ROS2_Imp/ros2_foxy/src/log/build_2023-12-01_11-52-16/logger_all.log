@@ -1,0 +1,420 @@
+[3.893s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.894s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa8538880>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa8538880>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa81d93a0>)
+[4.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.107s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.108s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extensions ['ignore', 'ignore_ament_install']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extension 'ignore'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extension 'ignore_ament_install'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extensions ['colcon_pkg']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extension 'colcon_pkg'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extensions ['colcon_meta']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extension 'colcon_meta'
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extensions ['ros']
+[4.141s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2) by extension 'ros'
+[4.153s] DEBUG:colcon.colcon_core.package_identification:Package 'Task_2' with type 'ros.ament_cmake' and name 'Task_2'
+[4.153s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extensions ['ignore', 'ignore_ament_install']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extension 'ignore'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extension 'ignore_ament_install'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extensions ['colcon_pkg']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extension 'colcon_pkg'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extensions ['colcon_meta']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extension 'colcon_meta'
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extensions ['ros']
+[4.154s] Level 1:colcon.colcon_core.package_identification:_identify(Task_2_msg) by extension 'ros'
+[4.155s] DEBUG:colcon.colcon_core.package_identification:Package 'Task_2_msg' with type 'ros.ament_cmake' and name 'Task_2_msg'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['ignore', 'ignore_ament_install']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ignore'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ignore_ament_install'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['colcon_pkg']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'colcon_pkg'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['colcon_meta']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'colcon_meta'
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extensions ['ros']
+[4.157s] Level 1:colcon.colcon_core.package_identification:_identify(detector) by extension 'ros'
+[4.158s] DEBUG:colcon.colcon_core.package_identification:Package 'detector' with type 'ros.ament_cmake' and name 'detector'
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.158s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['ignore', 'ignore_ament_install']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'ignore'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'ignore_ament_install'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['colcon_pkg']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'colcon_pkg'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['colcon_meta']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'colcon_meta'
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extensions ['ros']
+[4.159s] Level 1:colcon.colcon_core.package_identification:_identify(main_control) by extension 'ros'
+[4.160s] DEBUG:colcon.colcon_core.package_identification:Package 'main_control' with type 'ros.ament_cmake' and name 'main_control'
+[4.160s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extensions ['ignore', 'ignore_ament_install']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'ignore'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'ignore_ament_install'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extensions ['colcon_pkg']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'colcon_pkg'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extensions ['colcon_meta']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'colcon_meta'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extensions ['ros']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'ros'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extensions ['cmake', 'python']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'cmake'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'python'
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extensions ['python_setup_py']
+[4.161s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav) by extension 'python_setup_py'
+[4.162s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/build) by extensions ['ignore', 'ignore_ament_install']
+[4.162s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/build) by extension 'ignore'
+[4.162s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/build) ignored
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/install) by extensions ['ignore', 'ignore_ament_install']
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/install) by extension 'ignore'
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/install) ignored
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/log) by extensions ['ignore', 'ignore_ament_install']
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/log) by extension 'ignore'
+[4.163s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/log) ignored
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extensions ['ignore', 'ignore_ament_install']
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extension 'ignore'
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extension 'ignore_ament_install'
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extensions ['colcon_pkg']
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extension 'colcon_pkg'
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extensions ['colcon_meta']
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extension 'colcon_meta'
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extensions ['ros']
+[4.164s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav) by extension 'ros'
+[4.166s] DEBUG:colcon.colcon_core.package_identification:Package 'vectornav/vectornav' with type 'ros.ament_cmake' and name 'vectornav'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extensions ['ignore', 'ignore_ament_install']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extension 'ignore'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extension 'ignore_ament_install'
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extensions ['colcon_pkg']
+[4.167s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extension 'colcon_pkg'
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extensions ['colcon_meta']
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extension 'colcon_meta'
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extensions ['ros']
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(vectornav/vectornav_msgs) by extension 'ros'
+[4.169s] DEBUG:colcon.colcon_core.package_identification:Package 'vectornav/vectornav_msgs' with type 'ros.ament_cmake' and name 'vectornav_msgs'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extensions ['ignore', 'ignore_ament_install']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'ignore'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'ignore_ament_install'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extensions ['colcon_pkg']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'colcon_pkg'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extensions ['colcon_meta']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'colcon_meta'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extensions ['ros']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'ros'
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extensions ['cmake', 'python']
+[4.170s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'cmake'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'python'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extensions ['python_setup_py']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs) by extension 'python_setup_py'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extensions ['ignore', 'ignore_ament_install']
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extension 'ignore'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extension 'ignore_ament_install'
+[4.171s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extensions ['colcon_pkg']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extension 'colcon_pkg'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extensions ['colcon_meta']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extension 'colcon_meta'
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extensions ['ros']
+[4.172s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/bbox_ex_msgs) by extension 'ros'
+[4.173s] DEBUG:colcon.colcon_core.package_identification:Package 'yolov5-pkgs/bbox_ex_msgs' with type 'ros.ament_cmake' and name 'bboxes_ex_msgs'
+[4.173s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extensions ['ignore', 'ignore_ament_install']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'ignore'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'ignore_ament_install'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extensions ['colcon_pkg']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'colcon_pkg'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extensions ['colcon_meta']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'colcon_meta'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extensions ['ros']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'ros'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extensions ['cmake', 'python']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'cmake'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'python'
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extensions ['python_setup_py']
+[4.174s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2) by extension 'python_setup_py'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extensions ['ignore', 'ignore_ament_install']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extension 'ignore'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extension 'ignore_ament_install'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extensions ['colcon_pkg']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extension 'colcon_pkg'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extensions ['colcon_meta']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extension 'colcon_meta'
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extensions ['ros']
+[4.175s] Level 1:colcon.colcon_core.package_identification:_identify(yolov5-pkgs/yolov5-ros2/yolov5_ros) by extension 'ros'
+[4.177s] DEBUG:colcon.colcon_core.package_identification:Package 'yolov5-pkgs/yolov5-ros2/yolov5_ros' with type 'ros.ament_python' and name 'yolov5_ros'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extensions ['ignore', 'ignore_ament_install']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'ignore'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'ignore_ament_install'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extensions ['colcon_pkg']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'colcon_pkg'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extensions ['colcon_meta']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'colcon_meta'
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extensions ['ros']
+[4.177s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'ros'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extensions ['cmake', 'python']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'cmake'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'python'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extensions ['python_setup_py']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper) by extension 'python_setup_py'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extensions ['ignore', 'ignore_ament_install']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'ignore'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'ignore_ament_install'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extensions ['colcon_pkg']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'colcon_pkg'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extensions ['colcon_meta']
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'colcon_meta'
+[4.178s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extensions ['ros']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'ros'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extensions ['cmake', 'python']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'cmake'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'python'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extensions ['python_setup_py']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/images) by extension 'python_setup_py'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extensions ['ignore', 'ignore_ament_install']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'ignore'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'ignore_ament_install'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extensions ['colcon_pkg']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'colcon_pkg'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extensions ['colcon_meta']
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'colcon_meta'
+[4.179s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extensions ['ros']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'ros'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extensions ['cmake', 'python']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'cmake'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'python'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extensions ['python_setup_py']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed-ros-interfaces) by extension 'python_setup_py'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extensions ['ignore', 'ignore_ament_install']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extension 'ignore'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extension 'ignore_ament_install'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extensions ['colcon_pkg']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extension 'colcon_pkg'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extensions ['colcon_meta']
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extension 'colcon_meta'
+[4.180s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extensions ['ros']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_nodelets) by extension 'ros'
+[4.183s] DEBUG:colcon.colcon_core.package_identification:Package 'zed-ros-wrapper/zed_nodelets' with type 'ros.catkin' and name 'zed_nodelets'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extensions ['ignore', 'ignore_ament_install']
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extension 'ignore'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extension 'ignore_ament_install'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extensions ['colcon_pkg']
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extension 'colcon_pkg'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extensions ['colcon_meta']
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extension 'colcon_meta'
+[4.183s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extensions ['ros']
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_ros) by extension 'ros'
+[4.184s] DEBUG:colcon.colcon_core.package_identification:Package 'zed-ros-wrapper/zed_ros' with type 'ros.catkin' and name 'zed_ros'
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extension 'ignore'
+[4.184s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extension 'ignore_ament_install'
+[4.185s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extensions ['colcon_pkg']
+[4.185s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extension 'colcon_pkg'
+[4.185s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extensions ['colcon_meta']
+[4.185s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extension 'colcon_meta'
+[4.185s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extensions ['ros']
+[4.185s] Level 1:colcon.colcon_core.package_identification:_identify(zed-ros-wrapper/zed_wrapper) by extension 'ros'
+[4.186s] DEBUG:colcon.colcon_core.package_identification:Package 'zed-ros-wrapper/zed_wrapper' with type 'ros.catkin' and name 'zed_wrapper'
+[4.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install
+[4.395s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[4.397s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.530s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'cmake_args' from command line to 'None'
+[4.530s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'cmake_target' from command line to 'None'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'cmake_clean_cache' from command line to 'False'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'cmake_clean_first' from command line to 'False'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'cmake_force_configure' from command line to 'False'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'ament_cmake_args' from command line to 'None'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'catkin_cmake_args' from command line to 'None'
+[4.531s] Level 5:colcon.colcon_core.verb:set package 'Task_2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.531s] DEBUG:colcon.colcon_core.verb:Building package 'Task_2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/Task_2', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2', 'symlink_install': False, 'test_result_base': None}
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'cmake_args' from command line to 'None'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'cmake_target' from command line to 'None'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'cmake_clean_first' from command line to 'False'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'cmake_force_configure' from command line to 'False'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'ament_cmake_args' from command line to 'None'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[4.547s] Level 5:colcon.colcon_core.verb:set package 'Task_2_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.547s] DEBUG:colcon.colcon_core.verb:Building package 'Task_2_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/Task_2_msg', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2_msg', 'symlink_install': False, 'test_result_base': None}
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_args' from command line to 'None'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_target' from command line to 'None'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[4.563s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.563s] DEBUG:colcon.colcon_core.verb:Building package 'bboxes_ex_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/bboxes_ex_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/bboxes_ex_msgs', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/yolov5-pkgs/bbox_ex_msgs', 'symlink_install': False, 'test_result_base': None}
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_args' from command line to 'None'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_target' from command line to 'None'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_clean_cache' from command line to 'False'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_clean_first' from command line to 'False'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'cmake_force_configure' from command line to 'False'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'ament_cmake_args' from command line to 'None'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'catkin_cmake_args' from command line to 'None'
+[4.579s] Level 5:colcon.colcon_core.verb:set package 'detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.580s] DEBUG:colcon.colcon_core.verb:Building package 'detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/detector', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector', 'symlink_install': False, 'test_result_base': None}
+[4.595s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_args' from command line to 'None'
+[4.595s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_target' from command line to 'None'
+[4.595s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.595s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[4.595s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[4.595s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[4.596s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[4.596s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[4.596s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.596s] DEBUG:colcon.colcon_core.verb:Building package 'vectornav_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/vectornav_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/vectornav_msgs', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs', 'symlink_install': False, 'test_result_base': None}
+[4.611s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'cmake_args' from command line to 'None'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'cmake_target' from command line to 'None'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'cmake_clean_cache' from command line to 'False'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'cmake_clean_first' from command line to 'False'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'cmake_force_configure' from command line to 'False'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'ament_cmake_args' from command line to 'None'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'catkin_cmake_args' from command line to 'None'
+[4.612s] Level 5:colcon.colcon_core.verb:set package 'zed_nodelets' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.612s] DEBUG:colcon.colcon_core.verb:Building package 'zed_nodelets' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_nodelets', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets', 'symlink_install': False, 'test_result_base': None}
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_args' from command line to 'None'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_target' from command line to 'None'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_clean_cache' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_clean_first' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'cmake_force_configure' from command line to 'False'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'ament_cmake_args' from command line to 'None'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'catkin_cmake_args' from command line to 'None'
+[4.628s] Level 5:colcon.colcon_core.verb:set package 'main_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.628s] DEBUG:colcon.colcon_core.verb:Building package 'main_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/main_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/main_control', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/main_control', 'symlink_install': False, 'test_result_base': None}
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_args' from command line to 'None'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_target' from command line to 'None'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_clean_cache' from command line to 'False'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_clean_first' from command line to 'False'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_force_configure' from command line to 'False'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'ament_cmake_args' from command line to 'None'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'catkin_cmake_args' from command line to 'None'
+[4.644s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.644s] DEBUG:colcon.colcon_core.verb:Building package 'vectornav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/vectornav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/vectornav', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav', 'symlink_install': False, 'test_result_base': None}
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_args' from command line to 'None'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_target' from command line to 'None'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_clean_first' from command line to 'False'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_force_configure' from command line to 'False'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'ament_cmake_args' from command line to 'None'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[4.660s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.660s] DEBUG:colcon.colcon_core.verb:Building package 'yolov5_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/yolov5_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/yolov5_ros', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/yolov5-pkgs/yolov5-ros2/yolov5_ros', 'symlink_install': False, 'test_result_base': None}
+[4.676s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_args' from command line to 'None'
+[4.676s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target' from command line to 'None'
+[4.676s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.676s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[4.676s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[4.676s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[4.677s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[4.677s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[4.677s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.677s] DEBUG:colcon.colcon_core.verb:Building package 'zed_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_wrapper', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_wrapper', 'symlink_install': False, 'test_result_base': None}
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'cmake_args' from command line to 'None'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'cmake_target' from command line to 'None'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'cmake_clean_first' from command line to 'False'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'cmake_force_configure' from command line to 'False'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'ament_cmake_args' from command line to 'None'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[4.693s] Level 5:colcon.colcon_core.verb:set package 'zed_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.693s] DEBUG:colcon.colcon_core.verb:Building package 'zed_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_ros', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_ros', 'symlink_install': False, 'test_result_base': None}
+[4.709s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.726s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.727s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets' with build type 'catkin'
+[4.727s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets'
+[4.763s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.763s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.763s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.827s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/yolov5-pkgs/bbox_ex_msgs' with build type 'ament_cmake'
+[4.827s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/yolov5-pkgs/bbox_ex_msgs'
+[4.845s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.845s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.901s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector' with build type 'ament_cmake'
+[4.902s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/detector'
+[4.920s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.920s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.988s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs' with build type 'ament_cmake'
+[4.989s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs'
+[5.007s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.007s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.063s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2' with build type 'ament_cmake'
+[5.064s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2'
+[5.082s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.082s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.139s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2_msg' with build type 'ament_cmake'
+[5.140s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2_msg'
+[5.160s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.160s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_nodelets': /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets
+[5.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/bboxes_ex_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/yolov5-pkgs/bbox_ex_msgs -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/bboxes_ex_msgs
+[5.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/detector -- -j12 -l12
+[5.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/vectornav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/vectornav/vectornav_msgs -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/vectornav_msgs
+[5.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/Task_2
+[5.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/Task_2_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/Task_2_msg -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/Task_2_msg
+[6.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/build/zed_nodelets' returned '1': /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/zed-ros-wrapper/zed_nodelets -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets
+[6.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_nodelets)
+[6.513s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets' for CMake module files
+[6.514s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets' for CMake config files
+[6.514s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/bin'
+[6.514s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/lib/pkgconfig/zed_nodelets.pc'
+[6.515s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/lib/python3.8/site-packages'
+[6.515s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/bin'
+[6.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/share/zed_nodelets/package.ps1'
+[6.538s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/share/zed_nodelets/package.dsv'
+[6.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/share/zed_nodelets/package.sh'
+[6.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/share/zed_nodelets/package.bash'
+[6.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/share/zed_nodelets/package.zsh'
+[6.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/zed_nodelets/share/colcon-core/packages/zed_nodelets)
+[8.877s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.878s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.878s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[8.879s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.001s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.001s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.066s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.091s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.ps1'
+[9.114s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/_local_setup_util_ps1.py'
+[9.117s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.ps1'
+[9.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.sh'
+[9.169s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/_local_setup_util_sh.py'
+[9.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.sh'
+[9.241s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.bash'
+[9.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.bash'
+[9.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/local_setup.zsh'
+[9.296s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/src/install/setup.zsh'
