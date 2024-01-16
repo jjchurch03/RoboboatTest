@@ -13,7 +13,6 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 - YOLOv5 datasets
 	- Put updated ones in both folders to make this easier
 - Task 1
-	- Move into GPS folder
 	- Change part to grab inital waypoint and store as variable
 - Task 2 
 	- Move into GPS folder
