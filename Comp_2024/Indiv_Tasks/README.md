@@ -4,7 +4,7 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 
 ## Folders
 
-- GPS_Related_Tasks: Tasks 1, 2, 3, and 8 will be stored here. Unless we want to do what a paid group did over years in a month we need ROS2 driver so this will be the ros2 workspace. If anything else needs a waypoint please put it here and Barbee will work on it. 
+- GPS_Related Tasks: Tasks 1, 2, 3, and 8 will be stored here. Unless we want to do what a paid group did over years in a month we need ROS2 driver so this will be the ros2 workspace. If anything else needs a waypoint please put it here and Barbee will work on it. 
 - Indiv_Tasks: This is where Tasks that are finished will go that do not require GPS implementation. 
 
 ## Tasks to be done overall for Competition (Add as needed and delete from list below when finished)
