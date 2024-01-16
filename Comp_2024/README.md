@@ -25,7 +25,7 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- Train for posters
 	- Pool testing for psuedo code
 - Task 4
-	- Create code
+	- Create code in GPS folder
 	- See task3 for poster training
 	- add code that gets waypoint before start of task to make sure watergun does not blow boat too far away
 	- pool testing 
@@ -36,7 +36,7 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- Buoy training
 	- Pool tests
 - Task 8
-	- Create code
+	- Create code in GPS folder
 	- Implement GPS
 	- Have it call Task 1
 	- Test logic (does not need to be pool)
