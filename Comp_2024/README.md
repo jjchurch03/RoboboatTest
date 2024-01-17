@@ -24,12 +24,13 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- Train for posters
 	- Pool testing for psuedo code
 - Task 4
-	- Create code in GPS folder
+	- Create code in Indiv Folder
 	- See task3 for poster training
 	- add code that gets waypoint before start of task to make sure watergun does not blow boat too far away
 	- pool testing 
 	- Update code as needed
-- Task 5
+   
+- Task 5 (Would be nice)
 	- Move into GPS folder
 	- Add piece that checks for correct channel (do not accidentally go through task2 again)
 	- Buoy training
