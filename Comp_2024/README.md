@@ -9,7 +9,9 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 
 ## Tasks to be done overall for Competition (Add as needed and delete from list below when finished)
 - GPS
-	-Set up this folder as the go to ros2 foxy folder
+	- Information needed
+	- Lat/long (1+8 maybe 5)
+	- Yaw (2)
 - YOLOv5 datasets
 	- Put updated ones in both folders to make this easier
 - Task 1

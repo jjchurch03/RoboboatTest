@@ -1,0 +1,4 @@
+source;share/finals_tasks/local_setup.bash
+source;share/finals_tasks/local_setup.dsv
+source;share/finals_tasks/local_setup.sh
+source;share/finals_tasks/local_setup.zsh
