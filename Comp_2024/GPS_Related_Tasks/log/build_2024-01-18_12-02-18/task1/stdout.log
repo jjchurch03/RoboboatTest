@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/task1/task1.egg-info/PKG-INFO
+writing dependency_links to ../../build/task1/task1.egg-info/dependency_links.txt
+writing requirements to ../../build/task1/task1.egg-info/requires.txt
+writing top-level names to ../../build/task1/task1.egg-info/top_level.txt
+reading manifest file '../../build/task1/task1.egg-info/SOURCES.txt'
+writing manifest file '../../build/task1/task1.egg-info/SOURCES.txt'
+running build
+running build_py
+copying task1/MainControl.py -> /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/build/lib/task1
+running install
+running install_lib
+copying /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/build/lib/task1/MainControl.py -> /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1
+byte-compiling /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1/MainControl.py to MainControl.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/task1/task1.egg-info to /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/install.log'

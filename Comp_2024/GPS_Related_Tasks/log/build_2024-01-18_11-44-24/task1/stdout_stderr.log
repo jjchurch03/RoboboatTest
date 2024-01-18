@@ -1,0 +1,35 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+CMake Warning at CMakeLists.txt:20 (find_package):
+  By not providing "Findrcply.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "rcply", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "rcply" with any of
+  the following names:
+
+    rcplyConfig.cmake
+    rcply-config.cmake
+
+  Add the installation prefix of "rcply" to CMAKE_PREFIX_PATH or set
+  "rcply_DIR" to a directory containing one of the above files.  If "rcply"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found vectornav: 3.0.0 (/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/cmake)
+-- Found vectornav_msgs: 3.0.0 (/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/cmake)
+CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+  ament_target_dependencies() the first argument must be a valid target name
+Call Stack (most recent call first):
+  CMakeLists.txt:29 (ament_target_dependencies)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/CMakeFiles/CMakeOutput.log".
+See also "/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/CMakeFiles/CMakeError.log".
+make: *** [Makefile:222: cmake_check_build_system] Error 1

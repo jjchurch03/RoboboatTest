@@ -1,0 +1,25 @@
+[1.874s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1': PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/prefix_override:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/task1 build --build-base /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/build install --record /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/install.log --install-scripts $base/lib/task1 --single-version-externally-managed
+[2.058s] /home/roboboat/.local/lib/python3.8/site-packages/setuptools/dist.py:788: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.059s]   warnings.warn(
+[2.200s] running egg_info
+[2.223s] writing ../../build/task1/task1.egg-info/PKG-INFO
+[2.223s] writing dependency_links to ../../build/task1/task1.egg-info/dependency_links.txt
+[2.224s] writing requirements to ../../build/task1/task1.egg-info/requires.txt
+[2.225s] writing top-level names to ../../build/task1/task1.egg-info/top_level.txt
+[2.426s] reading manifest file '../../build/task1/task1.egg-info/SOURCES.txt'
+[2.428s] writing manifest file '../../build/task1/task1.egg-info/SOURCES.txt'
+[2.428s] running build
+[2.428s] running build_py
+[2.429s] running install
+[2.429s] /home/roboboat/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.429s]   warnings.warn(
+[2.437s] running install_lib
+[2.461s] byte-compiling /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1/MainControl.py to MainControl.cpython-38.pyc
+[2.462s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (MainControl.py, line 74)
+[2.462s] running install_data
+[2.484s] running install_egg_info
+[2.507s] removing '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1-0.0.0-py3.8.egg-info' (and everything under it)
+[2.508s] Copying ../../build/task1/task1.egg-info to /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1-0.0.0-py3.8.egg-info
+[2.509s] running install_scripts
+[2.603s] writing list of installed files to '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/install.log'
+[2.673s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1' returned '0': PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/prefix_override:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/task1 build --build-base /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/build install --record /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/install.log --install-scripts $base/lib/task1 --single-version-externally-managed

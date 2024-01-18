@@ -1,0 +1,24 @@
+CMake Warning at CMakeLists.txt:20 (find_package):
+  By not providing "Findrcply.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "rcply", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "rcply" with any of
+  the following names:
+
+    rcplyConfig.cmake
+    rcply-config.cmake
+
+  Add the installation prefix of "rcply" to CMAKE_PREFIX_PATH or set
+  "rcply_DIR" to a directory containing one of the above files.  If "rcply"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+  ament_target_dependencies() the first argument must be a valid target name
+Call Stack (most recent call first):
+  CMakeLists.txt:29 (ament_target_dependencies)
+
+
+make: *** [Makefile:222: cmake_check_build_system] Error 1
