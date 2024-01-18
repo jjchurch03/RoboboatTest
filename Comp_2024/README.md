@@ -12,6 +12,11 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- Information needed
 	- Lat/long (1+8 maybe 5)
 	- Yaw (2)
+- LiDAR 
+	- figure out CDC ACM
+	- Return home
+	- Docking
+	
 - YOLOv5 datasets
 	- Put updated ones in both folders to make this easier
 - Task 1
@@ -37,6 +42,7 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- Add piece that checks for correct channel (do not accidentally go through task2 again)
 	- Buoy training
 	- Pool tests
+	- LiDAR
 - Task 8
 	- Create code in GPS folder
 	- Implement GPS
