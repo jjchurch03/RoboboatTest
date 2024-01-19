@@ -1,0 +1,25 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8
+-- Install configuration: ""
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/ament_index/resource_index/package_run_dependencies/task8
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/ament_index/resource_index/parent_prefix_path/task8
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/environment/ament_prefix_path.sh
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/environment/ament_prefix_path.dsv
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/environment/path.sh
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/environment/path.dsv
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/local_setup.bash
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/local_setup.sh
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/local_setup.zsh
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/local_setup.dsv
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.dsv
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/ament_index/resource_index/packages/task8
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/cmake/task8Config.cmake
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/cmake/task8Config-version.cmake
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.xml

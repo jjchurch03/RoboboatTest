@@ -1,0 +1,25 @@
+[0.103s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1 -- -j12 -l12
+[0.174s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1 -- -j12 -l12
+[0.224s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1
+[0.242s] -- Install configuration: ""
+[0.243s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/environment/pythonpath.sh
+[0.243s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/environment/pythonpath.dsv
+[0.243s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1
+[0.243s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1/__init__.py
+[0.285s] Listing '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages/task1'...
+[0.293s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/ament_index/resource_index/package_run_dependencies/task1
+[0.293s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/ament_index/resource_index/parent_prefix_path/task1
+[0.294s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/environment/ament_prefix_path.sh
+[0.294s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/environment/ament_prefix_path.dsv
+[0.294s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/environment/path.sh
+[0.294s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/environment/path.dsv
+[0.295s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/local_setup.bash
+[0.295s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/local_setup.sh
+[0.295s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/local_setup.zsh
+[0.295s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/local_setup.dsv
+[0.295s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.dsv
+[0.296s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/ament_index/resource_index/packages/task1
+[0.296s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/cmake/task1Config.cmake
+[0.296s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/cmake/task1Config-version.cmake
+[0.296s] -- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.xml
+[0.301s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1

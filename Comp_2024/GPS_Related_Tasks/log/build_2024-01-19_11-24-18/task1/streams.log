@@ -1,0 +1,30 @@
+[0.270s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1
+[0.512s] -- The C compiler identification is GNU 9.4.0
+[0.677s] -- The CXX compiler identification is GNU 9.4.0
+[0.691s] -- Check for working C compiler: /usr/bin/cc
+[0.798s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.800s] -- Detecting C compiler ABI info
+[0.904s] -- Detecting C compiler ABI info - done
+[0.917s] -- Detecting C compile features
+[0.918s] -- Detecting C compile features - done
+[0.922s] -- Check for working CXX compiler: /usr/bin/c++
+[1.037s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.038s] -- Detecting CXX compiler ABI info
+[1.151s] -- Detecting CXX compiler ABI info - done
+[1.164s] -- Detecting CXX compile features
+[1.165s] -- Detecting CXX compile features - done
+[1.168s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.204s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.204s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.701s] CMake Error at /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:46 (message):
+[1.701s]   ament_python_install_package() the Python package folder
+[1.702s]   '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1/python'
+[1.702s]   doesn't contain an '__init__.py' file
+[1.702s] Call Stack (most recent call first):
+[1.702s]   /opt/ros/foxy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:28 (_ament_cmake_python_install_package)
+[1.702s]   CMakeLists.txt:21 (ament_python_install_package)
+[1.702s] 
+[1.702s] 
+[1.703s] -- Configuring incomplete, errors occurred!
+[1.703s] See also "/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1/CMakeFiles/CMakeOutput.log".
+[1.712s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1

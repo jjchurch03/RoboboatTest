@@ -1,0 +1,42 @@
+[0.116s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node -- -j12 -l12
+[0.250s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.285s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.589s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[0.623s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.627s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.837s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.050s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.086s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.274s] -- Found laser_proc: 1.0.2 (/opt/ros/foxy/share/laser_proc/cmake)
+[1.453s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[1.549s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[1.567s] -- Found urg_c: 1.0.4001 (/opt/ros/foxy/share/urg_c/cmake)
+[1.569s] -- Found urg_node_msgs: 1.0.1 (/opt/ros/foxy/share/urg_node_msgs/cmake)
+[1.635s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.753s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.754s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node/include>
+[1.754s] -- Configured cppcheck exclude dirs and/or files: 
+[1.768s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.768s] -- Configured cpplint exclude dirs and/or files: 
+[1.771s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.775s] -- Added test 'lint_cmake' to check CMake code style
+[1.777s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.792s] -- Added test 'uncrustify' to check C / C++ code style
+[1.792s] -- Configured uncrustify additional arguments: 
+[1.794s] -- Added test 'xmllint' to check XML markup files
+[1.803s] -- Configuring done
+[1.870s] -- Generating done
+[1.873s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node
+[1.944s] [35m[1mScanning dependencies of target urg_node_driver[0m
+[1.952s] [35m[1mScanning dependencies of target urg_node[0m
+[1.978s] [ 14%] [32mBuilding CXX object CMakeFiles/urg_node_driver.dir/rclcpp_components/node_main_urg_node_driver.cpp.o[0m
+[1.999s] [ 42%] [32mBuilding CXX object CMakeFiles/urg_node.dir/src/urg_c_wrapper.cpp.o[0m
+[2.000s] [ 42%] [32mBuilding CXX object CMakeFiles/urg_node.dir/src/urg_node.cpp.o[0m
+[6.870s] [ 57%] [32m[1mLinking CXX executable urg_node_driver[0m
+[7.130s] [ 57%] Built target urg_node_driver
+[12.354s] [ 71%] [32m[1mLinking CXX shared library liburg_node.so[0m
+[12.901s] [ 71%] Built target urg_node
+[12.919s] [35m[1mScanning dependencies of target getID[0m
+[12.964s] [ 85%] [32mBuilding CXX object CMakeFiles/getID.dir/src/get_id.cpp.o[0m
+[15.755s] [100%] [32m[1mLinking CXX executable getID[0m
+[16.077s] [100%] Built target getID
