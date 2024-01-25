@@ -20,7 +20,7 @@ This is the folder where all algorithms/code/virtual components will be stored. 
  - 	Figure out what is useable for me and team! This will be the easier route if useable
 	
 - YOLOv5 datasets
-	- Put updated ones in both folders to make this easier
+	- Put updated ones in it's own created folder so it is easier to point to. Keep it in this area
 - Task 1
 	- Change part to grab inital waypoint and store as variable
 - Task 2 
