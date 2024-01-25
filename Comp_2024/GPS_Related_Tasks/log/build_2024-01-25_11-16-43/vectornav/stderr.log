@@ -1,0 +1,197 @@
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1376:38:[m[K [01;31m[Kerror: [m[K‘[01m[KDOP[m[K’ in namespace ‘[01m[Kvectornav_msgs::msg[m[K’ does not name a type
+ 1376 |   static inline vectornav_msgs::msg::[01;31m[KDOP[m[K toMsg(const vn::protocol::uart::GnssDop & rhs)
+      |                                      [01;31m[K^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1390:38:[m[K [01;31m[Kerror: [m[K‘[01m[KVpeStatus[m[K’ in namespace ‘[01m[Kvectornav_msgs::msg[m[K’ does not name a type; did you mean ‘[01m[KTimeStatus[m[K’?
+ 1390 |   static inline vectornav_msgs::msg::[01;31m[KVpeStatus[m[K toMsg(const vn::protocol::uart::VpeStatus & rhs)
+      |                                      [01;31m[K^~~~~~~~~[m[K
+      |                                      [32m[KTimeStatus[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:[m[K In static member function ‘[01m[Kstatic void Vectornav::parseGpsGroup(Vectornav*, vn::sensors::CompositeData&, uint16_t, const rclcpp::Time&)[m[K’:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1049:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kutc[m[K’
+ 1049 |       msg.[01;31m[Kutc[m[K = toMsg(compositeData.timeUtc());
+      |           [01;31m[K^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1053:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktow[m[K’
+ 1053 |       msg.[01;31m[Ktow[m[K = compositeData.gpsTow();
+      |           [01;31m[K^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1058:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kweek[m[K’
+ 1058 |       msg.[01;31m[Kweek[m[K = compositeData.week();
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1062:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Knumsats[m[K’
+ 1062 |       msg.[01;31m[Knumsats[m[K = compositeData.numSats();
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1070:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposlla[m[K’
+ 1070 |       msg.[01;31m[Kposlla[m[K = toMsg(compositeData.positionGpsLla());
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1075:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposecef[m[K’
+ 1075 |       msg.[01;31m[Kposecef[m[K = toMsg(compositeData.positionGpsEcef());
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1079:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelned[m[K’
+ 1079 |       msg.[01;31m[Kvelned[m[K = toMsg(compositeData.velocityGpsNed());
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1083:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelecef[m[K’
+ 1083 |       msg.[01;31m[Kvelecef[m[K = toMsg(compositeData.velocityGpsEcef());
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1087:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposu[m[K’
+ 1087 |       msg.[01;31m[Kposu[m[K = toMsg(compositeData.positionUncertaintyGpsNed());
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1091:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelu[m[K’
+ 1091 |       msg.[01;31m[Kvelu[m[K = compositeData.velocityUncertaintyGps();
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1095:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktimeu[m[K’
+ 1095 |       msg.[01;31m[Ktimeu[m[K = compositeData.timeUncertainty();
+      |           [01;31m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1099:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktimeinfo_status[m[K’
+ 1099 |       msg.[01;31m[Ktimeinfo_status[m[K = compositeData.timeInfo().timeStatus;
+      |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1100:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktimeinfo_leapseconds[m[K’
+ 1100 |       msg.[01;31m[Ktimeinfo_leapseconds[m[K = compositeData.timeInfo().timeStatus;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1104:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kdop[m[K’
+ 1104 |       msg.[01;31m[Kdop[m[K = toMsg(compositeData.dop());
+      |           [01;31m[K^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1104:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KVectornav::toMsg(vn::protocol::uart::GnssDop)[m[K’
+ 1104 |       msg.dop = toMsg(compositeData.dop()[01;31m[K)[m[K;
+      |                                          [01;31m[K^[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1331:45:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic geometry_msgs::msg::Vector3 Vectornav::toMsg(const vec3f&)[m[K’
+ 1331 |   static inline geometry_msgs::msg::Vector3 [01;36m[KtoMsg[m[K(const vn::math::vec3f & rhs)
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1331:75:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kconst vec3f&[m[K’ {aka ‘[01m[Kconst vn::math::vec<3>&[m[K’}
+ 1331 |   static inline geometry_msgs::msg::Vector3 toMsg([01;36m[Kconst vn::math::vec3f & rhs[m[K)
+      |                                                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1341:48:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic geometry_msgs::msg::Quaternion Vectornav::toMsg(const vec4f&)[m[K’
+ 1341 |   static inline geometry_msgs::msg::Quaternion [01;36m[KtoMsg[m[K(const vn::math::vec4f & rhs)
+      |                                                [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1341:78:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kconst vec4f&[m[K’ {aka ‘[01m[Kconst vn::math::vec<4>&[m[K’}
+ 1341 |   static inline geometry_msgs::msg::Quaternion toMsg([01;36m[Kconst vn::math::vec4f & rhs[m[K)
+      |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1352:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic geometry_msgs::msg::Point Vectornav::toMsg(const vec3d&)[m[K’
+ 1352 |   static inline geometry_msgs::msg::Point [01;36m[KtoMsg[m[K(const vn::math::vec3d & rhs)
+      |                                           [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1352:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kconst vec3d&[m[K’ {aka ‘[01m[Kconst vn::math::vec<3, double>&[m[K’}
+ 1352 |   static inline geometry_msgs::msg::Point toMsg([01;36m[Kconst vn::math::vec3d & rhs[m[K)
+      |                                                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1362:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic vectornav_msgs::msg::TimeUTC Vectornav::toMsg(const vn::protocol::uart::TimeUtc&)[m[K’
+ 1362 |   static inline vectornav_msgs::msg::TimeUTC [01;36m[KtoMsg[m[K(const vn::protocol::uart::TimeUtc & rhs)
+      |                                              [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1362:88:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kconst vn::protocol::uart::TimeUtc&[m[K’
+ 1362 |   static inline vectornav_msgs::msg::TimeUTC toMsg([01;36m[Kconst vn::protocol::uart::TimeUtc & rhs[m[K)
+      |                                                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1406:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic std::array<float, 9> Vectornav::toMsg(const mat3f&)[m[K’
+ 1406 |   static inline std::array<float, 9> [01;36m[KtoMsg[m[K(const vn::math::mat3f & rhs)
+      |                                      [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1406:68:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kconst mat3f&[m[K’ {aka ‘[01m[Kconst vn::math::mat<3>&[m[K’}
+ 1406 |   static inline std::array<float, 9> toMsg([01;36m[Kconst vn::math::mat3f & rhs[m[K)
+      |                                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1422:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic vectornav_msgs::msg::TimeStatus Vectornav::toMsg(uint8_t)[m[K’
+ 1422 |   static inline vectornav_msgs::msg::TimeStatus [01;36m[KtoMsg[m[K(const uint8_t rhs)
+      |                                                 [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1422:69:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’}
+ 1422 |   static inline vectornav_msgs::msg::TimeStatus toMsg([01;36m[Kconst uint8_t rhs[m[K)
+      |                                                       [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1433:48:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic vectornav_msgs::msg::InsStatus Vectornav::toMsg(const vn::protocol::uart::InsStatus&)[m[K’
+ 1433 |   static inline vectornav_msgs::msg::InsStatus [01;36m[KtoMsg[m[K(const vn::protocol::uart::InsStatus & rhs)
+      |                                                [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1433:92:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::GnssDop[m[K’ to ‘[01m[Kconst vn::protocol::uart::InsStatus&[m[K’
+ 1433 |   static inline vectornav_msgs::msg::InsStatus toMsg([01;36m[Kconst vn::protocol::uart::InsStatus & rhs[m[K)
+      |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:[m[K In static member function ‘[01m[Kstatic void Vectornav::parseAttitudeGroup(Vectornav*, vn::sensors::CompositeData&, uint16_t, const rclcpp::Time&)[m[K’:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1130:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvpestatus[m[K’
+ 1130 |       msg.[01;31m[Kvpestatus[m[K = toMsg(compositeData.vpeStatus());
+      |           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1130:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KVectornav::toMsg(vn::protocol::uart::VpeStatus)[m[K’
+ 1130 |       msg.vpestatus = toMsg(compositeData.vpeStatus()[01;31m[K)[m[K;
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1331:45:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic geometry_msgs::msg::Vector3 Vectornav::toMsg(const vec3f&)[m[K’
+ 1331 |   static inline geometry_msgs::msg::Vector3 [01;36m[KtoMsg[m[K(const vn::math::vec3f & rhs)
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1331:75:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kconst vec3f&[m[K’ {aka ‘[01m[Kconst vn::math::vec<3>&[m[K’}
+ 1331 |   static inline geometry_msgs::msg::Vector3 toMsg([01;36m[Kconst vn::math::vec3f & rhs[m[K)
+      |                                                   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1341:48:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic geometry_msgs::msg::Quaternion Vectornav::toMsg(const vec4f&)[m[K’
+ 1341 |   static inline geometry_msgs::msg::Quaternion [01;36m[KtoMsg[m[K(const vn::math::vec4f & rhs)
+      |                                                [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1341:78:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kconst vec4f&[m[K’ {aka ‘[01m[Kconst vn::math::vec<4>&[m[K’}
+ 1341 |   static inline geometry_msgs::msg::Quaternion toMsg([01;36m[Kconst vn::math::vec4f & rhs[m[K)
+      |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1352:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic geometry_msgs::msg::Point Vectornav::toMsg(const vec3d&)[m[K’
+ 1352 |   static inline geometry_msgs::msg::Point [01;36m[KtoMsg[m[K(const vn::math::vec3d & rhs)
+      |                                           [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1352:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kconst vec3d&[m[K’ {aka ‘[01m[Kconst vn::math::vec<3, double>&[m[K’}
+ 1352 |   static inline geometry_msgs::msg::Point toMsg([01;36m[Kconst vn::math::vec3d & rhs[m[K)
+      |                                                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1362:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic vectornav_msgs::msg::TimeUTC Vectornav::toMsg(const vn::protocol::uart::TimeUtc&)[m[K’
+ 1362 |   static inline vectornav_msgs::msg::TimeUTC [01;36m[KtoMsg[m[K(const vn::protocol::uart::TimeUtc & rhs)
+      |                                              [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1362:88:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kconst vn::protocol::uart::TimeUtc&[m[K’
+ 1362 |   static inline vectornav_msgs::msg::TimeUTC toMsg([01;36m[Kconst vn::protocol::uart::TimeUtc & rhs[m[K)
+      |                                                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1406:38:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic std::array<float, 9> Vectornav::toMsg(const mat3f&)[m[K’
+ 1406 |   static inline std::array<float, 9> [01;36m[KtoMsg[m[K(const vn::math::mat3f & rhs)
+      |                                      [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1406:68:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kconst mat3f&[m[K’ {aka ‘[01m[Kconst vn::math::mat<3>&[m[K’}
+ 1406 |   static inline std::array<float, 9> toMsg([01;36m[Kconst vn::math::mat3f & rhs[m[K)
+      |                                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1422:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic vectornav_msgs::msg::TimeStatus Vectornav::toMsg(uint8_t)[m[K’
+ 1422 |   static inline vectornav_msgs::msg::TimeStatus [01;36m[KtoMsg[m[K(const uint8_t rhs)
+      |                                                 [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1422:69:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’}
+ 1422 |   static inline vectornav_msgs::msg::TimeStatus toMsg([01;36m[Kconst uint8_t rhs[m[K)
+      |                                                       [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1433:48:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic vectornav_msgs::msg::InsStatus Vectornav::toMsg(const vn::protocol::uart::InsStatus&)[m[K’
+ 1433 |   static inline vectornav_msgs::msg::InsStatus [01;36m[KtoMsg[m[K(const vn::protocol::uart::InsStatus & rhs)
+      |                                                [01;36m[K^~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1433:92:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvn::protocol::uart::VpeStatus[m[K’ to ‘[01m[Kconst vn::protocol::uart::InsStatus&[m[K’
+ 1433 |   static inline vectornav_msgs::msg::InsStatus toMsg([01;36m[Kconst vn::protocol::uart::InsStatus & rhs[m[K)
+      |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1138:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kquaternion[m[K’
+ 1138 |       msg.[01;31m[Kquaternion[m[K = toMsg(compositeData.quaternion());
+      |           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1142:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kdcm[m[K’
+ 1142 |       msg.[01;31m[Kdcm[m[K = toMsg(compositeData.directionCosineMatrix());
+      |           [01;31m[K^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1146:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kmagned[m[K’
+ 1146 |       msg.[01;31m[Kmagned[m[K = toMsg(compositeData.magneticNed());
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1150:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kaccelned[m[K’
+ 1150 |       msg.[01;31m[Kaccelned[m[K = toMsg(compositeData.accelerationNed());
+      |           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1154:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Klinearaccelbody[m[K’
+ 1154 |       msg.[01;31m[Klinearaccelbody[m[K = toMsg(compositeData.accelerationLinearBody());
+      |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1158:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Klinearaccelned[m[K’
+ 1158 |       msg.[01;31m[Klinearaccelned[m[K = toMsg(compositeData.accelerationLinearNed());
+      |           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1162:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::AttitudeGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kypru[m[K’
+ 1162 |       msg.[01;31m[Kypru[m[K = toMsg(compositeData.attitudeUncertainty());
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:[m[K In static member function ‘[01m[Kstatic void Vectornav::parseGps2Group(Vectornav*, vn::sensors::CompositeData&, uint16_t, const rclcpp::Time&)[m[K’:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1265:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktow[m[K’
+ 1265 |       msg.[01;31m[Ktow[m[K = compositeData.gps2Tow();
+      |           [01;31m[K^~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1283:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposlla[m[K’
+ 1283 |       msg.[01;31m[Kposlla[m[K = toMsg(compositeData.positionGps2Lla());
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1287:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposecef[m[K’
+ 1287 |       msg.[01;31m[Kposecef[m[K = toMsg(compositeData.positionGps2Ecef());
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1291:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelned[m[K’
+ 1291 |       msg.[01;31m[Kvelned[m[K = toMsg(compositeData.velocityGps2Ned());
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1295:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelecef[m[K’
+ 1295 |       msg.[01;31m[Kvelecef[m[K = toMsg(compositeData.velocityGps2Ecef());
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1299:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposu[m[K’
+ 1299 |       msg.[01;31m[Kposu[m[K = toMsg(compositeData.positionUncertaintyGps2Ned());
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vectornav.cc:1303:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kvelu[m[K’
+ 1303 |       msg.[01;31m[Kvelu[m[K = compositeData.velocityUncertaintyGps2();
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vn_sensor_msgs.cc:[m[K In member function ‘[01m[Kvoid VnSensorMsgs::sub_vn_gps(vectornav_msgs::msg::GpsGroup_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav/src/vn_sensor_msgs.cc:363:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct vectornav_msgs::msg::GpsGroup_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposu[m[K’
+  363 |     gps_posu_ = msg_in->[01;31m[Kposu[m[K;
+      |                         [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/vectornav.dir/build.make:63: CMakeFiles/vectornav.dir/src/vectornav.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:127: CMakeFiles/vectornav.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/vn_sensor_msgs.dir/build.make:63: CMakeFiles/vn_sensor_msgs.dir/src/vn_sensor_msgs.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:100: CMakeFiles/vn_sensor_msgs.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -14,9 +14,11 @@ import time
 import pyzed.sl as sl
 import rcply
 from vectornav_msgs.msg import GpsGroup
+from sensor_msgs.msg import NavSatFix
 
 # global variable to store GPS data
-gps_recieved_data = None
+latitude = None
+longitude = None
 
 # Initial GPIO Setup
 GPIO.setmode(GPIO.BOARD)
@@ -50,12 +52,14 @@ class Thrusters:
 		thrusters.p_l.stop()
 
 def callback(msg):
-    global first_received_data
-
-    if first_received_data is None:
+    global latitude
+	global longitude
+    if latitude is None:
         # Grab the first set of information
-        first_received_data = msg.data
-        print(f"Received first set of information: {first_received_data}")
+        latitude = msg.latitude
+		longitude = msg.longitude
+        print(f"Received first set of information: {latitude}")
+		print(f"Recieved second set of information: {longitude}")
 
         # Unsubscribe after receiving the first message
         node.get_logger().info('Unsubscribing from the topic...')
@@ -65,7 +69,7 @@ def main():
     rclpy.init()
 
     node = rclpy.create_node('task1_start')  # Replace 'your_node_name' with a unique name
-    subscription = node.create_subscription(GpsGroup, 'vectornav/time_gps', callback, 10)  # Adjust the queue size as needed
+    subscription = node.create_subscription(SatNavFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
     
 
 

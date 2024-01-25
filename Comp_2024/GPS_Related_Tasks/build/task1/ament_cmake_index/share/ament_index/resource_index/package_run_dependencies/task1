@@ -1,1 +1,1 @@
-ament_cmake_python;vectornav
+sensor_msgs;ament_cmake_python;vectornav

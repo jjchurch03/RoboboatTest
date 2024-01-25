@@ -1,0 +1,100 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 2.4.3 (/opt/ros/foxy/share/rclcpp_action/cmake)
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found vectornav_msgs: 3.0.0 (/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/cmake)
+-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav
+[35m[1mScanning dependencies of target vn_sensor_msgs[0m
+[ 85%] Built target vncxx
+[35m[1mScanning dependencies of target vectornav[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/vn_sensor_msgs.dir/src/vn_sensor_msgs.cc.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/vectornav.dir/src/vectornav.cc.o[0m
+[ 96%] [32m[1mLinking CXX executable vectornav[0m
+[ 96%] Built target vectornav
+[100%] [32m[1mLinking CXX executable vn_sensor_msgs[0m
+[100%] Built target vn_sensor_msgs
+-- Install configuration: ""
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/vectornav/vectornav
+-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/vectornav/vectornav" to ""
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/vectornav/vn_sensor_msgs
+-- Set runtime path of "/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/vectornav/vn_sensor_msgs" to ""
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav//config
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav//config/vn_100_800hz.yaml
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav//config/vectornav.yaml
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav//launch
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav//launch/vectornav.launch.py
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/ament_index/resource_index/package_run_dependencies/vectornav
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/ament_index/resource_index/parent_prefix_path/vectornav
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/environment/ament_prefix_path.sh
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/environment/path.sh
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/environment/path.dsv
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/local_setup.bash
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/local_setup.sh
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/local_setup.zsh
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/local_setup.dsv
+-- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.dsv
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/ament_index/resource_index/packages/vectornav
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/cmake/vectornavConfig.cmake
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/cmake/vectornavConfig-version.cmake
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.xml
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/libvncxx.so
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/rtcmlistener.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/matrix.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/dllvalidator.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/registers.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/serialport.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/error_detection.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/port.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/attitude.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/searcher.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/boostpython.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/compositedata.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/int.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/consts.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/event.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/rtcmmessage.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/mock.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/signal.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/position.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/ezasyncdata.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/util.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/vntime.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/sensors.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/utilities.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/nocopy.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/conversions.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/exceptions.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/vector.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/thread.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/compiler.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/criticalsection.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/packet.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/memoryport.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/types.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/packetfinder.h
+-- Up-to-date: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/include/vn/export.h
