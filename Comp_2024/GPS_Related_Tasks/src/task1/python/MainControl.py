@@ -12,13 +12,15 @@ l_thrust_pwm = 15
 import RPi.GPIO as GPIO
 import time
 import pyzed.sl as sl
-import rcply
+import rclpy
 from vectornav_msgs.msg import GpsGroup
 from sensor_msgs.msg import NavSatFix
 
 # global variable to store GPS data
 latitude = None
 longitude = None
+subscription = None
+node = None
 
 # Initial GPIO Setup
 GPIO.setmode(GPIO.BOARD)
@@ -52,24 +54,27 @@ class Thrusters:
 		thrusters.p_l.stop()
 
 def callback(msg):
-    global latitude
-	global longitude
-    if latitude is None:
-        # Grab the first set of information
-        latitude = msg.latitude
+	global latitude, longitude
+	if latitude is None:
+    # Grab the first set of information
+		latitude = msg.latitude
 		longitude = msg.longitude
-        print(f"Received first set of information: {latitude}")
+		print(f"Received first set of information: {latitude}")
 		print(f"Recieved second set of information: {longitude}")
 
-        # Unsubscribe after receiving the first message
-        node.get_logger().info('Unsubscribing from the topic...')
-        subscription.destroy()
+		# Unsubscribe after receiving the first message
+		node.get_logger().info('Unsubscribing from the topic...')
+		subscription.destroy()
+	if longitude is None:
+		print(f"Failed to grab longitude information.")
+	if latitude is None:
+		print(f"Failed to grab latitude information")
 
-def main():
+
+def ros():
     rclpy.init()
-
-    node = rclpy.create_node('task1_start')  # Replace 'your_node_name' with a unique name
-    subscription = node.create_subscription(SatNavFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
+    node = rclpy.create_node('task1_start')  # node is named here
+    subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
     
 
 
@@ -82,6 +87,7 @@ try:
         rclpy.spin(node)
 except KeyboardInterrupt:
         pass
+
 
 
 # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
@@ -234,8 +240,8 @@ rclpy.shutdown()
 thrusters.stop()
 GPIO.cleanup()
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__ros__':
+    ros()
 
 
     	
