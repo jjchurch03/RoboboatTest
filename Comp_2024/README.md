@@ -16,6 +16,8 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- figure out CDC ACM
 	- Return home
 	- Docking
+ - MATLAB
+ - 	Figure out what is useable for me and team! This will be the easier route if useable
 	
 - YOLOv5 datasets
 	- Put updated ones in both folders to make this easier
