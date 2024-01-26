@@ -54,24 +54,24 @@ class Thrusters:
 		thrusters.p_l.stop()
 
 def callback(msg):
-	global latitude, longitude
-	if latitude is None:
-    # Grab the first set of information
-		latitude = msg.latitude
-		longitude = msg.longitude
-		print(f"Received first set of information: {latitude}")
-		print(f"Recieved second set of information: {longitude}")
+    global latitude, longitude, node, subscription
+    if latitude is None:
+        # Grab the first set of information
+        latitude = msg.latitude
+        longitude = msg.longitude
+        print(f"Received first set of information: {latitude}")
+        print(f"Received second set of information: {longitude}")
 
-		# Unsubscribe after receiving the first message
-		node.get_logger().info('Unsubscribing from the topic...')
-		subscription.destroy()
-	if longitude is None:
-		print(f"Failed to grab longitude information.")
-	if latitude is None:
-		print(f"Failed to grab latitude information")
-
+        # Unsubscribe after receiving the first message
+        node.get_logger().info('Unsubscribing from the topic...')
+        subscription.destroy()
+    if longitude is None:
+        print("Failed to grab longitude information.")
+    if latitude is None:
+        print("Failed to grab latitude information")
 
 def ros():
+    global node, subscription
     rclpy.init()
     node = rclpy.create_node('task1_start')  # node is named here
     subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
@@ -82,12 +82,6 @@ def ros():
 thrusters = Thrusters(1500, 1500)
 time.sleep(5)
 thrusters.changeSpeed(1350, 1350)
-
-try:
-        rclpy.spin(node)
-except KeyboardInterrupt:
-        pass
-
 
 
 # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
@@ -240,8 +234,11 @@ rclpy.shutdown()
 thrusters.stop()
 GPIO.cleanup()
 
-if __name__ == '__ros__':
+if __name__ == '__main__':
     ros()
-
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
 
     	
