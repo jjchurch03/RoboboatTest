@@ -19,8 +19,6 @@ from sensor_msgs.msg import NavSatFix
 # global variable to store GPS data
 latitude = None
 longitude = None
-subscription = None
-node = None
 
 # Initial GPIO Setup
 GPIO.setmode(GPIO.BOARD)
@@ -54,7 +52,7 @@ class Thrusters:
 		thrusters.p_l.stop()
 
 def callback(msg):
-    global latitude, longitude, node, subscription
+    global latitude, longitude
     if latitude is None:
         # Grab the first set of information
         latitude = msg.latitude
@@ -71,10 +69,10 @@ def callback(msg):
         print("Failed to grab latitude information")
 
 def ros():
-    global node, subscription
     rclpy.init()
     node = rclpy.create_node('task1_start')  # node is named here
     subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
+    node.destroy_node()
     
 
 
@@ -228,17 +226,14 @@ def test_motors():
 	
 	GPIO.cleanup()
 
-# Clean up
-node.destroy_node()
-rclpy.shutdown()
-thrusters.stop()
-GPIO.cleanup()
-
 if __name__ == '__main__':
-    ros()
     try:
+        ros()
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+    finally:
+        thrusters.stop()
+        rclpy.shutdown()
+        GPIO.cleanup()
 
-    	
