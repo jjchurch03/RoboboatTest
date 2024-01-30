@@ -1,0 +1,48 @@
+[0.309s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task3 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3
+[0.457s] -- The C compiler identification is GNU 9.4.0
+[0.557s] -- The CXX compiler identification is GNU 9.4.0
+[0.570s] -- Check for working C compiler: /usr/bin/cc
+[0.677s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.685s] -- Detecting C compiler ABI info
+[0.794s] -- Detecting C compiler ABI info - done
+[0.814s] -- Detecting C compile features
+[0.815s] -- Detecting C compile features - done
+[0.820s] -- Check for working CXX compiler: /usr/bin/c++
+[0.939s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.941s] -- Detecting CXX compiler ABI info
+[1.061s] -- Detecting CXX compiler ABI info - done
+[1.085s] -- Detecting CXX compile features
+[1.086s] -- Detecting CXX compile features - done
+[1.087s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.144s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.144s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.487s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.628s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.631s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.632s] -- Added test 'lint_cmake' to check CMake code style
+[1.633s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.635s] -- Added test 'xmllint' to check XML markup files
+[1.639s] -- Configuring done
+[1.642s] -- Generating done
+[1.644s] -- Build files have been written to: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3
+[1.651s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task3 -DCMAKE_INSTALL_PREFIX=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3
+[1.658s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3 -- -j12 -l12
+[1.724s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3 -- -j12 -l12
+[1.768s] Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3
+[1.782s] -- Install configuration: ""
+[1.783s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/ament_index/resource_index/package_run_dependencies/task3
+[1.783s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/ament_index/resource_index/parent_prefix_path/task3
+[1.783s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/environment/ament_prefix_path.sh
+[1.783s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/environment/ament_prefix_path.dsv
+[1.784s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/environment/path.sh
+[1.784s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/environment/path.dsv
+[1.784s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/local_setup.bash
+[1.784s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/local_setup.sh
+[1.785s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/local_setup.zsh
+[1.785s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/local_setup.dsv
+[1.785s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.dsv
+[1.785s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/ament_index/resource_index/packages/task3
+[1.785s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/cmake/task3Config.cmake
+[1.786s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/cmake/task3Config-version.cmake
+[1.786s] -- Installing: /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.xml
+[1.789s] Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3
