@@ -62,20 +62,6 @@ urg_node_msgs/msg/status.hpp
 urg_node/urg_c_wrapper.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node/include/urg_node/urg_node/urg_c_wrapper.hpp
 
-/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node/src/urg_c_wrapper.cpp
-urg_node/urg_c_wrapper.hpp
--
-limits
--
-memory
--
-string
--
-vector
--
-boost/crc.hpp
-/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node/src/boost/crc.hpp
-
 /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node/src/urg_node.cpp
 urg_node/urg_node.hpp
 /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node/src/urg_node/urg_node.hpp

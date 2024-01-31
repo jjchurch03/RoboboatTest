@@ -54,7 +54,7 @@ UrgNode::UrgNode(const rclcpp::NodeOptions & node_options)
   close_scan_(true),
   ip_address_(""),
   ip_port_(10940),
-  serial_port_("/dev/cu.usbmodem141101"),
+  serial_port_("/dev/ttyACM0"),
   serial_baud_(115200),
   calibrate_time_(false),
   publish_intensity_(false),
