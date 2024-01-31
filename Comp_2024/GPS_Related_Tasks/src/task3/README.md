@@ -21,5 +21,5 @@ Please follow these step!
 3. type in `source install/setup.bash`
 4. `ros2 run urg_node urg_node_driver`
 	- From here it should output something like this
-[go here for gh help](Comp_2024/GPS_Related_Tasks/src/task3/pic.png)
+![pic of success](https://github.com/DarkAngelRed/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task3/pic.png)
 5. Go into the `src/task3/python` folder and then run `python3 insert_name_of detector_form_here.py`
