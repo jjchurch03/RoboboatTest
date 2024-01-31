@@ -1,4 +1,4 @@
-#Helpful Tips for Grabbing Info from LiDAR!
+# Helpful Tips for Grabbing Info from LiDAR!
 
 Hi Ed! Here is where I am going to give advice about how LiDAR works. I have a script in the python folder which grabs all the output from the datastream. If you want a specific variable from it define a variable as such:
 
@@ -20,5 +20,6 @@ Please follow these step!
 2. run the command `colcon build`
 3. type in `source install/setup.bash`
 4. `ros2 run urg_node urg_node_driver`
-	- From here it should output something like this (insert pic here)
+	- From here it should output something like this
+[go here for gh help](Comp_2024/GPS_Related_Tasks/src/task3/pic.png)
 5. Go into the `src/task3/python` folder and then run `python3 insert_name_of detector_form_here.py`
