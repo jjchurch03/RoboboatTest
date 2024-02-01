@@ -6,50 +6,90 @@ from geometry_msgs.msg import Twist
 class ObstacleAvoidance(Node):
     def __init__(self):
         super().__init__('obstacle_avoidance_node')
-        self.subscription = self.create_subscription(LaserScan,'scan', self.scan_callback,10)
-        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10) # This is a way to do this. We need to find a way to pass the variable to MainControl
-        self.min_distance_threshold = 0.5  # Adjust this threshold as needed
+        self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
+        print("Subscription to LiDAR created!")
+        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+        print("Main Control Turn Publisher Created!")
+        self.min_distance_threshold = 0.5
+        self.front_obstacle_threshold = 0.2  # Set your own threshold for obstacles in front
+        self.num_readings = 0  # Initialize num_readings
 
     def scan_callback(self, msg):
         distances = msg.ranges
         min_distance = min(distances)
+        self.num_readings = len(distances)  # Update num_readings
 
         if min_distance < self.min_distance_threshold:
-            # Obstacle detected, perform obstacle avoidance
-            self.avoid_obstacle(distances)
+            print("Obstacle Detected! Deciding best course of action...")
+            self.avoid_obstacle(distances, msg)  # Pass msg to the avoid_obstacle method
         else:
-            # No obstacle, move forward
+            print("Moving Forward...")
             self.move_forward()
 
-    def avoid_obstacle(self, distances):
-        # Determine the direction of the closest obstacle
+    def avoid_obstacle(self, distances, msg):
         closest_index = distances.index(min(distances))
         num_readings = len(distances)
         angle_increment = msg.angle_increment
 
-        # Calculate the angle of the closest obstacle
-        angle_to_obstacle = closest_index * angle_increment
+        print(f"Calculating Angle... Angle Increment: {angle_increment}")
 
-        # Decide whether to turn left or right based on the angle
-        if angle_to_obstacle < (num_readings / 2):
-            # Turn right
-            twist_msg = Twist()
-            twist_msg.linear.x = 0.0  # Stop moving forward
-            twist_msg.angular.z = -0.5  # Rotate to the right
-            self.publisher.publish(twist_msg)
+        angle_to_obstacle = closest_index * angle_increment
+        print(f"Angle to Obstacle: {angle_to_obstacle}")
+
+        # Check if the obstacle is in front or near the front
+        if angle_to_obstacle < self.front_obstacle_threshold:
+            print("Obstacle in Front or Near Front! Changing direction...")
+            self.change_direction(angle_to_obstacle)
         else:
-            # Turn left
-            twist_msg = Twist()
-            twist_msg.linear.x = 0.0  # Stop moving forward
-            twist_msg.angular.z = 0.5  # Rotate to the left
-            self.publisher.publish(twist_msg)
+            # Determine the angle ranges for left and right sides
+            left_range = slice(0, num_readings // 2)
+            right_range = slice(num_readings // 2, num_readings)
+
+            # Calculate the average distances for left and right sides
+            avg_left_distance = sum(distances[left_range]) / len(distances[left_range])
+            avg_right_distance = sum(distances[right_range]) / len(distances[right_range])
+
+            # Decide which side has more space and turn accordingly
+            if avg_left_distance > avg_right_distance:
+                print("Best course of action: Turn Right")
+                self.turn_right()
+            else:
+                print("Best course of action: Turn Left")
+                self.turn_left()
+
+    # (Remaining code for turn_right, turn_left, and move_forward methods)
+
+
+# Add new methods for turning right and left
+    def turn_right(self):
+        twist_msg = Twist()
+        twist_msg.linear.x = 0.0
+        twist_msg.angular.z = -0.5
+        self.publisher.publish(twist_msg)
+
+    def turn_left(self):
+        twist_msg = Twist()
+        twist_msg.linear.x = 0.0
+        twist_msg.angular.z = 0.5
+        self.publisher.publish(twist_msg)
+
 
     def move_forward(self):
-        # Move forward with a constant linear velocity
         twist_msg = Twist()
-        twist_msg.linear.x = 0.2  # Adjust linear velocity as needed
-        twist_msg.angular.z = 0.0  # No rotation
+        twist_msg.linear.x = 0.2
+        twist_msg.angular.z = 0.0
         self.publisher.publish(twist_msg)
+
+
+    def change_direction(self, angle_to_obstacle):
+        # Add logic to change the direction based on your requirements
+        print("Changing Direction...")
+        if angle_to_obstacle < (self.num_readings / 2):
+            print("Best course of action: Turn Right")
+            self.turn_right()
+        else:
+            print("Best course of action: Turn Left")
+            self.turn_left()
 
 def main(args=None):
     rclpy.init(args=args)
@@ -60,3 +100,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+

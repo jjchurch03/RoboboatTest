@@ -26,13 +26,35 @@ import rclpy
 from vectornav_msgs.msg import GpsGroup
 from sensor_msgs.msg import NavSatFix
 
+import signal
+
 # global variable to store GPS data
 latitude = None
 longitude = None
+subscription = None
+node = None
+ros2_initialized = False
 
 lock = Lock()
 run_signal = False
 exit_signal = False
+
+#Trying to help with the exiting issues
+def signal_handler(sig, frame):
+    global exit_signal, capture_thread, node
+
+    print("Received SIGINT (Ctrl+C). Shutting down...")
+    exit_signal = True
+
+    if capture_thread.is_alive():
+        capture_thread.join()
+
+    if node is not None:
+        print("Destroying Node...")
+        node.destroy_node()
+
+    print("ROS2 Node Exterminated")
+    sys.exit(0)
 
 
 def img_preprocess(img, device, half, net_size):
@@ -135,49 +157,83 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             lock.release()
             run_signal = False
         sleep(0.01)
+
+def initialize_ros2():
+    global subscription, node
+    global latitude, longitude, ros2_initialized
+
+    if not ros2_initialized and latitude is None:
+        print("Creating ROS2 GPS Subscriber...")
+        try:
+            rclpy.init()
+            node = rclpy.create_node('task1_start')
+            subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', lambda msg: callback(msg, node), 10)
+            ros2_initialized = True
+            print("ROS2 Initialized")
+            rclpy.spin_once(node, timeout_sec=0.1)
+        except Exception as e:
+            print(f"Failed to initialize ROS2: {e}")
+
+
 	
 def callback(msg, node):
-    global latitude, longitude
+    global latitude, longitude, subscription
     if latitude is None:
         # Grab the first set of information
         latitude = msg.latitude
         longitude = msg.longitude
-        print(f"Received first set of information: {latitude}")
-        print(f"Received second set of information: {longitude}")
+        print(f"Received latitude information: {latitude}")
+        print(f"Received longitude information: {longitude}")
 
         # Unsubscribe after receiving the first message
-        node.get_logger().info('Unsubscribing from the topic...')
-        subscription.destroy()
+        if subscription is not None:
+            node.get_logger().info('Unsubscribing from the topic...')
+            subscription.destroy()
+            subscription = None  # Reset subscription after destroying
     if longitude is None:
         print("Failed to grab longitude information.")
     if latitude is None:
         print("Failed to grab latitude information")
 
+def cleanup_ros2():
+    global subscription, node
+
+    if node is not None:
+        print("Destroying Node...")
+        try:
+            node.destroy_node()
+        except Exception as e:
+            print(f"Failed to destroy ROS2 node: {e}")
+
+    if subscription is not None:
+        print("Unsubscribing from the topic...")
+        try:
+            if hasattr(subscription, 'handle') and subscription.handle.is_valid():
+                subscription.destroy()
+                subscription = None
+        except Exception as e:
+            print(f"Failed to unsubscribe from the topic: {e}")
+
+    print("Shutting down ROS2...")
+    try:
+        rclpy.shutdown()
+    except Exception as e:
+        print(f"Failed to shutdown ROS2: {e}")
+
+
 
 def main():
     # Define thruster object for thruster control
 
-    global image_net, exit_signal, run_signal, detections
+    global image_net, exit_signal, run_signal, detections, subscription, latitude, ros2_initialized
 
     capture_thread = Thread(target=torch_thread,
                             kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
     capture_thread.start()
 
-    print("Creating ROS2 GPS Subscriber...")
-
-    rclpy.init()
-    node = rclpy.create_node('task1_start')  # node is named here
-    subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', lambda msg: callback(msg, node), 10)
-
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        print("KeyboardInterrupt: Shutting down...")
-    finally:
-        print("Destroying Node...")
-        node.destroy_node()
-        print("Shutting down ROS2...")
-        rclpy.shutdown()
+    initialize_ros2()
+    cleanup_ros2()
+    
 
     zed = sl.Camera()
 
@@ -295,22 +351,29 @@ def main():
     
     #viewer.exit()
     exit_signal = True
+    capture_thread.join() 
     zed.close()
 
 
 
 if __name__ == '__main__':
+    exit_signal = False  # Initialize exit_signal here
     try:
         parser = argparse.ArgumentParser()
-        parser.add_argument('--weights', nargs='+', type=str, default='/home/RoboBoat_Cyber_Minority/Old_Sys/YOLOv5&Image_Tests/yolov5/exp13best.pt', help='model.pt path(s)')
+        parser.add_argument('--weights', nargs='+', type=str, default='exp13best.pt', help='model.pt path(s)')
         parser.add_argument('--svo', type=str, default=None, help='optional svo file')
         parser.add_argument('--img_size', type=int, default=512, help='inference size (pixels)')
         parser.add_argument('--conf_thres', type=float, default=0.1, help='object confidence threshold')
         opt = parser.parse_args()
-        # rest of the script
         with torch.no_grad():
             main()
     except KeyboardInterrupt:
-        print("KeyboardInterrupt: Exiting...")
+        # Handle Ctrl+C (KeyboardInterrupt)
+        signal_handler(signal.SIGINT, None)
+        # Set exit_signal to True
+        exit_signal = True
     finally:
-        rclpy.shutdown()
+        # Print "Exiting script..." only if Ctrl+C is used
+        if exit_signal is True:
+            print("Exiting script...")
+
