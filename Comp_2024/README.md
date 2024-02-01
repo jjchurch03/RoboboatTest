@@ -4,7 +4,7 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 
 ## Folders
 
-- GPS_Related_Tasks: Tasks 1, 2, and 8 will be stored here. Unless we want to do what a paid group did over years in a month we need ROS2 driver so this will be the ros2 workspace. If anything else needs a waypoint please put it here and Barbee will work on it. 
+- GPS_Related_Tasks: Tasks 1, 2, 3, (if we do 5) and 8 will be stored here. Unless we want to do what a paid group did over years in a month we need ROS2 driver so this will be the ros2 workspace. If anything else needs a waypoint please put it here and Barbee will work on it. 
 - Indiv_Tasks: This is where Tasks that are finished will go that do not require GPS implementation. 
 
 ## Tasks to be done overall for Competition (Add as needed and delete from list below when finished)
@@ -13,29 +13,22 @@ This is the folder where all algorithms/code/virtual components will be stored. 
 	- Lat/long (1+8 maybe 5)
 	- Yaw (2)
 - LiDAR 
-	- figure out CDC ACM
 	- Return home
 	- Docking
- - MATLAB
- - 	Figure out what is useable for me and team! This will be the easier route if useable
 	
 - YOLOv5 datasets
 	- Put updated ones in it's own created folder so it is easier to point to. Keep it in this area
 - Task 1
 	- Change part to grab inital waypoint and store as variable
 - Task 2 
-	- Move into GPS folder
 	- Check pseudo for actual with new datasets
 	- add code that grabs waypoint/heading at end of course for spins
 - Task 3
-	- Move into Indiv folder
-	- Pics for posters
 	- Train for posters
 	- Pool testing for psuedo code
 - Task 4
 	- Create code in Indiv Folder
 	- See task3 for poster training
-	- add code that gets waypoint before start of task to make sure watergun does not blow boat too far away
 	- pool testing 
 	- Update code as needed
    

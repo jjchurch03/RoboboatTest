@@ -1,0 +1,649 @@
+[3.731s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.731s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbb8d8b80>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbb8d8b80>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffbb5506d0>)
+[3.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.945s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.945s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.980s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.980s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.981s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[3.982s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extensions ['ignore', 'ignore_ament_install']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extension 'ignore'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extension 'ignore_ament_install'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extensions ['colcon_pkg']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extension 'colcon_pkg'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extensions ['colcon_meta']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extension 'colcon_meta'
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extensions ['ros']
+[3.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/finals_tasks) by extension 'ros'
+[3.998s] DEBUG:colcon.colcon_core.package_identification:Package 'src/finals_tasks' with type 'ros.ament_cmake' and name 'finals_tasks'
+[3.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['ignore', 'ignore_ament_install']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'ignore'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'ignore_ament_install'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['colcon_pkg']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'colcon_pkg'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['colcon_meta']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'colcon_meta'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extensions ['ros']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/task1) by extension 'ros'
+[4.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task1' with type 'ros.ament_cmake' and name 'task1'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extensions ['ignore', 'ignore_ament_install']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extension 'ignore'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extension 'ignore_ament_install'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extensions ['colcon_pkg']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extension 'colcon_pkg'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extensions ['colcon_meta']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extension 'colcon_meta'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extensions ['ros']
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/task2) by extension 'ros'
+[4.002s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task2' with type 'ros.ament_cmake' and name 'task2'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extensions ['ignore', 'ignore_ament_install']
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extension 'ignore'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extension 'ignore_ament_install'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extensions ['colcon_pkg']
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extension 'colcon_pkg'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extensions ['colcon_meta']
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extension 'colcon_meta'
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extensions ['ros']
+[4.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/task3) by extension 'ros'
+[4.004s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task3' with type 'ros.ament_cmake' and name 'task3'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extensions ['ignore', 'ignore_ament_install']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extension 'ignore'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extension 'ignore_ament_install'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extensions ['colcon_pkg']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extension 'colcon_pkg'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extensions ['colcon_meta']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extension 'colcon_meta'
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extensions ['ros']
+[4.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/task8) by extension 'ros'
+[4.006s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task8' with type 'ros.ament_cmake' and name 'task8'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['ignore', 'ignore_ament_install']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'ignore'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'ignore_ament_install'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['colcon_pkg']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'colcon_pkg'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['colcon_meta']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'colcon_meta'
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['ros']
+[4.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'ros'
+[4.008s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urg_node' with type 'ros.ament_cmake' and name 'urg_node'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extensions ['ignore', 'ignore_ament_install']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'ignore'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'ignore_ament_install'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extensions ['colcon_pkg']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'colcon_pkg'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extensions ['colcon_meta']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'colcon_meta'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extensions ['ros']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'ros'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extensions ['cmake', 'python']
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'cmake'
+[4.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'python'
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extensions ['python_setup_py']
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav) by extension 'python_setup_py'
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extensions ['ignore', 'ignore_ament_install']
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extension 'ignore'
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extension 'ignore_ament_install'
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extensions ['colcon_pkg']
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extension 'colcon_pkg'
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extensions ['colcon_meta']
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extension 'colcon_meta'
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extensions ['ros']
+[4.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav) by extension 'ros'
+[4.012s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vectornav/vectornav' with type 'ros.ament_cmake' and name 'vectornav'
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extensions ['ignore', 'ignore_ament_install']
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extension 'ignore'
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extension 'ignore_ament_install'
+[4.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extensions ['colcon_pkg']
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extension 'colcon_pkg'
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extensions ['colcon_meta']
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extension 'colcon_meta'
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extensions ['ros']
+[4.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/vectornav/vectornav_msgs) by extension 'ros'
+[4.014s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vectornav/vectornav_msgs' with type 'ros.ament_cmake' and name 'vectornav_msgs'
+[4.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.214s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install
+[4.231s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 260 installed packages in /opt/ros/foxy
+[4.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.368s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'cmake_args' from command line to 'None'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'cmake_target' from command line to 'None'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'cmake_clean_cache' from command line to 'False'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'cmake_clean_first' from command line to 'False'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'cmake_force_configure' from command line to 'False'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'ament_cmake_args' from command line to 'None'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'catkin_cmake_args' from command line to 'None'
+[4.369s] Level 5:colcon.colcon_core.verb:set package 'finals_tasks' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.369s] DEBUG:colcon.colcon_core.verb:Building package 'finals_tasks' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/finals_tasks', 'symlink_install': False, 'test_result_base': None}
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'cmake_args' from command line to 'None'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'cmake_target' from command line to 'None'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'cmake_clean_cache' from command line to 'False'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'cmake_clean_first' from command line to 'False'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'cmake_force_configure' from command line to 'False'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'ament_cmake_args' from command line to 'None'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'catkin_cmake_args' from command line to 'None'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'task2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.385s] DEBUG:colcon.colcon_core.verb:Building package 'task2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task2', 'symlink_install': False, 'test_result_base': None}
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'cmake_args' from command line to 'None'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'cmake_target' from command line to 'None'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'cmake_clean_cache' from command line to 'False'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'cmake_clean_first' from command line to 'False'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'cmake_force_configure' from command line to 'False'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'ament_cmake_args' from command line to 'None'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'catkin_cmake_args' from command line to 'None'
+[4.401s] Level 5:colcon.colcon_core.verb:set package 'task3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.401s] DEBUG:colcon.colcon_core.verb:Building package 'task3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task3', 'symlink_install': False, 'test_result_base': None}
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'cmake_args' from command line to 'None'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'cmake_target' from command line to 'None'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'cmake_clean_cache' from command line to 'False'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'cmake_clean_first' from command line to 'False'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'cmake_force_configure' from command line to 'False'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'ament_cmake_args' from command line to 'None'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'catkin_cmake_args' from command line to 'None'
+[4.417s] Level 5:colcon.colcon_core.verb:set package 'task8' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.417s] DEBUG:colcon.colcon_core.verb:Building package 'task8' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task8', 'symlink_install': False, 'test_result_base': None}
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_args' from command line to 'None'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_target' from command line to 'None'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_clean_cache' from command line to 'False'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_clean_first' from command line to 'False'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_force_configure' from command line to 'False'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'ament_cmake_args' from command line to 'None'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'catkin_cmake_args' from command line to 'None'
+[4.433s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.433s] DEBUG:colcon.colcon_core.verb:Building package 'urg_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node', 'symlink_install': False, 'test_result_base': None}
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_args' from command line to 'None'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_target' from command line to 'None'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[4.449s] Level 5:colcon.colcon_core.verb:set package 'vectornav_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.449s] DEBUG:colcon.colcon_core.verb:Building package 'vectornav_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav_msgs', 'symlink_install': False, 'test_result_base': None}
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_args' from command line to 'None'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_target' from command line to 'None'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_clean_cache' from command line to 'False'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_clean_first' from command line to 'False'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'cmake_force_configure' from command line to 'False'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'ament_cmake_args' from command line to 'None'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'catkin_cmake_args' from command line to 'None'
+[4.465s] Level 5:colcon.colcon_core.verb:set package 'vectornav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.466s] DEBUG:colcon.colcon_core.verb:Building package 'vectornav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav', 'symlink_install': False, 'test_result_base': None}
+[4.481s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_args' from command line to 'None'
+[4.481s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_target' from command line to 'None'
+[4.481s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_clean_cache' from command line to 'False'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_clean_first' from command line to 'False'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'cmake_force_configure' from command line to 'False'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'ament_cmake_args' from command line to 'None'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'catkin_cmake_args' from command line to 'None'
+[4.482s] Level 5:colcon.colcon_core.verb:set package 'task1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.482s] DEBUG:colcon.colcon_core.verb:Building package 'task1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1', 'merge_install': False, 'path': '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1', 'symlink_install': False, 'test_result_base': None}
+[4.497s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.515s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.515s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav_msgs' with build type 'ament_cmake'
+[4.516s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav_msgs'
+[4.551s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.551s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.551s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/finals_tasks' with build type 'ament_cmake'
+[4.616s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/finals_tasks'
+[4.637s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.637s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.700s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task2' with build type 'ament_cmake'
+[4.701s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task2'
+[4.722s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.722s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.782s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task3' with build type 'ament_cmake'
+[4.783s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task3'
+[4.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.801s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.861s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task8' with build type 'ament_cmake'
+[4.862s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task8'
+[4.880s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.880s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.938s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node' with build type 'ament_cmake'
+[4.938s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/urg_node'
+[4.958s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.958s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs -- -j12 -l12
+[5.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks -- -j12 -l12
+[5.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2 -- -j12 -l12
+[5.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3 -- -j12 -l12
+[5.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8 -- -j12 -l12
+[5.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node -- -j12 -l12
+[5.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks -- -j12 -l12
+[5.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8 -- -j12 -l12
+[5.179s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2 -- -j12 -l12
+[5.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3 -- -j12 -l12
+[5.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks
+[5.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8
+[5.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2
+[5.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3
+[5.262s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(finals_tasks)
+[5.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/finals_tasks
+[5.333s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks' for CMake module files
+[5.334s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks' for CMake config files
+[5.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('finals_tasks', 'cmake_prefix_path')
+[5.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/hook/cmake_prefix_path.ps1'
+[5.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/hook/cmake_prefix_path.dsv'
+[5.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/hook/cmake_prefix_path.sh'
+[5.364s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/bin'
+[5.364s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/lib/pkgconfig/finals_tasks.pc'
+[5.364s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/lib/python3.8/site-packages'
+[5.365s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/bin'
+[5.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.ps1'
+[5.384s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.dsv'
+[5.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.sh'
+[5.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.bash'
+[5.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.zsh'
+[5.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/colcon-core/packages/finals_tasks)
+[5.397s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task8)
+[5.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task8
+[5.417s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8' for CMake module files
+[5.418s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8' for CMake config files
+[5.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('task8', 'cmake_prefix_path')
+[5.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/hook/cmake_prefix_path.ps1'
+[5.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/hook/cmake_prefix_path.dsv'
+[5.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/hook/cmake_prefix_path.sh'
+[5.438s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/bin'
+[5.438s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/lib/pkgconfig/task8.pc'
+[5.439s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/lib/python3.8/site-packages'
+[5.439s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/bin'
+[5.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.ps1'
+[5.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.dsv'
+[5.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.sh'
+[5.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.bash'
+[5.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.zsh'
+[5.464s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/colcon-core/packages/task8)
+[5.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task2)
+[5.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task2
+[5.498s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2' for CMake module files
+[5.499s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2' for CMake config files
+[5.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('task2', 'cmake_prefix_path')
+[5.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/hook/cmake_prefix_path.ps1'
+[5.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/hook/cmake_prefix_path.dsv'
+[5.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/hook/cmake_prefix_path.sh'
+[5.524s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/bin'
+[5.524s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/lib/pkgconfig/task2.pc'
+[5.524s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/lib/python3.8/site-packages'
+[5.525s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/bin'
+[5.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.ps1'
+[5.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.dsv'
+[5.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.sh'
+[5.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.bash'
+[5.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.zsh'
+[5.549s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/colcon-core/packages/task2)
+[5.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task3)
+[5.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task3
+[5.576s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3' for CMake module files
+[5.576s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3' for CMake config files
+[5.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('task3', 'cmake_prefix_path')
+[5.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/hook/cmake_prefix_path.ps1'
+[5.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/hook/cmake_prefix_path.dsv'
+[5.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/hook/cmake_prefix_path.sh'
+[5.598s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/bin'
+[5.598s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/lib/pkgconfig/task3.pc'
+[5.599s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/lib/python3.8/site-packages'
+[5.600s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/bin'
+[5.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.ps1'
+[5.623s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.dsv'
+[5.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.sh'
+[5.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.bash'
+[5.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.zsh'
+[5.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/colcon-core/packages/task3)
+[5.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node -- -j12 -l12
+[5.661s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(finals_tasks)
+[5.678s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks' for CMake module files
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks' for CMake config files
+[5.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('finals_tasks', 'cmake_prefix_path')
+[5.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/hook/cmake_prefix_path.ps1'
+[5.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/hook/cmake_prefix_path.dsv'
+[5.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/hook/cmake_prefix_path.sh'
+[5.703s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/bin'
+[5.703s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/lib/pkgconfig/finals_tasks.pc'
+[5.703s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/lib/python3.8/site-packages'
+[5.703s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/bin'
+[5.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.ps1'
+[5.722s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.dsv'
+[5.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.sh'
+[5.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.bash'
+[5.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/finals_tasks/package.zsh'
+[5.729s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/finals_tasks/share/colcon-core/packages/finals_tasks)
+[5.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs -- -j12 -l12
+[5.766s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task8)
+[5.783s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8' for CMake module files
+[5.784s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8' for CMake config files
+[5.784s] Level 1:colcon.colcon_core.shell:create_environment_hook('task8', 'cmake_prefix_path')
+[5.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/hook/cmake_prefix_path.ps1'
+[5.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/hook/cmake_prefix_path.dsv'
+[5.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/hook/cmake_prefix_path.sh'
+[5.805s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/bin'
+[5.805s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/lib/pkgconfig/task8.pc'
+[5.806s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/lib/python3.8/site-packages'
+[5.806s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/bin'
+[5.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.ps1'
+[5.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.dsv'
+[5.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.sh'
+[5.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.bash'
+[5.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/task8/package.zsh'
+[5.829s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task8/share/colcon-core/packages/task8)
+[5.849s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task2)
+[5.866s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2' for CMake module files
+[5.867s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2' for CMake config files
+[5.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('task2', 'cmake_prefix_path')
+[5.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/hook/cmake_prefix_path.ps1'
+[5.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/hook/cmake_prefix_path.dsv'
+[5.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/hook/cmake_prefix_path.sh'
+[5.887s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/bin'
+[5.888s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/lib/pkgconfig/task2.pc'
+[5.888s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/lib/python3.8/site-packages'
+[5.890s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/bin'
+[5.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.ps1'
+[5.908s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.dsv'
+[5.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.sh'
+[5.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.bash'
+[5.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/task2/package.zsh'
+[5.915s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task2/share/colcon-core/packages/task2)
+[5.935s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task3)
+[5.952s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3' for CMake module files
+[5.953s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3' for CMake config files
+[5.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('task3', 'cmake_prefix_path')
+[5.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/hook/cmake_prefix_path.ps1'
+[5.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/hook/cmake_prefix_path.dsv'
+[5.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/hook/cmake_prefix_path.sh'
+[5.974s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/bin'
+[5.974s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/lib/pkgconfig/task3.pc'
+[5.975s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/lib/python3.8/site-packages'
+[5.975s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/bin'
+[5.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.ps1'
+[5.999s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.dsv'
+[6.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.sh'
+[6.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.bash'
+[6.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/task3/package.zsh'
+[6.001s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task3/share/colcon-core/packages/task3)
+[6.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node
+[6.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs
+[6.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urg_node)
+[6.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/urg_node
+[6.069s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node' for CMake module files
+[6.072s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node' for CMake config files
+[6.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node', 'cmake_prefix_path')
+[6.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/cmake_prefix_path.ps1'
+[6.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/cmake_prefix_path.dsv'
+[6.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/cmake_prefix_path.sh'
+[6.117s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/lib'
+[6.117s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node', 'ld_library_path_lib')
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/ld_library_path_lib.ps1'
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/ld_library_path_lib.dsv'
+[6.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/ld_library_path_lib.sh'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/bin'
+[6.139s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/lib/pkgconfig/urg_node.pc'
+[6.139s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/lib/python3.8/site-packages'
+[6.139s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/bin'
+[6.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.ps1'
+[6.171s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.dsv'
+[6.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.sh'
+[6.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.bash'
+[6.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.zsh'
+[6.173s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/colcon-core/packages/urg_node)
+[6.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vectornav_msgs)
+[6.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav_msgs
+[6.203s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs' for CMake module files
+[6.204s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs' for CMake config files
+[6.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav_msgs', 'cmake_prefix_path')
+[6.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/cmake_prefix_path.ps1'
+[6.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/cmake_prefix_path.dsv'
+[6.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/cmake_prefix_path.sh'
+[6.225s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib'
+[6.225s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav_msgs', 'ld_library_path_lib')
+[6.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/ld_library_path_lib.ps1'
+[6.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/ld_library_path_lib.dsv'
+[6.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/ld_library_path_lib.sh'
+[6.245s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/bin'
+[6.245s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/pkgconfig/vectornav_msgs.pc'
+[6.245s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages'
+[6.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav_msgs', 'pythonpath')
+[6.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/pythonpath.ps1'
+[6.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/pythonpath.dsv'
+[6.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/pythonpath.sh'
+[6.265s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/bin'
+[6.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.ps1'
+[6.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.dsv'
+[6.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.sh'
+[6.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.bash'
+[6.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.zsh'
+[6.286s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/colcon-core/packages/vectornav_msgs)
+[6.312s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urg_node)
+[6.329s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node' for CMake module files
+[6.330s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node' for CMake config files
+[6.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node', 'cmake_prefix_path')
+[6.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/cmake_prefix_path.ps1'
+[6.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/cmake_prefix_path.dsv'
+[6.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/cmake_prefix_path.sh'
+[6.352s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/lib'
+[6.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node', 'ld_library_path_lib')
+[6.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/ld_library_path_lib.ps1'
+[6.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/ld_library_path_lib.dsv'
+[6.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/hook/ld_library_path_lib.sh'
+[6.374s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/bin'
+[6.374s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/lib/pkgconfig/urg_node.pc'
+[6.376s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/lib/python3.8/site-packages'
+[6.377s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/bin'
+[6.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.ps1'
+[6.395s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.dsv'
+[6.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.sh'
+[6.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.bash'
+[6.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/urg_node/package.zsh'
+[6.402s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/urg_node/share/colcon-core/packages/urg_node)
+[6.627s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vectornav_msgs)
+[6.650s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs' for CMake module files
+[6.651s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs' for CMake config files
+[6.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav_msgs', 'cmake_prefix_path')
+[6.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/cmake_prefix_path.ps1'
+[6.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/cmake_prefix_path.dsv'
+[6.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/cmake_prefix_path.sh'
+[6.673s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib'
+[6.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav_msgs', 'ld_library_path_lib')
+[6.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/ld_library_path_lib.ps1'
+[6.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/ld_library_path_lib.dsv'
+[6.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/ld_library_path_lib.sh'
+[6.691s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/bin'
+[6.691s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/pkgconfig/vectornav_msgs.pc'
+[6.692s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages'
+[6.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav_msgs', 'pythonpath')
+[6.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/pythonpath.ps1'
+[6.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/pythonpath.dsv'
+[6.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/hook/pythonpath.sh'
+[6.712s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/bin'
+[6.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.ps1'
+[6.733s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.dsv'
+[6.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.sh'
+[6.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.bash'
+[6.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/vectornav_msgs/package.zsh'
+[6.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/share/colcon-core/packages/vectornav_msgs)
+[6.743s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav' with build type 'ament_cmake'
+[6.744s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/vectornav/vectornav'
+[6.767s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.767s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav -- -j12 -l12
+[7.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav -- -j12 -l12
+[7.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav
+[7.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vectornav)
+[7.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/vectornav
+[7.294s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav' for CMake module files
+[7.296s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav' for CMake config files
+[7.297s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav', 'cmake_prefix_path')
+[7.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/cmake_prefix_path.ps1'
+[7.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/cmake_prefix_path.dsv'
+[7.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/cmake_prefix_path.sh'
+[7.324s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib'
+[7.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav', 'ld_library_path_lib')
+[7.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/ld_library_path_lib.ps1'
+[7.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/ld_library_path_lib.dsv'
+[7.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/ld_library_path_lib.sh'
+[7.345s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/bin'
+[7.345s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/pkgconfig/vectornav.pc'
+[7.346s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/python3.8/site-packages'
+[7.346s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/bin'
+[7.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.ps1'
+[7.365s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.dsv'
+[7.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.sh'
+[7.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.bash'
+[7.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.zsh'
+[7.367s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/colcon-core/packages/vectornav)
+[7.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vectornav)
+[7.456s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav' for CMake module files
+[7.457s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav' for CMake config files
+[7.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav', 'cmake_prefix_path')
+[7.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/cmake_prefix_path.ps1'
+[7.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/cmake_prefix_path.dsv'
+[7.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/cmake_prefix_path.sh'
+[7.478s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib'
+[7.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('vectornav', 'ld_library_path_lib')
+[7.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/ld_library_path_lib.ps1'
+[7.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/ld_library_path_lib.dsv'
+[7.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/hook/ld_library_path_lib.sh'
+[7.503s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/bin'
+[7.503s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/pkgconfig/vectornav.pc'
+[7.504s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib/python3.8/site-packages'
+[7.504s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/bin'
+[7.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.ps1'
+[7.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.dsv'
+[7.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.sh'
+[7.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.bash'
+[7.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/vectornav/package.zsh'
+[7.530s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/share/colcon-core/packages/vectornav)
+[7.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1' with build type 'ament_cmake'
+[7.533s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/src/task1'
+[7.553s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1 -- -j12 -l12
+[7.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1 -- -j12 -l12
+[7.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1
+[7.902s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task1)
+[7.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1' returned '0': AMENT_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/vectornav_msgs:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/main_control:/home/roboboat/RoboBoat_Cyber_Minority/ROS2_Imp/ros2_foxy/install/detector:/opt/ros/foxy LD_LIBRARY_PATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav/lib:/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/vectornav_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/build/task1
+[7.952s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1' for CMake module files
+[7.954s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1' for CMake config files
+[7.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'cmake_prefix_path')
+[7.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/cmake_prefix_path.ps1'
+[7.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/cmake_prefix_path.dsv'
+[7.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/cmake_prefix_path.sh'
+[7.980s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib'
+[7.980s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/bin'
+[7.980s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/pkgconfig/task1.pc'
+[7.981s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages'
+[7.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'pythonpath')
+[8.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/pythonpath.ps1'
+[8.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/pythonpath.dsv'
+[8.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/pythonpath.sh'
+[8.006s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/bin'
+[8.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.ps1'
+[8.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.dsv'
+[8.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.sh'
+[8.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.bash'
+[8.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.zsh'
+[8.028s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/colcon-core/packages/task1)
+[8.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task1)
+[8.105s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1' for CMake module files
+[8.105s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1' for CMake config files
+[8.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'cmake_prefix_path')
+[8.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/cmake_prefix_path.ps1'
+[8.155s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/cmake_prefix_path.dsv'
+[8.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/cmake_prefix_path.sh'
+[8.157s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib'
+[8.157s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/bin'
+[8.158s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/pkgconfig/task1.pc'
+[8.158s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/lib/python3.8/site-packages'
+[8.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('task1', 'pythonpath')
+[8.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/pythonpath.ps1'
+[8.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/pythonpath.dsv'
+[8.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/hook/pythonpath.sh'
+[8.185s] Level 1:colcon.colcon_core.environment:checking '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/bin'
+[8.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.ps1'
+[8.203s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.dsv'
+[8.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.sh'
+[8.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.bash'
+[8.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/task1/package.zsh'
+[8.209s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/task1/share/colcon-core/packages/task1)
+[8.210s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.211s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.212s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.212s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.243s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.243s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.243s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.298s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.318s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/local_setup.ps1'
+[8.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/_local_setup_util_ps1.py'
+[8.323s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/setup.ps1'
+[8.349s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/local_setup.sh'
+[8.350s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/_local_setup_util_sh.py'
+[8.350s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/setup.sh'
+[8.375s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/local_setup.bash'
+[8.377s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/setup.bash'
+[8.401s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/local_setup.zsh'
+[8.403s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/roboboat/RoboBoat_Cyber_Minority/Comp_2024/GPS_Related_Tasks/install/setup.zsh'

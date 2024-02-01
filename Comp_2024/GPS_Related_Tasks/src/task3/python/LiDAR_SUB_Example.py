@@ -5,7 +5,7 @@ from sensor_msgs.msg import LaserScan
 class MySubscriber(Node):
     def __init__(self):
         super().__init__('my_subscriber_node')
-        self.subscription = self.create_subscription(LaserScan,'scan', self.listener_callback, 10)
+        self.subscription = self.create_subscription(LaserScan,'scan', self.listener_callback, 10) #format is: msg type, topic for node, callback function, then how much you want to process
         self.subscription  # Prevent unused variable warning
 
     def listener_callback(self, msg):

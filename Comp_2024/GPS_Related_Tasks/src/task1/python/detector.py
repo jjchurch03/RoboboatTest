@@ -22,6 +22,14 @@ import ogl_viewer.viewer as gl
 import cv_viewer.tracking_viewer as cv_viewer
 import MainControl as mc
 
+import rclpy
+from vectornav_msgs.msg import GpsGroup
+from sensor_msgs.msg import NavSatFix
+
+# global variable to store GPS data
+latitude = None
+longitude = None
+
 lock = Lock()
 run_signal = False
 exit_signal = False
@@ -128,7 +136,24 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
             run_signal = False
         sleep(0.01)
 	
-	
+def callback(msg, node):
+    global latitude, longitude
+    if latitude is None:
+        # Grab the first set of information
+        latitude = msg.latitude
+        longitude = msg.longitude
+        print(f"Received first set of information: {latitude}")
+        print(f"Received second set of information: {longitude}")
+
+        # Unsubscribe after receiving the first message
+        node.get_logger().info('Unsubscribing from the topic...')
+        subscription.destroy()
+    if longitude is None:
+        print("Failed to grab longitude information.")
+    if latitude is None:
+        print("Failed to grab latitude information")
+
+
 def main():
     # Define thruster object for thruster control
 
@@ -138,7 +163,21 @@ def main():
                             kwargs={'weights': opt.weights, 'img_size': opt.img_size, "conf_thres": opt.conf_thres})
     capture_thread.start()
 
-    print("Initializing Camera...")
+    print("Creating ROS2 GPS Subscriber...")
+
+    rclpy.init()
+    node = rclpy.create_node('task1_start')  # node is named here
+    subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', lambda msg: callback(msg, node), 10)
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        print("KeyboardInterrupt: Shutting down...")
+    finally:
+        print("Destroying Node...")
+        node.destroy_node()
+        print("Shutting down ROS2...")
+        rclpy.shutdown()
 
     zed = sl.Camera()
 
@@ -261,12 +300,17 @@ def main():
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default='~/RoboBoat_Cyber_Minority/Old_Sys/YOLOv5&Image_Tests/yolov5/exp13best.pt', help='model.pt path(s)')
-    parser.add_argument('--svo', type=str, default=None, help='optional svo file')
-    parser.add_argument('--img_size', type=int, default=512, help='inference size (pixels)')
-    parser.add_argument('--conf_thres', type=float, default=0.1, help='object confidence threshold')
-    opt = parser.parse_args()
-
-    with torch.no_grad():
-        main()
+    try:
+        parser = argparse.ArgumentParser()
+        parser.add_argument('--weights', nargs='+', type=str, default='/home/RoboBoat_Cyber_Minority/Old_Sys/YOLOv5&Image_Tests/yolov5/exp13best.pt', help='model.pt path(s)')
+        parser.add_argument('--svo', type=str, default=None, help='optional svo file')
+        parser.add_argument('--img_size', type=int, default=512, help='inference size (pixels)')
+        parser.add_argument('--conf_thres', type=float, default=0.1, help='object confidence threshold')
+        opt = parser.parse_args()
+        # rest of the script
+        with torch.no_grad():
+            main()
+    except KeyboardInterrupt:
+        print("KeyboardInterrupt: Exiting...")
+    finally:
+        rclpy.shutdown()
