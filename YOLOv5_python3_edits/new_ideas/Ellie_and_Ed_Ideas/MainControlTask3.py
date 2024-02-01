@@ -57,104 +57,46 @@ class ZedObjects:
         self.objects = objects
 		self.green_buoys_list = []
 		self.red_buoys_list = [] 
-        self.triangle_list = []
-        self.square_list = []
-        self.circle_list = []
-        self.plus_list = []
+        self.green_triangle_list = []
+        self.red_square_list = []
+        self.blue_circle_list = []
+        self.blue_plus_list = []
+		self.red_plus_list = []
+		self.green_plus_list = []
 
         self.green_buoy_detected = False
 		self.red_buoy_detected = False
-        self.triangle_detected = False
-        self.square_detected = False
-        self.circle_detected = False
-        self.plus_detected = False
+        self.green_triangle_detected = False
+        self.red_square_detected = False
+        self.blue_circle_detected = False
+        self.blue_plus_detected = False
+		self.red_plus_detected = False
+		self.green_plus_detected = False
+		
 
         self.nearest_green_detected = False
 		self.nearest_red_detected = False
-        self.nearest_triangle_detected = False
-        self.nearest_square_detected = False
-        self.nearest_circle_detected = False
-        self.nearest_plus_detected = False
+        self.nearest_green_triangle_detected = False
+        self.nearest_red_square_detected = False
+        self.nearest_blue_circle_detected = False
+        self.nearest_blue_plus_detected = False
+		self.nearest_red_plus_detected = False
+		self.nearest_green_plus_detected = False
 
         self.nearest_green_index = -1
 		self.nearest_red_index = -1
-        self.nearest_triangle_index = -1
-        self.nearest_square_index = -1
-        self.nearest_circle_index = -1
-        self.nearest_plus_index = -1
+        self.nearest_green_triangle_index = -1
+        self.nearest_red_square_index = -1
+        self.nearest_blue_circle_index = -1
+        self.nearest_blue_plus_index = -1
+		self.nearest_red_plus_index = -1
+		self.nearest_green_plus_index = -1
 
-		self.detected_image = 0
-		self.image_of_the_day = 0
+		self.image_of_the_day = 0 # 1=triangle; 2=square; 3=circle; 4=blue_plus; 5=red_plus; 6=green_plus
 		# ask what is the image of the day
 		# set the image to the image of the day
 
-
-        # use this in case have to label each individually
-		# self.objects = objects
-		# self.green_buoys_list = []
-		# self.red_buoys_list = []         # Holds all zed objects in the frame that are green buoys
-        # self.green_square_list = []
-        # self.red_square_list = []
-        # self.blue_square_list = []
-        # self.green_circle_list = []
-        # self.red_circle_list = []
-        # self.blue_circle_list = []
-        # self.green_triangle_list = []
-        # self.red_triangle_list = []
-        # self.blue_triangle_list = []
-        # self.green_plus_list = []
-        # self.red_plus_list = []
-        # self.blue_plus_list = []
-
-        # Use thi sin case have to label each individually
-		# self.green_buoy_detected = False
-		# self.red_buoy_detected = False
-        # self.green_square_detected = False
-        # self.red_square_detected = False
-        # self.blue_square_detected = False
-        # self.green_circle_detected = False
-        # self.red_circle_detected = False
-        # self.blue_circle_detected = False
-        # self.green_triangle_detected = False
-        # self.red_triangle_detected = False
-        # self.blue_triangle_detected = False
-        # self.green_plus_detected = False
-        # self.red_plus_detected = False
-        # self.blue_plus_detected = False
-
-		# Use this in case have to label each individually
-        # self.nearest_green_detected = False
-		# self.nearest_red_detected = False
-        # self.nearest_green_square_detected = False
-        # self.nearest_red_square_detected = False
-        # self.nearest_blue_square_detected = False
-        # self.nearest_green_circle_detected = False
-        # self.nearest_red_circle_detected = False
-        # self.nearest_blue_circle_detected = False
-        # self.nearest_green_triangle_detected = False
-        # self.nearest_red_triangle_detected = False
-        # self.nearest_blue_triangle_detected = False
-        # self.nearest_green_plus_detected = False
-        # self.nearest_red_plus_detected = False
-        # self.nearest_blue_plus_detected = False
-
-
-        # Use this in case have to label each individually
-		# self.nearest_green_index = -1
-		# self.nearest_red_index = -1
-        # self.nearest_green_square_index = -1
-        # self.nearest_red_square_index = -1
-        # self.nearest_blue_square_index = -1
-        # self.nearest_green_circle_index = -1
-        # self.nearest_red_circle_index = -1
-        # self.nearest_blue_circle_index = -1
-        # self.nearest_green_triangle_index = -1
-        # self.nearest_red_triangle_index = -1
-        # self.nearest_blue_triangle_index = -1
-        # self.nearest_green_plus_index = -1
-        # self.nearest_red_plus_index = -1
-        # self.nearest_blue_plus_index = -1
-
+		# set self.detected image to _ for shape of the day, update the index when it finds the shape to _, when the two match, then drive towards that
 		self.desired_center_point = 0
         
 		
@@ -175,37 +117,23 @@ class ZedObjects:
 				self.red_buoys_list.append(obj)
 				self.red_buoy_detected = True
             elif (str(obj.raw_label) == "6") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Triangle
-                self.triangle_list.append(obj)
-				 # if color = green
-				 # self.green_trangle_list.append(obj)
-				 # self.detected_image = 1
-				 # elif ...
-				 # ... self.detected_image = 2
-                self.triangle_detected = True
+                self.green_triangle_list.append(obj)
+				self.green_triangle_detected = True
             elif (str(obj.raw_label) == "7") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Square
-                self.square_list.append(obj)
-                self.square_detected = True
-				# if color = green
-				# self.green_square_list.append(obj)
-				# self.detected_image = 4
-				# elif ...
-				# ... self.detected_image = 5
+                self.red_square_list.append(obj)
+				self.red_square_detected = True
             elif (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Circle
-                self.circle_list.append(obj)
-                self.circle_detected = True
-				# if color = green
-				# self.green_circle_list.append(obj)
-				# self.detected_image = 7
-				# elif ...
-				# ... self.detected_image = 9
-            elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Plus
-                self.plus_list.append(obj)
-                self.plus_detected = True
-				# if color = green
-				# self.green_plus_list.append(obj)
-				# self.detected_image = 10
-				# elif ...
-				# ... self.detected_image = 11
+                self.blue_circle_list.append(obj)
+				self.blue_circle_detected = True
+            elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Blue Plus
+                self.blue_plus_list.append(obj)
+				self.blue_plus_detected = True
+			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Red Plus
+                self.red_plus_list.append(obj)
+				self.red_plus_detected = True
+			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Green Plus
+                self.green_plus_list.append(obj)
+				self.green_plus_detected = True
             
 
 	def sort_green_buoys(self):
@@ -241,31 +169,60 @@ class ZedObjects:
 				i = i + 1
     
     def sort_triangle(self):
-        if self.triangle_detected == False:
+        if self.green_triangle_detected == False:
             print("Error: No triangle detected.")
         else:
             # Find the triangle with closest distance
             triangle_distances = []
-            for triangle in self.triangle_list:
+            for triangle in self.green_triangle_list:
                 triangle_distances.append(abs((triangle.position[2])))
             triangle_distances.sort()
-            for triangle in self.triangle_list:
+			i = 0
+            for triangle in self.green_triangle_list:
                 if abs(triangle.position[2]) == triangle_distances[0]
                     self.nearest_triangle_index = i
-                    self.nearest_triangle_detected = True
-                i = i +1
+                    self.nearest_green_triangle_detected = True
+                i = i + 1
 
     def sort_square(self):
-		if self.square_detected == False:
+		if self.red_square_detected == False:
 		 	print("Error: No square detected.")
 		else:
 			# Find the square with closest distance
 			square_distances = []
-			for square in self.square_list:
+			for square in self.red_square_list:
 				square_distances.append(abs((square.position[2])))
-    def sort_cirlce(self):
+			square_distances.sort()
+			i = 0
+			for square in self.red_square_list:
+				if abs(square.position[2]) == square_distances[0]
+					self.nearest_triangle_index = i
+					self.nearest_red_square_detected = True
+				i = i + 1
 
-    def sort_plus(self):
+    def sort_circle(self):
+		if self.blue_circle_detected == False:
+		 	print("Error: No circle detected.")
+		else:
+			# Find the circle with closest distance
+			circle_distances = []
+			for circle in self.blue_circle_list:
+				circle_distances.append(abs((circle.position[2])))
+			square_distances.sort()
+			i = 0
+				if abs(circle.position[2]) == circle_distances[0]
+					self.nearest_blue_circle_index = i
+					self.nearest_blue_circle_detected = True
+				i = i + 1
+    def sort_blue_plus(self):
+		if self.blue_plus_detected == False:
+			print("Error: No blue plus detected.")
+		else:
+			# Find the blue plus with the closest distance
+			blue_plus_distances = []
+			for blue_plus in self.blue_plus_list:
+				blue_plus_dis
+
 
 	def get_nearest_green_buoy(self):
 		if self.green_buoy_detected == False:
@@ -287,30 +244,18 @@ class ZedObjects:
 	# Finds what pixel is at the center of the green and red buoys
 	def find_center_point(self):
 		match self.image_of_the_day
-		case 1
+		case 1 # green triangle
 			self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
-		case 2
-			self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
-		case 3
-			self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
-		case 4
+		case 2 # red square
 			self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
-		case 5
-			self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
-		case 6
-			self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
-		case 7 
+		case 3 # blue circle
 			self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
-		case 8
-			self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
-		case 9
-			self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
-		case 10
-			self.center_point = round((self.get_nearest_plus().bounding_box_2d[1][0] + self.get_nearest_plus().bounding_box_2d[0][0])/2)
-		case 11
-			self.center_point = round((self.get_nearest_plus().bounding_box_2d[1][0] + self.get_nearest_plus().bounding_box_2d[0][0])/2)
-		case 12
-			self.center_point = round((self.get_nearest_plus().bounding_box_2d[1][0] + self.get_nearest_plus().bounding_box_2d[0][0])/2)
+		case 4 # blue plus
+			self.center_point = round((self.get_nearest_blue_plus().bounding_box_2d[1][0] + self.get_nearest_blue_plus().bounding_box_2d[0][0])/2)
+		case 5 # red plus
+			self.center_point = round((self.get_nearest_red_plus().bounding_box_2d[1][0] + self.get_nearest_red_plus().bounding_box_2d[0][0])/2)
+		case 6 # green plus
+			self.center_point = round((self.get_nearest_green_plus().bounding_box_2d[1][0] + self.get_nearest_green_plus().bounding_box_2d[0][0])/2)
 			
 
 # Takes in list of objects from Zed 2i Camera each frame
