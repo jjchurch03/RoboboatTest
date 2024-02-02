@@ -3,29 +3,40 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
+# Define a class for the obstacle avoidance behavior
 class ObstacleAvoidance(Node):
     def __init__(self):
+        # Initialize the Node with a name 'obstacle_avoidance_node'
         super().__init__('obstacle_avoidance_node')
-        self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
-        print("Subscription to LiDAR created!")
-        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
-        print("Main Control Turn Publisher Created!")
-        self.min_distance_threshold = 0.5
-        self.front_obstacle_threshold = 0.2  # Set your own threshold for obstacles in front
-        self.num_readings = 0  # Initialize num_readings
 
+        # Create a subscription to the 'scan' topic, which receives LaserScan messages
+        self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
+
+        # Create a publisher for sending Twist messages to control the robot's movement
+        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+
+        # Set threshold values for obstacle detection and initialize num_readings
+        self.min_distance_threshold = 0.5
+        self.front_obstacle_threshold = 0.2
+        self.num_readings = 0
+
+    # Callback function for handling LaserScan messages
     def scan_callback(self, msg):
         distances = msg.ranges
         min_distance = min(distances)
-        self.num_readings = len(distances)  # Update num_readings
+        self.num_readings = len(distances)
 
+        # Check if an obstacle is detected based on the minimum distance
         if min_distance < self.min_distance_threshold:
             print("Obstacle Detected! Deciding best course of action...")
-            self.avoid_obstacle(distances, msg)  # Pass msg to the avoid_obstacle method
+            # Call the avoid_obstacle method to determine the action to take
+            self.avoid_obstacle(distances, msg)
         else:
             print("Moving Forward...")
+            # If no obstacle, move forward
             self.move_forward()
 
+    # Method to handle obstacle avoidance logic
     def avoid_obstacle(self, distances, msg):
         closest_index = distances.index(min(distances))
         num_readings = len(distances)
@@ -33,12 +44,14 @@ class ObstacleAvoidance(Node):
 
         print(f"Calculating Angle... Angle Increment: {angle_increment}")
 
+        # Calculate the angle to the closest obstacle
         angle_to_obstacle = closest_index * angle_increment
         print(f"Angle to Obstacle: {angle_to_obstacle}")
 
         # Check if the obstacle is in front or near the front
         if angle_to_obstacle < self.front_obstacle_threshold:
             print("Obstacle in Front or Near Front! Changing direction...")
+            # Change direction based on the angle to the obstacle
             self.change_direction(angle_to_obstacle)
         else:
             # Determine the angle ranges for left and right sides
@@ -57,32 +70,29 @@ class ObstacleAvoidance(Node):
                 print("Best course of action: Turn Left")
                 self.turn_left()
 
-    # (Remaining code for turn_right, turn_left, and move_forward methods)
-
-
-# Add new methods for turning right and left
+    # Method to turn the robot to the right
     def turn_right(self):
         twist_msg = Twist()
         twist_msg.linear.x = 0.0
         twist_msg.angular.z = -0.5
         self.publisher.publish(twist_msg)
 
+    # Method to turn the robot to the left
     def turn_left(self):
         twist_msg = Twist()
         twist_msg.linear.x = 0.0
         twist_msg.angular.z = 0.5
         self.publisher.publish(twist_msg)
 
-
+    # Method to move the robot forward
     def move_forward(self):
         twist_msg = Twist()
         twist_msg.linear.x = 0.2
         twist_msg.angular.z = 0.0
         self.publisher.publish(twist_msg)
 
-
+    # Method to change the direction based on the angle to the obstacle
     def change_direction(self, angle_to_obstacle):
-        # Add logic to change the direction based on your requirements
         print("Changing Direction...")
         if angle_to_obstacle < (self.num_readings / 2):
             print("Best course of action: Turn Right")
@@ -91,6 +101,7 @@ class ObstacleAvoidance(Node):
             print("Best course of action: Turn Left")
             self.turn_left()
 
+# Main function to initialize the ROS 2 node and run the obstacle avoidance behavior
 def main(args=None):
     rclpy.init(args=args)
     obstacle_avoidance_node = ObstacleAvoidance()
@@ -98,6 +109,6 @@ def main(args=None):
     obstacle_avoidance_node.destroy_node()
     rclpy.shutdown()
 
+# Entry point to start the program
 if __name__ == '__main__':
     main()
-
