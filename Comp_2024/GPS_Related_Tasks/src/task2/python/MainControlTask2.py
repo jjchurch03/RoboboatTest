@@ -98,24 +98,24 @@ class ZedObjects:
 	def detect_buoys(self):
 		# Fills red_buoy_list, green_buoy_list, red_ball_list, etc...
 		for obj in self.objects.object_list:
-			if (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
+			if (str(obj.raw_label) == "5") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
 				self.green_buoys_list.append(obj)
 				self.green_buoy_detected = True				
-			elif (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_buoys_list.append(obj)
 				self.red_buoy_detected = True
-			if (str(obj.raw_label) == "1") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			if (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_ball_list.append(obj)
 				self.red_ball_detected = True	
-			elif (str(obj.raw_label) == "3") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "4") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.green_ball_list.append(obj)
 				self.green_ball_detected = True		
-			elif (str(obj.raw_label) == "4") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "12") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.yellow_ball_list.append(obj)
 				self.yellow_ball_detected = True
 				duck_counter = duck_counter + 1
 				print("Ducks... Quack count: " + str(duck_counter))				
-			elif (str(obj.raw_label) == "5") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.black_ball_list.append(obj)
 				self.black_ball_detected = True
 																
