@@ -59,13 +59,13 @@ class ZedObjects:
 		
 		# Fills red_buoy_list, green_buoy_list, red_ball_list, etc...
 		for obj in self.objects.object_list:
-			if (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			if (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_ball_list.append(obj)
 				self.red_ball_detected = True	
-			elif (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "4") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.green_ball_list.append(obj)
 				self.green_ball_detected = True		
-			elif (str(obj.raw_label) == "1") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "12") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.yellow_ball_list.append(obj)
 				self.yellow_ball_detected = True
 				duck_counter = duck_counter + 1
