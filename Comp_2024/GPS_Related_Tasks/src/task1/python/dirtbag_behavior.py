@@ -13,18 +13,16 @@ def callback(msg):
     global latitude, longitude, timer
     latitude = msg.latitude
     longitude = msg.longitude
-    print("Received GPS data.")
-
-    # Cancel the previous timer
-    if timer:
-        timer.cancel()
-        print("Cancelled previous timer.")
 
     # Schedule writing to file every 5 seconds
     if latitude is not None and longitude is not None:
-        timer = Timer(write_interval, write_to_file)
-        timer.start()
-        print("Scheduled writing to file.")
+        if timer is None:
+            # Start a new timer only if there's no existing timer
+            timer = Timer(write_interval, write_to_file)
+            timer.start()
+        else:
+            # Otherwise, the timer is already running, do nothing
+            pass
 
 def write_to_file():
     global timer, latitude, longitude
@@ -36,18 +34,16 @@ def write_to_file():
     # Reset the timer
     timer = Timer(write_interval, write_to_file)
     timer.start()
-    print("Reset timer.")
 
 def ros():
     global timer
     rclpy.init()
     node = rclpy.create_node('gps_subscriber')
     subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)
-    print("Subscribed to GPS topic.")
     rclpy.spin(node)
-    timer.cancel()  # Ensure timer is cancelled when exiting
+    if timer:
+        timer.cancel()  # Ensure timer is cancelled when exiting
     node.destroy_node()
-    print("Node destroyed.")
 
 if __name__ == '__main__':
     try:
