@@ -12,13 +12,13 @@ l_thrust_pwm = 15
 import RPi.GPIO as GPIO
 import time
 import pyzed.sl as sl
-import rclpy
-from vectornav_msgs.msg import GpsGroup
-from sensor_msgs.msg import NavSatFix
+# import rclpy
+# from vectornav_msgs.msg import GpsGroup
+# from sensor_msgs.msg import NavSatFix
 
-# global variable to store GPS data
-latitude = None
-longitude = None
+# # global variable to store GPS data
+# latitude = None
+# longitude = None
 
 # Initial GPIO Setup
 GPIO.setmode(GPIO.BOARD)
@@ -51,29 +51,29 @@ class Thrusters:
 		thrusters.p_r.stop()
 		thrusters.p_l.stop()
 
-def callback(msg):
-    global latitude, longitude
-    if latitude is None:
-        # Grab the first set of information
-        latitude = msg.latitude
-        longitude = msg.longitude
-        print(f"Received first set of information: {latitude}")
-        print(f"Received second set of information: {longitude}")
+# def callback(msg):
+#     global latitude, longitude
+#     if latitude is None:
+#         # Grab the first set of information
+#         latitude = msg.latitude
+#         longitude = msg.longitude
+#         print(f"Received first set of information: {latitude}")
+#         print(f"Received second set of information: {longitude}")
 
-        # Unsubscribe after receiving the first message
-        node.get_logger().info('Unsubscribing from the topic...')
-        subscription.destroy()
-    if longitude is None:
-        print("Failed to grab longitude information.")
-    if latitude is None:
-        print("Failed to grab latitude information")
+#         # Unsubscribe after receiving the first message
+#         node.get_logger().info('Unsubscribing from the topic...')
+#         subscription.destroy()
+#     if longitude is None:
+#         print("Failed to grab longitude information.")
+#     if latitude is None:
+#         print("Failed to grab latitude information")
 
-def ros():
-    rclpy.init()
-    node = rclpy.create_node('task1_start')  # node is named here
-    subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
-    node.destroy_node()
-    
+# def ros():
+#     rclpy.init()
+#     node = rclpy.create_node('task1_start')  # node is named here
+#     subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)  # Adjust the queue size as needed
+#     node.destroy_node()
+
 
 
 # Initialize the thrusters into neutral then set them to go straight forward
@@ -106,10 +106,10 @@ class ZedObjects:
 	def detect_buoys(self):
 		# Fills red_buoy_list and green_buoy_list
 		for obj in self.objects.object_list:
-			if (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
+			if (str(obj.raw_label) == "5") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
 				self.green_buoys_list.append(obj)
 				self.green_buoy_detected = True
-			elif (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_buoys_list.append(obj)
 				self.red_buoy_detected = True
 
@@ -227,13 +227,14 @@ def test_motors():
 	GPIO.cleanup()
 
 if __name__ == '__main__':
-    try:
-        ros()
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        thrusters.stop()
-        rclpy.shutdown()
-        GPIO.cleanup()
+    # try:
+    #     ros()
+    #     rclpy.spin(node)
+    # except KeyboardInterrupt:
+    #     pass
+    # finally:
+	
+    # thrusters.stop()
+    # #rclpy.shutdown()
+    # GPIO.cleanup()
 
