@@ -81,38 +81,34 @@ def set_objects(objects_in):
 	objects.sort_yellow_ball()
 	objects.sort_black_ball()
 	rclpy.init()
-    node = rclpy.create_node('thruster_control_node')
+	node = rclpy.create_node('thruster_control_node')
     # Create subscriber to receive Twist messages
-    def twist_callback(msg):
-        thrusters.receive_twist_message(msg)
-    subscriber = node.create_subscription(Twist, 'cmd_vel', twist_callback, 10)
+	def twist_callback(msg):
+		thrusters.receive_twist_message(msg)
+	subscriber = node.create_subscription(Twist, 'cmd_vel', twist_callback, 10)
     # Spin ROS 2 node
-    rclpy.spin(node)
+	rclpy.spin(node)
 	print("Desired Center Point: " + str(objects.find_desired_center_point()))
 	move_to_center(objects.find_desired_center_point())
 
 def move_to_center(desired_center_point):
 	zed_center_pixel = 1280/2
 	if angular_vel is 0.0:
-        if center_point == -1:
-	# Go straight slowly if buoy channel not detected
+		if center_point == -1:
+		# Go straight slowly if buoy channel not detected
 		    thrusters.changeSpeed(1425, 1425)
-    # Turn to the left when on the right side of channel
-	    elif center_point <= zed_center_pixel - 20:
+ 		# Turn to the left when on the right side of channel
+		elif center_point <= zed_center_pixel - 20:
 		    thrusters.changeSpeed(1400, 1300)
-	# Turn to the right when on left side of channel
+		# Turn to the right when on left side of channel
 	    elif center_point >= zed_center_pixel + 20:
 		    thrusters.changeSpeed(1300, 1400)
 	    else:
 	# Go forward if within 20 pixels of center channel
 		    thrusters.changeSpeed(1400, 1400)
 	else:
-        # Convert velocities to PWM values for thrusters (adjust as needed)
-        right_pwm = 1500 + int(linear_vel * 500) + int(angular_vel * 500)
-        left_pwm = 1500 + int(linear_vel * 500) - int(angular_vel * 500)
-
-        # Set thruster speeds
-        self.changeSpeed(left_pwm, right_pwm)
-
-if __name__ == '__main__':
-    main()
+        # Executes thuster orders based on Obbject Avoidance
+        if angular_vel == 0.5:
+			thrusters.changeSpeed(1400, 1300)
+		else:
+			thrusters.changeSpeed(1300, 1400)

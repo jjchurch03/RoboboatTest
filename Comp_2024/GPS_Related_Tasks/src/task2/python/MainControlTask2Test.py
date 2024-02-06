@@ -20,6 +20,7 @@ GPIO.setup(r_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(l_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 
 print("initializing thrusters")	
+duck_counter = 0
 	
 
  # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
@@ -59,10 +60,10 @@ class ZedObjects:
 		
 		# Fills red_buoy_list, green_buoy_list, red_ball_list, etc...
 		for obj in self.objects.object_list:
-			if (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			if (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_ball_list.append(obj)
 				self.red_ball_detected = True	
-			elif (str(obj.raw_label) == "4") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "5") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.green_ball_list.append(obj)
 				self.green_ball_detected = True		
 			elif (str(obj.raw_label) == "12") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):

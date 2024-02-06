@@ -2,27 +2,29 @@
 
 import sys
 import numpy as np
+
 import argparse
 import torch
 import cv2
 import pyzed.sl as sl
 import torch.backends.cudnn as cudnn
+
+sys.path.insert(0, './yolov5')
+from models.experimental import attempt_load
+from utils.general import check_img_size, non_max_suppression, scale_coords, xyxy2xywh
+from utils.torch_utils import select_device
+from utils.augmentations import letterbox
+
 from threading import Lock, Thread
 from time import sleep
+
 import ogl_viewer.viewer as gl
 import cv_viewer.tracking_viewer as cv_viewer
-
 import MainControlTask2Test as mc
-
-# import rclpy
-# from rclpy.node import Node
-# from vectornav_msgs.msg import AttitudeGroup
 
 lock = Lock()
 run_signal = False
 exit_signal = False
-image_net = None
-detections = None
 
 
 def img_preprocess(img, device, half, net_size):
@@ -179,12 +181,12 @@ def main():
     # Display
     camera_infos = zed.get_camera_information()
     # Create OpenGL viewer
-    viewer = gl.GLViewer() # ** Comment this line out to disable visual display **
+    #viewer = gl.GLViewer() # ** Comment this line out to disable visual display **
     point_cloud_res = sl.Resolution(min(camera_infos.camera_resolution.width, 720),
                                     min(camera_infos.camera_resolution.height, 404))
                                     
     point_cloud_render = sl.Mat()
-    viewer.init(camera_infos.camera_model, point_cloud_res, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
+    #viewer.init(camera_infos.camera_model, point_cloud_res, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
 
     point_cloud = sl.Mat(point_cloud_res.width, point_cloud_res.height, sl.MAT_TYPE.F32_C4, sl.MEM.CPU)
     image_left = sl.Mat()
@@ -204,8 +206,8 @@ def main():
     # Camera pose
     cam_w_pose = sl.Pose()
 
-    while viewer.is_available() and not exit_signal: # ** Comment this line out to disable visual display **
-    #while True: # <- ** Comment this out if above line is uncommented **
+    #while viewer.is_available() and not exit_signal: # ** Comment this line out to disable visual display **
+    while True: # <- ** Comment this out if above line is uncommented **
         if zed.grab(runtime_params) == sl.ERROR_CODE.SUCCESS:
             # -- Get the image
             lock.acquire()
@@ -233,10 +235,10 @@ def main():
             zed.get_position(cam_w_pose, sl.REFERENCE_FRAME.WORLD)
 
             # 3D rendering
-            viewer.updateData(point_cloud_render, objects) # ** Comment this line out to disable visual display **
+            #viewer.updateData(point_cloud_render, objects) # ** Comment this line out to disable visual display **
             # 2D rendering
             np.copyto(image_left_ocv, image_left.get_data())
-            cv_viewer.render_2D(image_left_ocv, image_scale, objects, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
+            #cv_viewer.render_2D(image_left_ocv, image_scale, objects, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
             global_image = cv2.hconcat([image_left_ocv, image_track_ocv])
             # Tracking view (the 2D birds eye view seems like the best bet for making this simple)
             track_view_generator.generate_view(objects, cam_w_pose, image_track_ocv, objects.is_tracked)
@@ -244,7 +246,7 @@ def main():
             # Send Zed aquired objects to MainControl.py script
             mc.set_objects(objects)
 
-            cv2.imshow("ZED | 2D View and Birds View", global_image) # ** Comment this line out to disable visual display **
+            #cv2.imshow("ZED | 2D View and Birds View", global_image) # ** Comment this line out to disable visual display **
             key = cv2.waitKey(10)
             if key == 27:
                 exit_signal = True
@@ -256,33 +258,6 @@ def main():
     exit_signal = True
     zed.close()
 
-# class AttitudeSubscriber(Node):
-
-#     def __init__(self):
-#         super().__init__('attitude_subscriber')
-#         self.subscription = self.create_subscription(AttitudeGroup,'attitude', self.attitude_callback, 10)
-#         self.subscription  # prevent unused variable warning
-
-#     def attitude_callback(self, msg):
-#         # Access the yawpitchroll variable from the attitude group
-#         yaw = msg.yawpitchroll.x
-#         pitch = msg.yawpitchroll.y
-#         roll = msg.yawpitchroll.z
-
-#         # Print the values (you can modify this part as needed)
-#         self.get_logger().info(f'Yaw: {yaw}, Pitch: {pitch}, Roll: {roll}')
-
-# def merge_scripts(weights, img_size, conf_thres=0.4):
-#     global image_net, exit_signal, run_signal, detections
-
-#     # Start the ROS node
-#     rclpy.init()
-#     attitude_subscriber = AttitudeSubscriber()
-#     rclpy.spin(attitude_subscriber)
-
-#     # Start the torch_thread
-#     capture_thread = Thread(target=torch_thread, kwargs={'weights': weights, 'img_size': img_size, 'conf_thres': conf_thres})
-#     capture_thread.start()
 
 
 if __name__ == '__main__':
@@ -292,7 +267,6 @@ if __name__ == '__main__':
     parser.add_argument('--img_size', type=int, default=416, help='inference size (pixels)')
     parser.add_argument('--conf_thres', type=float, default=0.4, help='object confidence threshold')
     opt = parser.parse_args()
-    # merge_scripts(opt.weights, opt.img_size, opt.conf_thres)
 
     with torch.no_grad():
         main()
