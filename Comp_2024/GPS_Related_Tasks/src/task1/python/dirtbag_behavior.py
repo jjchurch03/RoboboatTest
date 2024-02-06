@@ -35,10 +35,12 @@ def write_to_file():
     timer.start()
 
 def ros():
+    global timer
     rclpy.init()
     node = rclpy.create_node('gps_subscriber')
     subscription = node.create_subscription(NavSatFix, 'vectornav/gnss', callback, 10)
     rclpy.spin(node)
+    timer.cancel()  # Ensure timer is cancelled when exiting
     node.destroy_node()
 
 if __name__ == '__main__':
