@@ -226,7 +226,7 @@ def test_motors():
 	
 	GPIO.cleanup()
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # try:
     #     ros()
     #     rclpy.spin(node)

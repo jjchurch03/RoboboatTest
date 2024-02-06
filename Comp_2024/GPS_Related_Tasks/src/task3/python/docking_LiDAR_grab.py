@@ -17,7 +17,7 @@ class ObstacleAvoidance(Node):
 
         # Set threshold values for obstacle detection and initialize num_readings
         self.min_distance_threshold = 0.5
-        self.front_obstacle_threshold = 0.2
+        self.front_obstacle_threshold = 0.5
         self.num_readings = 0
 
     # Callback function for handling LaserScan messages
