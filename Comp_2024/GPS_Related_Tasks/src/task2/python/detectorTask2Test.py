@@ -181,12 +181,12 @@ def main():
     # Display
     camera_infos = zed.get_camera_information()
     # Create OpenGL viewer
-    #viewer = gl.GLViewer() # ** Comment this line out to disable visual display **
+    viewer = gl.GLViewer() # ** Comment this line out to disable visual display **
     point_cloud_res = sl.Resolution(min(camera_infos.camera_resolution.width, 720),
                                     min(camera_infos.camera_resolution.height, 404))
                                     
     point_cloud_render = sl.Mat()
-    #viewer.init(camera_infos.camera_model, point_cloud_res, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
+    viewer.init(camera_infos.camera_model, point_cloud_res, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
 
     point_cloud = sl.Mat(point_cloud_res.width, point_cloud_res.height, sl.MAT_TYPE.F32_C4, sl.MEM.CPU)
     image_left = sl.Mat()
@@ -206,8 +206,8 @@ def main():
     # Camera pose
     cam_w_pose = sl.Pose()
 
-    #while viewer.is_available() and not exit_signal: # ** Comment this line out to disable visual display **
-    while True: # <- ** Comment this out if above line is uncommented **
+    while viewer.is_available() and not exit_signal: # ** Comment this line out to disable visual display **
+    #while True: # <- ** Comment this out if above line is uncommented **
         if zed.grab(runtime_params) == sl.ERROR_CODE.SUCCESS:
             # -- Get the image
             lock.acquire()
@@ -235,10 +235,10 @@ def main():
             zed.get_position(cam_w_pose, sl.REFERENCE_FRAME.WORLD)
 
             # 3D rendering
-            #viewer.updateData(point_cloud_render, objects) # ** Comment this line out to disable visual display **
+            viewer.updateData(point_cloud_render, objects) # ** Comment this line out to disable visual display **
             # 2D rendering
             np.copyto(image_left_ocv, image_left.get_data())
-            #cv_viewer.render_2D(image_left_ocv, image_scale, objects, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
+            cv_viewer.render_2D(image_left_ocv, image_scale, objects, obj_param.enable_tracking) # ** Comment this line out to disable visual display **
             global_image = cv2.hconcat([image_left_ocv, image_track_ocv])
             # Tracking view (the 2D birds eye view seems like the best bet for making this simple)
             track_view_generator.generate_view(objects, cam_w_pose, image_track_ocv, objects.is_tracked)
@@ -246,7 +246,7 @@ def main():
             # Send Zed aquired objects to MainControl.py script
             mc.set_objects(objects)
 
-            #cv2.imshow("ZED | 2D View and Birds View", global_image) # ** Comment this line out to disable visual display **
+            cv2.imshow("ZED | 2D View and Birds View", global_image) # ** Comment this line out to disable visual display **
             key = cv2.waitKey(10)
             if key == 27:
                 exit_signal = True

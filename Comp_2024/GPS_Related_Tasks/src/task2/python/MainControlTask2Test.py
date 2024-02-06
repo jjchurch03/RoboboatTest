@@ -69,8 +69,8 @@ class ZedObjects:
 			elif (str(obj.raw_label) == "12") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.yellow_ball_list.append(obj)
 				self.yellow_ball_detected = True
-				duck_counter = duck_counter + 1
-				print("Ducks... Quack count: " + str(duck_counter))				
+				#duck_counter = duck_counter + 1
+				#print("Ducks... Quack count: " + str(duck_counter))				
 																
 	
 	# If present, finds the nearest of each type of buoy
