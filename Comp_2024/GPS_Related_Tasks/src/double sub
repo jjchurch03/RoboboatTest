@@ -1,19 +1,13 @@
+import rclpy
+from sensor_msgs.msg import NavSatFix
+from sensor_msgs.msg import LaserScan
+
+
 class MyNode(Node):
     def __init__(self):
         super().__init__('my_node')
-        self.vectornav_subscriber = self.create_subscription(
-            # VectorNav message type,
-            '/vectornav_topic_name',
-            # Callback function for VectorNav data,
-            self.vectornav_callback,
-            10
-        )
-        self.urg_subscriber = self.create_subscription(
-            LaserScan,
-            '/urg_topic_name',
-            self.urg_callback,
-            10
-        )
+        self.vectornav_subscriber = self.create_subscription(NavSatFix, 'vectornav/gnss', self.vectornav_callback, 10)
+        self.urg_subscriber = self.create_subscription(LaserScan, '/scan', self.urg_callback, 10)
 
     def vectornav_callback(self, msg):
         # Process VectorNav data
