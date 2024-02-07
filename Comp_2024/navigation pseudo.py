@@ -2,19 +2,19 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import NavSatFix
-from vectornav_msgs.msg import ins
+from vectornav_msgs.msg import gnss
 import math
 
 class WaypointNavigator(Node):
     def __init__(self):
         super().__init__('waypoint_navigator')
-        self.subscription = self.create_subscription(ins, 'vectornav/ins', self.ins_callback, 10)
+        self.subscription = self.create_subscription(NavSatFix, 'vectornav/gnss', self.dirtbag_callback, 10)
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         self.waypoints = self.load_waypoints_from_file("waypoints.txt")
         self.current_waypoint_index = 0
         self.waypoint_tolerance = 0.5  # Tolerance for considering a waypoint reached
 
-    def ins_callback(self, msg):
+    def dirtbag_callback(self, msg):
         current_latitude = msg.latitude
         current_longitude = msg.longitude
         current_waypoint = self.waypoints[self.current_waypoint_index]
