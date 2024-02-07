@@ -1,0 +1,33 @@
+class WaterGun:
+    def __init__(self, pin_number):
+        self.pin_number = pin_number
+        GPIO.setup(pin_number, GPIO.OUT)
+
+    def fire(self):
+        # Your water gun firing logic here
+        print("Firing water gun.")
+
+# Define your water gun stepper motor pin number
+water_gun_stepper_pin = 22  # Example pin number
+
+# Initialize the water gun stepper motor
+water_gun_stepper_motor = StepperMotor(water_gun_stepper_pin)
+
+def move_to_center(center_point):
+    zed_center_pixel = 1280 / 2
+    # Define your threshold for firing the water gun
+    threshold = 20
+
+    if center_point == -1:
+        # Go straight slowly if buoy channel not detected
+        thrusters.changeSpeed(1425, 1425)
+    elif center_point <= zed_center_pixel - threshold:
+        # Turn to the left when on the right side of channel
+        thrusters.changeSpeed(1400, 1300)
+    elif center_point >= zed_center_pixel + threshold:
+        # Turn to the right when on left side of channel
+        thrusters.changeSpeed(1300, 1400)
+    else:
+        # Fire the water gun if within threshold pixels of center channel
+        water_gun_stepper_motor.fire()
+        thrusters.changeSpeed(1400, 1400)
