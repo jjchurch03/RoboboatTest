@@ -106,10 +106,10 @@ class ZedObjects:
 	def detect_buoys(self):
 		# Fills red_buoy_list and green_buoy_list
 		for obj in self.objects.object_list:
-			if (str(obj.raw_label) == "5") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
+			if (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
 				self.green_buoys_list.append(obj)
 				self.green_buoy_detected = True
-			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_buoys_list.append(obj)
 				self.red_buoy_detected = True
 
