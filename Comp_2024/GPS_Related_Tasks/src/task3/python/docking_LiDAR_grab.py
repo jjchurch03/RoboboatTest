@@ -16,8 +16,8 @@ class ObstacleAvoidance(Node):
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
 
         # Set threshold values for obstacle detection and initialize num_readings
-        self.min_distance_threshold = 0.5
-        self.front_obstacle_threshold = 0.5
+        self.min_distance_threshold = 1.65
+        self.front_obstacle_threshold = 1.65
         self.num_readings = 0
 
     # Callback function for handling LaserScan messages
