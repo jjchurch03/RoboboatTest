@@ -1,0 +1,33 @@
+class MyNode(Node):
+    def __init__(self):
+        super().__init__('my_node')
+        self.vectornav_subscriber = self.create_subscription(
+            # VectorNav message type,
+            '/vectornav_topic_name',
+            # Callback function for VectorNav data,
+            self.vectornav_callback,
+            10
+        )
+        self.urg_subscriber = self.create_subscription(
+            LaserScan,
+            '/urg_topic_name',
+            self.urg_callback,
+            10
+        )
+
+    def vectornav_callback(self, msg):
+        # Process VectorNav data
+        pass
+
+    def urg_callback(self, msg):
+        # Process URG data
+        pass
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = MyNode()
+    rclpy.spin(node)
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
