@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+import rospy
+from sensor_msgs.msg import LaserScan
+
+class LaserScanSubscriber:
+    def __init__(self):
+        rospy.init_node('laser_scan_subscriber', anonymous=True)
+        self.scan_subscriber = rospy.Subscriber('/scan', LaserScan, self.scan_callback)
+        self.scan_data = []
+
+    def scan_callback(self, data):
+        self.scan_data.append(data)
+
+    def save_to_file(self, filename):
+        with open(filename, 'w') as file:
+            for scan in self.scan_data:
+                file.write("Header:\n{}\n".format(scan.header))
+                file.write("Angle Min: {}\n".format(scan.angle_min))
+                file.write("Angle Max: {}\n".format(scan.angle_max))
+                file.write("Angle Increment: {}\n".format(scan.angle_increment))
+                file.write("Time Increment: {}\n".format(scan.time_increment))
+                file.write("Scan Time: {}\n".format(scan.scan_time))
+                file.write("Range Min: {}\n".format(scan.range_min))
+                file.write("Range Max: {}\n".format(scan.range_max))
+                file.write("Ranges: {}\n".format(scan.ranges))
+                file.write("Intensities: {}\n".format(scan.intensities))
+                file.write("\n")
+
+if __name__ == '__main__':
+    laser_scan_subscriber = LaserScanSubscriber()
+    try:
+        rospy.spin()
+    except KeyboardInterrupt:
+        print("Shutting down...")
+        laser_scan_subscriber.save_to_file("laser_scan_data.txt")
