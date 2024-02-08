@@ -20,7 +20,7 @@ from time import sleep
 
 import ogl_viewer.viewer as gl
 import cv_viewer.tracking_viewer as cv_viewer
-import MainControl as mc
+import MainControlTask3_new as mc
 
 import rclpy
 from rclpy.node import Node
