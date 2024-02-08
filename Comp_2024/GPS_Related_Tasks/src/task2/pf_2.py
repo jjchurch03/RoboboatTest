@@ -1,57 +1,41 @@
-obstacle_avoidance_node = None  # Initialize obstacle_avoidance_node
+# Your existing code...
 
-class ObstacleAvoidance(Node):
-    def __init__(self):
-        super().__init__('obstacle_avoidance_node')
-        self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
+def set_objects(objects_in):
+    objects = ZedObjects(objects_in)
+    objects.detect_buoys()
+    objects.sort_green_buoys()
+    objects.sort_red_buoys()
+    objects.sort_red_ball()
+    objects.sort_green_ball()
+    objects.sort_yellow_ball()
+    objects.sort_black_ball()
+    print("Desired Center Point: " + str(objects.find_desired_center_point()))
+    move_to_center(objects.find_desired_center_point())
 
-        # Set minimum distance threshold for obstacle detection
-        self.min_distance_threshold = MIN_DISTANCE_THRESHOLD  
-        # Set starting distance for obstacle consideration
-        self.starting_distance = 0.6  # meters
-        # Set degree range for checking path ahead
-        self.degree_range = 20  # degrees
+def move_to_center(desired_center_point):
+    global obstacle_avoidance_node
+    zed_center_pixel = 1280/2
 
-        # Initialize the number of laser scan readings
-        self.num_readings = 0  
+    if desired_center_point == -1:
+        # Go straight slowly if buoy channel not detected
+        thrusters.change_speed(1425, 1425)
+    # Turn to the left when on the right side of channel
+    elif desired_center_point <= zed_center_pixel - 20:
+        thrusters.change_speed(1400, 1300)
+    # Turn to the right when on left side of channel
+    elif desired_center_point >= zed_center_pixel + 20:
+        thrusters.change_speed(1300, 1400)
+    else:
+        # Go forward if within 20 pixels of center channel
+        thrusters.change_speed(1400, 1400)
+    
+    # Instantiate ObstacleAvoidance class if not already instantiated
+    if obstacle_avoidance_node is None:
+        obstacle_avoidance_node = ObstacleAvoidance()
+    
+    # Call scan_callback method of ObstacleAvoidance class
+    obstacle_avoidance_node.scan_callback()
 
-        # Define left and right range for laser scan readings
-        self.left_range = None
-        self.right_range = None
-
-        self.obstacle_distances = []
-
-    def scan_callback(self, msg):
-        global obstacle_avoidance_node  # Access global obstacle_avoidance_node
-        distances = msg.ranges
-        self.obstacle_distances = [x for x in distances if not np.isnan(x)]
-
-        # Filter distances starting from 0.6 meters away
-        start_index = int(self.starting_distance / msg.range_max * len(distances))
-        filtered_distances = distances[start_index:]
-
-        # Check if there are obstacles within the specified degree range
-        degree_range_indices = int(self.degree_range / msg.angle_increment)
-        path_clear = self.is_path_clear(filtered_distances, degree_range_indices)
-
-        if not path_clear:
-            if obstacle_avoidance_node is None:  # Check if obstacle_avoidance_node is None
-                obstacle_avoidance_node = self  # Assign self to obstacle_avoidance_node
-                rclpy.spin_once(obstacle_avoidance_node)  # Run the obstacle avoidance node once
-                obstacle_avoidance_node.destroy_node()
-                rclpy.shutdown()
-        else:
-            print("Clear path")  # Print statement indicating clear path
-            # Continue moving straight
-            thrusters.change_speed(1400, 1400)  # Adjust thrusters to move straight
-
-    def is_path_clear(self, distances, degree_range_indices):
-        # Get distances within the specified degree range
-        front_distances = distances[:degree_range_indices]
-        back_distances = distances[-degree_range_indices:]
-
-        # Check if there are obstacles within the specified distance threshold
-        if min(front_distances) < self.min_distance_threshold or min(back_distances) < self.min_distance_threshold:
-            return False
-        else:
-            return True
+# Start the ROS 2 node and run obstacle avoidance
+obstacle_avoidance_node = ObstacleAvoidance()
+rclpy.spin(obstacle_avoidance_node)
