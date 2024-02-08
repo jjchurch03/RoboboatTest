@@ -492,8 +492,6 @@ class ZedObjects:
                                 self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
 
         return self.desired_center_point
-
-ChatGPT can make mistakes. Consider checking important information.
 obstacle_avoidance_node = None
 
 def set_objects(objects_in):
