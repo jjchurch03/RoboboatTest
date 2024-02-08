@@ -289,12 +289,12 @@ class ZedObjects:
 				# red, right, returning
 				return_or_depart = 1
 
-			if self.nearest_yellow_ball == -1 & self.nearest_black_ball == -1:
+			if self.nearest_yellow_ball_index == -1 & self.nearest_black_ball_index == -1:
 				print("no obstacle ball index detected")
 				self.desired_center_point = self.channel_center_point
 				return self.desired_center_point
 			
-			elif self.nearest_yellow_ball == -1 & self.nearest_black_ball != -1:
+			elif self.nearest_yellow_ball_index == -1 & self.nearest_black_ball_index != -1:
 				print("only black ball(s) detected")
 				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
 				if return_or_depart == 0:
@@ -331,7 +331,7 @@ class ZedObjects:
 								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
 
 ##################################### only yellow balls in channel detected ##########################
-			elif self.nearest_yellow_ball != -1 & self.nearest_black_ball == -1:
+			elif self.nearest_yellow_ball_index != -1 & self.nearest_black_ball_index == -1:
 				print("only yellow ball(s) detected")
 				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
 				if return_or_depart == 0:
