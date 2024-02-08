@@ -282,10 +282,6 @@ class ZedObjects:
 			xCenter_green_ball = round((self.get_nearest_green_ball().bounding_box_2d[1][0] + self.get_nearest_green_ball().bounding_box_2d[0][0])/2)
             	# finds center point between two closest red and green buoys
 			self.channel_center_point = round((xCenter_red_ball + xCenter_green_ball)/2)
-			if xCenter_red_ball < xCenter_green_ball:
-				# red on left, green on right: vessel is "departing" 
-				return_or_depart = 0
-
 
 			if self.nearest_yellow_ball == -1 & self.nearest_black_ball == -1:
 				print("no obstacle ball index detected")
