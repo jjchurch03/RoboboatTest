@@ -38,3 +38,43 @@ def move_to_center(desired_center_point):
         return False  # Indicate no adjustment needed
 
     # No need to check for obstacles here, as it's done in set_objects
+    
+    class ObstacleAvoidance(Node):
+    def __init__(self):
+        super().__init__('obstacle_avoidance_node')
+        self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
+
+        # Set minimum distance threshold for obstacle detection
+        self.min_distance_threshold = MIN_DISTANCE_THRESHOLD  
+        
+        # Initialize the number of laser scan readings
+        self.num_readings = 0  
+
+        # Define left and right range for laser scan readings
+        self.left_range = None
+        self.right_range = None
+
+        self.obstacle_distances = []
+
+    def scan_callback(self, msg):
+        distances = msg.ranges
+        self.obstacle_distances = [x for x in distances if not np.isnan(x)]
+
+        # Find the minimum distance from the laser scan readings
+        min_distance = min(self.obstacle_distances) 
+
+        # Update the number of laser scan readings
+        self.num_readings = len(self.obstacle_distances)  
+
+        if min_distance < self.min_distance_threshold:
+            print("Obstacle Detected! Deciding best course of action...")
+            # Call method to handle obstacle avoidance
+            self.avoid_obstacle(self.obstacle_distances, msg)  
+        else:
+            if min_distance > 0.6:  # Check if the path ahead is clear (adjust threshold as needed)
+                print("Clear path")  # Print statement indicating clear path
+                # Continue moving straight
+                thrusters.change_speed(1400, 1400)  # Adjust thrusters to move straight
+
+    def avoid_obstacle(self, distances, msg):
+        # Implement obstacle avoidance logic as before
