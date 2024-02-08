@@ -22,6 +22,7 @@ class ObstacleAvoidance(Node):
         self.obstacle_distances = []
 
     def scan_callback(self, msg):
+        global obstacle_avoidance_node  # Access global obstacle_avoidance_node
         distances = msg.ranges
         self.obstacle_distances = [x for x in distances if not np.isnan(x)]
 
@@ -34,7 +35,6 @@ class ObstacleAvoidance(Node):
         path_clear = self.is_path_clear(filtered_distances, degree_range_indices)
 
         if not path_clear:
-            global obstacle_avoidance_node  # Access global obstacle_avoidance_node
             if obstacle_avoidance_node is None:  # Check if obstacle_avoidance_node is None
                 obstacle_avoidance_node = self  # Assign self to obstacle_avoidance_node
                 rclpy.spin_once(obstacle_avoidance_node)  # Run the obstacle avoidance node once
