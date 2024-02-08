@@ -25,6 +25,9 @@ GPIO.setup(r_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(l_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 
 class Thrusters:
+ 
+    p_r = GPIO.PWM(r_thrust_pwm, 50)
+    p_l = GPIO.PWM(l_thrust_pwm, 50)
     def __init__(self, left_speed, right_speed):
         self.right_speed = right_speed
         self.left_speed = left_speed
@@ -45,53 +48,78 @@ thrusters = Thrusters(1500, 1500)
 time.sleep(5)
 thrusters.change_speed(1450, 1450) # Slower than original code
 
+# Constants
+MIN_DISTANCE_THRESHOLD = 1.65
+SAFE_FORWARD_DISTANCE = 0.5
+
+
 # Define a class for the obstacle avoidance behavior
 class ObstacleAvoidance(Node):
     def __init__(self):
         super().__init__('obstacle_avoidance_node')
         self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
-        self.min_distance_threshold = 1.65  # Set minimum distance threshold for obstacle detection
+
+        # Set minimum distance threshold for obstacle detection
+        self.min_distance_threshold = MIN_DISTANCE_THRESHOLD  
+        
+        # Initialize the number of laser scan readings
+        self.num_readings = 0  
+
+        # Define left and right range for laser scan readings
+        self.left_range = None
+        self.right_range = None
+
+        self.obstacle_distances = []
 
     def scan_callback(self, msg):
         distances = msg.ranges
-        min_distance = min(distances)
+        self.obstacle_distances = [x for x in distances if not np.isnan(x)]
+
+        # Find the minimum distance from the laser scan readings
+        min_distance = min(self.obstacle_distances) 
+
+        # Update the number of laser scan readings
+        self.num_readings = len(self.obstacle_distances)  
+
         if min_distance < self.min_distance_threshold:
             print("Obstacle Detected! Deciding best course of action...")
             # Call method to handle obstacle avoidance
-            self.avoid_obstacle(distances, msg)
+            self.avoid_obstacle(self.obstacle_distances, msg)  
         else:
             print("Moving Forward...")
-            # If no obstacle, move forward
-            thrusters.change_speed(1425, 1425)
+            # # If no obstacle within a certain range, move forward
+            # if min_distance > SAFE_FORWARD_DISTANCE:
+            #thrusters.change_speed(1400, 1400)
+            # else:
+            #     print("Obstacle too close, cannot move forward.")
+
 
     def avoid_obstacle(self, distances, msg):
         # Find the index of the closest obstacle
-        closest_index = distances.index(min(distances))  
+        closest_index = distances.index(min(distances))
         num_readings = len(distances)
 
         # Get the angle increment of laser scan readings
-        angle_increment = msg.angle_increment  
-        print(f"Calculating Angle... Angle Increment: {angle_increment}")
+        angle_increment = msg.angle_increment
+        print("Calculating Angle... Angle Increment:", angle_increment)
 
         # Calculate angle to the closest obstacle
-        angle_to_obstacle = closest_index * angle_increment  
-        print(f"Angle to Obstacle: {angle_to_obstacle}")
+        angle_to_obstacle = closest_index * angle_increment
+        print("Angle to Obstacle:", angle_to_obstacle)
 
         # Define the range for the left side and right side of laser scan readings
-        left_range = slice(0, num_readings // 2)  
-        right_range = slice(num_readings // 2, num_readings)  
+        self.left_range = slice(0, num_readings // 2)  
+        self.right_range = slice(num_readings // 2, num_readings)
 
         # Calculate average distance on the left and right side
-        avg_left_distance = sum(distances[left_range]) / len(distances[left_range])  
-        avg_right_distance = sum(distances[right_range]) / len(distances[right_range])
+        avg_left_distance = sum(distances[self.left_range]) / len(distances[self.left_range])  
+        avg_right_distance = sum(distances[self.right_range]) / len(distances[self.right_range])
 
         #Based on objects around the vessel make a decision
         if avg_left_distance > avg_right_distance:
-            print("Best course of action: Turn Right")
-            thrusters.change_speed(1300, 1400)
-        else:
-            print("Best course of action: Turn Left")
             thrusters.change_speed(1400, 1300)
+        else:
+            thrusters.change_speed(1300, 1400)
 
 # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
 class ZedObjects:
@@ -330,6 +358,8 @@ class ZedObjects:
                 # Logic for finding desired center point in the presence of obstacles
                 pass  # Add your logic here
 
+obstacle_avoidance_node = None
+
 def set_objects(objects_in):
     objects = ZedObjects(objects_in)
     objects.detect_buoys()
@@ -357,7 +387,6 @@ def move_to_center(desired_center_point):
     else:
         # Go forward if within 20 pixels of center channel
         thrusters.change_speed(1400, 1400)
-
     if obstacle_avoidance_node is None:
         obstacle_avoidance_node = ObstacleAvoidance()
         rclpy.spin_once(obstacle_avoidance_node)  # Run the obstacle avoidance node once
