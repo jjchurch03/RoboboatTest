@@ -62,7 +62,7 @@ class ObstacleAvoidance(Node):
         # Set starting distance for obstacle consideration
         self.starting_distance = 0.6  # meters
         # Set degree range for checking path ahead
-        self.degree_range = 20  # degrees
+        self.degree_range = 0.98 # degrees
 
         # Initialize the number of laser scan readings
         self.num_readings = 0  
