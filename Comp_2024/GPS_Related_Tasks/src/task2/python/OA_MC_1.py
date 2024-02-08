@@ -17,8 +17,6 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 
-rclpy.init()
-
 # Initial GPIO Setup and control
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(in12, GPIO.OUT, initial=GPIO.LOW)
@@ -408,6 +406,7 @@ def move_to_center(desired_center_point):
     
     # Instantiate ObstacleAvoidance class if not already instantiated
     # Start the ROS 2 node and run obstacle avoidance
+    rclpy.init()
     obstacle_avoidance_node = ObstacleAvoidance()
     rclpy.spin_once(obstacle_avoidance_node)
     obstacle_avoidance_node.destroy_node()
