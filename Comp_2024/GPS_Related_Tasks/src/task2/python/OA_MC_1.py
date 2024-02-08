@@ -53,6 +53,7 @@ SAFE_FORWARD_DISTANCE = 0.5
 
 class ObstacleAvoidance(Node):
     def __init__(self):
+        global obstacle_avoidance_node
         super().__init__('obstacle_avoidance_node')
         self.subscription = self.create_subscription(LaserScan, 'scan', self.scan_callback, 10)
 
@@ -86,11 +87,7 @@ class ObstacleAvoidance(Node):
         path_clear = self.is_path_clear(filtered_distances, degree_range_indices)
 
         if not path_clear:
-            if obstacle_avoidance_node is None:  # Check if obstacle_avoidance_node is None
-                obstacle_avoidance_node = self  # Assign self to obstacle_avoidance_node
-                rclpy.spin_once(obstacle_avoidance_node)  # Run the obstacle avoidance node once
-                obstacle_avoidance_node.destroy_node()
-                rclpy.shutdown()
+            self.avoid_obstacle(filtered_distances, msg)
         else:
             print("Clear path")  # Print statement indicating clear path
             # Continue moving straight
