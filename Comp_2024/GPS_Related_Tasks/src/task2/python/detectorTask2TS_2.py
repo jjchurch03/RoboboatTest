@@ -20,7 +20,7 @@ from time import sleep
 
 import ogl_viewer.viewer as gl
 import cv_viewer.tracking_viewer as cv_viewer
-import MainControlTask2 as mc
+import MainControlTask2TS_2 as mc
 
 lock = Lock()
 run_signal = False
