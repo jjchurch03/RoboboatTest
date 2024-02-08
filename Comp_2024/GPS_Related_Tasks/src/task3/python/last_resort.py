@@ -64,28 +64,32 @@ class WaypointNavigator(Node):
         current_latitude = msg.latitude
         current_longitude = msg.longitude
         distance_to_waypoint = self.calculate_distance(current_latitude, current_longitude, latitude, longitude)
-        bearing_to_waypoint = self.calculate_bearing(current_latitude, current_longitude, latitude, longitude)
+        angle_to_waypoint = self.calculate_angle(current_latitude, current_longitude, latitude, longitude)
         self.navigate_to_waypoint(distance_to_waypoint, angle_to_waypoint) #Add more as I figure out what values I need
 
-    def navigate_to_waypoint(self, distance, bearing):
-    # Tolerance for angle to consider facing the waypoint
-        angle_tolerance = math.radians(10)  # Adjust as needed (this is degrees)
+    def navigate_to_waypoint(self, distance, angle):
+        # Tolerance for angle to consider facing the waypoint
+        angle_tolerance = math.radians(10)  # Adjust as needed
     
         if distance <= self.waypoint_tolerance:
             print("Waypoint reached. Stopping.")
             # Implement stopping logic here
+            thrusters.stop()
         
         elif abs(angle) <= angle_tolerance:
             print("Facing waypoint. Continuing straight.")
-            thrusters.changeSpeed(1425, 1425)
+            # Implement logic for continuing straight
+            thrusters.changeSpeed(1350, 1350)
         
         elif angle > angle_tolerance:
             print("Need to turn right.")
-            thrusters.changeSpeed(1350, 1450)
+            # Implement logic for turning right
+            thrusters.changeSpeed(1400, 1300)  # Adjust thruster speeds for turning right
         
         elif angle < -angle_tolerance:
             print("Need to turn left.")
-            thrusters.changeSpeed(1450, 1350)
+            # Implement logic for turning left
+            thrusters.changeSpeed(1300, 1400)  # Adjust thruster speeds for turning left
 
     
     def calculate_bearing(self, lat1, long1, lat2, long2):
@@ -94,6 +98,10 @@ class WaypointNavigator(Node):
         x = math.cos(lat1) * math.sin(lat2) - math.sin(lat1)* math.cos(lat2) * math.cos(dLon)
         brng = math.atan2(y, x)
         brng = (brng + 2 * math.pi) % (2 * math.pi)
+        brng = math.degrees(brng)
+        brng = (brng + 360) % 360
+        brng = 360 - brng #count degrees counter-clockwise - remove to make clockwise
+
         return brng
 
     def calculate_distance(self, lat1, lon1, lat2, lon2):
@@ -106,13 +114,23 @@ class WaypointNavigator(Node):
         distance = R * c
         return distance
 
-
 def main(args=None):
-    rclpy.init(args=args)
-    navigator = WaypointNavigator()
-    rclpy.spin(navigator)
-    navigator.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.init(args=args)
+        navigator = WaypointNavigator()
+        rclpy.spin(navigator)
+    except KeyboardInterrupt:
+        print("Keyboard interrupt detected. Exiting...")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+    finally:
+        if 'navigator' in locals():
+            navigator.destroy_node()
+        rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()
+
+
+GPIO.cleanup()
