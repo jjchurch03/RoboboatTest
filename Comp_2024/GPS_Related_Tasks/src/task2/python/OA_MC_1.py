@@ -10,6 +10,7 @@ l_thrust_pwm = 15
 import RPi.GPIO as GPIO
 import time
 import pyzed.sl as sl
+import numpy as np
 
 # Importing modules from OA
 import rclpy
@@ -52,8 +53,6 @@ thrusters.change_speed(1450, 1450) # Slower than original code
 MIN_DISTANCE_THRESHOLD = 1.65
 SAFE_FORWARD_DISTANCE = 0.5
 
-
-# Define a class for the obstacle avoidance behavior
 class ObstacleAvoidance(Node):
     def __init__(self):
         super().__init__('obstacle_avoidance_node')
@@ -61,7 +60,11 @@ class ObstacleAvoidance(Node):
 
         # Set minimum distance threshold for obstacle detection
         self.min_distance_threshold = MIN_DISTANCE_THRESHOLD  
-        
+        # Set starting distance for obstacle consideration
+        self.starting_distance = 0.6  # meters
+        # Set degree range for checking path ahead
+        self.degree_range = 20  # degrees
+
         # Initialize the number of laser scan readings
         self.num_readings = 0  
 
@@ -72,27 +75,39 @@ class ObstacleAvoidance(Node):
         self.obstacle_distances = []
 
     def scan_callback(self, msg):
+        global obstacle_avoidance_node  # Access global obstacle_avoidance_node
         distances = msg.ranges
         self.obstacle_distances = [x for x in distances if not np.isnan(x)]
 
-        # Find the minimum distance from the laser scan readings
-        min_distance = min(self.obstacle_distances) 
+        # Filter distances starting from 0.6 meters away
+        start_index = int(self.starting_distance / msg.range_max * len(self.obstacle_distances))
+        filtered_distances = self.obstacle_distances[start_index:]
 
-        # Update the number of laser scan readings
-        self.num_readings = len(self.obstacle_distances)  
+        # Check if there are obstacles within the specified degree range
+        degree_range_indices = int(self.degree_range / msg.angle_increment)
+        path_clear = self.is_path_clear(filtered_distances, degree_range_indices)
 
-        if min_distance < self.min_distance_threshold:
-            print("Obstacle Detected! Deciding best course of action...")
-            # Call method to handle obstacle avoidance
-            self.avoid_obstacle(self.obstacle_distances, msg)  
+        if not path_clear:
+            if obstacle_avoidance_node is None:  # Check if obstacle_avoidance_node is None
+                obstacle_avoidance_node = self  # Assign self to obstacle_avoidance_node
+                rclpy.spin_once(obstacle_avoidance_node)  # Run the obstacle avoidance node once
+                obstacle_avoidance_node.destroy_node()
+                rclpy.shutdown()
         else:
-            print("Moving Forward...")
-            # # If no obstacle within a certain range, move forward
-            # if min_distance > SAFE_FORWARD_DISTANCE:
-            #thrusters.change_speed(1400, 1400)
-            # else:
-            #     print("Obstacle too close, cannot move forward.")
+            print("Clear path")  # Print statement indicating clear path
+            # Continue moving straight
+            thrusters.change_speed(1400, 1400)  # Adjust thrusters to move straight
 
+    def is_path_clear(self, distances, degree_range_indices):
+        # Get distances within the specified degree range
+        front_distances = distances[:degree_range_indices]
+        back_distances = distances[-degree_range_indices:]
+
+        # Check if there are obstacles within the specified distance threshold
+        if min(front_distances) < self.min_distance_threshold or min(back_distances) < self.min_distance_threshold:
+            return False
+        else:
+            return True
 
     def avoid_obstacle(self, distances, msg):
         # Find the index of the closest obstacle
@@ -117,8 +132,10 @@ class ObstacleAvoidance(Node):
 
         #Based on objects around the vessel make a decision
         if avg_left_distance > avg_right_distance:
+            print("Best course of action: Turn Left")
             thrusters.change_speed(1400, 1300)
         else:
+            print("Best course of action: Turn Left")
             thrusters.change_speed(1300, 1400)
 
 # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
@@ -373,6 +390,7 @@ def set_objects(objects_in):
     move_to_center(objects.find_desired_center_point())
 
 def move_to_center(desired_center_point):
+    global obstacle_avoidance_node
     zed_center_pixel = 1280/2
 
     if desired_center_point == -1:
