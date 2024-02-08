@@ -86,7 +86,7 @@ class ZedObjects:
 
 		self.desired_center_point = 0
 
-		duck_counter = 0
+		self.duck_counter = 0
 		
 		#for obj in objects.object_list:
 			#print("x_min: " + str(obj.bounding_box_2d[0][0]))
@@ -113,8 +113,8 @@ class ZedObjects:
 			elif (str(obj.raw_label) == "12") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.yellow_ball_list.append(obj)
 				self.yellow_ball_detected = True
-				duck_counter = duck_counter + 1
-				print("Ducks... Quack count: " + str(duck_counter))				
+				self.duck_counter = self.duck_counter + 1
+				print("Ducks... Quack count: " + str(self.duck_counter))				
 			elif (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.black_ball_list.append(obj)
 				self.black_ball_detected = True
