@@ -86,13 +86,13 @@ class ZedObjects:
 
 		self.desired_center_point = 0
 
-		duck_counter = 0
+		self.duck_counter = 0
 		
-		#for obj in objects.object_list:
-			#print("x_min: " + str(obj.bounding_box_2d[0][0]))
-			#print("x_max: " + str(obj.bounding_box_2d[1][0]))
-			#print("Distance: " + str(abs((obj.position[2]))))
-			#print("Object Label: " + str(obj.raw_label))
+		# for obj in objects.object_list:
+		# 	print("x_min: " + str(obj.bounding_box_2d[0][0]))
+		# 	print("x_max: " + str(obj.bounding_box_2d[1][0]))
+		# 	print("Distance: " + str(abs((obj.position[2]))))
+		# 	print("Object Label: " + str(obj.raw_label))
 
 	# Determines if  buoys are detected then puts them into seperate arrays (red_buoy_list, green_buoy_list, red_ball_list, etc...)
 	def detect_buoys(self):
@@ -113,8 +113,8 @@ class ZedObjects:
 			elif (str(obj.raw_label) == "12") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.yellow_ball_list.append(obj)
 				self.yellow_ball_detected = True
-				#duck_counter = duck_counter + 1
-				#print("Ducks... Quack count: " + str(duck_counter))				
+				self.duck_counter = self.duck_counter + 1
+				print("Ducks... Quack count: " + str(self.duck_counter))				
 			elif (str(obj.raw_label) == "0") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.black_ball_list.append(obj)
 				self.black_ball_detected = True
@@ -293,8 +293,82 @@ class ZedObjects:
 				print("no obstacle ball index detected")
 				self.desired_center_point = self.channel_center_point
 				return self.desired_center_point
+			
+			elif self.nearest_yellow_ball == -1 & self.nearest_black_ball != -1:
+				print("only black ball(s) detected")
+				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
+				if return_or_depart == 0:
+					if xCenter_black_ball < xCenter_green_ball & xCenter_black_ball > xCenter_red_ball:
+							stbd_gap_width = xCenter_green_ball - xCenter_black_ball						
+							port_gap_width = xCenter_black_ball - xCenter_red_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Departing: move to stbd side of black ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
+							else:
+								print("Departing: move to port side of black ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_black_ball)/2)
+				else:
+					if xCenter_black_ball > xCenter_green_ball & xCenter_black_ball < xCenter_red_ball:
+							stbd_gap_width = xCenter_red_ball - xCenter_black_ball						
+							port_gap_width = xCenter_black_ball - xCenter_green_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Returning: move to stbd side of black ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_black_ball)/2)
+							else:
+								print("Returning: move to port side of black ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
+
+##################################### only yellow balls in channel detected ##########################
+			elif self.nearest_yellow_ball != -1 & self.nearest_black_ball == -1:
+				print("only yellow ball(s) detected")
+				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
+				if return_or_depart == 0:
+					if xCenter_yellow_ball < xCenter_green_ball & xCenter_yellow_ball > xCenter_red_ball:
+							stbd_gap_width = xCenter_green_ball - xCenter_yellow_ball						
+							port_gap_width = xCenter_yellow_ball - xCenter_red_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Departing: move to stbd side of yellow ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
+							else:
+								print("Departing: move to port side of yellow ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
+				else:
+					if xCenter_yellow_ball > xCenter_green_ball & xCenter_yellow_ball < xCenter_red_ball:
+							stbd_gap_width = xCenter_red_ball - xCenter_yellow_ball						
+							port_gap_width = xCenter_yellow_ball - xCenter_green_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Returning: move to stbd side of yellow ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
+							else:
+								print("Returning: move to port side of yellow ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
+
 			else:
-				############### look into if you dont have both
+				print("black and yellow obsticles detected")
 				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
 				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
 
@@ -394,14 +468,14 @@ def set_objects(objects_in):
 def move_to_center(desired_center_point):
 	zed_center_pixel = 1280/2
 
-	if center_point == -1:
+	if desired_center_point == -1:
 	# Go straight slowly if buoy channel not detected
 		thrusters.changeSpeed(1425, 1425)
     # Turn to the left when on the right side of channel
-	elif center_point <= zed_center_pixel - 20:
+	elif desired_center_point <= zed_center_pixel - 20:
 		thrusters.changeSpeed(1400, 1300)
 	# Turn to the right when on left side of channel
-	elif center_point >= zed_center_pixel + 20:
+	elif desired_center_point >= zed_center_pixel + 20:
 		thrusters.changeSpeed(1300, 1400)
 	else:
 	# Go forward if within 20 pixels of center channel
