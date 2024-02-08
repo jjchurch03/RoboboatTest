@@ -405,8 +405,14 @@ def move_to_center(desired_center_point):
     else:
         # Go forward if within 20 pixels of center channel
         thrusters.change_speed(1400, 1400)
+    
+    # Instantiate ObstacleAvoidance class if not already instantiated
     if obstacle_avoidance_node is None:
         obstacle_avoidance_node = ObstacleAvoidance()
-        rclpy.spin_once(obstacle_avoidance_node)  # Run the obstacle avoidance node once
-        obstacle_avoidance_node.destroy_node()
-        rclpy.shutdown()
+    
+    # Call scan_callback method of ObstacleAvoidance class
+    obstacle_avoidance_node.scan_callback()
+
+# Start the ROS 2 node and run obstacle avoidance
+obstacle_avoidance_node = ObstacleAvoidance()
+rclpy.spin(obstacle_avoidance_node)
