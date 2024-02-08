@@ -129,65 +129,17 @@ def torch_thread(weights, img_size, conf_thres=0.2, iou_thres=0.45):
 
             # ZED CustomBox format (with inverse letterboxing tf applied)
             detections = detections_to_custom_box(det, img, image_net)
+
+            # Estimate distance using ZED2i camera
+            distance = zed.estimate_distance()  # New line
+
+            # Send detections and distance to MainControl.py
+            mc.set_objects(detections, distance)  # Modified line
+
             lock.release()
             run_signal = False
         sleep(0.01)
-	
-	
-class ObstacleAvoidance(Node):
-    def __init__(self):
-        super().__init__('obstacle_avoidance_node')
-        self.subscription = self.create_subscription(LaserScan,'scan', self.scan_callback,10)
-        print("Subscription to LiDAR created!")
-        self.publisher = self.create_publisher(Twist, 'cmd_vel', 10) # This is a way to do this. We need to find a way to pass the variable to MainControl
-        print("Main Control Turn Pusblisher Created!")
-        self.min_distance_threshold = 0.5  # Adjust this threshold as needed
 
-    def scan_callback(self, msg):
-        distances = msg.ranges
-        min_distance = min(distances)
-
-        if min_distance < self.min_distance_threshold:
-            # Obstacle detected, perform obstacle avoidance
-            print("Obstacle Detected! Deciding best course of action...")
-            self.avoid_obstacle(distances)
-        else:
-            # No obstacle, move forward
-            print("Moving Forward...")
-            self.move_forward()
-
-    def avoid_obstacle(self, distances):
-        # Determine the direction of the closest obstacle
-        closest_index = distances.index(min(distances))
-        num_readings = len(distances)
-        angle_increment = msg.angle_increment
-
-        # Calculate the angle of the closest obstacle
-        print("Calculating Angle...")
-        angle_to_obstacle = closest_index * angle_increment
-
-        # Decide whether to turn left or right based on the angle
-        if angle_to_obstacle < (num_readings / 2):
-            # Turn right
-            print("Best course of action: Turn Right")
-            twist_msg = Twist()
-            twist_msg.linear.x = 0.0  # Stop moving forward
-            twist_msg.angular.z = -0.5  # Rotate to the right
-            self.publisher.publish(twist_msg)
-        else:
-            # Turn left
-            print("Best course of action: Turn Left")
-            twist_msg = Twist()
-            twist_msg.linear.x = 0.0  # Stop moving forward
-            twist_msg.angular.z = 0.5  # Rotate to the left
-            self.publisher.publish(twist_msg)
-
-    def move_forward(self):
-        # Move forward with a constant linear velocity
-        twist_msg = Twist()
-        twist_msg.linear.x = 0.2  # Adjust linear velocity as needed
-        twist_msg.angular.z = 0.0  # No rotation
-        self.publisher.publish(twist_msg)
 
 
 def main():
@@ -201,6 +153,7 @@ def main():
 
     print("Initializing Camera...")
 
+    global zed
     zed = sl.Camera()
 
     input_type = sl.InputType()
@@ -225,10 +178,6 @@ def main():
     image_left_tmp = sl.Mat()
 
     print("Initialized Camera")
-
-    print("Initializing ROS2 LiDAR Node...")
-    obstacle_avoidance_node = ObstacleAvoidance()
-
 
     positional_tracking_parameters = sl.PositionalTrackingParameters()
     # If the camera is static, uncomment the following line to have better performances and boxes sticked to the ground.
