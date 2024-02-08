@@ -9,11 +9,11 @@ l_thrust_pwm = 15
 import RPi.GPIO as GPIO
 import time
 import pyzed.sl as sl
-import PID
+# import PID
 
 # Initial GPIO Setup
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(in12, GPIO.OUT, initial=GPIO.LOW)
+# GPIO.setup(in12, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(r_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(l_thrust_pwm, GPIO.OUT, initial=GPIO.LOW)
 
@@ -33,7 +33,6 @@ class Thrusters:
         # Change right thruster to set value
         thrusters.right_speed = right_speed
         thrusters.p_r.start(right_speed/200)
-        bounding
         # Change left thruster to set value
         thrusters.left_speed = left_speed
         thrusters.p_l.start(left_speed/200)
@@ -78,7 +77,7 @@ class ZedObjects:
     def detect_all(self):
         # Fills red_buoy_list and green_buoy_list  
         for obj in self.objects.object_list:
-            if (str(obj.raw_label) == "5") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
+            if (str(obj.raw_label) == "3") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
                 self.defined_day_shape_list.append(obj)
                 self.defined_day_shape_detected = True
 #			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Red buoy
@@ -195,13 +194,13 @@ def move_to_center(center_point,distance_away):
     # Go forward if within 20 pixels of center channel
        goal_distance = 1 # distance we want to be in meters
        if goal_distance*5 >= distance_away:
-            thruster.changeSpeed(1400,1400)
+            thrusters.changeSpeed(1400,1400)
        elif goal_distance*2.5 >= distance_away:
-            thruster.changeSpeed(1425,1425)
+            thrusters.changeSpeed(1425,1425)
        elif goal_distance*1.5 >= distance_away:
-            thruster.changeSpeed(1450,1450)
+            thrusters.changeSpeed(1450,1450)
        elif goal_distance*1.1 >= distance_away or goal_distance*0.9 <= distance_away:
-            thruster.changeSpeed(1500+10*(goal_distance-distance_away),1500+10*(goal_distance-distance_away))
+            thrusters.changeSpeed(1500+10*(goal_distance-distance_away),1500+10*(goal_distance-distance_away))
        else:
             time.sleep(5)
             thrusters.changeSpeed(1550,1550)
