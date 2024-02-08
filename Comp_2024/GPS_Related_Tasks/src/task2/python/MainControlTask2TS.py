@@ -289,85 +289,7 @@ class ZedObjects:
 				# red, right, returning
 				return_or_depart = 1
 
-			if self.nearest_yellow_ball_index == -1 & self.nearest_black_ball_index == -1:
-				print("no obstacle ball index detected")
-				self.desired_center_point = self.channel_center_point
-				return self.desired_center_point
-			
-			elif self.nearest_yellow_ball_index == -1 & self.nearest_black_ball_index != -1:
-				print("only black ball(s) detected")
-				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
-				if return_or_depart == 0:
-					if xCenter_black_ball < xCenter_green_ball & xCenter_black_ball > xCenter_red_ball:
-							stbd_gap_width = xCenter_green_ball - xCenter_black_ball						
-							port_gap_width = xCenter_black_ball - xCenter_red_ball
-							if port_gap_width < stbd_gap_width:
-								# 0 = stbd side is greater, move to the right of the yellow ball
-								move_port_or_stbd = 0
-							else:
-								# 1 = port side is greater, move to the left of the yellow ball
-								move_port_or_stbd = 1
-							if move_port_or_stbd == 0:
-								print("Departing: move to stbd side of black ball")
-								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
-							else:
-								print("Departing: move to port side of black ball")
-								self.desired_center_point = round((xCenter_red_ball + xCenter_black_ball)/2)
-				else:
-					if xCenter_black_ball > xCenter_green_ball & xCenter_black_ball < xCenter_red_ball:
-							stbd_gap_width = xCenter_red_ball - xCenter_black_ball						
-							port_gap_width = xCenter_black_ball - xCenter_green_ball
-							if port_gap_width < stbd_gap_width:
-								# 0 = stbd side is greater, move to the right of the yellow ball
-								move_port_or_stbd = 0
-							else:
-								# 1 = port side is greater, move to the left of the yellow ball
-								move_port_or_stbd = 1
-							if move_port_or_stbd == 0:
-								print("Returning: move to stbd side of black ball")
-								self.desired_center_point = round((xCenter_red_ball + xCenter_black_ball)/2)
-							else:
-								print("Returning: move to port side of black ball")
-								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
-
-##################################### only yellow balls in channel detected ##########################
-			elif self.nearest_yellow_ball_index != -1 & self.nearest_black_ball_index == -1:
-				print("only yellow ball(s) detected")
-				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
-				if return_or_depart == 0:
-					if xCenter_yellow_ball < xCenter_green_ball & xCenter_yellow_ball > xCenter_red_ball:
-							stbd_gap_width = xCenter_green_ball - xCenter_yellow_ball						
-							port_gap_width = xCenter_yellow_ball - xCenter_red_ball
-							if port_gap_width < stbd_gap_width:
-								# 0 = stbd side is greater, move to the right of the yellow ball
-								move_port_or_stbd = 0
-							else:
-								# 1 = port side is greater, move to the left of the yellow ball
-								move_port_or_stbd = 1
-							if move_port_or_stbd == 0:
-								print("Departing: move to stbd side of yellow ball")
-								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
-							else:
-								print("Departing: move to port side of yellow ball")
-								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
-				else:
-					if xCenter_yellow_ball > xCenter_green_ball & xCenter_yellow_ball < xCenter_red_ball:
-							stbd_gap_width = xCenter_red_ball - xCenter_yellow_ball						
-							port_gap_width = xCenter_yellow_ball - xCenter_green_ball
-							if port_gap_width < stbd_gap_width:
-								# 0 = stbd side is greater, move to the right of the yellow ball
-								move_port_or_stbd = 0
-							else:
-								# 1 = port side is greater, move to the left of the yellow ball
-								move_port_or_stbd = 1
-							if move_port_or_stbd == 0:
-								print("Returning: move to stbd side of yellow ball")
-								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
-							else:
-								print("Returning: move to port side of yellow ball")
-								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
-
-			else:
+			if self.nearest_yellow_ball_index != -1 & self.nearest_black_ball_index != -1:
 				print("black and yellow obsticles detected")
 				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
 				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
@@ -449,6 +371,85 @@ class ZedObjects:
 					
 					return self.desired_center_point
 			
+			elif self.nearest_yellow_ball_index == -1 & self.nearest_black_ball_index != -1:
+				print("only black ball(s) detected")
+				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
+				if return_or_depart == 0:
+					if xCenter_black_ball < xCenter_green_ball & xCenter_black_ball > xCenter_red_ball:
+							stbd_gap_width = xCenter_green_ball - xCenter_black_ball						
+							port_gap_width = xCenter_black_ball - xCenter_red_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Departing: move to stbd side of black ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
+							else:
+								print("Departing: move to port side of black ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_black_ball)/2)
+				else:
+					if xCenter_black_ball > xCenter_green_ball & xCenter_black_ball < xCenter_red_ball:
+							stbd_gap_width = xCenter_red_ball - xCenter_black_ball						
+							port_gap_width = xCenter_black_ball - xCenter_green_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Returning: move to stbd side of black ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_black_ball)/2)
+							else:
+								print("Returning: move to port side of black ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_black_ball)/2)
+
+##################################### only yellow balls in channel detected ##########################
+			elif self.nearest_yellow_ball_index != -1 & self.nearest_black_ball_index == -1:
+				print("only yellow ball(s) detected")
+				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
+				if return_or_depart == 0:
+					if xCenter_yellow_ball < xCenter_green_ball & xCenter_yellow_ball > xCenter_red_ball:
+							stbd_gap_width = xCenter_green_ball - xCenter_yellow_ball						
+							port_gap_width = xCenter_yellow_ball - xCenter_red_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Departing: move to stbd side of yellow ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
+							else:
+								print("Departing: move to port side of yellow ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
+				else:
+					if xCenter_yellow_ball > xCenter_green_ball & xCenter_yellow_ball < xCenter_red_ball:
+							stbd_gap_width = xCenter_red_ball - xCenter_yellow_ball						
+							port_gap_width = xCenter_yellow_ball - xCenter_green_ball
+							if port_gap_width < stbd_gap_width:
+								# 0 = stbd side is greater, move to the right of the yellow ball
+								move_port_or_stbd = 0
+							else:
+								# 1 = port side is greater, move to the left of the yellow ball
+								move_port_or_stbd = 1
+							if move_port_or_stbd == 0:
+								print("Returning: move to stbd side of yellow ball")
+								self.desired_center_point = round((xCenter_red_ball + xCenter_yellow_ball)/2)
+							else:
+								print("Returning: move to port side of yellow ball")
+								self.desired_center_point = round((xCenter_green_ball + xCenter_yellow_ball)/2)
+
+			else:
+				print("no obstacle ball index detected")
+				self.desired_center_point = self.channel_center_point
+				return self.desired_center_point
+				
+			
 
 # Takes in list of objects from Zed 2i Camera each frame
 def set_objects(objects_in):
@@ -503,7 +504,6 @@ def test_motors():
 	thrusters.stop()
 	
 	GPIO.cleanup()
-
 
 
     	
