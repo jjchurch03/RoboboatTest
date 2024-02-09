@@ -125,6 +125,7 @@ class ZedObjects:
                     self.self.defined_day_shape_detected = True
                 i = i + 1				   
             self.distance_away = day_distances[0]
+            return self.distance_away
 
 
     def get_nearest_defined_day_shape(self):
@@ -164,8 +165,8 @@ class ZedObjects:
             
 
 # Takes in list of objects from Zed 2i Camera each frame
-def find_center_point(self):
-        if self.defined_day_shape_index == -1:
+    def find_center_point(self):
+        if self.nearest_defined_day_shape_index == -1:
             print("Error: Issue with day shape index")
             return -1
         else:
@@ -185,9 +186,10 @@ def find_center_point(self):
 def set_objects(objects_in):
     objects = ZedObjects(objects_in)
     objects.detect_all()
-    objects.sort_detected_day_shape()
+    da = objects.sort_detected_day_shape()
     print("Center Point: " + str(objects.find_center_point()))
-    move_to_center(objects.find_center_point())
+    # da = objects.sort_detected_day_shape()
+    move_to_center(objects.find_center_point(), da)
     # self.distance_away = abs((obj.position[2]))
 
 

@@ -14,8 +14,8 @@ from sensor_msgs.msg import NavSatFix
 import math
 from vectornav_msgs.msg import CommonGroup
 
-latitude = 27.37572
-longitude = -82.45215
+latitude = 27.375227408
+longitude = -82.453126708
 
 
 
@@ -69,6 +69,7 @@ class WaypointNavigator(Node):
         yaw = msg.yawpitchroll.x  # Assuming yaw is a field in the message
         # Convert yaw angle to degrees true (if needed)
         self.degrees_true = yaw
+        self.degrees_true = self.degrees_true + 360
         
         # Print or use the degrees true value
         print(f"Degrees True: {self.degrees_true}")
@@ -106,10 +107,10 @@ class WaypointNavigator(Node):
                 else:
                     if (angle-self.degrees_true) <= 180:
                         print("Need to turn right.")
-                        thrusters.changeSpeed(1400, 1300)
+                        thrusters.changeSpeed(1350, 1450)
                     elif (angle-self.degrees_true) > 180:
                         print("Need to turn left.")
-                        thrusters.changeSpeed(1300, 1400)
+                        thrusters.changeSpeed(1450, 1350)
         else:
             print("Waiting for heading information...")
 
