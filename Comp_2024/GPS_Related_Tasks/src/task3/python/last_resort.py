@@ -57,42 +57,49 @@ class WaypointNavigator(Node):
         super().__init__('waypoint_navigator')
         self.subscription = self.create_subscription(NavSatFix, 'vectornav/gnss', self.dirtbag_callback, 10)
         
-        self.waypoint_tolerance = 0.5  # Tolerance for considering a waypoint reached (adjust as needed)
-
+        self.waypoint_tolerance = 1.6  # Tolerance for considering a waypoint reached (adjust as needed)
+        self.steady_counter = 0  # Counter to keep track of steady state
+        self.backward_duration = 2  # Duration (in seconds) to apply reverse thrust
+        
     def dirtbag_callback(self, msg):
         global latitude, longitude
         current_latitude = msg.latitude
         current_longitude = msg.longitude
         distance_to_waypoint = self.calculate_distance(current_latitude, current_longitude, latitude, longitude)
         angle_to_waypoint = self.calculate_angle(current_latitude, current_longitude, latitude, longitude)
-        self.navigate_to_waypoint(distance_to_waypoint, angle_to_waypoint) #Add more as I figure out what values I need
+        self.navigate_to_waypoint(distance_to_waypoint, angle_to_waypoint) 
 
     def navigate_to_waypoint(self, distance, angle):
         # Tolerance for angle to consider facing the waypoint
         angle_tolerance = math.radians(10)  # Adjust as needed
-    
+        
         if distance <= self.waypoint_tolerance:
-            print("Waypoint reached. Stopping.")
-            # Implement stopping logic here
-            thrusters.stop()
-        
-        elif abs(angle) <= angle_tolerance:
-            print("Facing waypoint. Continuing straight.")
-            # Implement logic for continuing straight
-            thrusters.changeSpeed(1350, 1350)
-        
-        elif angle > angle_tolerance:
-            print("Need to turn right.")
-            # Implement logic for turning right
-            thrusters.changeSpeed(1400, 1300)  # Adjust thruster speeds for turning right
-        
-        elif angle < -angle_tolerance:
-            print("Need to turn left.")
-            # Implement logic for turning left
-            thrusters.changeSpeed(1300, 1400)  # Adjust thruster speeds for turning left
+            print("Waypoint reached. Stabilizing.")
+            if self.steady_counter < self.backward_duration * 10:
+                # Apply reverse thrust for a short duration to counter forward momentum
+                thrusters.changeSpeed(1600, 1100)
+                self.steady_counter += 1
+            else:
+                # Stop thrusters after applying reverse thrust
+                print("Vessel stabilized. Stopping thrusters.")
+                thrusters.stop()
+        else:
+            # Reset the steady counter if not reached the waypoint yet
+            self.steady_counter = 0
+            
+            if abs(angle) <= angle_tolerance:
+                print("Facing waypoint. Continuing straight.")
+                thrusters.changeSpeed(1350, 1350)
+            elif angle > angle_tolerance:
+                print("Need to turn right.")
+                thrusters.changeSpeed(1400, 1300)
+            elif angle < -angle_tolerance:
+                print("Need to turn left.")
+                thrusters.changeSpeed(1300, 1400)
+
 
     
-    def calculate_bearing(self, lat1, long1, lat2, long2):
+    def calculate_angle(self, lat1, long1, lat2, long2):
         dLon = (long2 - long1) #this should be a double
         y = math.sin(dLon) * math.cos(lat2)
         x = math.cos(lat1) * math.sin(lat2) - math.sin(lat1)* math.cos(lat2) * math.cos(dLon)
@@ -112,7 +119,8 @@ class WaypointNavigator(Node):
         a = math.sin(d_lat / 2) * math.sin(d_lat / 2) + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(d_lon / 2) * math.sin(d_lon / 2)
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         distance = R * c
-        return distance
+        distance_meters = distance * 1000  # Convert kilometers to meters
+        return distance_meters
 
 def main(args=None):
     try:
