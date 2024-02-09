@@ -44,11 +44,14 @@ class Thrusters:
 # Initialize the thrusters into neutral then set them to go straight forward
 thrusters = Thrusters(1500, 1500)
 time.sleep(5)
-thrusters.changeSpeed(1350, 1350)
+thrusters.changeSpeed(1400, 1400) #slower than original code
 
 # Takes in Zed Objects, which contains info on distance, bounding box position, etc.
 class ZedObjects:
     def __init__(self, objects):
+       
+       self.objects = objects
+
        self.defined_day_shape_list = []
         # self.green_triangle_list = []
 
@@ -57,20 +60,23 @@ class ZedObjects:
 
        self.nearest_defined_day_shape_detected = False
         # self.nearest_red_detected = False
+       
+       self.distance_away = 10
+       
+       self.center_point = -1
 
        self.nearest_defined_day_shape_index = -1
         # self.nearest_red_index = -1
-       self.desired_center_point = 0
+        # self.desired_center_point = 0
         # 1=triangle; 2=square; 3=circle; 4=blue_plus; 5=red_plus; 6=green_plus; 7=duck
         # ask what is the image of the day
         # set the image to the image of the day
-
-        # set self.detected image to _ for shape of the day, update the index when it finds the shape to _, when the two match, then drive towards that        
-        
-        #for obj in objects.object_list:
+    
+        # set self.detected image to _ for shape of the day, update the index when it finds the shape to _, when the two match, then drive towards that         
+       #for obj in objects.object_list:
             #print("x_min: " + str(obj.bounding_box_2d[0][0]))
             #print("x_max: " + str(obj.bounding_box_2d[1][0]))
-            #print("Distance: " + str(abs((obj.position[2]))))
+         #   print("Distance: " + str(abs((obj.position[2]))))
             #print("Object Label: " + str(obj.raw_label))
 
     # Determines if red and green buoys are detected then puts them in two seperate arrays (red_buoy_list and green_buoy_list)
@@ -118,7 +124,7 @@ class ZedObjects:
                     self.nearest_defined_day_shape_index = i
                     self.self.defined_day_shape_detected = True
                 i = i + 1				   
-
+            self.distance_away = day_distances[0]
 
 
     def get_nearest_defined_day_shape(self):
@@ -167,14 +173,22 @@ def find_center_point(self):
             xmax_shape = self.get_nearest_defined_day_shape().bounding_box_2d[1][0]
             self.center_point = round((xmin_shape + xmax_shape)/2)
             return self.center_point
+        
+# def find_Distance(self):
+#         if self.defined_day_shape_index == -1:
+#             print("Error: Issue with day shape index")
+#             return -1
+#         else:
+#             self.distance_away = abs(self.get_nearest_defined_day_shape().position[2])
+#             return self.distance_away       
 
-def set_objects(objects_in,distance):
+def set_objects(objects_in):
     objects = ZedObjects(objects_in)
     objects.detect_all()
     objects.sort_detected_day_shape()
     print("Center Point: " + str(objects.find_center_point()))
     move_to_center(objects.find_center_point())
-    self.distance_away = distance
+    # self.distance_away = abs((obj.position[2]))
 
 
 # Adjusts moters to ensure the pixel center point of the green and red buoys lines up with the center pixel of the image (640)
@@ -184,26 +198,34 @@ def move_to_center(center_point,distance_away):
     if center_point == -1:
     # Go straight slowly if buoy channel not detected
         thrusters.changeSpeed(1425, 1425)
+        print("channel not detected, going straight slowly")
     # Turn to the left when on the right side of channel
     elif center_point <= zed_center_pixel - 20:
         thrusters.changeSpeed(1450, 1350)
+        print("poster too far to the left, turning left")
     # Turn to the right when on left side of channel
     elif center_point >= zed_center_pixel + 20:
         thrusters.changeSpeed(1350, 1450)
+        print("poster too far to the right, turning right")
     else:
     # Go forward if within 20 pixels of center channel
        goal_distance = 1 # distance we want to be in meters
        if goal_distance*5 >= distance_away:
             thrusters.changeSpeed(1400,1400)
+            print("5 meters: most speed")
        elif goal_distance*2.5 >= distance_away:
             thrusters.changeSpeed(1425,1425)
+            print("2.5 meters: medium speed")
        elif goal_distance*1.5 >= distance_away:
             thrusters.changeSpeed(1450,1450)
+            print("1.5 meters: slow speed")
        elif goal_distance*1.1 >= distance_away or goal_distance*0.9 <= distance_away:
             thrusters.changeSpeed(1500+10*(goal_distance-distance_away),1500+10*(goal_distance-distance_away))
+            print("1.1 meters: station-keep")
        else:
             time.sleep(5)
             thrusters.changeSpeed(1550,1550)
+            print("idk")
 
 # def match_speed(distance_away):
 #    goal_distance = 1 # distance we want to be in meters
