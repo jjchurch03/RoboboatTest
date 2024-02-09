@@ -1,4 +1,4 @@
-# Code for Obstacle avoidance
+ # Code for Obstacle avoidance
 # Pin Definitions
 # Pin 18: PWM Output - Controls Right Thruster (Grey wire)
 R_THRUST_PWM = 18

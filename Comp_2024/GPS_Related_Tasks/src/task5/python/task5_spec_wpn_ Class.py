@@ -6,6 +6,7 @@ r_thrust_pwm = 18
 l_thrust_pwm = 15
 
 # Imports
+from typing import List
 import RPi.GPIO as GPIO
 import time
 import rclpy
@@ -14,8 +15,8 @@ from sensor_msgs.msg import NavSatFix
 import math
 from vectornav_msgs.msg import CommonGroup
 
-latitude = 27.37572
-longitude = -82.45215
+latitude = None
+longitude = None
 
 
 
@@ -53,15 +54,36 @@ thrusters = Thrusters(1500, 1500)
 time.sleep(5)
 thrusters.changeSpeed(1350, 1350)
 
+# class InitialPointGrabber(Node):
+#     def __init__(self):
+#         global latitude, longitude
+#         super().__init__('desired_waypoint_grab')
+        
+#     def callback(self, msg):
+#         global latitude, longitude
+#         if latitude is None:
+#         # Grab the first set of information
+#             latitude = msg.latitude
+#             longitude = msg.longitude
+#             print(f"Received latitude information: {latitude}")
+#             print(f"Received longitude information: {longitude}")
+#             return latitude, longitude
+#         if longitude is None:
+#             print("Failed to grab longitude information.")
+#         if latitude is None:
+#             print("Failed to grab latitude information")
+
+
 class WaypointNavigator(Node):
     def __init__(self):
         super().__init__('waypoint_navigator')
+        self.subscription_grab = self.create_subscription(NavSatFix, 'vectornav/gnss', self.callback, 10)
         self.subscription_gps = self.create_subscription(NavSatFix, 'vectornav/gnss', self.dirtbag_callback, 10)
         self.subscription_heading = self.create_subscription(CommonGroup, 'vectornav/raw/common', self.yaw_callback, 10)
         
         self.waypoint_tolerance = 0.75  # Tolerance for considering a waypoint reached (adjust as needed)
         self.steady_counter = 0  # Counter to keep track of steady state
-        self.backward_duration = 3  # Duration (in seconds) to apply reverse thrust
+        self.backward_duration = 3 # Duration (in seconds) to apply reverse thrust
         self.degrees_true = None  # Store current heading
 
     def yaw_callback(self, msg):
@@ -90,7 +112,7 @@ class WaypointNavigator(Node):
                 print("Waypoint reached. Stabilizing.")
                 if self.steady_counter < self.backward_duration * 10:
                     # Apply reverse thrust for a short duration to counter forward momentum
-                    thrusters.changeSpeed(1550, 1550)
+                    thrusters.changeSpeed(1525, 1525)
                     self.steady_counter += 1
                 else:
                 # Stop thrusters after applying reverse thrust
@@ -141,19 +163,27 @@ class WaypointNavigator(Node):
         return distance_meters
 
 def main(args=None):
-    try:
-        rclpy.init(args=args)
-        navigator = WaypointNavigator()
-        print("Spinning node...")
-        rclpy.spin(navigator)  # Spin the node to handle incoming messages
-    except KeyboardInterrupt:
-        print("Keyboard interrupt detected. Exiting...")
-    except Exception as e:
-        print(f"An error occurred: {str(e)}")
-    finally:
-        if 'navigator' in locals():
-            navigator.destroy_node()
-        rclpy.shutdown()
+    if latitude or longitude is None:
+        rclpy.init()
+        uno = InitialPointGrabber()
+        print("Spinning first node...")
+        rclpy.spin_once(uno)
+    else:
+        try:
+            rclpy.init(args=args)
+            navigator = WaypointNavigator()
+            print("Spinning second node...")
+            rclpy.spin(navigator)  # Spin the node to handle incoming messages
+        except KeyboardInterrupt:
+            print("Keyboard interrupt detected. Exiting...")
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+        finally:
+            if 'navigator' in locals():
+                navigator.destroy_node()
+            if 'uno' in locals():
+                uno.destroy_node()
+            rclpy.shutdown()
 
 
 

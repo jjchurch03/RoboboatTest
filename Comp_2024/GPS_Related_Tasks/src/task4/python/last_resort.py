@@ -61,7 +61,7 @@ class WaypointNavigator(Node):
         
         self.waypoint_tolerance = 0.75  # Tolerance for considering a waypoint reached (adjust as needed)
         self.steady_counter = 0  # Counter to keep track of steady state
-        self.backward_duration = 3  # Duration (in seconds) to apply reverse thrust
+        self.backward_duration = 3 # Duration (in seconds) to apply reverse thrust
         self.degrees_true = None  # Store current heading
 
     def yaw_callback(self, msg):
@@ -90,7 +90,7 @@ class WaypointNavigator(Node):
                 print("Waypoint reached. Stabilizing.")
                 if self.steady_counter < self.backward_duration * 10:
                     # Apply reverse thrust for a short duration to counter forward momentum
-                    thrusters.changeSpeed(1550, 1550)
+                    thrusters.changeSpeed(1525, 1525)
                     self.steady_counter += 1
                 else:
                 # Stop thrusters after applying reverse thrust
