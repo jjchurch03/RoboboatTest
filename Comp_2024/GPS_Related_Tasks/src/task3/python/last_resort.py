@@ -12,9 +12,10 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix
 import math
+from vectornav_msgs.msg import CommonGroup
 
-latitude = None
-longitude = None
+latitude = 27.37572
+longitude = -82.45215
 
 
 
@@ -55,47 +56,63 @@ thrusters.changeSpeed(1350, 1350)
 class WaypointNavigator(Node):
     def __init__(self):
         super().__init__('waypoint_navigator')
-        self.subscription = self.create_subscription(NavSatFix, 'vectornav/gnss', self.dirtbag_callback, 10)
+        self.subscription_gps = self.create_subscription(NavSatFix, 'vectornav/gnss', self.dirtbag_callback, 10)
+        self.subscription_heading = self.create_subscription(CommonGroup, 'vectornav/raw/common', self.yaw_callback, 10)
         
         self.waypoint_tolerance = 1.6  # Tolerance for considering a waypoint reached (adjust as needed)
         self.steady_counter = 0  # Counter to keep track of steady state
         self.backward_duration = 2  # Duration (in seconds) to apply reverse thrust
+        self.degrees_true = None  # Store current heading
+
+    def yaw_callback(self, msg):
+        # Extract yaw angle from the message
+        yaw = msg.yawpitchroll.x  # Assuming yaw is a field in the message
+        # Convert yaw angle to degrees true (if needed)
+        self.degrees_true = yaw
+        
+        # Print or use the degrees true value
+        print(f"Degrees True: {self.degrees_true}")
+        return self.degrees_true
         
     def dirtbag_callback(self, msg):
         global latitude, longitude
         current_latitude = msg.latitude
         current_longitude = msg.longitude
+        print(f"Latitude: {current_latitude} and longitude: {current_longitude}")
         distance_to_waypoint = self.calculate_distance(current_latitude, current_longitude, latitude, longitude)
         angle_to_waypoint = self.calculate_angle(current_latitude, current_longitude, latitude, longitude)
         self.navigate_to_waypoint(distance_to_waypoint, angle_to_waypoint) 
 
     def navigate_to_waypoint(self, distance, angle):
         # Tolerance for angle to consider facing the waypoint
-        angle_tolerance = math.radians(10)  # Adjust as needed
-        
-        if distance <= self.waypoint_tolerance:
-            print("Waypoint reached. Stabilizing.")
-            if self.steady_counter < self.backward_duration * 10:
-                # Apply reverse thrust for a short duration to counter forward momentum
-                thrusters.changeSpeed(1600, 1100)
-                self.steady_counter += 1
-            else:
+        if self.degrees_true is not None:
+            if distance <= self.waypoint_tolerance:
+                print("Waypoint reached. Stabilizing.")
+                if self.steady_counter < self.backward_duration * 10:
+                    # Apply reverse thrust for a short duration to counter forward momentum
+                    thrusters.changeSpeed(1550, 1550)
+                    self.steady_counter += 1
+                else:
                 # Stop thrusters after applying reverse thrust
-                print("Vessel stabilized. Stopping thrusters.")
-                thrusters.stop()
-        else:
+                    print("Vessel stabilized. Stopping thrusters.")
+                    thrusters.stop()
+            else:
             # Reset the steady counter if not reached the waypoint yet
-            self.steady_counter = 0
+                self.steady_counter = 0
             
-            if abs(angle) <= angle_tolerance:
-                print("Facing waypoint. Continuing straight.")
-                thrusters.changeSpeed(1350, 1350)
-            elif angle > angle_tolerance:
-                print("Need to turn right.")
-                thrusters.changeSpeed(1400, 1300)
-            elif angle < -angle_tolerance:
-                print("Need to turn left.")
-                thrusters.changeSpeed(1300, 1400)
+                if (angle-self.degrees_true) < -.05:
+                    print("Facing waypoint. Continuing straight.")
+                    thrusters.changeSpeed(1350, 1350)
+                else:
+                    if (angle-self.degrees_true) <= 180:
+                        print("Need to turn right.")
+                        thrusters.changeSpeed(1400, 1300)
+                    elif (angle-self.degrees_true) >= 180.000000000001:
+                        print("Need to turn left.")
+                        thrusters.changeSpeed(1300, 1400)
+        else:
+            print("Waiting for heading information...")
+
 
 
     
@@ -108,7 +125,7 @@ class WaypointNavigator(Node):
         brng = math.degrees(brng)
         brng = (brng + 360) % 360
         brng = 360 - brng #count degrees counter-clockwise - remove to make clockwise
-
+        print(f"angle: {brng}")
         return brng
 
     def calculate_distance(self, lat1, lon1, lat2, lon2):
@@ -120,13 +137,15 @@ class WaypointNavigator(Node):
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         distance = R * c
         distance_meters = distance * 1000  # Convert kilometers to meters
+        print(f"Distance: {distance_meters}")
         return distance_meters
 
 def main(args=None):
     try:
         rclpy.init(args=args)
         navigator = WaypointNavigator()
-        rclpy.spin(navigator)
+        print("Spinning node...")
+        rclpy.spin(navigator)  # Spin the node to handle incoming messages
     except KeyboardInterrupt:
         print("Keyboard interrupt detected. Exiting...")
     except Exception as e:
@@ -135,6 +154,8 @@ def main(args=None):
         if 'navigator' in locals():
             navigator.destroy_node()
         rclpy.shutdown()
+
+
 
 
 if __name__ == '__main__':
