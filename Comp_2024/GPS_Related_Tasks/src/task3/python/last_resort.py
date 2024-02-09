@@ -69,7 +69,8 @@ class WaypointNavigator(Node):
         yaw = msg.yawpitchroll.x  # Assuming yaw is a field in the message
         # Convert yaw angle to degrees true (if needed)
         self.degrees_true = yaw
-        self.degrees_true = self.degrees_true + 360
+        if self.degrees_true < 0:
+            self.degrees_true = self.degrees_true + 360
         
         # Print or use the degrees true value
         print(f"Degrees True: {self.degrees_true}")
@@ -86,6 +87,9 @@ class WaypointNavigator(Node):
 
     def navigate_to_waypoint(self, distance, angle):
         # Tolerance for angle to consider facing the waypoint
+        # Ensure angles are within the range [0, 360)
+        
+
         if self.degrees_true is not None:
             if distance <= self.waypoint_tolerance:
                 print("Waypoint reached. Stabilizing.")
@@ -100,17 +104,28 @@ class WaypointNavigator(Node):
             else:
             # Reset the steady counter if not reached the waypoint yet
                 self.steady_counter = 0
-            
-                if (angle-self.degrees_true) < -.05:
-                    print("Facing waypoint. Continuing straight.")
+                    # Calculate the difference in angles
+                turn_degrees = self.degrees_true - angle
+
+                # Ensure turn_degrees is within the range [-180, 180)
+                if turn_degrees >= 180:
+                    turn_degrees -= 360
+                elif turn_degrees < -180:
+                    turn_degrees += 360
+                    
+                print(f"Turn Degree: {turn_degrees}")
+                if abs(turn_degrees) < 3:
+                    print("GO forward!")
                     thrusters.changeSpeed(1350, 1350)
-                else:
-                    if (angle-self.degrees_true) <= 180:
-                        print("Need to turn right.")
-                        thrusters.changeSpeed(1350, 1450)
-                    elif (angle-self.degrees_true) > 180:
-                        print("Need to turn left.")
-                        thrusters.changeSpeed(1450, 1350)
+                    # Make a decision based on the turn angle
+                elif turn_degrees >= 3:
+                    print("Turn Left!")
+                    thrusters.changeSpeed(1450, 1350)
+                elif turn_degrees <= 3:
+                    print("Turn Right!")
+                    thrusters.changeSpeed(1350, 1450)
+
+
         else:
             print("Waiting for heading information...")
 
