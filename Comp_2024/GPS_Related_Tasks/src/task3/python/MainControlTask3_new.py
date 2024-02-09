@@ -83,30 +83,9 @@ class ZedObjects:
     def detect_all(self):
         # Fills red_buoy_list and green_buoy_list  
         for obj in self.objects.object_list:
-            if (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
+            if (str(obj.raw_label) == "10") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
                 self.defined_day_shape_list.append(obj)
                 self.defined_day_shape_detected = True
-#			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Red buoy
-#				self.red_buoys_list.append(obj)
-#				self.red_buoy_detected = True
-#            elif (str(obj.raw_label) == "7") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Triangle
-#                self.green_triangle_list.append(obj)
-#				self.green_triangle_detected = True
-#            elif (str(obj.raw_label) == "11") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Square
-#                self.red_square_list.append(obj)
-#				self.red_square_detected = True
-#            elif (str(obj.raw_label) == "1") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Circle
-            #     self.blue_circle_list.append(obj)
-            # 	self.blue_circle_detected = True
-            # elif (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Blue Plus
-            #     self.blue_plus_list.append(obj)
-            # 	self.blue_plus_detected = True
-            # elif (str(obj.raw_label) == "10") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Red Plus
-            #     self.red_plus_list.append(obj)
-            # 	self.red_plus_detected = True
-            # elif (str(obj.raw_label) == "6") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Green Plus
-            #     self.green_plus_list.append(obj)
-            # 	self.green_plus_detected = True
             
 
     def sort_detected_day_shape(self):
@@ -129,7 +108,7 @@ class ZedObjects:
 
 
     def get_nearest_defined_day_shape(self):
-        if self.nearest_defined_day_shape_detected == False:
+        if self.defined_day_shape_detected == False:
             print("Error: No day shape detected.")
         elif self.nearest_defined_day_shape_detected == False:
             print("Error: Nearest day shape not yet detected.")
@@ -144,25 +123,6 @@ class ZedObjects:
     # 	else:
     # 		return self.red_buoys_list[self.nearest_red_index]
     # def get_nearest_circle
-    
-    # Finds what pixel is at the center of the green and red buoys
-    #def find_center_point(self):
-    # 	match self.image_of_the_day
-    # 	case 1 # green triangle
-    # 		self.center_point = round((self.get_nearest_triangle().bounding_box_2d[1][0] + self.get_nearest_triangle().bounding_box_2d[0][0])/2)
-    # 	case 2 # red square
-    # 		self.center_point = round((self.get_nearest_square().bounding_box_2d[1][0] + self.get_nearest_square().bounding_box_2d[0][0])/2)
-    # 	case 3 # blue circle
-    # 		self.center_point = round((self.get_nearest_circle().bounding_box_2d[1][0] + self.get_nearest_circle().bounding_box_2d[0][0])/2)
-    # 	case 4 # blue plus
-    # 		self.center_point = round((self.get_nearest_blue_plus().bounding_box_2d[1][0] + self.get_nearest_blue_plus().bounding_box_2d[0][0])/2)
-    # 	case 5 # red plus
-    # 		self.center_point = round((self.get_nearest_red_plus().bounding_box_2d[1][0] + self.get_nearest_red_plus().bounding_box_2d[0][0])/2)
-    # 	case 6 # green plus
-    # 		self.center_point = round((self.get_nearest_green_plus().bounding_box_2d[1][0] + self.get_nearest_green_plus().bounding_box_2d[0][0])/2)
-    # 	case 7 # duck
-    # 		self.center_point = round((self.get_nearest_duck().bounding_box_2d[1][0] + self.get_nearest_green_plus().bounding_box_2d[0][0])/2)
-            
 
 # Takes in list of objects from Zed 2i Camera each frame
     def find_center_point(self):
@@ -188,7 +148,6 @@ def set_objects(objects_in):
     objects.detect_all()
     da = objects.sort_detected_day_shape()
     print("Center Point: " + str(objects.find_center_point()))
-    # da = objects.sort_detected_day_shape()
     move_to_center(objects.find_center_point(), da)
     # self.distance_away = abs((obj.position[2]))
 
