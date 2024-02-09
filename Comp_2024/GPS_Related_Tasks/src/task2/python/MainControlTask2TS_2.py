@@ -104,7 +104,7 @@ class ZedObjects:
 			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_buoys_list.append(obj)
 				self.red_buoy_detected = True
-			if (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
+			elif (str(obj.raw_label) == "8") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
 				self.red_ball_list.append(obj)
 				self.red_ball_detected = True	
 			elif (str(obj.raw_label) == "4") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK):
@@ -286,7 +286,7 @@ class ZedObjects:
 
 
 ##################################### only black balls in channel detected ##########################			
-			if self.nearest_yellow_ball == -1 & self.nearest_black_ball != -1:
+			if self.nearest_yellow_ball_index == -1 & self.nearest_black_ball_index != -1:
 				print("only black ball(s) detected")
 				xCenter_black_ball = round((self.get_nearest_black_ball().bounding_box_2d[1][0] + self.get_nearest_black_ball().bounding_box_2d[0][0])/2)
 
@@ -305,7 +305,7 @@ class ZedObjects:
 
 
 ##################################### only yellow balls in channel detected ##########################
-			elif self.nearest_yellow_ball != -1 & self.nearest_black_ball == -1:
+			elif self.nearest_yellow_ball_index != -1 & self.nearest_black_ball_index == -1:
 				print("only yellow ball(s) detected")
 				xCenter_yellow_ball = round((self.get_nearest_yellow_ball().bounding_box_2d[1][0] + self.get_nearest_yellow_ball().bounding_box_2d[0][0])/2)
 
