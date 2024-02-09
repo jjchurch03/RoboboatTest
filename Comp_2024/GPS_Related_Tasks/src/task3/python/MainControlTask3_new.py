@@ -83,7 +83,7 @@ class ZedObjects:
     def detect_all(self):
         # Fills red_buoy_list and green_buoy_list  
         for obj in self.objects.object_list:
-            if (str(obj.raw_label) == "3") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
+            if (str(obj.raw_label) == "2") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Will say "green_buoy or whatever the label is for a green buoy"
                 self.defined_day_shape_list.append(obj)
                 self.defined_day_shape_detected = True
 #			elif (str(obj.raw_label) == "9") and (obj.tracking_state == sl.OBJECT_TRACKING_STATE.OK): # Red buoy
@@ -194,38 +194,58 @@ def set_objects(objects_in):
 # Adjusts moters to ensure the pixel center point of the green and red buoys lines up with the center pixel of the image (640)
 def move_to_center(center_point,distance_away):
     zed_center_pixel = 1280/2
+    goal_distance = 1  # distance we want to be in meters
 
     if center_point == -1:
     # Go straight slowly if buoy channel not detected
-        thrusters.changeSpeed(1425, 1425)
+        thrusters.changeSpeed(1430, 1425) #left thruster stronger than right, hence the offset
         print("channel not detected, going straight slowly")
-    # Turn to the left when on the right side of channel
+
+    # Turn to the left when poster is to the left
     elif center_point <= zed_center_pixel - 20:
-        thrusters.changeSpeed(1450, 1350)
-        print("poster too far to the left, turning left")
+        if goal_distance*5 >= distance_away:
+            thrusters.changeSpeed(1450,1350) # 1400 @ +- 50 either side
+            print("5 meters left: most speed")
+        elif goal_distance*2.5 >= distance_away:
+            thrusters.changeSpeed(1450,1400) # 1425 @ +- 25 either side
+            print("2.5 meters left: medium speed")
+        elif goal_distance*1.5 >= distance_away:
+            thrusters.changeSpeed(1460,1440) # 1450 @ +- 10 either side
+            print("1.5 meters left: slow speed")
+        else:
+            thrusters.changeSpeed(1500+10*(goal_distance-distance_away),1500-10*(goal_distance-distance_away)) # 1500 @ +- 10 x distanceDifference
+            print("left, station-keep")
+
     # Turn to the right when on left side of channel
-    elif center_point >= zed_center_pixel + 20:
-        thrusters.changeSpeed(1350, 1450)
-        print("poster too far to the right, turning right")
+    elif center_point >= zed_center_pixel + 20: 
+        if goal_distance*5 >= distance_away:
+            thrusters.changeSpeed(1350,1450) # 1400 @ -+ 50 either side
+            print("5 meters right: most speed")
+        elif goal_distance*2.5 >= distance_away:
+            thrusters.changeSpeed(1400,1450) # 1425 @ -+ 25 either side
+            print("2.5 meters right: medium speed")
+        elif goal_distance*1.5 >= distance_away:
+            thrusters.changeSpeed(1440,1460) # 1450 @ -+ 10 either side
+            print("1.5 meters right: slow speed")
+        else:
+            thrusters.changeSpeed(1500-10*(goal_distance-distance_away),1500+10*(goal_distance-distance_away)) # 1500 @ -+ 10 x distanceDifference
+            print("right, station-keep")
+
+############### Go straight forward (within 20 pixels of center channel) ##############        
     else:
-    # Go forward if within 20 pixels of center channel
-       goal_distance = 1 # distance we want to be in meters
-       if goal_distance*5 >= distance_away:
+        if goal_distance*5 >= distance_away:
             thrusters.changeSpeed(1400,1400)
-            print("5 meters: most speed")
-       elif goal_distance*2.5 >= distance_away:
+            print("5 meters ahead: most speed")
+        elif goal_distance*2.5 >= distance_away:
             thrusters.changeSpeed(1425,1425)
-            print("2.5 meters: medium speed")
-       elif goal_distance*1.5 >= distance_away:
+            print("2.5 meters ahead: medium speed")
+        elif goal_distance*1.5 >= distance_away:
             thrusters.changeSpeed(1450,1450)
-            print("1.5 meters: slow speed")
-       elif goal_distance*1.1 >= distance_away or goal_distance*0.9 <= distance_away:
+            print("1.5 meters ahead: slow speed")
+        else:
             thrusters.changeSpeed(1500+10*(goal_distance-distance_away),1500+10*(goal_distance-distance_away))
-            print("1.1 meters: station-keep")
-       else:
-            time.sleep(5)
-            thrusters.changeSpeed(1550,1550)
-            print("idk")
+            print("straight ahead, station-keep")
+
 
 # def match_speed(distance_away):
 #    goal_distance = 1 # distance we want to be in meters
@@ -249,8 +269,8 @@ def move_to_center(center_point,distance_away):
 ## Sudo code for task 3
 # drive straight
 # aquire image of the day based on set variables (blue vs green, square vs triangle)
-    #scan back and forth, so slowly rotate back and forth
+    #scan back and forth, so slowly rotate back and forth - nope
     #aquire the correct image based on the defined stuff
 # use the move to center controller logic, keep the image in the center
 # use new speed controller to control speed as you get closer
-# once 3(?) feet away from dock, do not get any closer
+# once 3 feet away from poster, do not get any closer
